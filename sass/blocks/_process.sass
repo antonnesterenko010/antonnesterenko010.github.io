@@ -1,0 +1,161 @@
+.process
+  &-section
+  &-block
+    text-align: center
+    position: relative
+  &-background
+    position: absolute
+    z-index: 2
+    top: -210px
+    left: 35%
+  &-title
+  &-subtitle
+    margin-bottom: 130px
+  &-content
+  &-card
+    text-align: left
+    background-color: #ffffff
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)
+    width: 460px
+    padding-top: 50px
+    padding-right: 60px
+    padding-bottom: 60px
+    padding-left: 120px
+    &:nth-child(1)
+        border-bottom: 3px solid #fc5f45
+        position: absolute
+        top: -60px
+        left: 0
+    &:nth-child(2)
+        border-bottom: 3px solid #38c695
+        position: absolute
+        top: 210px
+        left: 710px
+    &:nth-child(3)
+        border-bottom: 3px solid #b27cf5
+        position: absolute
+        top: 540px
+        left: 0
+    &:nth-child(4)
+        border-bottom: 3px solid #feb960
+        position: absolute
+        top: 830px
+        left: 710px
+    &s
+      position: absolute
+    &__counter
+      font-size: 50px
+      opacity: 0.06
+      +bold
+      position: absolute
+      top: 40px
+      left: 35px
+    &__title
+      font-size: 25px
+      color: #272727
+      margin-bottom: 20px
+      position: relative
+      &:after
+        position: absolute
+        content: ''
+        left: -30px
+        top: 0
+        border: 10px solid transparent
+        border-right: 10px solid #e0e0e0
+        border-top: 10px solid #e0e0e0
+        
+
+    &__subtitle
+      font-size: 15px
+      color: #616161
+  &-image
+    height: 300px
+    &s
+@media (max-width: 1200px)
+  .process
+    &-background
+      margin: 95px 50px
+    &-card
+      padding: 25px 30px 30px 60px
+      width: 300px
+      &:nth-child(1)
+        top: -50px
+        left: 100px
+      &:nth-child(2)
+        left: 570px
+      &:nth-child(3)
+        top: 570px
+        left: 100px
+      &:nth-child(4)
+        left: 570px
+      &__counter
+        font-size: 30px
+        left: 20px
+      &__title
+        font-size: 14px
+        &:after
+          border-width: 5px
+          left: -10px
+          top: 20px
+      &__subtitle
+        font-size: 12px
+    &-subtitle
+      margin-bottom: 80px
+
+@media (max-width: 992px)
+  .process
+    &-background
+      margin: 95px 30px
+    &-card
+      padding: 10px 15px 15px 30px
+      width: 260px
+      &:nth-child(1), 
+        top: -30px
+        left: 50px
+      &:nth-child(2)
+        top: 250px
+        left: 450px
+      &:nth-child(3)
+        top: 550px
+        left: 50px
+      &:nth-child(4)
+        left: 450px
+        top: 870px
+      &__counter
+        font-size: 25px
+        left: 0px
+        top: 30px
+      &__title
+        font-size: 12px
+        &:after
+          border-width: 3px
+          left: -5px
+          top: 20px
+      &__subtitle
+        font-size: 10px
+    &-subtitle
+      margin-bottom: 40px
+      
+@media (max-width: 768px)
+  .process
+    &-background
+      margin: 130px 0px
+    &-card
+      width: 150px
+      &__title
+        margin-bottom: 10px
+        &:after
+          left: -10px
+      &__subtitle
+      &:nth-child(1)
+        left: 0px
+      &:nth-child(2)
+        left: 150px
+      &:nth-child(3)
+        left: 0px
+      &:nth-child(4)
+        left: 150px
+    &-image
+      width: 100%
+      img
+        height: 100%

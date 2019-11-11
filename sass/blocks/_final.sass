@@ -1,0 +1,161 @@
+.final
+  &-section
+    background-color: #cccccc
+    padding-bottom: 120px
+  &-block
+    position: relative
+    text-align: center
+  &-background
+    position: absolute
+    z-index: 2
+    top: -210px
+    left: 33%
+  &-title
+  &-subtitle
+    margin-bottom: 80px
+  &-form
+    &__button
+      margin-bottom: 150px
+      font-weight: bold
+
+.footer
+  background-color: #3f4049
+  display: flex
+  padding: 60px
+  &-logo
+    color:#ffffff
+    &:after
+      content: ''
+      border: 1px solid $orange
+      position: absolute
+      width: 25%
+      bottom: 0
+      left: 0
+  &-info
+    display: flex
+    color: #ffffff
+  &-address
+    margin-right: 90px
+    &:nth-child(1)
+      margin-left: 120px
+      &:after
+        content: ''
+        border: 1px solid $green
+        position: absolute
+        width: 25%
+        bottom: 0
+        left: 25%
+      .footer-address__title
+        color: $green
+    &:nth-child(2)
+      &:after
+        content: ''
+        border: 1px solid $purple
+        position: absolute
+        width: 20%
+        bottom: 0
+        left: 50%
+      .footer-address__title
+        color: $purple
+    &:nth-child(3)
+      &:after
+        content: ''
+        border: 1px solid $yellow
+        position: absolute
+        width: 30%
+        bottom: 0
+        left: 70%
+      margin-right: 0
+      .footer-address__title
+        color: $yellow
+    &__title
+      margin-bottom: 50px
+    &__text
+    &__icon
+      &s
+        display: flex
+        justify-content: space-between
+
+
+@media (max-width: 1200px)
+  .final
+    &-background 
+      margin: 95px 30px
+    &-subtitle
+      margin-bottom: 40px
+    &-form
+      position: relative
+      &__data
+        input
+          padding: 15px 70px
+        label
+          top: 53px
+          left: 350px
+          font-size: 12px
+          &:nth-child(2)
+            top: 53px
+            left: 0
+            font-size: 12px
+      &__button
+        margin-bottom: 40px
+  .footer
+    flex-direction: column
+    padding: 20px
+    &-info
+      flex-wrap: wrap
+      justify-content: space-between
+      font-size: 14px
+    &-address
+      margin-right: 0
+      margin-bottom: 10px
+      &:nth-child(1)
+        margin-left: 0
+      &:nth-child(3)
+        .footer-address__title
+          margin-bottom: 10px
+      &__title
+        margin-bottom: 0
+      &__icons
+        justify-content: center
+        a
+          margin-right: 10px
+
+@media (max-width: 768px)
+  .final
+    &-background 
+      margin: 125px 0
+    &-form
+      &__data
+        input
+          font-size: 12px
+          padding: 10px 35px
+          &::placeholder
+            font-size: 12px
+        label
+          font-size: 10px
+          top: 40px
+          left: 250px
+          &:nth-child(2)
+            top: 40px
+            left: 40px
+            font-size: 10px
+      &__text
+        input
+          padding-top: 10px
+          padding-bottom: 80px
+          &::placeholder
+            font-size: 12px
+  .footer
+    padding: 10px
+    &-info
+      font-size: 12px
+      flex-direction: column
+
+@media (max-width: 449px)
+  .final
+    &-form
+      &__data
+        justify-content: center
+        label
+          top: 95px
+          left: 30px

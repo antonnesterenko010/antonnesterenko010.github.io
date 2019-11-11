@@ -1,0 +1,217 @@
+.blog
+  &-section
+    background-color: #f7f7f7
+  &-block
+    position: relative
+    text-align: center
+  &-background
+    position: absolute
+    z-index: 2
+    top: -210px
+    left: 38%
+  &-title
+  &-subtitle
+    margin-bottom: 80px
+  &-content
+    display: flex
+    text-align: left
+  &-maincard
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)
+    background-color: #ffffff
+    border-bottom: 3px solid#fc5f45
+    margin-right: 30px
+    height: 100%
+    &__image
+      margin-bottom: 30px
+      position: relative
+    &__name
+      color: #fc5f45
+      font-size: 15px
+      font-weight: bold
+      text-transform: uppercase
+      position: absolute
+      top: 375px
+      left: 50px
+    &__date
+      color: #ffffff
+      opacity: 0.7
+      font-size: 13px
+      position: absolute
+      top: 378px
+      left: 215px
+    &__text
+      padding: 0 50px 183px 50px
+    &__title
+      color: #272727
+      font-size: 20px
+      font-weight: bold
+      line-height: 35px
+      margin-bottom: 30px
+    &__subtitle
+      color: #616161
+      font-size: 15px
+      line-height: 27px
+      a
+        color: #fc5f45
+  &-card
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)
+    background-color: #ffffff
+    margin-bottom: 20px
+    padding: 30px
+    width: 555px
+    &:nth-child(1)
+      border-bottom: 3px solid#38c695
+      .blog-card__name
+        color: #38c695
+      .blog-card__subtitle
+        a
+          color: #38c695
+          display: block
+    &:nth-child(2)
+      border-bottom: 3px solid#b27cf5
+      .blog-card__name
+        color: #b27cf5
+      .blog-card__subtitle
+        a
+          color: #b27cf5
+          display: block
+    &:nth-child(3)
+      border-bottom: 3px solid#feb960
+      .blog-card__name
+        color: #feb960
+      .blog-card__subtitle
+        a
+          color: #feb960
+          display: block
+    &s
+    &__name
+      font-size: 15px
+      font-weight: bold
+      text-transform: uppercase
+      display: inline-block
+      margin-right: 20px
+      margin-bottom: 20px
+    &__date
+      color: #616161
+      font-size: 13px
+      display: inline-block
+    &__title
+      color: #272727
+      font-size: 18px
+      font-weight: bold
+      margin-bottom: 20px
+    &__subtitle
+      color: #616161
+      font-size: 15px
+      line-height: 27px
+      a
+        font-weight: bold
+  &-subscribe
+    text-align: center
+    padding: 150px 0
+    &__title
+      color: #272727
+      font-size: 30px
+      font-weight: bold
+      margin-bottom: 50px
+    &__form
+      border: 1px solid #efefef
+      border-radius: 25px
+      background-color: #f7f7f7
+      width: 500px
+      margin: auto
+      display: flex
+      justify-content: space-between
+      position: relative
+      label
+        display: inline-block
+        position: absolute
+        top: 60px
+        left: 20px
+        font-size: 14px
+        color: #fc5f45
+        font-weight: bold
+    &__input
+      font-size: 16px
+      color: #616161
+      border: none
+      border-radius: 25px
+      outline: none
+      background-color: #f7f7f7
+      padding-left: 30px
+      &::placeholder
+        +title
+        color: #616161
+        font-size: 16px
+    &__button
+      font-weight: bold
+@media (max-width: 1200px)
+  .blog
+    &-background
+      margin: 95px 30px
+    &-subtitle
+      margin-bottom: 40px
+    &-content
+      display: block
+    &-maincard
+      padding-top: 20px
+      margin-right: 0
+      margin-bottom: 20px
+      &__title
+        font-size: 18px
+        line-height: 22px
+      &__subtitle
+        font-size: 13px
+        line-height: 20px
+        a
+          display: block
+      &__image
+        display: none
+      &__text
+        padding-bottom: 40px
+        
+    &-card
+      &__name
+        font-size: 13px
+      &__date
+        font-size: 11px
+      &__subtitle
+        font-size: 13px
+        line-height: 20px
+      &s
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+    &-subscribe
+      padding: 50px 0
+      &__title
+        font-size: 24px
+        margin-bottom: 20px
+
+@media (max-width: 768px)
+  .blog
+    &-background
+      margin: 125px 0
+    &-card
+      &__name
+        font-size: 12px
+      &__date
+        font-size: 10px
+      &__subtitle
+        font-size: 12px
+    &-subscribe
+      &__title
+        font-size: 18px
+      &__form
+        font-size: 10px
+        width: 295px
+        // margin-left: 150px
+        label
+          font-size: 12px
+      &__input
+        font-size: 14px
+        &::placeholder
+          font-size: 12px
+      &__button
+        padding: 10px
+

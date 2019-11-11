@@ -1,0 +1,137 @@
+*
+  box-sizing: border-box
+
+img
+  max-width: 100%
+
+a
+  text-decoration: none
+  color: #272727
+
+body
+  +reg
+  overflow-x: hidden
+.container
+  width: 1140px
+  margin: auto
+  @media (max-width: 1200px)
+    width: 90%
+
+.background
+  font-size: 274px
+  text-transform: uppercase
+  opacity: 0.06
+  +bold
+  @media (max-width: 1200px)
+    font-size: 174px
+  @media (max-width: 768px)
+    font-size: 124px
+
+.section
+  padding: 150px 0
+  @media (max-width: 1200px)
+    padding: 80px 0
+  @media (max-width: 768px)
+    padding: 60px 0
+
+.logo
+  font-family: 'Nexa Script Regular'
+  font-size: 35px
+  span
+    color:#fc5f45
+  svg
+    z-index: 2
+    width: 40%
+    @media (max-width: 1200px)
+      width: 150px
+    @media (max-width: 992px)
+      width: 125px
+    @media (max-width: 768px)
+      width: 100px
+  
+.title
+  color: #313131
+  font-size: 50px
+  +title
+  margin-bottom: 40px
+  @media (max-width: 1200px)
+    font-size: 40px
+  @media (max-width: 768px)
+    font-size: 32px
+.subtitle
+  color: #616161
+  font-size: 15px
+  line-height: 27px
+  @media (max-width: 1200px)
+    font-size: 14px
+  @media (max-width: 768px)
+    font-size: 12px
+
+
+.button
+  color: #ffffff
+  background-color: #fc5f45
+  border-radius: 25px
+  border: none
+  padding: 19px 41px
+  +reg
+  text-transform: uppercase
+  outline: none
+  &:hover
+    cursor: pointer
+  @media (max-width: 768px)
+    padding: 15px 30px
+    font-size: 12px
+
+.form
+  &-input
+    &__data
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      input
+        border: 1px solid #efefef
+        border-radius: 4px
+        padding: 20px 140px
+        margin-bottom: 25px
+        outline: none
+        // width: 360px
+        &:nth-child(2)
+          margin-right: 0
+        &:nth-child(4)
+          margin-right: 0
+        &::placeholder
+          text-align: center
+          font-size: 16px
+          +title
+      label
+        display: inline-block
+        position: absolute
+        top: 270px
+        left: 720px
+        font-size: 14px
+        color: #fc5f45
+        font-weight: bold
+        &:nth-child(2)
+          display: inline-block
+          position: absolute
+          top: 270px
+          left: 120px
+          font-size: 14px
+          color: #fc5f45
+          font-weight: bold
+    &__text
+      margin-bottom: 50px
+      input
+        border: 1px solid #efefef
+        border-radius: 4px
+        padding-top: 20px
+        padding-bottom: 160px
+        width: 100%
+        text-align: center
+        &::placeholder
+          text-align: center
+          font-size: 16px
+          +title
+
+  

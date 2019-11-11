@@ -1,0 +1,179 @@
+.team
+  &-section
+    background-color: #f7f7f7
+    padding-bottom: 0
+  &-block
+    text-align: center
+    position: relative
+  &-background
+    position: absolute
+    z-index: 2
+    top: -210px
+    left: 35%
+  &-title
+  &-subtitle
+    margin-bottom: 80px
+  &-content
+  &-card
+    &:nth-child(1)
+      &:hover
+        border-bottom: 3px solid #fc5f45
+    &:nth-child(2)
+      &:hover
+        border-bottom: 3px solid #38c695
+    &:nth-child(3)
+      &:hover
+        border-bottom: 3px solid #b27cf5
+    &:nth-child(4)
+      &:hover
+        border-bottom: 3px solid #feb960
+    &s
+      display: flex
+      margin-bottom: 50px
+  
+    &__image
+    &__title
+      +bold
+      font-size: 18px
+      margin-bottom: 15px
+    &:nth-child(1)
+      color: #fc5f45
+    &:nth-child(2)
+      color: #38c695
+    &:nth-child(3)
+      color: #b27cf5
+    &:nth-child(4)
+      color: #feb960
+    &__subtitle
+      font-size: 13px
+      color: #616161
+      margin-bottom: 25px
+  &-description
+    display: none
+    background-color: #ffffff
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)
+    position: relative
+    padding: 70px 100px
+    margin-bottom: 150px
+    &__triangle
+      display: none
+      background-color: transparent
+      &:nth-child(1)
+        position: absolute
+        top: -40px
+        left: 100px
+      &:nth-child(2)
+        position: absolute
+        top: -40px
+        left: 360px
+      &:nth-child(3)
+        position: absolute
+        top: -40px
+        left: 620px
+      &:nth-child(4)
+        position: absolute
+        top: -40px
+        left: 890px
+    &__block
+      display: flex
+    &__title
+      text-align: left
+      font-size: 20px
+    &__orange, &__green, &__violet, &__yellow
+      display: none
+    &__subtitle
+      text-align: left
+      font-size: 15px
+    &__icon
+      width: 100%
+  &-link
+    display: flex
+    &s
+    border-left: 2px solid#efefef
+    padding-left: 20px
+    &__icon
+      width: 15px
+      margin-right: 10px
+    &__title
+      font-size: 15px
+  &-stats
+    background: url('../img/team/background.jpg') 
+    display: flex
+    align-items: center
+    justify-content: space-around
+    height: 400px
+    text-align: center
+    
+    &__item
+      
+      span
+        color: #ffffff
+    &__icon
+      margin-bottom: 10px
+    &__counter
+      color: #ffffff
+      margin-bottom: 10px
+    &__subtitle
+      color: #ffffff
+      margin-bottom: 10px
+    &__dot
+
+@media (max-width: 1200px)
+  .team
+    &-background
+      margin: 95px 30px
+    &-title
+    &-subtitle
+      margin-bottom: 20px
+    &-card
+      flex-wrap: wrap
+      &__title
+        font-size: 18px
+      &__subtitle
+        font-size: 14px
+      &s
+        flex-wrap: wrap
+        justify-content: center
+        margin-bottom: 10px
+    &-stats
+      &__icon
+        img
+          width: 40px
+          height: 36px
+      &__subtitle
+        font-size: 14px
+    &-description
+      display: none !important
+      padding: 20px 40px
+
+@media (max-width: 992px)
+  .team
+    &-card
+      &__title
+        font-size: 16px
+      &__subtitle
+        font-size: 12px
+      
+@media (max-width: 768px)
+  .team
+    &-background
+      margin: 125px 0px
+    &-card
+      &__title
+        font-size: 16px
+      &__subtitle
+        font-size: 12px
+    &-stats
+      flex-direction: column
+      &__icon
+        img
+          width: 30px
+          height: 24px
+      &__dot
+        img
+          width: 10px
+          height: 10px
+      &__counter
+        font-size: 14px
+      &__subtitle
+        font-size: 12px

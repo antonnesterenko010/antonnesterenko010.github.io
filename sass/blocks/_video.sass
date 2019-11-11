@@ -1,0 +1,30 @@
+.video
+  &-section
+    background-color: rgba(38, 39, 50, 0.85)
+  &-block
+    text-align: center
+  &-title
+    color: #ffffff
+    font-size: 30px
+    +title
+    margin-bottom: 30px
+  &-button
+    margin-bottom: 40px
+    background-color: transparent
+    border: none
+    outline: none
+  &-subtitle
+    color: #ffffff
+    font-size: 15px
+
+.pause-button
+  display: none
+  position: relative
+  top: -85px
+
+@media (max-width: 768px)
+  .video
+    &-title
+      font-size: 26px
+    &-subtitle
+      font-size: 13px
