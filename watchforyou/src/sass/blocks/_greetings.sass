@@ -1,0 +1,20 @@
+.greetings
+  &-section
+    position: relative
+    padding: 250px 0
+    background: #c6b98f
+    z-index: 1
+    overflow: hidden
+    &:before
+      position: absolute
+      z-index: -1
+      left: 0
+      top: 0
+      content: url('../img/greetings/main-bg.jpg') 
+      opacity: 0.5
+
+  &-block
+    text-align: center
+  &-title
+    font-size: 52px
+    +title
