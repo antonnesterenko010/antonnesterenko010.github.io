@@ -14,4 +14,7 @@ $(document).ready(function () {
     prevArrow: ('.arrows-left'),
     nextArrow: ('.arrows-right')
   })
+  $('.greetings-list__button').click(function(){
+    $('.greetings-list').toggle('.greetings-list__active');
+  })
 })
