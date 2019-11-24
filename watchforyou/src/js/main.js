@@ -15,6 +15,7 @@ $(document).ready(function () {
     nextArrow: ('.arrows-right')
   })
   $('.greetings-list__button').click(function(){
-    $('.greetings-list').toggle('.greetings-list__active');
+    $(this).toggleClass('greetings-list__button-active');
+    $('.greetings-list').toggleClass('greetings-list__active');
   })
 })

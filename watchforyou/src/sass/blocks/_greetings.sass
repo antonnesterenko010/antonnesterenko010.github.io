@@ -32,6 +32,8 @@
     padding-left: 0
     font-size: 12px
     padding: 20px 0
+    transition: 0.5s
+    transform-origin: left center
     &__item
       width: 100px
       margin: 5px 20px
@@ -55,6 +57,12 @@
       outline: none
       background: none
       border: none
+      transition: 0.5s
+      &-active
+        top: 270px
+        left: 0
+        transition: 0.5s
+        transform: rotate(180deg)
       
     &__active
       display: none
