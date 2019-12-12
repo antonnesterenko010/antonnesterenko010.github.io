@@ -8,7 +8,7 @@
   <title>Watch for You. Часы для вас.</title>
 </head>
 <body>
-  <header class="section header-section">
+  <header class="header-section">
     <div class="container">
       <nav class="navbar">
         <a href="index.html" class="navbar-logo">
@@ -17,24 +17,20 @@
             <div class="navbar-logo-card__second">You</div>
             <div class="navbar-logo-card__third">for</div>
           </div>
-
+  
         </a>
         <ul class="navbar-phonelist">
-          <li class="navbar-phonelist__item"><a type="tel" href="+380507154205">+380507154205</a></li>
-          <li class="navbar-phonelist__item"><a type="tel" href="+380671270286">+380671270286</a></li>
+          <li class="navbar-phonelist__item"><a type="tel" href="+380507154205">+38 (050) 715 42 05</a></li>
+          <li class="navbar-phonelist__item"><a type="tel" href="+380671270286">+38 (067) 127 02 86</a></li>
         </ul>
         <button type="button" class="button navbar-button">Заказать звонок</button>
         <ul class="navbar-list">
-          <li class="navbar-list__item"><a href="#">Часы</a>
-          <ul class="navbar-listsub">
-            <li class="navbar-listsub__item"><a href="#">Спортивные часы</a></li>
-            <li class="navbar-listsub__item"><a href="#">Женские часы</a></li>
-            <li class="navbar-listsub__item"><a href="#">Мужские часы</a></li>
-            <li class="navbar-listsub__item"><a href="#">Детские часы</a></li>
-          </ul></li>
-          <li class="navbar-list__item"><a href="#">Акции и предложения</a></li>
-          <li class="navbar-list__item"><a href="#">Доставка и оплата</a></li>
-          <li class="navbar-list__item"><a href="#">Контакты</a></li>
+          <li class="navbar-list__item"><a href="index.html">Главная</a>
+  
+          </li>
+          <li class="navbar-list__item"><a href="promo.html">Акции и предложения</a></li>
+          <li class="navbar-list__item"><a href="shipping.html">Доставка и оплата</a></li>
+          <li class="navbar-list__item"><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -74,28 +70,28 @@
         </div>
         <div class="greetings-cards">
           <ul class="greetings-cards-list">
-            <a href="#">
+            <a href="sport.html">
               <li class="greetings-cards-list__item">
             
                 <img src="img/greetings/card-1.jpg" alt="Спортивные часы" class="greetings-card__image">
               <h2 class="greetings-card__title">Спортивные часы</h2>
             
             </li></a>
-            <a href="#">
+            <a href="women.html">
               <li class="greetings-cards-list__item">
             
                 <img src="img/greetings/card-3.jpg" alt="Женские часы" class="greetings-card__image">
               <h2 class="greetings-card__title">Женские часы</h2>
             
             </li></a>
-            <a href="#">
+            <a href="men.html">
               <li class="greetings-cards-list__item">
             
                 <img src="img/greetings/card-1.jpg" alt="Мужские часы" class="greetings-card__image">
               <h2 class="greetings-card__title">Мужские часы</h2>
             
             </li></a>
-            <a href="#">
+            <a href="teen.html">
               <li class="greetings-cards-list__item">
             
                 <img src="img/greetings/card-3.jpg" alt="Детские часы" class="greetings-card__image">
@@ -120,11 +116,20 @@
         
     </section>
     <!-- offer section -->
+    <section class="section subscribe-section">
+      <div class="container">
+        <h2 class="subscribe-title">Подпишитесь для получения промокода</h2>
+        <form action="#" class="subscribe-form">
+          <input class="subscribe-form__input" type="text" placeholder="Введите ваш e-mail">
+          <button class="subscribe-button">Подписаться</button>
+        </form>
+      </div>
+    </section>
     <section class="section sportwatch-section">
       <div class="container">
         <h2 class="section-title sportwatch-title">Спортивные часы</h2>
         <h3 class="section-subtitle sportwatch-subtitle">Спорт це така тяга</h3>
-        <a href="#" class="section-button sportwatch-button">Перейти</a>
+        <a href="sport.html" class="section-button sportwatch-button">Перейти</a>
       </div>
     </section>
     <!-- /.section sportwatch-section -->
@@ -132,7 +137,7 @@
       <div class="container">
         <h2 class="section-title womenwatch-title">Женские часы</h2>
         <h3 class="section-subtitle womenwatch-subtitle">Ну ты же женщина</h3>
-        <a href="#" class="section-button womenwatch-button">Перейти</a>
+        <a href="women.html" class="section-button womenwatch-button">Перейти</a>
       </div>
     </section>
     <!-- womenwatch section -->
@@ -140,14 +145,14 @@
       <div class="container">
         <h2 class="section-title menwatch-title">Мужские часы</h2>
         <h3 class="section-subtitle menwatch-subtitle">Мужик должен.</h3>
-        <a href="" class="section-button menwatch-button">Перейти</a>
+        <a href="men.html" class="section-button menwatch-button">Перейти</a>
       </div>
     </section>
     <section class="section teenwatch-section">
       <div class="container">
         <h2 class="section-title teenwatch-title">Детские часы</h2>
         <h3 class="section-subtitle teenwatch-subtitle">Когда рожать? А часики то тикают</h3>
-        <a href="" class="section-button teenwatch-button">Перейти</a>
+        <a href="teen.html" class="section-button teenwatch-button">Перейти</a>
       </div>
     </section>
   </main>
@@ -200,6 +205,17 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal-dialog">
+      <button class="button-close modal-dialog__close"></button>
+      <h2 class="modal-title">Оставьте свои контактные данные для обратной связи</h2>
+      <form action="#" id="modal-form" class="form modal-form">
+        <input type="text" placeholder="Введите ваше имя" class="modal-form__input">
+        <input type="tel" placeholder="Введите ваш номер" required class="modal-form__input">
+        <button class="button modal-form__button">Заказать</button>
+      </form>
+    </div>
+  </div>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>

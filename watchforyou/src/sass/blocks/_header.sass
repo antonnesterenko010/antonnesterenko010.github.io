@@ -1,8 +1,8 @@
 .header
   &-section
+    padding: 40px 0
 .navbar
   display: flex
-  // justify-content: space-between
   +menu
   &-logo
     position: relative
@@ -23,7 +23,7 @@
         height: 100%
         backface-visibility: hidden
         background: transparent
-        color: #333333
+        color: #ffffff
         font-size: 42px
         +logo
         text-align: center
@@ -34,7 +34,7 @@
         height: 100%
         backface-visibility: hidden
         background: transparent
-        color: #333333
+        color: #ffffff
         font-size: 42px
         +logo
         text-align: center
@@ -45,46 +45,147 @@
         height: 100%
         backface-visibility: hidden
         background: transparent
-        color: #333333
+        color: #ffffff
         font-size: 42px
         +logo
         text-align: center
         transform: rotateY(270deg)
   &-phonelist
-    margin: 0 100px
+    margin: 0 50px
     font-size: 20px
+    +bold
     &__item
-      margin: 10px 0px
+      margin: 15px 0px
       &:first-child
         margin-top: 0
       &:last-child
         margin-bottom: 0
   &-button
-    margin: 5px 100px
-    padding: 10px 30px 
-    
+    margin: 5px 0px
+    cursor: pointer
+    +bold
+    position: relative
+    background: transparent
+    border: 5px solid $primarycolor
+    img
+      display: none
+    &__burger
+      display: none
+    &:hover
+      box-shadow: 0px 0px 15px 0px $primarycolor
   &-list
     display: flex
-    font-size: 20px
+    flex-wrap: wrap
+    font-size: 18px
     position: absolute
-    right: 50px
+    right: 10px
     z-index: 10
     &__item
       margin: 0 10px
-      &:nth-child(1) 
-        border-bottom: 2px solid $maincolor
-        &:hover
-          border-bottom: none
-          .navbar-listsub
-            display: flex
-            flex-direction: column
+      text-transform: uppercase
+      +title
+      position: relative
       a
         &:hover
-          color: red
-    &sub
+          color: $primarycolor
+          
+          &::before
+            transform: scaleX(1)
+          &::after
+            transform: scaleX(1)
+        &::before
+          content: ''
+          display: block
+          width: 100%
+          height: 2px
+          transform: scaleX(0)
+          background-color: yellow
+          transition: all 0.4s
+          position: absolute
+          top: -10px
+          box-shadow: 0px 20px 30px 3px $primarycolor
+        &::after
+          content: ''
+          display: block
+          width: 100%
+          height: 2px
+          transform: scaleX(0)
+          background-color: yellow
+          transition: all 0.4s
+          position: absolute
+          bottom: -10px
+@media (max-width: 1200px)
+  .navbar
+    justify-content: space-between
+    flex-wrap: wrap
+    &-list
       display: none
-      &__item
-        &:hover
-          a
-            color: green
-    
+      &_active
+        display: flex
+        position: static
+        margin: auto
+        margin-top: 50px
+        font-size: 26px
+    &-button
+      &__burger
+        display: block
+        width: 60px
+        height: 60px
+        background-color: $primarycolor
+        border-radius: 50%
+        position: relative
+        margin-top: 7px
+        
+        span
+          position: absolute
+          top: 50%
+          margin-top: -1px
+          left: 50%
+          margin-left: -15px
+          width: 30px
+          height: 2px
+          background-color: #ffffff
+          &::before
+            content: ''
+            position: absolute
+            background-color: #ffffff
+            width: 30px
+            height: 2px
+            top: 50%
+            margin-top: -1px
+            left: 50%
+            margin-left: -15px
+            transform: translateY(-8px)
+            transition: 0.5s
+          &::after
+            content: ''
+            position: absolute
+            background-color: #ffffff
+            width: 30px
+            height: 2px
+            top: 50%
+            margin-top: -1px
+            left: 50%
+            margin-left: -15px
+            transform: translateY(8px)
+            transition: 0.5s
+        &__active
+          span
+            height: 0
+            &::before
+              transform: rotate(35deg)
+            &::after
+              transform: rotate(-35deg)
+
+          
+@media (max-width: 768px)
+  .navbar
+    &-button
+      padding: 10px
+      img
+        display: block
+        width: 40px
+      span
+        display: none
+
+  
