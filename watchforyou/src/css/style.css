@@ -479,8 +479,9 @@ template {
 }
 
 * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
@@ -1230,32 +1231,211 @@ button {
   border: 1px solid black;
 }
 
+.footer-section {
+  padding-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .footer-section {
+    padding-top: 0;
+  }
+}
+
 .footer-block {
-  display: inline-block;
-  margin: 0px 20px;
-}
-
-.footer-block:first-child .footer-list {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.footer-title {
-  margin-top: 0;
-}
-
-.footer-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+  font-family: 'Caveat-Regular', sans-serif;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .footer-block {
+    display: block;
+    text-align: center;
+  }
+}
+
+.footerbar-list {
+  position: static;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.footer-list {
+  border-right: 2px solid #ffffff;
+  padding-right: 50px;
+}
+
+@media (max-width: 1200px) {
+  .footer-list {
+    border: none;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+  }
+}
+
+@media (max-width: 786px) {
+  .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px 0;
+    border: 2px solid #6198FF;
+    border-radius: 50px;
+    width: 250px;
+  }
+}
+
+.footer-list p {
+  text-align: center;
+  border-bottom: 1px solid #6198FF;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .footer-list p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 786px) {
+  .footer-list p {
+    text-align: center;
+  }
 }
 
 .footer-list__item {
+  margin: 10px 0;
+  color: #6198FF;
+}
+
+.footer-list__item a {
+  color: #6198FF;
+}
+
+.footer-list__icon {
+  width: 25px;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .footer-list__icon {
+    margin: 0;
+  }
+}
+
+@media (max-width: 786px) {
+  .footer-list__icon {
+    margin: auto;
+  }
+}
+
+.footer-list__icon__sub {
+  width: 25px;
+}
+
+.footer-form {
+  font-family: 'CormorantSC-Bold', sans-serif;
+  margin-left: 50px;
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .footer-form {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+.footer-form__input {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding: 5px 30px 5px 10px;
+}
+
+@media (max-width: 786px) {
+  .footer-form__input {
+    padding: 5px 10px 5px 10px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-form__button {
+  padding: 5px 10px;
+}
+
+@media (max-width: 786px) {
+  .footer-form__button {
+    padding: 10px 20px;
+  }
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+}
+
+.footer-links__item {
   width: 40px;
-  margin: 0 5px;
+  margin: 0 10px;
+}
+
+.footer-copyright {
+  color: #6198FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 786px) {
+  .footer-copyright {
+    display: block;
+    text-align: center;
+  }
+}
+
+.footer-copyright__item:last-child {
+  font-family: 'Caveat-Regular', sans-serif;
+}
+
+@media (max-width: 786px) {
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  :-ms-input-placeholder {
+    text-align: center;
+  }
+  ::-ms-input-placeholder {
+    text-align: center;
+  }
+  ::placeholder {
+    text-align: center;
+  }
 }
 
 .modal {

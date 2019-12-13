@@ -1,17 +1,106 @@
 .footer
   &-section
+    padding-top: 50px
+    @media (max-width: 1200px)
+      padding-top: 0
   &-block
-    display: inline-block
-    margin: 0px 20px
-    &:first-child
-      .footer-list
-        flex-direction: column
-      
-  &-title
-    margin-top: 0
-  &-list
     display: flex
-    padding-left: 0
+    justify-content: space-between
+    font-size: 18px
+    +menu
+    color: #ffffff
+    @media (max-width: 1200px)
+      display: block
+      text-align: center
+      
+      
+  &bar
+    &-list
+      position: static
+      justify-content: center
+      margin-bottom: 50px   
+  &-list
+    border-right: 2px solid #ffffff
+    padding-right: 50px
+    @media (max-width: 1200px)
+      border: none
+      display: inline-block
+      text-align: left
+      vertical-align: top
+    @media (max-width: 786px)
+      display: flex
+      flex-direction: column
+      text-align: center
+      margin: 30px auto
+      padding: 20px 0
+      border: 2px solid $primarycolor
+      border-radius: 50px
+      width: 250px
+    p
+      text-align: center
+      border-bottom: 1px solid $primarycolor
+      padding-bottom: 10px
+      @media (max-width: 1200px)
+        text-align: left
+      @media (max-width: 786px)
+        text-align: center
+    &__item
+      margin: 10px 0
+      color: $primarycolor
+      a
+        color: $primarycolor
+        
+      
+    &__icon
+      width: 25px
+      display: block
+      margin: auto
+      @media (max-width: 1200px)
+        margin: 0
+      @media (max-width: 786px)
+        margin: auto
+      &__sub
+        width: 25px
+  &-form
+    +title
+    margin-left: 50px
+    font-size: 16px
+    @media (max-width: 1200px)
+      display: block
+      margin-left: 0
+    &__input
+      border-radius: 50px
+      border: none
+      outline: none
+      padding: 5px 30px 5px 10px
+      @media (max-width: 786px)
+        padding: 5px 10px 5px 10px
+        width: 200px
+        margin-bottom: 20px
+    
+        
+    &__button
+      padding: 5px 10px
+      @media (max-width: 786px)
+        padding: 10px 20px
+  &-links
+    display: flex
+    justify-content: center
+    margin: 50px 0
     &__item
       width: 40px
-      margin: 0 5px
+      margin: 0 10px
+  &-copyright
+    color: $primarycolor
+    display: flex
+    justify-content: space-between
+    @media (max-width: 786px)
+      display: block
+      text-align: center
+    &__item
+      &:last-child
+        +menu
+        
+@media (max-width: 786px)
+  ::placeholder
+    text-align: center
