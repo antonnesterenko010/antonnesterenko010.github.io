@@ -1,13 +1,29 @@
 .header
   &-section
     padding: 40px 0
+    @media (max-width: 786px)
+      padding: 10px 0
 .navbar
   display: flex
   +menu
+  @media (max-width: 786px)
+    position: fixed
+    z-index: 20
+    &::after
+      content: ''
+      width: 120%
+      height: 100px
+      background-color: $bgcolor
+      position: absolute
+      left: -50px
+      top: -30px
+      z-index: -1
   &-logo
     position: relative
     width: 200px
     height: 50px
+    @media (max-width: 786px)
+      position: static
     &-card
       position: absolute
       width: 100%
@@ -17,6 +33,8 @@
       animation-duration: 4s
       animation-timing-function: ease-in
       animation-iteration-count: infinite
+      @media (max-width: 786px)
+        right: 20px
       &__first
         position: absolute
         width: 100%
@@ -50,6 +68,7 @@
         +logo
         text-align: center
         transform: rotateY(270deg)
+    
   &-phonelist
     margin: 0 50px
     font-size: 20px
@@ -60,6 +79,8 @@
         margin-top: 0
       &:last-child
         margin-bottom: 0
+    @media (max-width: 786px)
+      display: none
   &-button
     margin: 5px 0px
     cursor: pointer
@@ -67,12 +88,20 @@
     position: relative
     background: transparent
     border: 5px solid $primarycolor
+    @media (max-width: 786px)
+      position: absolute
     img
       display: none
     &__burger
       display: none
+        
     &:hover
       box-shadow: 0px 0px 15px 0px $primarycolor
+      background-color: $primarycolor
+      @media (max-width: 1200px)
+        background-color: $bgcolor
+      @media (max-width: 786px)
+        background-color: $primarycolor
   &-list
     display: flex
     flex-wrap: wrap
@@ -85,21 +114,30 @@
       text-transform: uppercase
       +title
       position: relative
+      @media (max-width: 786px)
+        margin: 15px 30px 
+        font-size: 22px
+        border-bottom: 3px solid $yellowcolor
       a
         &:hover
           color: $primarycolor
-          
+          @media (max-width: 1200px)
+            color: #ffffff
           &::before
             transform: scaleX(1)
+            @media (max-width: 1200px)
+              transform: scaleX(0)
           &::after
             transform: scaleX(1)
+            @media (max-width: 1200px)
+              transform: scaleX(0)
         &::before
           content: ''
           display: block
           width: 100%
           height: 2px
           transform: scaleX(0)
-          background-color: yellow
+          background-color: $yellowcolor
           transition: all 0.4s
           position: absolute
           top: -10px
@@ -110,7 +148,7 @@
           width: 100%
           height: 2px
           transform: scaleX(0)
-          background-color: yellow
+          background-color: $yellowcolor
           transition: all 0.4s
           position: absolute
           bottom: -10px
@@ -178,10 +216,11 @@
               transform: rotate(35deg)
             &::after
               transform: rotate(-35deg)
-
+  
           
 @media (max-width: 768px)
   .navbar
+    width: 100%
     &-phonelist
     &-button
       padding: 5px
@@ -193,12 +232,20 @@
         display: none
       background-color: $primarycolor
       display: block
-      
-// @media (max-width: 470px)
-//   .navbar
-//     justify-content: center
-//     &-button
-
-
+      &__burger
+        position: absolute
+        right: 40px
+    &-list
+      &::after
+        content: ''
+        width: 100%
+        height: 350px
+        background-color: $bgcolor
+        opacity: 1
+        position: absolute
+        top: 70px
+        left: -50px
+        z-index: -1
+        border-right: 30px solid $bgcolor
 
   
