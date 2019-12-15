@@ -127,6 +127,8 @@
         margin-top: 50px
         font-size: 26px
     &-button
+      &:hover
+        box-shadow: 0px 0px 0px 0px $primarycolor
       &__burger
         display: block
         width: 60px
@@ -180,12 +182,23 @@
           
 @media (max-width: 768px)
   .navbar
+    &-phonelist
     &-button
-      padding: 10px
+      padding: 5px
+      margin-right: 165px
       img
         display: block
         width: 40px
       span
         display: none
+      background-color: $primarycolor
+      display: block
+      
+// @media (max-width: 470px)
+//   .navbar
+//     justify-content: center
+//     &-button
+
+
 
   

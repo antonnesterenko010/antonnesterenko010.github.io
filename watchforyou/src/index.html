@@ -8,6 +8,7 @@
   <title>Watch for You. Часы для вас.</title>
 </head>
 <body>
+  
   <header class="header-section">
     <div class="container">
       <nav class="navbar">
@@ -17,16 +18,17 @@
             <div class="navbar-logo-card__second">You</div>
             <div class="navbar-logo-card__third">for</div>
           </div>
-  
+
         </a>
         <ul class="navbar-phonelist">
           <li class="navbar-phonelist__item"><a type="tel" href="+380507154205">+38 (050) 715 42 05</a></li>
           <li class="navbar-phonelist__item"><a type="tel" href="+380671270286">+38 (067) 127 02 86</a></li>
         </ul>
-        <button type="button" class="button navbar-button">Заказать звонок</button>
+        <button type="button" class="button navbar-button"><img src="img/header/call.svg" alt="Order"><span>Заказать звонок</span></button>
+        <button type="button" class="button navbar-button__burger"><span></span></button>
         <ul class="navbar-list">
           <li class="navbar-list__item"><a href="index.html">Главная</a>
-  
+            
           </li>
           <li class="navbar-list__item"><a href="promo.html">Акции и предложения</a></li>
           <li class="navbar-list__item"><a href="shipping.html">Доставка и оплата</a></li>
@@ -36,12 +38,14 @@
     </div>
   </header>
   <!-- header section -->
+  <div class="page">
+    <h1 class="page-title">Watch for You</h1>
+    <h2 class="page-subtitle">Продажа часов по Украине</h2>
+  </div>
   <main>
     <section class="section greetings-section">
       <div class="container">
         <div class="greetings-block">
-          <h1 class="greetings-title">Watch for You</h1>
-          <h3 class="greetings-subtitle">Продажа часов по Украине</h2>
           <div class="greetings-list-wrap">
             <ul class="greetings-list">
               <li class="greetings-list__item"><a href="#">
@@ -156,52 +160,48 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <section class="footer-section"></section>
+  <footer class="footer-section footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-block">
-          <h3 class="footer-title">Контакты</h3>
-          <ul class="footer-list">
-            <li><a href="#" type="tel">+380507154205</a></li>
-            <li><a href="#" type="tel">+380671270286</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-block">
-          <h3 class="footer-title">Наша электронная почта</h3>
-          <ul class="footer-list">
-            <li class="footer-list__item"><a href="#">sherbachkakatya@gmail.com</a></li>
-          </ul>
-        </div>
-        <div class="footer-block">
-          <h3 class="footer-title">График работы</h3>
-          <ul class="footer-list">
-            <li class="footer-list__item">24/7</li>
-          </ul>
-        </div>
-        <div class="footer-block">
-          <h3 class="footer-title">Контактное лицо</h3>
-          <ul class="footer-list">
-            <li>Катерина Игоревна на секундочку</li>
-          </ul>
-        </div>
-        <div class="footer-block">
-          <h3 class="footer-title">Название</h3>
-          <ul class="footer-list">
-            <li>Watch for You &copy; 2019</li>
-          </ul>
-        </div>
-        <div class="footer-block">
-          <h3 class="footer-title">Мы в социальных сетях</h3>
-          <ul class="footer-list">
-            <li class="footer-list__item"><a href="#"><img src="img/greetings/telegram.svg" alt="Телеграм"></a></li>
-            <li class="footer-list__item"><a href="#"><img src="img/greetings/instagram.svg" alt="Инстаграм"></a></li>
-            <li class="footer-list__item"><a href="#"><img src="img/greetings/viber.svg" alt="Вайбер"></a></li>
-            <li class="footer-list__item"><a href="#"><img src="img/greetings/facebook.svg" alt="Фэйсбук"></a></li>
-            <li class="footer-list__item"><a href="#"><img src="img/greetings/vk.svg" alt="Вконтакте"></a></li>
-          </ul>
-        </div>
+      <ul class="footerbar-list navbar-list">
+        <li class="footerbar-list__item navbar-list__item"><a href="index.html">Главная</a>
+      
+        </li>
+        <li class="footerbar-list__item navbar-list__item"><a href="promo.html">Акции и предложения</a></li>
+        <li class="footerbar-list__item navbar-list__item"><a href="shipping.html">Доставка и оплата</a></li>
+        <li class="footerbar-list__item navbar-list__item"><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <div class="footer-block">
+        <ul class="footer-list"><img src="img/footer/phone-call.svg" alt="" class="footer-list__icon"><p>Наши контакты</p> 
+          <li class="footer-list__item"><a href="#" type="tel"><img class="footer-list__icon__sub"src="img/footer/call.svg" alt="Звонок">+380507154205</a></li>
+          <li class="footer-list__item"><a href="#" type="tel"><img class="footer-list__icon__sub"src="img/footer/call.svg" alt="Звонок">+380671270286</a></li>
+          <li class="footer-list__item"><a href="#"><img src="img/footer/mail.svg" alt="Письмо" class="footer-list__icon__sub">shop.watchforyou@gmail.com</a></li>
+          
+        </ul>
+        <ul class="footer-list"><img src="img/footer/customer-service.svg" alt="Оператор" class="footer-list__icon"><p>Контактное лицо</p>
+          <li class="footer-list__item"> Катерина
+          </li>
+        </ul>
+        <ul class="footer-list"><img src="img/footer/clock.svg" alt="Часы" class="footer-list__icon"> <p>График работы</p> 
+          <li class="footer-list__item"><img src="img/footer/check-mark.svg" alt="Готово" class="footer-list__icon__sub"> Каждый день </li>
+          <li class="footer-list__item"><img src="img/footer/check-mark.svg" alt="Готово" class="footer-list__icon__sub"> С 9:00 до 20:00 </li>
+          <li class="footer-list__item"><img src="img/footer/check-mark.svg" alt="Готово" class="footer-list__icon__sub"> Без выходных </li>
+        </ul>
+        <form action="#" class="form footer-form">
+          <h2 class="footer-form__title">Подпишитесь на нашу рассылку</h2>
+          <input type="text" class="form-input footer-form__input" placeholder="Введите ваш e-mail">
+          <button class="button form-button footer-form__button">Подписаться</button>
+        </form>
+      </div>
+      <ul class="footer-links">
+        <li class="footer-links__item"><a href="#"><img src="img/greetings/telegram.svg" alt="Телеграм"></a></li>
+        <li class="footer-links__item"><a href="#"><img src="img/greetings/instagram.svg" alt="Инстаграм"></a></li>
+        <li class="footer-links__item"><a href="#"><img src="img/greetings/viber.svg" alt="Вайбер"></a></li>
+        <li class="footer-links__item"><a href="#"><img src="img/greetings/facebook.svg" alt="Фэйсбук"></a></li>
+        <li class="footer-links__item"><a href="#"><img src="img/greetings/vk.svg" alt="Вконтакте"></a></li>
+      </ul>
+      <div class="footer-copyright">
+        <p class="footer-copyright__item">Watch for You &copy; 2019</p>
+        <a href="" class="footer-copyright__item">Сайт сделал: Anton Nesterenko</a>
       </div>
     </div>
   </footer>
