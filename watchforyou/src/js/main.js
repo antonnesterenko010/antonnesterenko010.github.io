@@ -7,12 +7,22 @@ $(document).ready(function () {
     }, 1500);
   });
   // slick slider init
-  $('.offer-slider').slick({
-    autoplay: true,
-    dots: true,
+    $('.product-slider-main').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.product-slider'
+    });
+  $('.product-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.product-slider-main',
     arrows: true,
-    prevArrow: ('.arrows-left'),
-    nextArrow: ('.arrows-right')
+    prevArrow: ('.product-arrows-left'),
+    nextArrow: ('.product-arrows-right'),
+    centerMode: true,
+    focusOnSelect: true
   })
   // fixed menu init
   $('.greetings-list__button').click(function(){

@@ -1,0 +1,169 @@
+.product
+  &-section
+    background: #1B3638
+  &-title
+    text-align: left
+    margin-top: 50px
+    margin-left: 50px
+    text-transform: uppercase
+  &-id
+    text-align: right
+    margin-left: 50px
+  &-block
+    display: flex
+    
+  &-slider
+    width: 500px
+    position: relative
+    &__item
+      margin: 0 5px
+      img
+        width: 150px
+        height: 100px
+        border-radius: 10px
+    &s
+      flex-basis: 50%
+      display: flex
+      flex-direction: column
+      margin-top: 50px
+
+    &-main
+      width: 500px
+      margin-bottom: 50px
+      &__item
+        img
+          height: 500px
+          border-radius: 50px
+  &-arrows
+    display: flex
+    justify-content: space-between
+    &-left
+      outline: none
+      border: none
+      background: none
+      position: absolute
+      left: 180px
+      bottom: -50px
+      width: 40px
+      
+      
+    &-right
+      outline: none
+      border: none
+      background: none
+      position: absolute
+      bottom: -50px
+      left: 730px
+      width: 40px
+      
+      
+  &-info
+    flex-basis: 50%
+    &-wrap
+      display: flex
+      
+  &-price
+    flex-basis: 50%
+    padding: 50px
+    &__title
+      text-align: left
+      font-size: 40px
+      margin: 0 auto
+      +bold
+      text-transform: uppercase
+    &__availability
+      text-align: left
+      +bold
+      img
+        vertical-align: middle
+        margin-right: 5px
+    &__links
+      display: flex
+      margin-top: 20px
+      &__button
+        color: #ffffff
+        background: #367CFF
+        border: none
+        padding: 10px
+        text-transform: uppercase
+        line-height: 20px
+        opacity: 0.9
+        +bold
+        &:hover
+          opacity: 1
+          box-shadow: 0px 0px 10px 1px $primarycolor
+      &__link
+        align-self: center
+        margin-left: 10px
+        color: #ffffff
+        +bold
+        text-transform: uppercase
+        position: relative
+        &::after
+          content: ''
+          width: 100%
+          height: 2px
+          background-color: $yellowcolor
+          position: absolute
+          bottom: -5px
+          left: 0
+        
+    &__button
+      width: 100%
+      margin-bottom: 30px
+      outline: none
+      border: none
+      text-transform: uppercase
+      +bold
+      background-color: $greencolor
+      color: #ffffff
+      padding: 10px
+      position: relative
+      font-size: 22px
+      opacity: 0.9
+      &:hover
+        color: #F8F8F8
+        opacity: 1
+        box-shadow: 0px 0px 10px 1px $greencolor
+
+      &__icon
+        width: 20px
+        margin: auto 5px
+
+  &-form
+    display: flex
+    &__input
+      padding: 10px
+    &__button
+      outline: none
+      border: none
+      text-transform: uppercase
+      +bold
+      font-size: 14px
+      background: none
+      width: 100px
+      background-color: $greencolor
+      opacity: 0.9
+      color: #ffffff
+      &:hover
+        opacity: 1
+        box-shadow: 0px 0px 10px 1px $greencolor
+  
+  &-description
+    flex-basis: 50%
+    margin-top: 50px
+    &-list
+      &__item
+        width: 450px
+        display: flex
+        justify-content: space-between
+        font-size: 22px
+        padding: 15px
+        +bold
+        border-bottom: none
+        color: #000000
+        &:hover
+          background: $primarycolor
+        span
+          +reg
+
