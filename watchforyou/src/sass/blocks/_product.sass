@@ -1,42 +1,81 @@
 .product
   &-section
-    background: #1B3638
+    background: #bdaf9d
+    padding: 50px 0
+    @media (max-width: 1200px)
+      padding: 100px 0
+    @media (max-width: 786px)
+      background: #bdaf9d
   &-title
     text-align: left
-    margin-top: 50px
     margin-left: 50px
     text-transform: uppercase
+    @media (max-width: 1200px)
+      display: inline-block
+      margin-left: 0
+    @media (max-width: 786px)
+      color: #ffffff
+      text-align: center
   &-id
     text-align: right
     margin-left: 50px
+    font-size: 20px
+    +bold
+    @media (max-width: 1200px)
+      text-align: center
+      margin-left: 0
+    @media (max-width: 786px)
+      color: #ffffff
+      display: inline-block
   &-block
     display: flex
+    @media (max-width: 1200px)
+      flex-wrap: wrap
+      flex-direction: column-reverse
     
   &-slider
     width: 500px
     position: relative
+    @media (max-width: 786px)
+      width: 300px
+      margin: auto
     &__item
       margin: 0 5px
       img
         width: 150px
         height: 100px
         border-radius: 10px
+        @media (max-width: 786px)
+          height: 70px
+          
+
     &s
       flex-basis: 50%
       display: flex
       flex-direction: column
-      margin-top: 50px
+      @media (max-width: 1200px)
+        flex-basis: 100%
+        margin: auto
+        
 
     &-main
       width: 500px
       margin-bottom: 50px
+      @media (max-width: 786px)
+        width: 300px
       &__item
         img
           height: 500px
           border-radius: 50px
+          @media (max-width: 786px)
+            width: 350px
+            height: 350px
   &-arrows
     display: flex
     justify-content: space-between
+    @media (max-width: 1200px)
+      display: none
+    
     &-left
       outline: none
       border: none
@@ -45,7 +84,9 @@
       left: 180px
       bottom: -50px
       width: 40px
-      
+      @media (max-width: 1200px)
+        left: 250px
+        bottom: -1130px
       
     &-right
       outline: none
@@ -55,31 +96,50 @@
       bottom: -50px
       left: 730px
       width: 40px
-      
+      @media (max-width: 1200px)
+        left: 900px
+        bottom: -1130px
       
   &-info
     flex-basis: 50%
     &-wrap
       display: flex
+      @media (max-width: 1200px)
+        flex-direction: column
       
   &-price
     flex-basis: 50%
     padding: 50px
+    @media (max-width: 1200px)
+      flex-basis: 100%
+    @media (max-width: 786px)
+      padding: 0
+
     &__title
       text-align: left
       font-size: 40px
       margin: 0 auto
       +bold
       text-transform: uppercase
+      @media (max-width: 1200px)
+        text-align: center
+      @media (max-width: 786px)
+        color: #ffffff
     &__availability
       text-align: left
       +bold
+      @media (max-width: 1200px)
+        text-align: center
+      @media (max-width: 786px)
+        color: $greencolor
       img
         vertical-align: middle
         margin-right: 5px
     &__links
       display: flex
       margin-top: 20px
+      @media (max-width: 1200px)
+        justify-content: center
       &__button
         color: #ffffff
         background: #367CFF
@@ -89,9 +149,14 @@
         line-height: 20px
         opacity: 0.9
         +bold
+        @media (max-width: 1200px)
+          opacity: 1
+        
         &:hover
           opacity: 1
           box-shadow: 0px 0px 10px 1px $primarycolor
+          @media (max-width: 1200px)
+            box-shadow: 0px 0px 0px 0px #ffffff
       &__link
         align-self: center
         margin-left: 10px
@@ -121,10 +186,17 @@
       position: relative
       font-size: 22px
       opacity: 0.9
+      @media (max-width: 1200px)
+        width: 25%
+        opacity: 1
+      @media (max-width: 786px)
+        width: 50%
       &:hover
         color: #F8F8F8
         opacity: 1
         box-shadow: 0px 0px 10px 1px $greencolor
+        @media (max-width: 1200px)
+          box-shadow: 0px 0px 0px 0px #ffffff
 
       &__icon
         width: 20px
@@ -132,6 +204,8 @@
 
   &-form
     display: flex
+    @media (max-width: 1200px)
+      justify-content: center
     &__input
       padding: 10px
     &__button
@@ -145,13 +219,20 @@
       background-color: $greencolor
       opacity: 0.9
       color: #ffffff
+      @media (max-width: 1200px)
+        opacity: 1
       &:hover
         opacity: 1
         box-shadow: 0px 0px 10px 1px $greencolor
+        @media (max-width: 1200px)
+          box-shadow: 0px 0px 0px 0px #ffffff
   
   &-description
     flex-basis: 50%
     margin-top: 50px
+    @media (max-width: 1200px)
+      flex-basis: 100%
+      margin: auto
     &-list
       &__item
         width: 450px
@@ -162,8 +243,15 @@
         +bold
         border-bottom: none
         color: #000000
+        @media (max-width: 786px)
+          width: 300px
+          font-size: 18px
+          padding: 0
+          margin: 10px 0
         &:hover
           background: $primarycolor
+          @media (max-width: 1200px)
+            background: transparent
         span
           +reg
 
