@@ -82,7 +82,7 @@
       background: none
       position: absolute
       left: 180px
-      bottom: -50px
+      bottom: -100px
       width: 40px
       @media (max-width: 1200px)
         left: 250px
@@ -93,7 +93,7 @@
       border: none
       background: none
       position: absolute
-      bottom: -50px
+      bottom: -100px
       left: 730px
       width: 40px
       @media (max-width: 1200px)
@@ -110,6 +110,7 @@
   &-price
     flex-basis: 50%
     padding: 50px
+    padding-top: 0
     @media (max-width: 1200px)
       flex-basis: 100%
     @media (max-width: 786px)
@@ -147,16 +148,14 @@
         padding: 10px
         text-transform: uppercase
         line-height: 20px
-        opacity: 0.9
+        opacity: 0.8
+        cursor: pointer
         +bold
         @media (max-width: 1200px)
           opacity: 1
         
         &:hover
           opacity: 1
-          box-shadow: 0px 0px 10px 1px $primarycolor
-          @media (max-width: 1200px)
-            box-shadow: 0px 0px 0px 0px #ffffff
       &__link
         align-self: center
         margin-left: 10px
@@ -185,7 +184,8 @@
       padding: 10px
       position: relative
       font-size: 22px
-      opacity: 0.9
+      opacity: 0.8
+      cursor: pointer
       @media (max-width: 1200px)
         width: 25%
         opacity: 1
@@ -194,9 +194,6 @@
       &:hover
         color: #F8F8F8
         opacity: 1
-        box-shadow: 0px 0px 10px 1px $greencolor
-        @media (max-width: 1200px)
-          box-shadow: 0px 0px 0px 0px #ffffff
 
       &__icon
         width: 20px
@@ -217,15 +214,13 @@
       background: none
       width: 100px
       background-color: $greencolor
-      opacity: 0.9
+      opacity: 0.8
+      cursor: pointer
       color: #ffffff
       @media (max-width: 1200px)
         opacity: 1
       &:hover
         opacity: 1
-        box-shadow: 0px 0px 10px 1px $greencolor
-        @media (max-width: 1200px)
-          box-shadow: 0px 0px 0px 0px #ffffff
   
   &-description
     flex-basis: 50%

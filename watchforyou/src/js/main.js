@@ -23,6 +23,13 @@ $(document).ready(function () {
     nextArrow: ('.product-arrows-right'),
     centerMode: true,
     focusOnSelect: true
+  }),
+  $('.bestseller-slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    focusOnSelect: true,
+    autoplay: true,
+    infinite: true,
   })
   // fixed menu init
   $('.greetings-list__button').click(function(){
