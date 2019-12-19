@@ -1,6 +1,6 @@
 .greetings
   &-section
-    background: $primarycolor
+    background: $secondbgcolor
   &-menu
     display: flex
     flex-wrap: wrap
@@ -12,20 +12,25 @@
       background: $bgcolor
       margin: 10px
       opacity: 0.9
+      border-radius: 20px
       &:hover
         opacity: 1
       &__image
         width: 300px
         height: 200px
+        border-top-left-radius: 20px
+        border-top-right-radius: 20px
       &__title
         text-transform: uppercase
         +title
 .bestseller
   &-section
-    background: $bgcolor
+    background: $secondbgcolor
   &-title
+    margin-top: 0
     text-transform: uppercase
     color: #ffffff
+    background: $bgcolor
   &-slider
     display: flex
     &-item

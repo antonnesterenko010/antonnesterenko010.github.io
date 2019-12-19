@@ -1,11 +1,9 @@
 .product
   &-section
-    background: #bdaf9d
+    background: #b5bcbd
     padding: 50px 0
     @media (max-width: 1200px)
       padding: 100px 0
-    @media (max-width: 786px)
-      background: #bdaf9d
   &-title
     text-align: left
     margin-left: 50px
@@ -14,7 +12,6 @@
       display: inline-block
       margin-left: 0
     @media (max-width: 786px)
-      color: #ffffff
       text-align: center
   &-id
     text-align: right
@@ -24,9 +21,6 @@
     @media (max-width: 1200px)
       text-align: center
       margin-left: 0
-    @media (max-width: 786px)
-      color: #ffffff
-      display: inline-block
   &-block
     display: flex
     @media (max-width: 1200px)
@@ -53,6 +47,11 @@
       flex-basis: 50%
       display: flex
       flex-direction: column
+      border: 7px solid $bgbutton
+      border-radius: 20px
+      border-bottom-left-radius: 10px
+      border-bottom-right-radius: 10px
+      
       @media (max-width: 1200px)
         flex-basis: 100%
         margin: auto
@@ -67,11 +66,13 @@
         img
           height: 500px
           border-radius: 50px
+          border-top-left-radius: 10px
+          border-top-right-radius: 10px
           @media (max-width: 786px)
             width: 350px
             height: 350px
   &-arrows
-    display: flex
+    display: none
     justify-content: space-between
     @media (max-width: 1200px)
       display: none
@@ -124,8 +125,6 @@
       text-transform: uppercase
       @media (max-width: 1200px)
         text-align: center
-      @media (max-width: 786px)
-        color: #ffffff
     &__availability
       text-align: left
       +bold
@@ -143,16 +142,20 @@
         justify-content: center
       &__button
         color: #ffffff
-        background: #367CFF
+        background: $bgbutton
         border: none
         padding: 10px
         text-transform: uppercase
         line-height: 20px
         opacity: 0.8
         cursor: pointer
+        float: right
         +bold
+        border: 1px solid #ffffff
         @media (max-width: 1200px)
           opacity: 1
+          float: none
+          margin: 15px 0
         
         &:hover
           opacity: 1
@@ -179,13 +182,14 @@
       border: none
       text-transform: uppercase
       +bold
-      background-color: $greencolor
+      background-color: $bgbutton
       color: #ffffff
       padding: 10px
       position: relative
       font-size: 22px
       opacity: 0.8
       cursor: pointer
+      border: 1px solid #ffffff
       @media (max-width: 1200px)
         width: 25%
         opacity: 1
@@ -210,13 +214,14 @@
       border: none
       text-transform: uppercase
       +bold
-      font-size: 14px
+      font-size: 13px
       background: none
       width: 100px
-      background-color: $greencolor
+      background-color: $bgbutton
       opacity: 0.8
       cursor: pointer
       color: #ffffff
+      border: 1px solid #ffffff
       @media (max-width: 1200px)
         opacity: 1
       &:hover
@@ -230,14 +235,15 @@
       margin: auto
     &-list
       &__item
-        width: 450px
+        width: 400px
         display: flex
         justify-content: space-between
-        font-size: 22px
+        font-size: 18px
         padding: 15px
         +bold
         border-bottom: none
         color: #000000
+        border: 1px solid rgba(0, 0, 0, 0)
         @media (max-width: 786px)
           width: 300px
           font-size: 18px
@@ -245,8 +251,9 @@
           margin: 10px 0
         &:hover
           background: $primarycolor
+          border-color: rgba(255,255,255,1)
           @media (max-width: 1200px)
             background: transparent
         span
-          +reg
+          +title
 
