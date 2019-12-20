@@ -38,6 +38,9 @@
         @media (max-width: 1200px)
           font-size: 14px
           padding: 10px
+        @media (max-width: 786px)
+          font-size: 10px
+          padding: 5px
       &__image
         position: relative
         &::before
@@ -60,6 +63,8 @@
         padding-left: 20px
         @media (max-width: 1200px)
           font-size: 24px
+        @media (max-width: 786px)
+          display: none
         
         
       &__id
@@ -67,13 +72,21 @@
         padding-left: 20px
         @media (max-width: 1200px)
           font-size: 12px
+        @media (max-width: 786px)
+          display: none
       &__price
         color: #ffffff
         font-size: 40px
         margin-top: 0
         padding-left: 20px
         @media (max-width: 1200px)
-          font-size: 20px
+          font-size: 30px
+        @media (max-width: 786px)
+          font-size: 26px
+          padding-left: 0
+          text-align: center
+          margin-top: 20px
+          margin-bottom: 70px
         &-discount
           text-decoration: line-through
           display: inline-block
@@ -93,6 +106,12 @@
         bottom: 40px
         z-index: 10
         color: #ffffff
+        @media (max-width: 786px)
+          margin-bottom: 30px
+          font-size: 12px
+          bottom: 0
+          left: 15px
+          
         &::after
           content: ''
           width: 80px
@@ -104,6 +123,8 @@
           transition: 0.2s
           opacity: 0.7
           z-index: 1
+          @media (max-width: 786px)
+            display: none
         &:hover
           color: $primarycolor
           &::after

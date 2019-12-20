@@ -1092,9 +1092,21 @@ button {
   margin-bottom: 0;
 }
 
+@media (max-width: 786px) {
+  .main-title {
+    font-size: 18px;
+  }
+}
+
 .main-form {
   margin: auto;
   padding: 50px 0;
+}
+
+@media (max-width: 786px) {
+  .main-form {
+    padding: 20px 0;
+  }
 }
 
 .main-form__input {
@@ -1105,6 +1117,19 @@ button {
   border: none;
   width: 300px;
   margin: 30px;
+}
+
+@media (max-width: 1200px) {
+  .main-form__input {
+    width: 500px;
+  }
+}
+
+@media (max-width: 786px) {
+  .main-form__input {
+    width: 250px;
+    margin: 10px 0;
+  }
 }
 
 .main-form__input:last-child {
@@ -1215,18 +1240,6 @@ button {
   background: #1E2533A8;
 }
 
-.form__input-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .watch-section {
   padding: 50px 0;
   background: #1E2533A8;
@@ -1297,6 +1310,13 @@ button {
   }
 }
 
+@media (max-width: 786px) {
+  .watch-list__item__discount {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+
 .watch-list__item__image {
   position: relative;
 }
@@ -1332,6 +1352,12 @@ button {
   }
 }
 
+@media (max-width: 786px) {
+  .watch-list__item__title {
+    display: none;
+  }
+}
+
 .watch-list__item__id {
   color: #ffffff;
   padding-left: 20px;
@@ -1340,6 +1366,12 @@ button {
 @media (max-width: 1200px) {
   .watch-list__item__id {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 786px) {
+  .watch-list__item__id {
+    display: none;
   }
 }
 
@@ -1352,7 +1384,17 @@ button {
 
 @media (max-width: 1200px) {
   .watch-list__item__price {
-    font-size: 20px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 786px) {
+  .watch-list__item__price {
+    font-size: 26px;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
   }
 }
 
@@ -1383,6 +1425,15 @@ button {
   color: #ffffff;
 }
 
+@media (max-width: 786px) {
+  .watch-list__item__link {
+    margin-bottom: 30px;
+    font-size: 12px;
+    bottom: 0;
+    left: 15px;
+  }
+}
+
 .watch-list__item__link::after {
   content: '';
   width: 80px;
@@ -1395,6 +1446,12 @@ button {
   transition: 0.2s;
   opacity: 0.7;
   z-index: 1;
+}
+
+@media (max-width: 786px) {
+  .watch-list__item__link::after {
+    display: none;
+  }
 }
 
 .watch-list__item__link:hover {

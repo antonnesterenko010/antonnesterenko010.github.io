@@ -5,9 +5,13 @@
     color: #ffffff
     background: $bgcolor
     margin-bottom: 0
+    @media (max-width: 786px)
+      font-size: 18px
   &-form
     margin: auto
     padding: 50px 0
+    @media (max-width: 786px)
+      padding: 20px 0
     &__input
       padding: 15px 0
       padding-left: 10px
@@ -16,6 +20,11 @@
       border: none
       width: 300px
       margin: 30px
+      @media (max-width: 1200px)
+        width: 500px
+      @media (max-width: 786px)
+        width: 250px
+        margin: 10px 0
       &:last-child
         height: 150px
         width: 90%
@@ -80,8 +89,3 @@
   &-section
     padding-bottom: 50px
     background: $secondbgcolor
-  &__input
-    &-wrap
-      display: flex
-      flex-wrap: wrap
-      flex-direction: column
