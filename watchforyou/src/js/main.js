@@ -24,12 +24,38 @@ $(document).ready(function () {
     centerMode: true,
     focusOnSelect: true
   }),
+  $('.offer-slider').slick({
+    autoplay: true,
+    arrows: true
+  }),
   $('.bestseller-slider').slick({
-    slidesToShow: 5,
-    slidesToScroll: 3,
     focusOnSelect: true,
     autoplay: true,
     infinite: true,
+    responsive: [
+      {
+        breakpoint: 786,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 3000,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 3
+        }
+      },
+      
+    ]
   })
   // fixed menu init
   $('.greetings-list__button').click(function(){
