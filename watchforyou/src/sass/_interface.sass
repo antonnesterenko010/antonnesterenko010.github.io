@@ -95,27 +95,90 @@ button
   background-color: rgba(0, 0, 0, 0.7)
   z-index: 20
   &-dialog
-    width: 800px
+    width: 600px
     height: 400px
-    background-color: #fff
+    background-color: rgba(30, 37, 51, 1)
     margin: auto
-    margin-top: 200px
+    margin-top: 150px
+    position: relative
+    text-align: center
+    @media (max-width: 786px)
+      width: 300px
+      height: 250px
+    &__close
+      position: absolute
+      right: 0
+      width: 25px
+      @media (max-width: 786px)
+        width: 15px
+  &-title
+    padding-top: 20px
+    text-transform: uppercase
+    color: #ffffff
+    @media (max-width: 786px)
+      font-size: 14px
+  &-form
+    display: flex
+    flex-direction: column
+    padding: 50px
+    padding-top: 10px
+    @media (max-width: 786px)
+      padding: 0
+    &__input
+      width: 250px
+      margin: auto
+      margin-bottom: 20px
+      border-radius: 10px
+      border: none
+      padding: 10px 20px
+      outline: none
+      @media (max-width: 786px)
+        width: 150px
+        font-size: 12px
+        padding: 10px
+        margin-bottom: 10px
+        &::placeholder
+          text-align: left
+      &:nth-child(3)
+        height: 100px
+        @media (max-width: 786px)
+          height: 50px
+
+    &__button
+      margin: auto
+      padding: 20px 60px
+      @media (max-width: 786px)
+        padding: 10px 10px
+
+.modalty
+  // display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.9)
+  z-index: 20
+  &-dialog
+    width: 250px
+    height: 200px
+    background-color: rgba(30, 37, 51, 1)
+    margin: auto
+    margin-top: 150px
     position: relative
     text-align: center
     &__close
       position: absolute
       right: 0
+      width: 25px
   &-title
-    padding-top: 50px
-  &-form
-    display: flex
-    flex-direction: column
-    padding: 50px
-    &__input
-      width: 200px
-      margin: auto
-      margin-bottom: 20px
-    &__button
-      width: 110px
-      margin: auto
-      padding: 10px 20px
+    color: #ffffff
+    padding-top: 30px
+    +title
+    padding-left: 10px
+    padding-right: 10px
+  &-content
+    color: #ffffff
+    padding: 0 10px
+    +menu
+    font-size: 20px

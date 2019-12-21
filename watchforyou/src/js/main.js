@@ -63,13 +63,17 @@ $(document).ready(function () {
     $('.greetings-list').toggleClass('greetings-list__active');
   })
   // modal form init
-  $('.navbar-button').click(function(){
+  $('.navbar-button, .product-price__button, .product-price__links__button').click(function(){
     $('.modal').fadeIn();
-  })
+  });
   // button-close init
-  $('.button-close').click(function(){
+  $('.modal-dialog__close').click(function(){
     $('.modal').fadeOut();
-  })
+  });
+  $('.modalty-dialog__close').click(function () {
+    $('.modalty').fadeOut();
+  });
+
   $(document).mouseup(function (e) {
   var close = $('.modal-dialog');
   if (e.target != close[0] && close.has(e.target).length === 0) {
@@ -80,6 +84,12 @@ $(document).ready(function () {
       $('.modal').fadeOut();
     }
   });
+});
+$(document).mouseup(function (e) {
+  var close = $('.modalty-dialog');
+  if (e.target != close[0] && close.has(e.target).length === 0) {
+    $('.modalty').fadeOut();
+  };
 });
 // burger menu init
 $('.navbar-button__burger').click(function(){

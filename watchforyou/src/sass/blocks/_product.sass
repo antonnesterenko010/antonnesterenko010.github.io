@@ -6,23 +6,23 @@
       padding: 100px 0
   &-title
     text-align: left
-    margin-left: 50px
     text-transform: uppercase
     @media (max-width: 1200px)
-      display: inline-block
+      align-self: center
       margin-left: 0
     @media (max-width: 786px)
       text-align: center
   &-id
-    text-align: right
     margin-left: 50px
     font-size: 20px
     +bold
+    align-self: flex-end
     @media (max-width: 1200px)
-      text-align: center
+      align-self: center
       margin-left: 0
   &-block
     display: flex
+    justify-content: space-between
     @media (max-width: 1200px)
       flex-wrap: wrap
       flex-direction: column-reverse
@@ -51,10 +51,13 @@
       border-radius: 20px
       border-bottom-left-radius: 10px
       border-bottom-right-radius: 10px
+      @media (max-width: 786px)
+        border-bottom-left-radius: 5px
+        border-bottom-right-radius: 5px
+        flex-basis: 0%
+        border-width: 2px
+
       
-      @media (max-width: 1200px)
-        flex-basis: 100%
-        margin: auto
         
 
     &-main
@@ -69,13 +72,14 @@
           border-top-left-radius: 10px
           border-top-right-radius: 10px
           @media (max-width: 786px)
+            border-top-left-radius: 20px
+            border-top-right-radius: 20px
             width: 350px
             height: 350px
   &-arrows
     display: flex
     @media (max-width: 1200px)
-      display: none
-    
+      justify-content: center
     &-left
       outline: none
       border: none
@@ -85,6 +89,8 @@
       display: flex
       align-self: flex-end
       margin-bottom: 40px
+      @media (max-width: 420px)
+        display: none!important
     &-right
       outline: none
       border: none
@@ -94,19 +100,25 @@
       display: flex
       align-self: flex-end
       margin-bottom: 40px
+      @media (max-width: 420px)
+        display: none!important
   &-info
-    flex-basis: 50%
+    flex-basis: 70%
+    display: flex
+    flex-direction: column
     &-wrap
       display: flex
       @media (max-width: 1200px)
         flex-direction: column
       
   &-price
-    flex-basis: 50%
-    padding: 50px
+    // flex-basis: 50%
+    padding: 50px 
     padding-top: 0
+    padding-left: 0
     @media (max-width: 1200px)
       flex-basis: 100%
+      padding: 0
     @media (max-width: 786px)
       padding: 0
 
@@ -129,10 +141,6 @@
         vertical-align: middle
         margin-right: 5px
     &__links
-      display: flex
-      margin-top: 20px
-      @media (max-width: 1200px)
-        justify-content: center
       &__button
         color: #ffffff
         background: $bgbutton
@@ -142,13 +150,14 @@
         line-height: 20px
         opacity: 0.8
         cursor: pointer
-        float: right
         +bold
         border: 1px solid #ffffff
+        align-self: flex-end
+        
         @media (max-width: 1200px)
           opacity: 1
-          float: none
-          margin: 15px 0
+          margin: 15px auto
+
         
         &:hover
           opacity: 1
@@ -221,14 +230,14 @@
         opacity: 1
   
   &-description
-    flex-basis: 50%
     margin-top: 50px
+    
     @media (max-width: 1200px)
       flex-basis: 100%
       margin: auto
+      position: static
     &-list
       &__item
-        width: 400px
         display: flex
         justify-content: space-between
         font-size: 18px
@@ -237,8 +246,9 @@
         border-bottom: none
         color: #000000
         border: 1px solid rgba(0, 0, 0, 0)
+        @media (max-width: 1350px)
+          font-size: 16px
         @media (max-width: 786px)
-          font-size: 18px
           padding: 0
           margin: 10px 0
         &:hover
@@ -248,4 +258,6 @@
             background: transparent
         span
           +title
-
+          margin-right: 200px
+          text-align: left
+          
