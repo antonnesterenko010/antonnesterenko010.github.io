@@ -47,7 +47,6 @@
       flex-basis: 50%
       display: flex
       flex-direction: column
-      border: 7px solid #000000
       border-radius: 20px
       border-bottom-left-radius: 10px
       border-bottom-right-radius: 10px
@@ -63,17 +62,15 @@
     &-main
       width: 500px
       margin-bottom: 50px
+      border: 7px solid #ffffff
+      border-radius: 20px
       @media (max-width: 786px)
         width: 300px
       &__item
         img
           height: 500px
-          border-radius: 50px
-          border-top-left-radius: 10px
-          border-top-right-radius: 10px
+          border-radius: 10px
           @media (max-width: 786px)
-            border-top-left-radius: 20px
-            border-top-right-radius: 20px
             width: 350px
             height: 350px
   &-arrows
@@ -89,6 +86,8 @@
       display: flex
       align-self: flex-end
       margin-bottom: 40px
+      @media (max-width: 786px)
+        margin-bottom: 20px
       @media (max-width: 420px)
         display: none!important
     &-right
@@ -100,6 +99,8 @@
       display: flex
       align-self: flex-end
       margin-bottom: 40px
+      @media (max-width: 786px)
+        margin-bottom: 20px
       @media (max-width: 420px)
         display: none!important
   &-info
@@ -258,6 +259,6 @@
             background: transparent
         span
           +title
-          margin-right: 200px
+          margin-right: 100px
           text-align: left
           
