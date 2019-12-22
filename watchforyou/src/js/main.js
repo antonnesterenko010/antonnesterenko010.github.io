@@ -63,7 +63,7 @@ $(document).ready(function () {
     $('.sidebar-list').toggleClass('sidebar-list_active');
   })
   // modal form init
-  $('.navbar-button, .product-price__button, .product-price__links__button').click(function(){
+  $('.navbar-button, .product-price__button, .product-price__links__button, .recall-button').click(function(){
     $('.modal').fadeIn();
   });
   // button-close init

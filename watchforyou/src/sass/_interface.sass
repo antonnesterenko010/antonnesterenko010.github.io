@@ -58,6 +58,8 @@ button
   left: 30px
   z-index: 30
   display: flex
+  @media (max-width: 786px)
+    left: 0
   &-list
     &_active
       display: none
@@ -70,9 +72,15 @@ button
       padding: 10px 0
       height: 80px
       color: #000000
+      @media (max-width: 786px)
+        width: 50px
+        height: auto
       &:hover
         color: #ffffff
         background-color: $secondbgcolor
+        @media (max-width: 1200px)
+          background-color: #ffffff
+          color: #000000
       &__image
         width: 30px
         display: block
@@ -82,6 +90,8 @@ button
         text-align: center
         margin: 0
         font-size: 12px
+        @media (max-width: 786px)
+          display: none
   &-button
     background: url('../img/greetings/left-arrow.svg')
     width: 30px
@@ -93,6 +103,8 @@ button
     &_active
       transform: rotate(180deg)
       margin-top: 225px
+      @media (max-width: 786px)
+        margin-top: 170px
 .page
   text-align: center
   color: #ffffff
@@ -224,3 +236,16 @@ button
     padding: 0 10px
     +menu
     font-size: 20px
+
+.recall
+  &-button
+    position: fixed
+    bottom: 20px
+    left: 40px
+    background: url('../img/header/telephone.svg') no-repeat
+    width: 60px
+    height: 60px
+    border: none
+    align-self: center
+    cursor: pointer
+    z-index: 30

@@ -569,6 +569,12 @@ button {
   display: flex;
 }
 
+@media (max-width: 786px) {
+  .sidebar {
+    left: 0;
+  }
+}
+
 .sidebar-list_active {
   display: none;
 }
@@ -584,9 +590,23 @@ button {
   color: #000000;
 }
 
+@media (max-width: 786px) {
+  .sidebar-list__item {
+    width: 50px;
+    height: auto;
+  }
+}
+
 .sidebar-list__item:hover {
   color: #ffffff;
   background-color: #1E2533A8;
+}
+
+@media (max-width: 1200px) {
+  .sidebar-list__item:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 .sidebar-list__item__image {
@@ -600,6 +620,12 @@ button {
   text-align: center;
   margin: 0;
   font-size: 12px;
+}
+
+@media (max-width: 786px) {
+  .sidebar-list__item__title {
+    display: none;
+  }
 }
 
 .sidebar-button {
@@ -618,6 +644,12 @@ button {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   margin-top: 225px;
+}
+
+@media (max-width: 786px) {
+  .sidebar-button_active {
+    margin-top: 170px;
+  }
 }
 
 .page {
@@ -864,6 +896,21 @@ button {
   padding: 0 10px;
   font-family: 'Caveat-Regular', sans-serif;
   font-size: 20px;
+}
+
+.recall-button {
+  position: fixed;
+  bottom: 20px;
+  left: 40px;
+  background: url("../img/header/telephone.svg") no-repeat;
+  width: 60px;
+  height: 60px;
+  border: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  z-index: 30;
 }
 
 .header-section {
