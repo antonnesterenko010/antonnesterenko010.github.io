@@ -58,9 +58,9 @@ $(document).ready(function () {
     ]
   })
   // fixed menu init
-  $('.greetings-list__button').click(function(){
-    $(this).toggleClass('greetings-list__button-active');
-    $('.greetings-list').toggleClass('greetings-list__active');
+  $('.sidebar-button').click(function(){
+    $(this).toggleClass('sidebar-button_active');
+    $('.sidebar-list').toggleClass('sidebar-list_active');
   })
   // modal form init
   $('.navbar-button, .product-price__button, .product-price__links__button').click(function(){
