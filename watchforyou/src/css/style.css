@@ -1489,30 +1489,31 @@ input.error {
   }
 }
 
-.main-form__input:last-child {
+.main-form input[name="user_text"] {
   height: 150px;
   width: 90%;
 }
 
-.main-form__input:last-child::-webkit-input-placeholder {
+.main-form input[name="user_text"]::-webkit-input-placeholder {
   text-align: center;
 }
 
-.main-form__input:last-child:-ms-input-placeholder {
+.main-form input[name="user_text"]:-ms-input-placeholder {
   text-align: center;
 }
 
-.main-form__input:last-child::-ms-input-placeholder {
+.main-form input[name="user_text"]::-ms-input-placeholder {
   text-align: center;
 }
 
-.main-form__input:last-child::placeholder {
+.main-form input[name="user_text"]::placeholder {
   text-align: center;
 }
 
 .main-form__button {
   margin: auto;
   padding: 20px 100px;
+  display: block;
 }
 
 .greetings-section {
