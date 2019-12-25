@@ -25,7 +25,7 @@
     justify-content: space-between
     @media (max-width: 1200px)
       flex-wrap: wrap
-      flex-direction: column-reverse
+      flex-direction: column
     
   &-slider
     width: 500px
@@ -77,6 +77,7 @@
     display: flex
     @media (max-width: 1200px)
       justify-content: center
+      margin-bottom: 50px
     &-left
       outline: none
       border: none
@@ -141,27 +142,6 @@
       img
         vertical-align: middle
         margin-right: 5px
-    &__links
-      &__button
-        color: #ffffff
-        background: $bgbutton
-        border: none
-        padding: 10px
-        text-transform: uppercase
-        line-height: 20px
-        opacity: 0.8
-        cursor: pointer
-        +bold
-        border: 1px solid #ffffff
-        align-self: flex-end
-        
-        @media (max-width: 1200px)
-          opacity: 1
-          margin: 15px auto
-
-        
-        &:hover
-          opacity: 1
       &__link
         align-self: center
         margin-left: 10px
@@ -208,8 +188,20 @@
 
   &-form
     display: flex
+    position: relative
     @media (max-width: 1200px)
       justify-content: center
+    label
+      &:nth-child(2)
+        position: absolute
+        top: 50px
+        left: 0
+        font-size: 14px
+        @media (max-width: 1200px)
+          top: -30px
+          left: 350px
+        @media (max-width: 786px)
+          left: 80px
     &__input
       padding: 10px
     &__button

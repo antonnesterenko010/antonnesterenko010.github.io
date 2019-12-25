@@ -178,6 +178,28 @@ button
     padding-top: 10px
     @media (max-width: 786px)
       padding: 0
+    label
+      &:nth-child(2)
+        position: absolute
+        left: 180px
+        top: 60px
+        font-size: 14px
+        color: #ffffff
+        @media (max-width: 786px)
+          font-size: 10px
+          left: 80px
+          top: 35px
+      &:nth-child(4)
+        position: absolute
+        left: 180px
+        top: 180px
+        font-size: 14px
+        color: #ffffff
+        @media (max-width: 786px)
+          font-size: 10px
+          left: 40px
+          top: 85px
+      
     &__input
       width: 250px
       margin: auto
@@ -193,10 +215,10 @@ button
         margin-bottom: 10px
         &::placeholder
           text-align: left
-      &:nth-child(3)
-        height: 100px
-        @media (max-width: 786px)
-          height: 50px
+    input[name="user_text"]
+      height: 100px
+      @media (max-width: 786px)
+        height: 50px
 
     &__button
       margin: auto
@@ -240,7 +262,7 @@ button
 .recall
   &-button
     position: fixed
-    bottom: 20px
+    bottom: 100px
     left: 40px
     background: url('../img/header/telephone.svg') no-repeat
     width: 60px
@@ -249,3 +271,17 @@ button
     align-self: center
     cursor: pointer
     z-index: 30
+    @media (max-width: 786px)
+      display: none
+
+.back-top
+  position: fixed
+  bottom: 0px
+  right: 40px
+  &__link
+  &__image
+    width: 50px
+    height: 50px
+
+input.error
+  border: 2px solid red

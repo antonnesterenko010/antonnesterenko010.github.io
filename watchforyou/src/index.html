@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.css">
   <title>Watch for You. Часы для вас.</title>
 </head>
 
 <body>
-  <header class="header-section">
+  <header class="header-section" id="top">
     <div class="container">
       <nav class="navbar">
         <a href="index.html" class="navbar-logo">
@@ -22,8 +23,8 @@
 
         </a>
         <ul class="navbar-phonelist">
-          <li class="navbar-phonelist__item"><a type="tel" href="+380507154205">+38 (050) 715 42 05</a></li>
-          <li class="navbar-phonelist__item"><a type="tel" href="+380671270286">+38 (067) 127 02 86</a></li>
+          <li class="navbar-phonelist__item"><a href="tel:+380507154205">+38 (050) 715 42 05</a></li>
+          <li class="navbar-phonelist__item"><a href="tel:+380671270286">+38 (067) 127 02 86</a></li>
         </ul>
         <button type="button" class="button navbar-button"><img src="img/header/call.svg" alt="Order"><span>Заказать
             звонок</span></button>
@@ -40,42 +41,6 @@
     </div>
   </header>
   <!-- header section -->
-  <aside class="sidebar">
-    <ul class="sidebar-list">
-      <a href="#"><li class="sidebar-list__item">
-        
-        <img src="img/greetings/telegram.svg" alt="Телеграм" class="sidebar-list__item__image">
-        <p class="sidebar-list__item__title">Напишите нам в Telegram</p>
-        
-      </li></a>
-      <a href="#"><li class="sidebar-list__item">
-        
-        <img src="img/greetings/instagram.svg" alt="Инстаграм" class="sidebar-list__item__image">
-        <p class="sidebar-list__item__title">Напишите нам в Instagram</p>
-        
-      </li></a>
-      <a href="#"><li class="sidebar-list__item">
-        
-        <img src="img/greetings/facebook.svg" alt="Facebook" class="sidebar-list__item__image">
-        <p class="sidebar-list__item__title">Напишите нам в Facebook</p>
-        
-      </li></a>
-      <a href="#"><li class="sidebar-list__item">
-        
-        <img src="img/greetings/viber.svg" alt="Viber" class="sidebar-list__item__image">
-        <p class="sidebar-list__item__title">Напишите нам в Viber</p>
-        
-      </li></a>
-      <a href="#"><li class="sidebar-list__item">
-        
-        <img src="img/greetings/vk.svg" alt="VK" class="sidebar-list__item__image">
-        <p class="sidebar-list__item__title">Напишите нам в VK</p>
-        
-      </li></a>
-    </ul>
-    <button class="sidebar-button">
-    </button>
-  </aside>
   <button class="recall-button">
   </button>
 <div class="page">
@@ -205,12 +170,12 @@
   <section class="form-section section">
     <h2 class="form-title main-title">Заявка обратной связи</h2>
     <div class="container">
-      <form action="#" class="main-form form">
-          <input type="text" class="main-form__input form__input" placeholder="Ваше имя">
-          <input type="tel" class="main-form__input form__input" placeholder="Номер вашего телефона">
-          <input type="mail" class="main-form__input form__input" placeholder="Электронная почта">
-          <input type="text" class="main-form__input form__input" placeholder="Введите ваше сообщение"></div>
-        <button class="button main-form__button form__button">Отправить</button>
+      <form action="mail.php" id="main-form" method="POST" class="main-form form">
+          <input type="text"  name="user_name" class="main-form__input form__input" placeholder="Ваше имя">
+          <input type="tel" name="user_tel"  class="form__input__tel main-form__input form__input" placeholder="Номер вашего телефона">
+          <input type="email" name="user_email"  class="main-form__input form__input" placeholder="Электронная почта">
+          <input type="text" name="user_text"  class="main-form__input form__input" placeholder="Введите ваше сообщение">
+        <button type="submit" class="button main-form__button form__button">Отправить</button>
       </form>
     </div>
   </section>
@@ -221,11 +186,11 @@
     <div class="modal-dialog__close"><img src="img/modal/close.svg" alt="Закрыть"></div>
     <h2 class="modal-title">Оставьте ваши контактные данные</h2>
     <div class="modal-content">
-      <form action="#" class="modal-form form">
-        <input type="text" class="modal-form__input form__input" required placeholder="Введите ваше имя">
-        <input type="tel" class="modal-form__input form__input" required placeholder="Введите ваш номер">
-        <input type="text" class="modal-form__input form__input" placeholder="Введите ваше сообщение">
-        <button class="button modal-form__button form__button">Отправить</button>
+      <form action="mail.php" method="POST" id="modal-form" class="modal-form form">
+        <input type="text" name="user_name" class="modal-form__input form__input" placeholder="Введите ваше имя">
+        <input type="tel" name="user_tel" class="modal-form__input form__input__tel form__input" placeholder="Введите ваш номер">
+        <input type="text"  name="user_text" class="modal-form__input form__input" placeholder="Введите ваше сообщение">
+        <button type="submit" class="button modal-form__button form__button">Отправить</button>
       </form>
     </div>
   </div>
@@ -239,6 +204,7 @@
 </div>
 <footer class="footer-section footer">
   <div class="container">
+    <p id="back-top" class="back-top"> <a href="#top" class="back-top__link"><img class="back-top__image" src="img/footer/up-arrow.svg" alt="Вверх"></a></p>
     <ul class="footerbar-list navbar-list">
       <li class="footerbar-list__item navbar-list__item"><a href="index.html">Главная</a>
 
@@ -248,21 +214,21 @@
       <li class="footerbar-list__item navbar-list__item"><a href="contacts.html">Контакты</a></li>
     </ul>
     <div class="footer-block">
-      <ul class="footer-list"><img src="img/footer/phone-call.svg" alt="" class="footer-list__icon">
-        <p>Наши контакты</p>
+      <ul class="footer-list"><li class="footer-list__title"><img src="img/footer/phone-call.svg" alt="" class="footer-list__icon">
+      <p>Наши контакты</p></li>
         <li class="footer-list__item"><img src="img/footer/customer-service.svg" alt="Оператор"
             class="footer-list__icon__sub">
           Екатерина</li>
-        <li class="footer-list__item"><a href="#" type="tel"><img class="footer-list__icon__sub"
+        <li class="footer-list__item"><a href="tel:+380507154205" ><img class="footer-list__icon__sub"
               src="img/footer/call.svg" alt="Звонок">+38 (050) 715 42 05</a></li>
-        <li class="footer-list__item"><a href="#" type="tel"><img class="footer-list__icon__sub"
+        <li class="footer-list__item"><a href="tel:+380671270286" ><img class="footer-list__icon__sub"
               src="img/footer/call.svg" alt="Звонок">+38 (067) 127 02 86</a></li>
         <li class="footer-list__item"><a href="#"><img src="img/footer/mail.svg" alt="Письмо"
               class="footer-list__icon__sub">watchforyou12@gmail.com</a></li>
 
       </ul>
-      <ul class="footer-list"><img src="img/footer/clock.svg" alt="Часы" class="footer-list__icon">
-        <p>График работы</p>
+      <ul class="footer-list"><li class="footer-list__title"><img src="img/footer/clock.svg" alt="Часы" class="footer-list__icon"><p>График работы</p></li>
+        
         <li class="footer-list__item"><img src="img/footer/check-mark.svg" alt="Готово" class="footer-list__icon__sub">
           Пн - Вс </li>
         <li class="footer-list__item"><img src="img/footer/check-mark.svg" alt="Готово" class="footer-list__icon__sub">
@@ -270,10 +236,10 @@
         <li class="footer-list__item"><img src="img/footer/check-mark.svg" alt="Готово" class="footer-list__icon__sub">
           Без выходных </li>
       </ul>
-      <form action="#" class="form footer-form">
+      <form action="mail.php" method="POST" class="form footer-form">
         <h2 class="footer-form__title">Подпишитесь на нашу рассылку</h2>
-        <input type="text" class="form-input footer-form__input" placeholder="Введите ваш e-mail">
-        <button class="button form-button footer-form__button">Подписаться</button>
+        <input type="text" name="user_email" class="form-input footer-form__input" placeholder="Введите ваш e-mail">
+        <button type="submit" class="button form-button footer-form__button">Подписаться</button>
       </form>
     </div>
     <ul class="footer-links">
@@ -291,9 +257,9 @@
 </footer>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/wow.min.js"></script>
 </body>
 
 </html>

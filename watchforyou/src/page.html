@@ -74,16 +74,15 @@
         <div class="product-info">
           <h1 class="product-title">Заголовок Часов</h1>
           <p class="product-id">Код товара: 01001</p>
-          <button class="product-price__links__button">Заказать по телефону</button>
           <div class="product-info-wrap">
             <div class="product-price">
               <p class="product-price__title">2535 грн</p>
               <p class="product-price__availability"><img src="img/watch/checkmark.png" alt="Есть">В наличии</p>
               <button class="product-price__button"><img src="img/watch/buy.svg" alt="Купить"
                   class="product-price__button__icon">Купить</button>
-              <form action="#" class="product-form">
-                <input type="text" placeholder="Номер вашего телефона" class="product-form__input">
-                <button class="product-form__button">Заказать в один клик</button>
+              <form action="mail.php" method="POST" id="product-form" class="product-form">
+                <input type="text" name="user_tel" placeholder="Номер вашего телефона" class="product-form__input form__input__tel">
+                <button type="submit" class="product-form__button">Заказать в один клик</button>
               </form>
             </div>
             <div class="product-description">
@@ -100,6 +99,7 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
   <div class="modal">
     <div class="modal-dialog">
@@ -169,6 +169,7 @@
 </footer>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/wow.min.js"></script>

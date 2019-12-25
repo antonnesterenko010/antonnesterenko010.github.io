@@ -10,8 +10,52 @@
   &-form
     margin: auto
     padding: 50px 0
+    position: relative
     @media (max-width: 786px)
       padding: 20px 0
+    label
+      &:nth-child(2)
+        position: absolute
+        left: 80px
+        font-size: 14px
+        color: #ffffff
+        @media (max-width: 1200px)
+          left: 350px
+        @media (max-width: 786px)
+          left: 110px
+          top: 8px
+          font-size: 11px
+        @media (max-width: 560px)
+          left: 70px
+          top: 10px
+      &:nth-child(4)
+        position: absolute
+        left: 430px
+        font-size: 14px
+        color: #ffffff
+        @media (max-width: 1200px)
+          left: 350px
+        @media (max-width: 786px)
+          left: 370px
+          top: 8px
+          font-size: 11px
+        @media (max-width: 560px)
+          left: 70px
+          top: 85px
+      &:nth-child(6)
+        position: absolute
+        left: 790px
+        font-size: 14px
+        color: #ffffff
+        @media (max-width: 1200px)
+          left: 350px
+        @media (max-width: 786px)
+          left: 240px
+          top: 85px
+          font-size: 11px
+        @media (max-width: 560px)
+          left: 70px
+          top: 160px
     &__input
       padding: 15px 0
       padding-left: 10px
