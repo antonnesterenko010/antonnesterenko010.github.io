@@ -24,6 +24,11 @@ a {
   color: #ffffff;
 }
 
+@font-face {
+  font-family: Anastasia;
+  src: url(../fonts/18487.ttf);
+}
+
 .title {
   background-color: #ffffff;
   text-align: center;
@@ -141,6 +146,7 @@ a {
   background: transparent;
   color: #ffffff;
   font-size: 40px;
+  font-family: 'Anastasia', sans-serif;
 }
 
 .navbar {
@@ -188,12 +194,12 @@ a {
   -webkit-box-pack: column;
       -ms-flex-pack: column;
           justify-content: column;
+  padding-top: 100px;
 }
 
 .self-description__image {
   margin-left: 50px;
   width: 500px;
-  border: 2px solid #ffffff;
   border-radius: 50px;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
@@ -201,6 +207,7 @@ a {
 
 .self-description__image img {
   border-radius: 50px;
+  border: 2px solid #ffffff;
 }
 
 .self-text {
@@ -213,6 +220,8 @@ a {
   margin: 0px 10px;
   padding: 20px 0;
   font-size: 30px;
+  text-align: right;
+  margin-right: 50px;
 }
 
 .self-text__list {
@@ -292,7 +301,7 @@ a {
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 0 50px;
+  margin: 0 140px;
 }
 
 .arrows {
