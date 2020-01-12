@@ -14,7 +14,7 @@
 <body>
   <header class="section header-section">
     <div class="container">
-      <h1 class="header-title title">Добро пожаловать на страницу моего портфолио</h1>
+      <h1 class="header-title title wow fadeInDown">Добро пожаловать на страницу моего портфолио</h1>
     </div>
   </header>
   <!-- header -->
@@ -28,12 +28,12 @@
           </div>
           
           <div class="self-text">
-            <h2 class="self-text__title">Здравствуйте, уважаемый работодатель! </h2>
+            <h2 class="self-text__title wow fadeInRight" data-wow-delay="1s">Здравствуйте, уважаемый работодатель! </h2>
               
-            <h2 class="self-text__title"> Меня зовут Антон Нестеренко.</h2>
-              <h2 class="self-text__title"> Я хочу работать и
+            <h2 class="self-text__title wow fadeInRight" data-wow-delay="2s"> Меня зовут Антон Нестеренко.</h2>
+              <h2 class="self-text__title wow fadeInRight" data-wow-delay="3s"> Я хочу работать и
                 развиваться в вашей компании.</h2>
-            <ul class="self-text__list"><p class="self-text__list__title">Почему вы будете рады видеть меня в своем офисе?</p>
+            <ul class="self-text__list wow fadeIn" data-wow-delay="4s"><p class="self-text__list__title">Почему вы будете рады видеть меня в своем офисе?</p>
             <li class="self-text__list__item">Я добиваюсь поставленных целей и работаю в интересах компании.</li>
             <li class="self-text__list__item">Я трудолюбивый и толерантный сотрудник.</li>
             <li class="self-text__list__item">Я хочу развиваться и адекватно отношусь к критике.</li>
@@ -75,8 +75,9 @@
           </div>
           <ul class="self-slider">
             <li class="self-slider__item">
+              <p class="self-card__title">Проект 1</p>
               <a href="https://antonnesterenko010.github.io/alexis-design/src/index.html" target="_blank" class="self-card">
-                <p class="self-card__title">Проект 1</p>
+                
                 <div class="self-card__image">
                   <img src="img/screenshot_1.png" alt="Проект №1">
                 </div>
@@ -97,9 +98,9 @@
               </a>
             </li>
             <li class="self-slider__item">
+              <p class="self-card__title">Проект 2</p>
               <a href="https://watchforyou.com.ua" target="_blank" class="self-card">
-                <p class="self-card__title">Проект 2</p>
-                <div class="self-card__image">
+                <div class="self-card__image self-card__image_2">
                   <img src="img/screenshot_2.png" alt="Проект №2">
                 </div>
                 <p class="self-card__description">
@@ -112,7 +113,7 @@
                   </ul>
                   <ul class="self-card__description__list"> Что использовалось:
                     <li class="self-card__description__list__item">HTML/CSS/SASS/PHP</li>
-        
+                
                     <li class="self-card__description__list__item">JS/JQUERY/SLICK.JS/ANIMATE.JS/VALIDATE.JS</li>
                     <li class="self-card__description__list__item">AJAX/PHPMAILER</li>
                     <li class="self-card__description__list__item">WORDPRESS/ADVANCED CUSTOM FIELDS</li>
@@ -126,7 +127,10 @@
     </section>
     <!-- /.section self-section -->
   </main>
-  <footer class="footer">2019&copy; Anton Nesterenko</footer>
+  <footer class="footer"><p>Мои контакты:</p>
+    <a href="tel:+380951290809">+38(095)129-08-09</a>
+    <a href="tel:+380675886292">+38(067)588-62-92</a>
+    <a href="mailto:anton.nesterenko.010@gmail.com">anton.nesterenko.010@gmail.com</a></footer>
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.min.js"></script>
@@ -141,6 +145,10 @@
       nextArrow: '.arrow-right'
     });
   });
+  
 </script>
-
+<script src="js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
 </html>
