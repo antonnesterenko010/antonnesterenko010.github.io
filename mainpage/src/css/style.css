@@ -3454,7 +3454,7 @@ a {
   -webkit-box-pack: column;
       -ms-flex-pack: column;
           justify-content: column;
-  padding-top: 180px;
+  padding-top: 170px;
 }
 
 .self-description__image {
@@ -3494,6 +3494,7 @@ a {
   padding-top: 10px;
   color: #1C571C;
   font-size: 32px;
+  margin-top: 50px;
   margin-right: 50px;
 }
 
@@ -3525,7 +3526,7 @@ a {
 .self-content__subtitle {
   text-align: center;
   margin: 10px 0;
-  color: #E8DA0C;
+  color: #ffffff;
 }
 
 .self-slider {
@@ -3567,6 +3568,7 @@ a {
 .self-card__image img {
   width: 100%;
   height: 100%;
+  border: 3px solid #ffffff;
 }
 
 .self-card__title {
@@ -3576,6 +3578,7 @@ a {
   margin-right: 20px;
   margin-bottom: 20px;
   font-family: 'Caveat', cursive;
+  font-weight: bold;
 }
 
 .arrow {
