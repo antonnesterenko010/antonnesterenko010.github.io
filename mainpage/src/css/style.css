@@ -16,7 +16,7 @@ img {
 }
 
 body {
-  color: #ffffff;
+  color: #000000;
 }
 
 a {
@@ -169,7 +169,7 @@ a {
 }
 
 .self-section {
-  background-image: url("../img/self-background.jpg");
+  background-color: #DACB68;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -202,7 +202,7 @@ a {
 
 .self-text__title {
   font-family: 'Caveat', cursive;
-  margin: 10px 10px;
+  margin: 5px 10px;
 }
 
 .self-text__list {
@@ -245,7 +245,6 @@ a {
 
 .self-slider {
   list-style: none;
-  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -277,7 +276,6 @@ a {
   background: transparent;
   border: none;
   outline: none;
-  margin: 0 30px;
   cursor: pointer;
 }
 
@@ -285,9 +283,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer {
