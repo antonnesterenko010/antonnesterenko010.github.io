@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Wordpress</h1>
+  <h2>Установка</h2>
+
+  <p>1. Cкачать <a href="https://ru.wordpress.org/">архив</a></p>
+  <p>2. Разархивировать в папку с сервером.</p>
+  <p>3. Открываем phpMyAdmin. Слева - Создать БД. Вводим название БД + utf8_general_ci</p>
+  <p>4. Привилегии. Создаем нового пользователя. Отмечаем все привилегии. </p>
+  <p>5. Открываем путь сайта. Далее в установщике Wordpress вводим: имя БД, логин нового пользователя + пароль. Сервер и префикс пропускаем.</p>
+  <p>6. Завершаем установку. </p>
+
+  <h2>Создание темы</h2>
+  <p>1. Путь: wp-content/themes/.. - создаем новую тему.</p>
+  <p>2. Заходим на <a href="https://underscores.me/">https://underscores.me/</a>, вводим название сайта. Разархивируем в папку с сайтом.</p>
+  <p>3. Переносим в проект готовые шаблоны css и php.</p>
+  <p>4. Создаем screenshot.png с разрешением 1200х900</p>
+  <p>5. Переносим header.php</p>
+  <p>6. Переносим footer.php</p>
+  <p>7. Внутри index.php и других страницах: "php get_header(); " и "php get_footer(); " </p>
+  <p>8. Добавляем хук: wp_head(); перед "/head" (NOT HEADER) и wp_footer(); перед "/body" </p>
+  <p>Полезные ссылки: <a href="https://wp-kama.ru/">https://wp-kama.ru/</a></p>
+  <p><a href="https://wp-kama.ru/id_7654/ierarhiya-fajlov-temy-shablona.html">Иерархия файлов темы шаблона</a></p>
+  <h2>Подключение стилей</h3>
+  <p>1. Создаем functions.php</p>
+  <p>2. add_action ('wp_enqueue_scripts', 'style_theme'); </p>
+  <p>3. function style_theme(){<br>
+    wp_enqueue_style('style', get_stylesheet_uri());<br>}</p>
+  <p>4. Чтобы добавить любой другой css - нужно вставить внутри функции: wp_enqueue_style( '*****', get_template_directory_uri() . '/assets/css/*****.format');</p>
+  <h2>Подключение скриптов</h4>
+  <p>1. add_action('wp_footer', 'scripts_theme');</p>
+  <p>2. function scripts_theme(){<br>
+  wp_deregister_script( 'jquery');<br>
+  wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' );<br>
+  wp_enqueue_script( 'jquery');<br>
+  wp_enqueue_script( 'validate', get_template_directory_uri() . '/assets/js/jquery.validate.min.js', ['jquery'], null ,
+  true);<br>
+  wp_enqueue_script( 'maskedinput', get_template_directory_uri() . '/assets/js/jquery.maskedinput.min.js', ['jquery'],
+  null , true);<br>
+  wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js');<br>
+  wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/slick.min.js');<br>
+  }</p>
+  <h2>Дополнительно (часть 1)</h2>
+  <p>1. Установка ссылки на главную страницу на логотипе: внутри href логотипа указываем php bloginfo('url'); </p>
+  <p>2. Вывод название блога если потребуется: php bloginfo('name'); </p>
+  <p>3. Добавления слага к header или footer поможет дублировать разные шапки и подвалы . Для их применения нужно указывать слаг в php get_header('слаг') и т.д.</p>
+  <h2>Регистрация меню</h2>
+  <p>1. add_action( 'after_setup_theme', 'theme_register_nav_menu'); <br>
+  function theme_register_nav_menu() {<br>
+  register_nav_menu( 'topmenu', 'Меню в шапке сайта' );<br>
+  register_nav_menu( 'footermenu', 'Меню в подвале сайта' );<br>
+  }
+  </p>
+  <p>2. Туда куда надо вставить меню указываем: php wp_nav_menu();<br> <a href="https://wp-kama.ru/function/wp_nav_menu">wp_nav_menu</a><br>
+  wp_nav_menu( [<br>
+  'theme_location' => 'здесь topmenu или footermenu',<br>
+  'container' => null,<br>
+  'menu_class' => 'здесь класс ul',<br>
+  ] );</p>
+  <p>3. Класс для изменения li-елементов : menu-item</p>
+  <h2>Сайдбары и виджеты</h2>
+  <p>1. Сайдбары указываются в теге "aside" и хранятся в sidebar.php. Вставляется sidebar через get_sidebar(); </p>
+  <p>2. В functions.php регистрируем sidebar через функцию <a href="https://wp-kama.ru/function/register_sidebar">register_sidebar();</a></p>
+  <p>3. Регистрируем сайдбар , вводим его имя и id.</p>
+  <p>4. В sidebar.php указываем где мы хотим вызвать конкретный сайдбар который мы зарегестрировали через <a href="https://wp-kama.ru/function/dynamic_sidebar">dynamic_sidebar('id sidebar');</a></p>
+  <p>5. В административной панели вызываем нужный sidebar во вкладке Виджеты</p>
+  <h2>Вывод информации</h2>
+  <p>1. Для вывода нужно перебрать циклом все посты.</p>
+  <p>2. Если сейчас у WP есть посты на данной странице , то мы их будем выводить<br>
+  <br>< ? php if (have_posts()) {
+
+  <br>}////конец if<br>?></p>
+  <p>3. Далее запускаем цикл while - пока посты есть - их нужно выводить. <br>
+    <br>
+    < ? php if (have_posts()) { while (have_posts)) {<br>
+    }////конец while<br>
+    
+    }////конец if<br>?>
+  </p>
+  <p>4. Добавляем the_post(); Что нам нужно выводить пока действует это условие? Посты.<br>
+    <br>
+    < ? php if (have_posts()) { while (have_posts)) {<br>
+    the_post();<br>
+    }////конец while<br>
+    
+    }////конец if<br>?>
+  </p>
+  <p>5. Разрываем php код и вставляем div куда нам надо вставить этот пост<br>
+  <br>
+  < ? php if (have_posts()) { while (have_posts)) {<br>
+  the_post(); ?><br><br>
+  article > h1 > php the_title(); + php the_content();
+  <br><br>
+  < ? php }////конец while<br>
+  
+  }////конец if<br>?>
+ </p>
+</body>
+</html>
