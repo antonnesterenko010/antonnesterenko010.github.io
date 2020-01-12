@@ -133,9 +133,7 @@ a {
 }
 
 .header-section {
-  background: #5b0a63;
-  background: -webkit-gradient(linear, left top, right top, from(#5b0a63), color-stop(25%, #d40749), to(#e2cb18));
-  background: linear-gradient(90deg, #5b0a63 0%, #d40749 25%, #e2cb18 100%);
+  background: #487943;
 }
 
 .header-title {
@@ -169,7 +167,7 @@ a {
 }
 
 .self-section {
-  background-color: #DACB68;
+  background-color: #487943;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -194,6 +192,14 @@ a {
 
 .self-description__image {
   width: 500px;
+  border: 8px solid #000000;
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.self-description__image img {
+  border-radius: 40px;
 }
 
 .self-text {
@@ -269,6 +275,7 @@ a {
 
 .self-card__title {
   font-size: 28px;
+  color: #000000;
 }
 
 .arrow {
