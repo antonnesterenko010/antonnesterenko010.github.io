@@ -192,14 +192,14 @@ a {
 
 .self-description__image {
   width: 500px;
-  border: 8px solid #000000;
-  background: #ffffff;
-  padding: 5px;
+  border: 2px solid #ffffff;
   border-radius: 50px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
 }
 
 .self-description__image img {
-  border-radius: 40px;
+  border-radius: 50px;
 }
 
 .self-text {
@@ -208,16 +208,18 @@ a {
 
 .self-text__title {
   font-family: 'Caveat', cursive;
-  margin: 5px 10px;
+  margin: 0px 10px;
+  padding: 20px 0;
+  font-size: 30px;
 }
 
 .self-text__list {
   border-radius: 20px;
   opacity: 0.8;
-  background: yellow;
+  background: #E8E85B;
   padding: 50px;
   padding-top: 10px;
-  color: green;
+  color: #1C571C;
   font-size: 28px;
 }
 
@@ -236,7 +238,6 @@ a {
 }
 
 .self-content {
-  width: 400px;
   padding: 20px 10px;
 }
 
@@ -260,7 +261,7 @@ a {
   background: #000000;
   opacity: 0.7;
   padding: 10px 50px;
-  color: green;
+  color: #1C571C;
   font-size: 28px;
 }
 
@@ -270,7 +271,8 @@ a {
 }
 
 .self-card__image {
-  width: 400px;
+  margin: auto;
+  width: 1000px;
 }
 
 .self-card__title {
