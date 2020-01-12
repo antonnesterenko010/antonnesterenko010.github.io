@@ -3403,10 +3403,10 @@ a {
 }
 
 .header-title {
-  padding: 50px 0;
+  padding: 20px 0;
   background: transparent;
   color: #f9d137;
-  font-size: 45px;
+  font-size: 69px;
 }
 
 .navbar {
@@ -3454,7 +3454,6 @@ a {
   -webkit-box-pack: column;
       -ms-flex-pack: column;
           justify-content: column;
-  padding-top: 170px;
 }
 
 .self-description__image {
@@ -3521,6 +3520,7 @@ a {
   font-size: 30px;
   text-align: center;
   color: #E8DA0C;
+  font-size: 72px;
 }
 
 .self-content__subtitle {
@@ -3558,6 +3558,11 @@ a {
   font-size: 20px;
   color: #000000;
   margin: 10px 0;
+  list-style-type: disc;
+}
+
+.self-card__description__sublist {
+  margin-top: 50px;
 }
 
 .self-card__image {
@@ -3619,8 +3624,12 @@ a {
   font-weight: bold;
 }
 
+.footer p {
+  margin-bottom: 10px;
+}
+
 .footer a {
-  margin: 10px 0;
+  margin: 0px 0;
   color: #E8DA0C;
 }
 
