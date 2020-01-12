@@ -3,6 +3,7 @@ $(document).ready(function () {
     var getvalue = $(this).attr('href');
     $(this).parent().find('input').val(getvalue);
   }).keyup();
+
 $('.links-input').each(function(i, item){
   $(item).addClass('clipboard-text-' + i);
   
