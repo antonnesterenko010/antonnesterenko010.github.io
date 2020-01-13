@@ -4097,6 +4097,7 @@ template {
 
 .navbar-logo {
   color: #616161;
+  width: 300px;
 }
 
 .navbar-menu {
