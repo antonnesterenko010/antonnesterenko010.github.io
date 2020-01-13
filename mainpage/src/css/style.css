@@ -139,12 +139,12 @@ a {
 
 .header-section {
   background: #487943;
+  border-bottom: 4px solid #ffffff;
 }
 
 .header-title {
   padding: 20px 0;
   background: transparent;
-  color: #f9da63;
   font-size: 51px;
   -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color: black;
@@ -174,9 +174,10 @@ a {
 }
 
 .self-section {
-  background-color: #487943;
+  background-color: #9db79bb3;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  padding-top: 20px;
 }
 
 .self-block {
@@ -260,16 +261,16 @@ a {
 .self-content__title {
   font-size: 30px;
   text-align: center;
-  color: #E8DA0C;
   font-size: 72px;
   -webkit-text-stroke-width: 0.01px;
   -webkit-text-stroke-color: black;
+  background: #487943;
 }
 
 .self-content__subtitle {
   text-align: center;
   margin: 10px 0;
-  color: #ffffff;
+  color: #000000;
 }
 
 .self-slider {
@@ -317,11 +318,12 @@ a {
   width: 100%;
   height: 100%;
   border: 3px solid #ffffff;
+  border-radius: 10px;
 }
 
 .self-card__title {
   font-size: 28px;
-  color: #ffffff;
+  color: #000000;
   text-align: right;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -350,6 +352,8 @@ a {
 
 .footer {
   padding: 20px 0 10px 0;
+  padding-bottom: 50px;
+  border-top: 4px solid #ffffff;
   background: #487943;
   text-align: center;
   font-size: 22px;
@@ -365,7 +369,6 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bold;
-  padding-bottom: 50px;
 }
 
 .footer p {
@@ -374,7 +377,8 @@ a {
 
 .footer a {
   margin: 0px 0;
-  color: #E8DA0C;
+  color: #ffffff;
+  font-family: 'Caveat', cursive;
 }
 
 .footer a:last-child {
