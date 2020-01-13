@@ -364,6 +364,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bold;
+  padding-bottom: 50px;
 }
 
 .footer p {
