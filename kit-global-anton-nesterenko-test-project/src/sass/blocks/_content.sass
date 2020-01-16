@@ -23,7 +23,7 @@
     display: flex
     margin-top: 26px
   &-leftblock
-    // margin-top: 26px
+    margin-right: 5px
     &__list
       font-size: 18px
       line-height: 30px
@@ -31,21 +31,24 @@
         &__link
       &__sub
         font-size: 14px
-        margin-left: 30px
+        margin-left: 26px
         list-style: disc
         &__item
           line-height: 22px
+          width: 178px
           &__link
           &_active
             +bold
             border-bottom: 1px solid $maincolor
     &__pricelist
-      margin-top: 110px
+      margin-top: 106px
       &__image
-        margin-left: 28px
+        margin-left: 43px
         margin-right: 26px
         margin-bottom: 6px
       &__title
+        margin-bottom: 5px
+        margin-right: 23px
         text-align: center
         font-size: 30px
         +bold
@@ -53,11 +56,12 @@
         letter-spacing: 0.75px
         color: $pricecolor
   &-rightblock
-    margin-left: 22px
+    margin-left: -10px
     &__card-list
       display: flex
       flex-wrap: wrap
       width: 795px
+      margin-top: 10px
       &__item
         width: 250px
         height: 380px
@@ -87,22 +91,26 @@
           margin-left: 56px
           margin-right: 16px
   &-pagination
-    margin-top: 9px
+    margin-top: 10px
+    margin-left: 30px
     margin-right: 20px
-    margin-bottom: 60px
+    margin-bottom: 64px
     display: flex
     justify-content: center
     &__item
-      margin-right: 20px
+      margin-right: 19px
       &_current
         color: $pricecolor
         font-size: 18px
   &-description
     border-top: 1px solid $maincolor
-    padding-top: 29px
+    width: 780px
+    padding-top: 25px
     display: flex
     &__item
-      margin-right: 40px
+      margin-right: 55px
       font-size: 14px
       line-height: 22px
-      width: 370px
+      width: 355px
+      &:last-child
+        margin-right: 0

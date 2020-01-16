@@ -1,28 +1,26 @@
 .slider
   &-section
+    position: relative
+    top: -63px
+    left: 5px
     @media (max-width: 1248px)
       display: none
   &-list
     z-index: -1
-    position: absolute
-    top: -63px
-    left: 177px
     &__item
-  &-arrows
-    &__left
-      outline: none
-      border: none
-      background: none
-      position: absolute
-      left: 303px
-      top: 155px
-    &__right
-      outline: none
-      border: none
-      background: none
-      position: absolute
-      top: 155px
-      right: 325px
+      img
+        margin: auto
+  &-arrow
+    outline: none
+    border: none
+    background: none
+    position: absolute
+    &_left
+      left: 205px
+      top: 220px
+    &_right
+      top: 215px
+      right: 240px
+      transform: rotate(180deg)
 .main
-  padding-top: 329px
   position: relative

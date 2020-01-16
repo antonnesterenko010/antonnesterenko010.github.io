@@ -18,7 +18,7 @@
             <li class="header-info__phonelist__item"><a class="header-info__phonelist__item__link" href="tel:+74997777777" type="tel">+7(499) 777-77-77</a></li>
             <li class="header-info__phonelist__item"><a class="header-info__phonelist__item__link" href="tel:+74997777777" type="tel">+7(499) 777-77-77</a></li>
           </ul>
-          <button class="header-info__feedback-btn">Обратная связь</button>
+          <button type="submit" class="header-info__feedback-btn">Обратная связь</button>
         </div>
       </div>
     </div>
@@ -42,10 +42,8 @@
           <li class="slider-list__item"><img src="img/slider/slide_1.png" alt="Слайд 1"></li>
           <li class="slider-list__item"><img src="img/slider/slide_2.png" alt="Слайд 2"></li>
         </ul>
-        <div class="slider-arrows">
-          <button class="slider-arrows__left"><img src="img/slider/arrow-left.png" alt="Влево"></button>
-          <button class="slider-arrows__right"><img src="img/slider/arrow-right.png" alt="Вправо"></button>
-        </div>
+          <button class="slider-arrow slider-arrow_left"><img src="img/slider/arrow.png" alt="Влево"></button>
+          <button class="slider-arrow slider-arrow_right"><img src="img/slider/arrow.png" alt="Вправо"></button>
     </section>
     <!-- slider-section -->
     <section class="content-section">
@@ -159,6 +157,7 @@
         </div>
       </div>
     </section>
+    <!-- content-section -->
   </main>
   <footer class="footer-section">
     <div class="container">
@@ -178,7 +177,25 @@
       </div>
     </div>
   </footer>
+  <div class="feedback">
+    <div class="feedback-dialog">
+      <button class="feedback-close-btn"><span></span></button>
+      <p class="feedback-title">Обратная связь</p>
+      <form action="#" id="feedback-form" class="feedback-form">
+        <p class="feedback-form__input__title">Ваше имя *</p>
+        <input type="text" name="feedback_name" class="feedback-form__input">
+        <p class="feedback-form__input__title">Телефон *</p>
+        <input type="tel" name="feedback_tel"class="feedback-form__input">
+        <p class="feedback-form__input__title">Email *</p>
+        <input type="email" name="feedback_email" class="feedback-form__input">
+        <p class="feedback-form__input__title">Сообщение</p>
+        <input type="text" name="feedback_msg" class="feedback-form__input__text">
+        <button class="feedback-form__btn">Отправить</button>
+      </form>
+    </div>
+  </div>
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
