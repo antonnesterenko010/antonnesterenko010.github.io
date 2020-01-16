@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('.slider-list').slick({
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 4000,
     fade: true,
     cssEase: 'linear',

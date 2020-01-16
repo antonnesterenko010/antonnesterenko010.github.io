@@ -170,18 +170,18 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 45px;
-  padding-bottom: 65px;
+  padding-top: 36px;
+  padding-bottom: 70px;
 }
 
 .header-logo {
-  padding-top: 20px;
+  padding-top: 27px;
   width: 273px;
   height: 100px;
 }
 
 .header-info__phonelist {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .header-info__phonelist__item__link {
@@ -203,11 +203,13 @@ a {
   font-weight: 800;
   line-height: 22px;
   margin-left: 87px;
+  letter-spacing: 0.6px;
 }
 
 .menu-section {
   background-color: #777777;
-  padding: 26px 0;
+  padding-top: 16px;
+  padding-bottom: 26px;
   z-index: 10;
 }
 
@@ -225,7 +227,7 @@ a {
 }
 
 .menu-list__item__link {
-  color: #fbfbfb;
+  color: #ffffff;
   font-size: 30px;
   letter-spacing: 0.75px;
   margin-left: 20px;
@@ -237,9 +239,9 @@ a {
   content: '';
   width: 3px;
   height: 60%;
-  background: #fbfbfb;
+  background: #ffffff;
   position: absolute;
-  right: -20px;
+  right: -22px;
   bottom: 5px;
 }
 
@@ -250,36 +252,48 @@ a {
   position: absolute;
   left: 0px;
   bottom: 2px;
-  background: #fbfbfb;
+  background: #ffffff;
+}
+
+@media (max-width: 1248px) {
+  .slider-section {
+    display: none;
+  }
 }
 
 .slider-list {
   z-index: -1;
-}
-
-.slider-arrows {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: absolute;
+  top: -63px;
+  left: 177px;
 }
 
 .slider-arrows__left {
   outline: none;
   border: none;
   background: none;
+  position: absolute;
+  left: 303px;
+  top: 155px;
 }
 
 .slider-arrows__right {
   outline: none;
   border: none;
   background: none;
+  position: absolute;
+  top: 155px;
+  right: 325px;
+}
+
+.main {
+  padding-top: 329px;
+  position: relative;
 }
 
 .content-section {
-  padding-top: 10px;
+  padding-top: 73px;
+  padding-left: 7px;
   padding-bottom: 67px;
 }
 
@@ -318,10 +332,6 @@ a {
   margin-top: 26px;
 }
 
-.content-leftblock {
-  margin-top: 26px;
-}
-
 .content-leftblock__list {
   font-size: 18px;
   line-height: 30px;
@@ -348,7 +358,9 @@ a {
 }
 
 .content-leftblock__pricelist__image {
-  margin-left: 43px;
+  margin-left: 28px;
+  margin-right: 26px;
+  margin-bottom: 6px;
 }
 
 .content-leftblock__pricelist__title {
@@ -358,6 +370,7 @@ a {
   font-weight: 800;
   line-height: 25px;
   letter-spacing: 0.75px;
+  color: #444444;
 }
 
 .content-rightblock {
@@ -370,6 +383,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 795px;
 }
 
 .content-rightblock__card-list__item {
@@ -378,7 +392,6 @@ a {
   margin-right: 15px;
   margin-bottom: 20px;
   background-color: #dcdcdc;
-  padding-bottom: 14px;
   padding: 20px;
 }
 
@@ -407,5 +420,74 @@ a {
 .content-rightblock__card-list__item__icon {
   margin-left: 56px;
   margin-right: 16px;
+}
+
+.content-pagination {
+  margin-top: 9px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-pagination__item {
+  margin-right: 20px;
+}
+
+.content-pagination__item_current {
+  color: #444444;
+  font-size: 18px;
+}
+
+.content-description {
+  border-top: 1px solid #767676;
+  padding-top: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-description__item {
+  margin-right: 40px;
+  font-size: 14px;
+  line-height: 22px;
+  width: 370px;
+}
+
+.footer-section {
+  background-color: #777777;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 53px;
+}
+
+.footer-description {
+  margin-right: 150px;
+}
+
+.footer-description__item {
+  color: #ffffff;
+}
+
+.footer-description__item__link {
+  color: #ffffff;
+}
+
+.footer-menu-list__item {
+  margin-bottom: 15px;
+}
+
+.footer-menu-list__item__link {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

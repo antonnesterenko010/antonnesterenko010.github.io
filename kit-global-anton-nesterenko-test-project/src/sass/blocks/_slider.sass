@@ -1,16 +1,28 @@
 .slider
   &-section
+    @media (max-width: 1248px)
+      display: none
   &-list
     z-index: -1
+    position: absolute
+    top: -63px
+    left: 177px
     &__item
   &-arrows
-    display: flex
-    justify-content: space-between
     &__left
       outline: none
       border: none
       background: none
+      position: absolute
+      left: 303px
+      top: 155px
     &__right
       outline: none
       border: none
       background: none
+      position: absolute
+      top: 155px
+      right: 325px
+.main
+  padding-top: 329px
+  position: relative
