@@ -1,22 +1,29 @@
 .slider
   &-section
+  &-block
     position: relative
-    top: -63px
-    left: 5px
-    @media (max-width: 1248px)
-      display: none
+    // @media (max-width: 1248px)
+    //   display: none
   &-list
     z-index: -1
     &__item
-      img
-        margin: auto
+      height: 410px
+      &__image
+        img
+          margin: 0
+          transform: translate(-50%, -50%)
+          position: absolute
+          top: 50%
+          left: 50%
+          // transform: translateY(calc(-50% - 0px))
   &-arrow
     outline: none
     border: none
     background: none
     position: absolute
     &_left
-      left: 205px
+      left: 50%
+      transform: translateX(calc(-50% - 470px))
       top: 220px
     &_right
       top: 215px
