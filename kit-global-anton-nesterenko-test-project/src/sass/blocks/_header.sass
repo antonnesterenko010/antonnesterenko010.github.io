@@ -5,12 +5,23 @@
     display: flex
     justify-content: space-between
     padding-top: 36px
-    padding-bottom: 70px
+    padding-bottom: 64px
+    @media (max-width: 767px)
+      flex-direction: column
+      padding-top: 15px
+      padding-bottom: 35px
   &-logo
     padding-top: 27px
-    width: 273px
-    height: 100px
+    @media (max-width: 767px)
+      padding-top: 0
+      margin: auto
+      margin-bottom: 20px
+    img
+      width: 273px
+      height: 100px
   &-info
+    @media (max-width: 767px)
+      margin: auto
     &__phonelist
       margin-bottom: 7px
       &__item
@@ -19,6 +30,9 @@
           font-size: 40px
           letter-spacing: 1px
           line-height: 46px
+          @media (max-width: 767px)
+            font-size: 30px
+            margin-left: 60px
     &__feedback-btn
       outline: none
       border: none
@@ -30,4 +44,7 @@
       line-height: 22px
       margin-left: 87px
       letter-spacing: 0.6px
+      @media (max-width: 767px)
+        font-size: 18px
+        margin-left: 125px
     
