@@ -753,6 +753,7 @@ main {
   .menu-list__item__link::before {
     bottom: 0px;
     right: -15px;
+    height: 18px;
   }
 }
 
@@ -760,6 +761,7 @@ main {
   .menu-list__item__link::before {
     right: -2px;
     bottom: 0;
+    height: 15px;
   }
 }
 
