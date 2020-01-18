@@ -11,9 +11,11 @@ $(document).ready(function () {
   // feedback window open/close
   $('.header-info__feedback-btn').click(function () {
     $('.feedback').fadeIn();
+    $('.feedback-dialog').css('opacity', '1');
   });
   $('.feedback-close-btn').click(function () {
     $('.feedback').fadeOut();
+    $('.feedback-dialog').css('opacity', '0');
   });
   // validate.js
 $("#feedback-form").validate({

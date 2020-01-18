@@ -1,7 +1,11 @@
 .content
   &-section
     padding-top: 3px
-    padding-bottom: 67px
+    padding-bottom: 197px
+    @media (max-width: 991px)
+      padding-bottom: 50px
+    @media (max-width: 485px)
+      padding-bottom: 20px
   &-navigation
     display: flex
     &__item
@@ -21,12 +25,12 @@
   &-blocks
     display: flex
     margin-top: 17px
+    @media (max-width: 800px)
+      margin-top: 5px
     @media (max-width: 485px)
       flex-direction: column
   &-leftblock
-    margin-right: 20px
-    @media (max-width: 485px)
-      // display: flex
+    margin-right: 5px
     &__list
       font-size: 18px
       line-height: 30px
@@ -38,8 +42,7 @@
         list-style: disc
         &__item
           line-height: 22px
-          // width: 200px
-          // width: 178px
+          width: 178px
           &__link
           &_active
             +bold
@@ -67,24 +70,24 @@
           font-size: 18px
           text-align: left
   &-rightblock
-    // margin-left: -10px
+    margin-left: -10px
     &__card-list
       display: flex
       flex-wrap: wrap
-      // justify-content: space-between
-      // width: 795px
+      width: 795px
       margin-top: 10px
+      @media (max-width: 1050px)
+        width: 550px
+      @media (max-width: 800px)
+        justify-content: center
+        width: auto
+      @media (max-width: 485px)
+        justify-content: center
       &__item
-        // width: 250px
-        // height: 380px
         margin-right: 15px
         margin-bottom: 20px
         background-color: $bgcolor
         padding: 20px
-        // @media (max-width: 991px)
-        //   width: 200px
-        // @media (max-width: 767px)
-        //   width: 150px
         &__image
         &__title
           color: $maincolor
@@ -94,11 +97,11 @@
           letter-spacing: 0.45px
           margin-top: 17px
           width: 210px
-          // margin-right: 22px
           margin-bottom: 55px
           @media (max-width: 1050px)
             font-size: 15px
             margin-bottom: 20px
+            text-align: center
         &__price
           color: $maincolor
           display: block
@@ -111,17 +114,17 @@
             display: inline-block
           @media (max-width: 1050px)
             font-size: 22px
+            text-align: center
         &__icon
           margin-left: 56px
-          // margin-right: 16px
           @media (max-width: 1050px)
             margin-left: 40px
             margin-right: 0
   &-pagination
     margin-top: 10px
     margin-left: 30px
-    margin-right: 20px
-    margin-bottom: 64px
+    margin-right: 10px
+    margin-bottom: 60px
     display: flex
     justify-content: center
     @media (max-width: 991px)
@@ -133,7 +136,7 @@
         font-size: 18px
   &-description
     border-top: 1px solid $maincolor
-    // width: 780px
+    width: 780px
     padding-top: 25px
     display: flex
     @media (max-width: 991px)
@@ -143,7 +146,7 @@
       margin-right: 55px
       font-size: 14px
       line-height: 22px
-      // width: 355px
+      width: 355px
       @media (max-width: 991px)
         width: auto
         margin-bottom: 20px

@@ -17,6 +17,11 @@
     position: absolute
     right: -27px
     top: -27px
+    @media (max-width: 485px)
+      width: 15px
+      height: 15px
+      right: -15px
+      top: -15px
     span
       &::before
         content: ''
@@ -29,6 +34,9 @@
         height: 1px
         background-color: #ffffff
         transform: rotate(-45deg)
+        @media (max-width: 485px)
+          width: 10px
+          margin-left: -5px
       &::after
         content: ''
         position: absolute
@@ -40,23 +48,38 @@
         height: 1px
         background-color: #ffffff
         transform: rotate(45deg)
+        @media (max-width: 485px)
+          width: 10px
+          margin-left: -5px
 
   &-dialog
+    transition: 1s
     z-index: 10
-    opacity: 1
+    opacity: 0
     background: #ffffff
     width: 466px
     margin: auto
-    margin-top: 284px
-    padding: 35px 63px 26px 64px
-    position: relative
+    padding: 30px 63px 26px 64px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateX(calc(-50% - -14px)) translateY(calc(-50% - -342px))
+    @media (max-width: 991px)
+      width: 350px
+    @media (max-width: 485px)
+      width: 250px
+      padding: 20px 20px 10px 20px
   &-title
     color: $feedbackcolor
     +bold
     font-size: 24px
     text-transform: uppercase
     text-align: center
-    margin-bottom: 35px
+    margin-bottom: 23px
+    @media (max-width: 991px)
+      font-size: 20px
+    @media (max-width: 485px)
+      font-size: 14px
   &-form
     text-align: center
     position: relative
@@ -64,8 +87,12 @@
       width: 339px
       height: 40px
       border: 1px solid #c3c3c3
-      margin-bottom: 20px
+      margin-bottom: 14px
       position: relative
+      @media (max-width: 991px)
+        width: 200px
+      @media (max-width: 485px)
+        width: 150px
       &__title
         color: $feedbackcolor
         font-size: 14px
@@ -74,28 +101,60 @@
         margin-bottom: 20px
         width: 339px
         height: 140px
+        @media (max-width: 991px)
+          width: 200px
+          height: 100px
+        @media (max-width: 485px)
+          width: 150px
+          height: 80px
     &__btn
       display: block
       margin: auto
-      padding: 14px 16px 15px 17px
+      padding: 10px 16px 10px 15px
       color: $menu
       background: $bgcolormenu
       outline: none
       border: none
       text-transform: uppercase
+      font-size: 18px
+      @media (max-width: 991px)
+        font-size: 16px
+      @media (max-width: 485px)
+        font-size: 14px
+        padding: 8px 12px 8px 12px
     label
       position: absolute
       left: 20px
       font-style: italic
       font-size: 14px
       color: $errorcolor
+      @media (max-width: 991px)
+        left: 13px
+        font-size: 13px
+      @media (max-width: 485px)
+        left: 40px
 #feedback_name-error
   position: absolute
   top: 35px
+  @media (max-width: 485px)
+    font-size: 12px
+    width: 100px
+    top: 31px
+    
 #feedback_tel-error
   position: absolute
-  top: 120px
+  top: 115px
+  @media (max-width: 485px)
+    font-size: 12px
+    width: 100px
+    top: 111px
+  
 #feedback_email-error
   position: absolute
-  top: 205px  
+  top: 195px
+  @media (max-width: 485px)
+    font-size: 12px
+    width: 100px
+    top: 191px
+    
     
