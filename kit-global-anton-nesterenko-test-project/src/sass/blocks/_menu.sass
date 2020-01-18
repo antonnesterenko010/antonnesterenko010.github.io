@@ -14,44 +14,81 @@
       margin-left: 10px
       margin-right: 10px
     &__item
-        
       @media (max-width: 991px)
-        width: 50px
+        // width: 50px
         text-align: center
       @media (max-width: 991px)
         &:nth-child(3)
           .menu-list__item__link
             &::before
-              right: -50px
-              bottom: 57px
+              right: -15px
+              bottom: 7px
         &:nth-child(4)
           .menu-list__item__link
             &::before
-              right: -70px
-              bottom: 32px
+              right: -15px
+              bottom: 7px
       @media (max-width: 767px)
         &:nth-child(3)
           .menu-list__item__link
             &::before
-              right: -30px
-              bottom: 36px
+              right: -15px
+              bottom: 0px
         &:nth-child(4)
           .menu-list__item__link
             &::before
-              right: -35px
-              bottom: 18px
+              right: -15px
+              bottom: 0px
+      // @media (max-width: 484px)
+      //   &:nth-child(3)
+      //     .menu-list__item__link
+      //       &::before
+      //         right: -2px
+      //         bottom: 0px
+      //   &:nth-child(4)
+      //     .menu-list__item__link
+      //       &::before
+      //         right: -2px
+      //         bottom: 0px
       @media (max-width: 439px)
         &:nth-child(3)
           .menu-list__item__link
             &::before
-              right: -13px
-              bottom: 36px
+              right: -2px
+              bottom: 0px
         &:nth-child(4)
           .menu-list__item__link
             &::before
+              right: -2px
+              bottom: 0px
+      @media (max-width: 384px)
+        &:nth-child(1)
+          .menu-list__item__link
+            &::before
+              height: 40px
+              right: -4px
+              bottom: -10px
+        &:nth-child(2)
+          .menu-list__item__link
+            &::before
+              height: 40px
+              right: -4px
+              bottom: -10px
+        &:nth-child(3)
+          .menu-list__item__link
+            &::before
+              height: 40px
+              right: -13px
+              bottom: 8px
+        &:nth-child(4)
+          .menu-list__item__link
+            &::before
+              height: 40px
               right: -17px
-              bottom: 19px
-      
+              bottom: 0px
+      @media (max-width: 384px)
+        width: 50px
+        margin: auto
         
       &:last-child
         .menu-list__item__link
@@ -80,8 +117,9 @@
           bottom: 6px
           @media (max-width: 767px)
             bottom: 0px
+            right: -15px
           @media (max-width: 439px)
-            right: -5px
+            right: -2px
             bottom: 0
         &:hover
           &::after
