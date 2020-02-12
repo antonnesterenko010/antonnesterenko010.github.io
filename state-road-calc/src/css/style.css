@@ -1,0 +1,18 @@
+/* .test-title {
+  text-align: center;
+}
+.test-blocks {
+  display: flex;
+  justify-content: space-around;
+}
+.calc-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.calc-form__input {
+  margin: 20px 0;
+} */
+.calc {
+  margin-top: 50px;
+}
