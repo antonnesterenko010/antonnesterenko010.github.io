@@ -4,11 +4,6 @@ $(document).ready(function(){
     $tattooWidth = $('input#t2').val();
     $tattooColor = $('select#t3 option:selected').attr('data-color');
     $tattooStyle = $('select#t4 option:selected').attr('data-style');
-    // if ($tattooColor == 1) {
-    //   $('.qwe').hide();
-    // } else {
-    //   $('.qwe').show();
-    // }
 
     $price =  $tattooLenght * $tattooWidth * $tattooColor * $tattooStyle;
 
@@ -26,7 +21,7 @@ $(document).ready(function(){
   })
 
   $('#btn-result').click(function(){
-    $('.sum').text($price);
+    $('.sum2').text($price);
   })
 
 })
