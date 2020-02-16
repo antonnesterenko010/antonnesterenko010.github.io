@@ -25,7 +25,7 @@
           </div>
           <div class="form-group">
             <label for="t3">Выберите цвет</label>
-            <select name="" id="t3" class="form-control">
+            <select name="tcolor" id="t3" class="form-control" required>
               <option selected hidden>Выбор</option>
               <option data-color="10" value="Черно-белая">Черно-белая</option>
               <option data-color="12" value="Цветная">Цветная</option>
@@ -33,7 +33,7 @@
           </div>
             <div class="form-group">
             <label for="t4">Выберите стиль</label>
-              <select name="" id="t4" class="form-control">
+              <select name="tstyle" id="t4" class="form-control" required>
                 <option selected hidden>Выбор</option>
                 <option data-style="1" value="Реализм">Реализм</option>
                 <option data-style="1" value="Треш полька">Треш полька</option>
@@ -47,24 +47,19 @@
                 <option data-style="1" value="Надпись">Надпись</option>
               </select>
             </div>
-            
+            <input type="text" name="tprice" value="" id="tprice" style="display: none;" >
             <input type="text" name="name" class="form-control  mb-4" required placeholder="Укажите, пожалуйста, ваше имя ">
             <input type="text" name="phone" class="form-control form__input__tel mb-4" required placeholder="+38 (000) 000-00-00">
             <input type="text" name="messenger" class="form-control  mb-4" placeholder="Viber или Telegram?">
             <div class="dropzone">
                 <div class="info"></div>
             </div>
-            <div class="info_hidden">
-              <div name="t-price" class="info-price"></div>
-              <div name="t-color" class="info_color"></div>
-              <div name="t-style" class="info_style"></div>
-            </div>
             <button class="mt-2 mb-5" id="btn-result">Посчитать</button>
         </form>
       </div>
       <div class="sum">
         <div class="sum1">Итого</div>
-        <div class="sum2" id="output"></div>
+        <div class="sum2" id="output" name="tprice"></div>
       </div>
     </div>
   </div>

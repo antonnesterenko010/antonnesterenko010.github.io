@@ -39,15 +39,14 @@ if(isset($_POST['phone'])) {
             [$_POST['t-width'] . ' см'], // сюда вписать значение из атрибута "name" пример: <input name="phone">
         ]);
         $lead->addCustomField(267513, [ // ID  поля в которое будт приходить заявки
-            [$_POST['t-color']], // сюда вписать значение из атрибута "name" пример: <input name="phone">
+            [$_POST['tcolor']], // сюда вписать значение из атрибута "name" пример: <input name="phone">
         ]);
         $lead->addCustomField(267515, [ // ID  поля в которое будт приходить заявки
-            [$_POST['t-style']], // сюда вписать значение из атрибута "name" пример: <input name="phone">
+            [$_POST['tstyle']], // сюда вписать значение из атрибута "name" пример: <input name="phone">
         ]);
         $lead->addCustomField(267517, [ // ID  поля в которое будт приходить заявки
-            [$_POST['t-price'] . ' грн'], // сюда вписать значение из атрибута "name" пример: <input name="phone">
+            [$_POST['tprice'] . ' грн'], // сюда вписать значение из атрибута "name" пример: <input name="phone">
         ]);
-
         $id = $lead->apiAdd();
 
       // Получение экземпляра модели для работы с контактами

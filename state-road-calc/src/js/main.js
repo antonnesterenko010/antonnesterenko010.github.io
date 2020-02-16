@@ -7,23 +7,26 @@ $(document).ready(function(){
 
     $price =  $tattooLenght * $tattooWidth * $tattooColor * $tattooStyle;
 
-    if ($price < 400) {
-      $('#btn-result').click(function () {
-        $('.sum2').text('400');
-      })
-    }
-    if ($price > 4000) {
-      $('#btn-result').click(function () {
-        $('.sum2').text('Ваша татуировка займёт более одного сеанса. Стоимость сеанса 2000-3000 грн, в зависимости от сложности работы. В ближайшее время наш менеджер свяжется с Вами и предоставит детальную консультацию. Спасибо');
-        $('.sum1').hide();
-      })
-    }
+    // if ($price < 400) {
+    //   $('#btn-result').click(function () {
+    //     $('.sum2').text('400');
+    //   })
+    // }
+    // if ($price > 4000) {
+    //   $('#btn-result').click(function () {
+    //     $('.sum2').text('Ваша татуировка займёт более одного сеанса. Стоимость сеанса 2000-3000 грн, в зависимости от сложности работы. В ближайшее время наш менеджер свяжется с Вами и предоставит детальную консультацию. Спасибо');
+    //     $('.sum1').hide();
+    //   })
+    // }
 
     $tattooColorName = $('select#t3 option:selected').val();
     $tattooStyleName = $('select#t4 option:selected').val();
-    $('.info_price').text($price);
-    $('.info_color').text($tattooColorName);
-    $('.info_style').text($tattooStyleName);
+
+    var tprice = document.getElementById('tprice');
+    tprice.value = $price;
+    // $('.info_price').text($price);
+    // $('.info_color').text($tattooColorName);
+    // $('.info_style').text($tattooStyleName);
 
   })
   // $('#btn-result').click(function(){
@@ -42,6 +45,12 @@ $("#calc").validate({
       },
       messenger: {
         required: true,
+      },
+      tcolor: {
+        required: true,
+      },
+      tstyle: {
+        required: true,
       }
     },
     messages: {
@@ -53,6 +62,12 @@ $("#calc").validate({
       },
       messenger: {
         required: "Укажите свой Viber или Telegram"
+      },
+      tcolor: {
+        required: "Выберите вариант цвета желаемого тату"
+      },
+      tstyle: {
+        required: "Выберите стиль татуировки"
       }
     },
     submitHandler: function (form) {
@@ -62,6 +77,12 @@ $("#calc").validate({
         data: $('#calc').serialize(),
         success: function (data) {
           $('.sum2').text($price);
+          if ($price < 400) {
+            $('.sum2').text('400');
+          }
+          if ($price > 4000) {
+            $('.sum2').text('Ваша татуировка займёт более одного сеанса. Стоимость сеанса 2000-3000 грн, в зависимости от сложности работы. В ближайшее время наш менеджер свяжется с Вами и предоставит детальную консультацию. Спасибо');
+          }
           // $('form input[type="text"], form textarea').val('');
           alert('Спасибо! Ваша заявка отправлена :)');
         }
@@ -70,7 +91,7 @@ $("#calc").validate({
     invalidHandler: function (form) {
       $.ajax({
         success: function (data) {
-        $(".sum2").css("display", "none");
+        // $(".sum2").css("display", "none");
         }
       })
     }
