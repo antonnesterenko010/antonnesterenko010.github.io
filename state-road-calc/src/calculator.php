@@ -31,9 +31,22 @@ if(isset($_POST['phone'])) {
         // $lead['responsible_user_id'] = 2462338; // ID ответсвенного 
         // $lead['pipeline_id'] = 1207249; // ID воронки
 
-        // $lead->addCustomField(305117, [ // ID  поля в которое будт приходить заявки
-        //     [$_POST['city']], // сюда вписать значение из атрибута "name" пример: <input name="phone">
-        // ]);
+        $lead->addCustomField(267509, [ // ID  поля в которое будт приходить заявки
+            [$_POST['t-lenght'] . ' см'], // сюда вписать значение из атрибута "name" пример: <input name="phone">
+        ]);
+
+        $lead->addCustomField(267511, [ // ID  поля в которое будт приходить заявки
+            [$_POST['t-width'] . ' см'], // сюда вписать значение из атрибута "name" пример: <input name="phone">
+        ]);
+        $lead->addCustomField(267513, [ // ID  поля в которое будт приходить заявки
+            [$_POST['t-color']], // сюда вписать значение из атрибута "name" пример: <input name="phone">
+        ]);
+        $lead->addCustomField(267515, [ // ID  поля в которое будт приходить заявки
+            [$_POST['t-style']], // сюда вписать значение из атрибута "name" пример: <input name="phone">
+        ]);
+        $lead->addCustomField(267517, [ // ID  поля в которое будт приходить заявки
+            [$_POST['t-price'] . ' грн'], // сюда вписать значение из атрибута "name" пример: <input name="phone">
+        ]);
 
         $id = $lead->apiAdd();
 
@@ -47,13 +60,15 @@ if(isset($_POST['phone'])) {
         $contact->addCustomField(208251, [
             [$_POST['phone'], 'MOB'],
         ]);
-
-
+        
+        $contact->addCustomField(267507, [
+            [$_POST['messenger']],
+        ]);
+        
         $contact->addCustomField(266957, [
             [$_POST['file']],
         ]);
-
-
+        
 
       // Добавление нового контакта и получение его ID
       $id = $contact->apiAdd();

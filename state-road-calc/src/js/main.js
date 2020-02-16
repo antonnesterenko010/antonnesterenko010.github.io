@@ -18,10 +18,61 @@ $(document).ready(function(){
         $('.sum1').hide();
       })
     }
-  })
 
-  $('#btn-result').click(function(){
-    $('.sum2').text($price);
-  })
+    $tattooColorName = $('select#t3 option:selected').val();
+    $tattooStyleName = $('select#t4 option:selected').val();
+    $('.info_price').text($price);
+    $('.info_color').text($tattooColorName);
+    $('.info_style').text($tattooStyleName);
 
+  })
+  // $('#btn-result').click(function(){
+  //   $('.sum2').text($price);
+  // })
+// masked input
+  $(".form__input__tel").mask("+38 (999) 999-99-99");
+// jquery validate init
+$("#calc").validate({
+    rules: {
+      name: {
+        required: true
+      },
+      phone: {
+        required: true
+      },
+      messenger: {
+        required: true,
+      }
+    },
+    messages: {
+      name: {
+        required: "Пожалуйста, укажите ваше имя"
+      },
+      phone: {
+        required: "Для связи с вами нам необходим ваш мобильный номер"
+      },
+      messenger: {
+        required: "Укажите свой Viber или Telegram"
+      }
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        url: 'calculator.php',
+        type: 'POST',
+        data: $('#calc').serialize(),
+        success: function (data) {
+          $('.sum2').text($price);
+          // $('form input[type="text"], form textarea').val('');
+          alert('Спасибо! Ваша заявка отправлена :)');
+        }
+      })
+    },
+    invalidHandler: function (form) {
+      $.ajax({
+        success: function (data) {
+        $(".sum2").css("display", "none");
+        }
+      })
+    }
+  });
 })
