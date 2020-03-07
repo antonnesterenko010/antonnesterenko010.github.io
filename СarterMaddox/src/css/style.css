@@ -770,7 +770,6 @@ ul {
 .hero-section {
   background: #323234;
   padding-top: 140px;
-  padding-bottom: 140px;
 }
 
 @media (max-width: 1200px) {
@@ -1088,8 +1087,69 @@ ul {
 }
 
 .stats-section {
-  padding-top: 100px;
-  background-size: contain;
-  background-position: left center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: url("../img/stats/background.png") no-repeat #323234;
+  background-size: 100% 100%;
+  background-position: 100% 50%;
+  z-index: 20;
+}
+
+.stats-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stats-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px;
+  width: 300px;
+  vertical-align: middle;
+}
+
+.stats-item__image {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stats-item__title {
+  font-size: 45px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+}
+
+.stats-item__subtitle {
+  font-size: 13px;
+  font-family: 'SF Pro Display-Thin', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 140%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
