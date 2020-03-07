@@ -117,6 +117,9 @@
   color: #ffffff
   text-align: center
   +mr
+  @media (max-width: 768px)
+    font-size: 36px
+    margin-top: 150px
 .header-btns
   display: flex
   justify-content: center
@@ -130,8 +133,18 @@
   letter-spacing: 0.1em
   font-size: 17px
   +sf-sb
+  outline: none
+  @media (max-width: 768px)
+    padding: 10px 10px
+    font-size: 16px
+    margin-right: 10px
   &:hover
     background: rgba(255,255,255,0.1)
     border-color: #ffffff
     color: #A2F21E
     cursor: pointer
+    @media (max-width: 1200px)
+      background: none
+      border: 1px solid #A2F21E
+      color: #ffffff
+      cursor: none
