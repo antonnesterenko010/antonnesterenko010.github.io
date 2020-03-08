@@ -1,0 +1,150 @@
+
+.header-section 
+  background: url('../img/header/background.jpg') no-repeat
+  background-size: cover
+  background-position: center
+  padding-bottom: 470px
+
+.header-block 
+  padding-top: 31px
+.header-logo
+  z-index: 5
+  position: fixed
+  left: 250px
+  @media (max-width: 1200px)
+    left: 10%
+  &_active
+    display: block
+    position: fixed
+    top: 7%
+    left: 50%
+    transform: translate(-50%, -50%)
+    @media (max-width: 1200px)
+      top: 10%
+      left: 50%
+      transform: translate(-50%, -50%)
+  &__name
+    display: none
+    &_active
+      display: block
+      position: fixed
+      top: 33px
+      left: 310px
+      z-index: 5
+      @media (max-width: 1200px)
+        left: 15%
+      @media (max-width: 992px)
+        left: 17%
+      @media (max-width: 768px)
+        left: 19%
+      @media (max-width: 576px)
+        display: none
+.header-menu 
+  display: flex
+  justify-content: space-between
+  padding-top: 20px
+  width: 100%
+  z-index: 6
+  // margin: auto
+  // width: 1120px
+  // @media (max-width: 1200px)
+  //   width: 900px
+  &_active
+    position: fixed
+    // left: 0
+    width: 100%
+    background: rgba(0,0,0,0.7)
+  &__btn
+    position: relative
+    z-index: 5
+    left: 75%
+    // @media (min-width: 1200px)
+    //   left: 1350px
+    @media (max-width: 1200px)
+      left: 85%
+    @media (max-width: 768px)
+      left: 80%
+    @media (max-width: 576px)
+      left: 70%
+    &_active
+      position: fixed
+      right: 230px
+    &__span
+      position: absolute
+      margin-top: 23px
+      width: 21px
+      height: 1.5px
+      background-color: #4DE845
+      &::before
+        position: absolute  
+        content: ''
+        top: 50%
+        margin-top: -1px
+        width: 21px
+        height: 1.5px
+        background-color: #4DE845        
+        transform: translateY(-6px)
+        transition: 0.5s
+      &::after
+        position: absolute  
+        content: ''
+        top: 50%
+        margin-top: -1px
+        width: 21px
+        height: 1.5px
+        background-color: #4DE845
+        transform: translateY(6px)        
+        transition: 0.5s
+  &__name
+    letter-spacing: 0.1em
+    margin-left: 35px
+    font-size: 16px
+    color: #ffffff
+    text-transform: uppercase
+    &_active
+      opacity: 0
+.header-menu__btn_active
+  span
+    height: 0
+    &::before
+      transform: rotate(35deg)
+    &::after
+      transform: rotate(-35deg)
+
+.header-title
+  font-size: 47px
+  margin-top: 220px
+  color: #ffffff
+  text-align: center
+  +mr
+  @media (max-width: 768px)
+    font-size: 36px
+    margin-top: 150px
+.header-btns
+  display: flex
+  justify-content: center
+.header-btn
+  background: none
+  border: 1px solid #A2F21E
+  border-radius: 32px
+  margin-right: 32px
+  padding: 20px 40px
+  color: #ffffff
+  letter-spacing: 0.1em
+  font-size: 17px
+  +sf-sb
+  outline: none
+  @media (max-width: 768px)
+    padding: 10px 10px
+    font-size: 16px
+    margin-right: 10px
+  &:hover
+    background: rgba(255,255,255,0.1)
+    border-color: #ffffff
+    color: #A2F21E
+    cursor: pointer
+    @media (max-width: 1200px)
+      background: none
+      border: 1px solid #A2F21E
+      color: #ffffff
+      cursor: none

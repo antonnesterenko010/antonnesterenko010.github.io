@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/SF Pro Display/');
+  src: url('../fonts/SF Pro Display/?#iefix') format('embedded-opentype'),
+    url('../fonts/SF Pro Display/SFProDisplay-Medium.woff') format('woff'),
+    url('../fonts/SF Pro Display/SFProDisplay-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;  
+  font-display: auto;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/SF Pro Display/');
+  src: url('../fonts/SF Pro Display/?#iefix') format('embedded-opentype'),
+    url('../fonts/SF Pro Display/SFProDisplay-Medium.woff') format('woff'),
+    url('../fonts/SF Pro Display/SFProDisplay-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;  
+  font-display: auto;
+}
+@font-face {
+  font-family: 'SF Pro Display-Thin';
+  src: url('../fonts/SF Pro Display/');
+  src: url('../fonts/SF Pro Display/?#iefix') format('embedded-opentype'),
+    url('../fonts/SF Pro Display/SFProDisplay-Thin.woff') format('woff'),
+    url('../fonts/SF Pro Display/SFProDisplay-Thin.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;  
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Morebi Rounded';
+  src: url('../fonts/Morebi Rounded/');
+  src: url('../fonts/Morebi Rounded/?#iefix') format('embedded-opentype'),
+    url('../fonts/Morebi Rounded/MorebiRounded-Regular.woff') format('woff'),
+    url('../fonts/Morebi Rounded/MorebiRounded-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;  
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'SF Pro Display Semibold';
+  src: url('../fonts/SF Pro Display/');
+  src: url('../fonts/SF Pro Display/?#iefix') format('embedded-opentype'),
+    url('../fonts/SF Pro Display/SFProDisplay-Semibold.woff') format('woff'),
+    url('../fonts/SF Pro Display/SFProDisplay-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;  
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Muli';
+  src: url('../fonts/Muli/');
+  src: url('../fonts/Muli/?#iefix') format('embedded-opentype'),
+    url('../fonts/Muli/Muli-Regular.woff') format('woff'),
+    url('../fonts/Muli/Muli-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;  
+  font-display: auto;
+}
+@mixin sf {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+}
+
+@mixin sf-tn {
+  font-family: 'SF Pro Display-Thin', sans-serif;
+  font-weight: 300;
+}
+@mixin sf-sb {
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  font-weight: 400;
+}
+
+@mixin mr {
+  font-family: 'Morebi Rounded', sans-serif;
+  font-weight: 400;
+}
+@mixin muli {
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+}

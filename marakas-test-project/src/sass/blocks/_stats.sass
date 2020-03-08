@@ -1,0 +1,85 @@
+.stats
+  &-section
+
+    padding-bottom: 200px
+    // background: url('../img/stats/background.png') no-repeat #323234
+    // background-size: 100% 100%
+    // background-position: 100% 50%
+    // z-index: 20
+    position: relative
+    @media (max-width: 1200px)
+      padding-top: 0
+      background: #151515
+      padding-bottom: 0
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 900px
+      background: url('../img/stats/background.png') no-repeat
+      background-size: 100% 100%
+      background-position: 100% 50%
+      top: -185px
+      left: 0
+      // z-index: 5
+      z-index: -1
+      @media (max-width: 1200px)
+        background: none
+    
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 900px
+      background: url('../img/slider/background.png') no-repeat
+      filter: invert(15%)
+      background-size: cover
+      top: 620px
+      left: 0
+      z-index: -2
+      @media (max-width: 1200px)
+        // background-size: contain
+        top: 500px
+        // top: 540px
+      @media (max-width: 768px)
+        top: 1300px
+        height: 800px
+      @media (max-width: 576px)
+        top: 1500px
+  &-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    // z-index: -2
+    @media (max-width: 1200px)
+      justify-content: center
+  &-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: 20px
+    width: 300px
+    @media (max-width: 1200px)
+      width: 350px
+    @media (max-width: 992px)
+      width: 300px
+    @media (max-width: 768px)
+      width: 350px
+
+    &__image
+      height: 120px
+      display: flex
+      align-items: center
+    &__title
+      font-size: 45px
+      +sf
+      color: #ffffff
+      margin: 0
+    &__subtitle
+      font-size: 13px
+      +sf-tn
+      color: #ffffff
+      text-transform: uppercase
+      line-height: 140%
+      text-align: center
