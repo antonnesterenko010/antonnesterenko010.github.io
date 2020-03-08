@@ -1359,6 +1359,10 @@ ul {
   }
 }
 
+.slider-item {
+  outline: none;
+}
+
 .slider-title {
   font-family: 'Morebi Rounded', sans-serif;
   font-weight: 400;
@@ -1465,5 +1469,86 @@ ul {
   padding: 5px 10px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.achieve-section {
+  background: #000203;
+  padding: 200px 0;
+  z-index: -2;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .achieve-section {
+    padding: 20px 0;
+  }
+}
+
+.achieve-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../img/achieve/background.png") no-repeat;
+  background-size: 60% 100%;
+  background-position: right center;
+  width: 1350px;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+  .achieve-section::before {
+    background: none;
+  }
+}
+
+.achieve-title {
+  font-family: 'Morebi Rounded', sans-serif;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 120%;
+  color: #ffffff;
+  -webkit-filter: none;
+          filter: none;
+}
+
+@media (max-width: 1200px) {
+  .achieve-title {
+    text-align: center;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .achieve-title {
+    font-size: 28px;
+  }
+}
+
+.achieve-subtitle {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 140%;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .achieve-subtitle {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .achieve-subtitle {
+    font-size: 13px;
+  }
+}
+
+.achieve-subtitle span {
+  color: #23D5FF;
 }
 /*# sourceMappingURL=style.css.map */
