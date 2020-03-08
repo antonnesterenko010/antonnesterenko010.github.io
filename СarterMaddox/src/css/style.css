@@ -775,7 +775,7 @@ ul {
 @media (max-width: 1200px) {
   .hero-section {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
   }
 }
 
@@ -1095,6 +1095,14 @@ ul {
   z-index: 20;
 }
 
+@media (max-width: 1200px) {
+  .stats-section {
+    padding-top: 0;
+    background: #323234;
+    padding-bottom: 0;
+  }
+}
+
 .stats-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1104,6 +1112,14 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .stats-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .stats-item {
@@ -1120,9 +1136,14 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 30px;
+  margin: 20px;
   width: 300px;
-  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .stats-item {
+    margin: 10px;
+  }
 }
 
 .stats-item__image {
