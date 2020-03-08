@@ -1,0 +1,106 @@
+.slider
+  &-section
+    // background: url('../img/slider/background.png') no-repeat
+    // background-size: cover
+    // position: relative
+    // &::before
+    //   content: ''
+    //   position: absolute
+    //   width: 100%
+    //   height: 100%
+    //   background: url('../img/slider/background.png') no-repeat
+    //   background-size: cover
+    //   top: 0
+    //   left: 0
+    //   z-index: -2
+  &-block
+    padding-top: 100px
+    padding-bottom: 200px
+    @media (max-width: 1200px)
+      padding-top: 50px
+      padding-bottom: 0
+  &-item
+  &-title
+    +mr
+    font-size: 47px
+    line-height: 120%
+    text-align: center
+    color: #ffffff
+    margin-bottom: 66px
+    @media (max-width: 1200px)
+      font-size: 36px
+      margin-bottom: 32px
+    @media (max-width: 768px)
+      font-size: 28px
+    &__icons
+      display: flex
+      justify-content: center
+      margin-bottom: 50px
+    &__icon
+      margin-right: 10px
+  &-subtitle
+    font-size: 27px
+    text-align: center
+    +sf
+    color: #ffffff
+    margin-bottom: 20px
+    @media (max-width: 1200px)
+      font-size: 22px
+    @media (max-width: 768px)
+      font-size: 18px
+    span
+      color: #63ED3B
+  &-dots
+    display: flex
+    justify-content: center
+    list-style-type: none
+    button
+      background: #ffffff
+      border-radius: 50%
+      padding: 5px
+      margin-right: 10px
+      border: none
+      outline: none
+      font-size: 0
+      cursor: pointer
+    &__active
+      background: #61EC3C
+      border-radius: 20px
+      // width: 10px
+      padding: 5px 10px
+      // margin: 0 10 px
+      margin-right: 10px
+    &__default
+      background: #ffffff
+      border-radius: 50%
+      // width: 10px
+      padding: 5px 5px
+      // margin: 0 10 px
+      margin-right: 10px
+// .slick
+//   &-dots
+//     display: flex
+//     justify-content: center
+//     li button::before
+//       content: ''
+
+//   &-active
+//     background: #61EC3C
+//     border-radius: 20px
+//     // width: 10px
+//     padding: 5px 10px
+//     // margin: 0 10 px
+//     margin-right: 10px
+.slick-active
+  button
+    background: #61EC3C
+    border: none
+    outline: none
+    font-size: 0
+    border-radius: 20px
+    // width: 10px
+    padding: 5px 10px
+    // margin: 0 10 px
+    margin-right: 10px
+    cursor: pointer
+    

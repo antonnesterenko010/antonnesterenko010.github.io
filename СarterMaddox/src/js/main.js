@@ -82,3 +82,11 @@ $(function () {
 
   });
 });
+$(document).ready(function(){
+
+  $('.slider-block').slick({
+    arrows: false,
+    dots: true,
+    dotsClass: 'slider-dots'
+  })
+})
