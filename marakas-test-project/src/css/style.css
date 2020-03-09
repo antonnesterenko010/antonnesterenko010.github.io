@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -562,7 +564,8 @@ ul {
   top: 7%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   overflow: hidden;
 }
 
@@ -571,7 +574,8 @@ ul {
     top: 10%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
   }
 }
 
@@ -675,8 +679,10 @@ ul {
   height: 1.5px;
   background-color: #4DE845;
   -webkit-transform: translateY(-6px);
-          transform: translateY(-6px);
+          -ms-transform: translateY(-6px);
+      transform: translateY(-6px);
   -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -689,8 +695,10 @@ ul {
   height: 1.5px;
   background-color: #4DE845;
   -webkit-transform: translateY(6px);
-          transform: translateY(6px);
+          -ms-transform: translateY(6px);
+      transform: translateY(6px);
   -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -714,12 +722,14 @@ ul {
 
 .header-menu__btn_active span::before {
   -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
+          -ms-transform: rotate(35deg);
+      transform: rotate(35deg);
 }
 
 .header-menu__btn_active span::after {
   -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
+          -ms-transform: rotate(-35deg);
+      transform: rotate(-35deg);
 }
 
 .header-title {
@@ -1898,6 +1908,7 @@ ul {
 }
 
 .contact-form__btn {
+  background: -o-linear-gradient(337.95deg, #A2F71E -31.66%, #3DE74C 70.81%);
   background: linear-gradient(112.05deg, #A2F71E -31.66%, #3DE74C 70.81%);
   border-radius: 30px;
   color: #000000;
@@ -1919,11 +1930,13 @@ ul {
 }
 
 .contact-form__btn:hover {
+  background: -o-linear-gradient(337.95deg, #3DE74C -31.66%, #A2F71E 70.81%);
   background: linear-gradient(112.05deg, #3DE74C -31.66%, #A2F71E 70.81%);
 }
 
 @media (max-width: 1200px) {
   .contact-form__btn:hover {
+    background: -o-linear-gradient(337.95deg, #A2F71E -31.66%, #3DE74C 70.81%);
     background: linear-gradient(112.05deg, #A2F71E -31.66%, #3DE74C 70.81%);
   }
 }
@@ -2013,4 +2026,3 @@ ul {
   margin-top: 24px;
   line-height: 130%;
 }
-/*# sourceMappingURL=style.css.map */
