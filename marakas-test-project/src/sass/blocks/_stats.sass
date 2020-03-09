@@ -1,11 +1,6 @@
 .stats
   &-section
-
     padding-bottom: 200px
-    // background: url('../img/stats/background.png') no-repeat #323234
-    // background-size: 100% 100%
-    // background-position: 100% 50%
-    // z-index: 20
     position: relative
     @media (max-width: 1200px)
       padding-top: 0
@@ -21,11 +16,9 @@
       background-position: 100% 50%
       top: -185px
       left: 0
-      // z-index: 5
       z-index: -1
       @media (max-width: 1200px)
         background: none
-    
     &::after
       content: ''
       position: absolute
@@ -38,9 +31,7 @@
       left: 0
       z-index: -2
       @media (max-width: 1200px)
-        // background-size: contain
         top: 500px
-        // top: 540px
       @media (max-width: 768px)
         top: 1300px
         height: 800px
@@ -50,7 +41,6 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    // z-index: -2
     @media (max-width: 1200px)
       justify-content: center
   &-item
