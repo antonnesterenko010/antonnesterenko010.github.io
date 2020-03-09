@@ -3,7 +3,9 @@ $('.header-menu__btn').click(function(e) {
   e.preventDefault;
   $(this).toggleClass('header-menu__btn_active');
   $('.menu-section').toggleClass('menu-section_active').fadeToggle();
+
   $('.header-logo').toggleClass('header-logo_active')(function () {
+    
     $('.header-logo').css('position', 'fixed').
       css('left', '750px').
       css('z-index', '5').
@@ -13,7 +15,6 @@ $('.header-menu__btn').click(function(e) {
   });
  
 });
-
 
 $(function () {
   menu_top = $('.header-menu').offset().top;
