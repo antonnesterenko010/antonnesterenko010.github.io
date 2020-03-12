@@ -1,4 +1,3 @@
-
 $('.header-menu__btn').click(function(e) {
   e.preventDefault;
   $(this).toggleClass('header-menu__btn_active');

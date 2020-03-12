@@ -6,6 +6,14 @@
   padding-bottom: 470px
   @media (max-width: 1200px)
     padding-bottom: 50px
+  &::before
+    content: ''
+    position: absolute
+    background: linear-gradient(180deg, rgba(5, 11, 30, 0.4) 5.9%, rgba(5, 11, 30, 0) 56.01%)
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
 
 .header-block 
   padding-top: 31px
@@ -15,6 +23,9 @@
   left: 250px
   @media (max-width: 1200px)
     left: 10%
+  @media (max-width: 768px)
+    width: 33px
+    height: 35px
   &_active
     display: block
     position: fixed
@@ -53,20 +64,25 @@
   &_active
     position: fixed
     width: 100%
+    height: 72px
     background: rgba(0,0,0,0.7)
   &__btn
     position: relative
     z-index: 5
+    top: -5px
     left: 75%
     @media (max-width: 1200px)
       left: 85%
     @media (max-width: 768px)
       left: 80%
-    @media (max-width: 576px)
-      left: 70%
     &_active
       position: fixed
-      right: 230px
+      top: 15px
+      // right: 230px
+      @media (max-width: 1200px)
+        left: 85%
+      @media (max-width: 768px)       
+        left: 80%
     &__span
       position: absolute
       margin-top: 23px
@@ -100,8 +116,12 @@
     color: #ffffff
     text-transform: uppercase
     margin-top: 17px
+    +sf
+    @media (max-width: 768px)
+      font-size: 0
     &_active
-      opacity: 0
+      // opacity: 0
+      font-size: 0px
       margin-bottom: 16px
 .header-menu__btn_active
   span
@@ -118,13 +138,22 @@
   text-align: center
   +mr
   @media (max-width: 768px)
-    font-size: 36px
-    margin-top: 150px
+    font-size: 42px
+    margin-top: 48px
+    margin-bottom: 36px
 .header-btns
   display: flex
   justify-content: center
   @media (max-width: 576px)
     flex-direction: column
+  &__main
+    @media (max-width: 768px)
+      display: none
+  &__resp
+    display: none
+    @media (max-width: 768px)
+      display: flex
+      justify-content: center
 .header-btn
   background: none
   border: 1px solid #A2F21E
@@ -137,12 +166,13 @@
   +sf-sb
   outline: none
   @media (max-width: 768px)
-    padding: 10px 10px
+    // padding: 10px 10px
     font-size: 16px
     margin-right: 10px
   @media (max-width: 576px)
+    padding: 20px 0
     margin: 20px auto
-    width: 150px
+    width: 200px
   &:hover
     background: rgba(255,255,255,0.1)
     border-color: #ffffff

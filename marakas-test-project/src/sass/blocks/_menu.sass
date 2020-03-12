@@ -23,14 +23,31 @@
       margin: 80px 10px
       flex-wrap: wrap
       justify-content: center
+  &-block__main
+    @media (max-width: 768px)
+      display: none
+  &-block__resp
+    display: none
+    @media (max-width: 768px)
+      display: flex
+    &-list
+      +mr
+      font-size: 42px
+      text-align: center
+      &__item
+        margin: 20px auto
+        text-transform: uppercase
+        a
+          color: #ffffff
+        &:first-child
+          a
+            color: #4DE845
   &-list
     padding-left: 0
     +muli
     @media (max-width: 1200px)
       padding-left: 0
       margin: 10px
-
-
     &__title
       font-size: 24px
       color: #323234

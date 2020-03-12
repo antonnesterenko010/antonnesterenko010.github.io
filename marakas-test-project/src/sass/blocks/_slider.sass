@@ -1,5 +1,26 @@
 .slider
   &-section
+    position: relative
+    &::before
+      content: ''
+      background: url('../img/slider/background.png') no-repeat
+      
+      background-size: cover
+      z-index: -5
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+    &::after
+      content: ''
+      z-index: -5
+      background: rgba(5, 18, 26, 0.35)
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%      
   &-block
     padding-top: 100px
     padding-bottom: 170px

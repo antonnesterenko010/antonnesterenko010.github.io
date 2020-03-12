@@ -1,31 +1,59 @@
 .achieve
   &-section
-    background: #000203
-    padding: 200px 0
-    z-index: -2
-    position: relative
+    display: flex
+    justify-content: space-between
+    background: rgb(0,2,3)
+    
+  &-info
+    margin-left: 115px
+    margin-top: 303px
+    // background: linear-gradient(90deg, rgba(0,2,3,1) 0%, rgba(26,38,50,1) 68%)
+    // padding: 200px 0
+    // z-index: -2
+    // position: relative
+  &-image
+    background: rgb(0,2,3)
+    background: linear-gradient(90deg, rgba(0,2,3,1) 0%, rgba(26,38,50,1) 20%)
+    img
+      opacity: 0.1
+      width: 100%
+      height: 100%
     @media (max-width: 1200px)
       padding: 20px 0
     &::before
-      content: ''
-      position: absolute
-      top: 0
-      right: 0
-      background: url('../img/achieve/background.png') no-repeat 
-      background-size: 60% 100%
-      background-position: right center
-      width: 1350px
-      height: 100%
-      z-index: -1
-      opacity: 0.5
+      // content: ''
+      // position: absolute
+      // top: 0
+      // right: 0
+      // background: url('../img/achieve/background.png') no-repeat 
+      // background-size: 60% 100%
+      // background-position: right center
+      // width: 1380px
+      // // width: 
+      // height: 100%
+      // z-index: -1
+      // opacity: 0.5
       @media (max-width: 1200px)
         background: none
+    &::after
+      // content: ''
+      // position: absolute
+      // top: 0
+      // left: 47%
+      // background: rgb(0,2,3)
+      // background: linear-gradient(180deg, rgba(0,2,3,1) 0%, rgba(26,38,50,1) 40%)
+      
+      // width: 100px
+      // height: 100%
+      // z-index: 100
+      // box-shadow: 0, 0, 10px, red
   &-title
     +mr
     font-size: 47px
     line-height: 120%
     color: #ffffff
     filter: none
+    margin-bottom: 26px
     @media (max-width: 1200px)
       text-align: center
       font-size: 36px
