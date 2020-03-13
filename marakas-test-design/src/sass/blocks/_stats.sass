@@ -6,7 +6,7 @@
     @media (max-width: 1200px)
       padding-top: 0
       background: #151515
-      padding-bottom: 0
+      padding-bottom: 72px
     &::before
       content: ''
       position: absolute
@@ -19,31 +19,26 @@
       left: 0
       z-index: -1
       @media (max-width: 1200px)
-        background: none
-    &::after
-      // content: ''
-      // position: absolute
-      // width: 100%
-      // height: 900px
-      // background: url('../img/slider/background.png') no-repeat
-      // filter: invert(15%)
-      // background-size: cover
-      // top: 620px
-      // left: 0
-      // z-index: -2
-      @media (max-width: 1200px)
-        top: 500px
+        top: -220px
+        height: 1200px
       @media (max-width: 768px)
-        top: 1300px
-        height: 800px
+        background: url('../img/stats/background-resp.png') no-repeat
+        top: -60px
+        background-size: 100% 100%
+        height: 1700px
       @media (max-width: 576px)
-        top: 1500px
+        background: url('../img/stats/background-resp.png') no-repeat
+        background-size: 100% 100%
+        height: 1750px
   &-list
     display: flex
     flex-wrap: wrap
     justify-content: space-between
     @media (max-width: 1200px)
       justify-content: center
+      margin-top: 80px
+    @media (max-width: 768px)
+      margin-top: 0
   &-item
     display: flex
     flex-direction: column
@@ -62,6 +57,14 @@
       height: 120px
       display: flex
       align-items: center
+      &__main
+        @media (max-width: 576px)
+          display: none
+      &__resp
+        display: none
+        @media (max-width: 576px)
+          display: block
+          height: 80px
     &__title
       font-size: 45px
       +sf
@@ -75,3 +78,5 @@
       line-height: 140%
       text-align: center
       margin: 13px 0
+      @media (max-width: 576px)
+        width: 60%

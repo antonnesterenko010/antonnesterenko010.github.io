@@ -7,10 +7,10 @@
     
     @media (max-width: 1200px)
       padding-top: 100px
-      padding-bottom: 0px
+      padding-bottom: 100px
     @media (max-width: 768px)
       padding-top: 72px
-      padding-bottom: 50px
+      padding-bottom: 0
     &::before
       content: ''
       width: 100%
@@ -76,8 +76,16 @@
           margin-left: 0
         &::after
           left: 625px
+          @media (max-width: 1200px)
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - -220px), calc(-50% - -15px))
         &::before
           left: 629px
+          @media (max-width: 1200px)
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - -220px), calc(-50% - -15px))
       .hero-item__info__subtitle
         @media (max-width: 1200px)
           text-align: right
@@ -88,12 +96,17 @@
           margin-right: 16px
         &::after
           left: 0
-          // @media (max-width: 1200px)
-          //   left: 500px
+          @media (max-width: 1200px)
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - -220px), calc(-50% - -75px))
     &:nth-child(3)
       .hero-item__info
         &::after
-          height: 1.5px
+          height: 0.5px
+          @media (max-width: 1200px)
+            width: 0.5px
+            height: 75px
     &:nth-child(4)
       flex-direction: row-reverse
       @media (max-width: 1200px)
@@ -105,8 +118,16 @@
           margin-left: 0
         &::after
           left: 625px
+          @media (max-width: 1200px)
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - -220px), calc(-50% - -15px))
         &::before
           left: 629px
+          @media (max-width: 1200px)
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - -220px), calc(-50% - -15px))
       .hero-item__info__subtitle
         @media (max-width: 1200px)
           text-align: right
@@ -118,11 +139,31 @@
         &::after
           left: 0
           height: 1.5px
+          @media (max-width: 1200px)
+            height: 75px
+            width: 0.5px
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - -220px), calc(-50% - -85px))
+    &:nth-child(5)
+      .hero-item__image
+        img
+          width: 100%
+      .hero-item__info
+        &::after
+          height: 75px
+          width: 0.5px
+          left: 50%
+          top: 50%
+          transform: translate(calc(-50% - 220px), calc(-50% - -85px))
     &:nth-child(6)
       .hero-item__info__title
         text-align: right
       .hero-item__info__subtitle
         text-align: right
+      .hero-item__image
+        img
+          width: 100%
     &__image
       width: 100%
       position: relative
@@ -131,6 +172,7 @@
         width: auto
         display: flex
         justify-content: center
+        
 
       @media (max-width: 768px)
         min-width: 1px
@@ -165,7 +207,10 @@
           left: 50%
           width: 0.5px
           height: 75px
-          transform: translate(calc(-50% - 270px), calc(-50% - 146px))
+          transform: translate(calc(-50% - 220px), calc(-50% - -75px))
+        @media (max-width: 576px)
+          display: none
+          
       &__title
         color: #A2F81D
         +mr
@@ -188,8 +233,11 @@
           border: 1px solid #A2F81D
           background: transparent
           @media (max-width: 1200px)
-            left: 135px
-            top: 230px
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - 220px), calc(-50% - -5px))
+          @media (max-width: 576px)
+            display: none
         &::before
           content: ''
           width: 14px
@@ -201,8 +249,12 @@
           border: 1px solid transparent
           background: #A2F81D
           @media (max-width: 1200px)
-            left: 139px
-            top: 234px
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - 220px), calc(-50% - -5px))
+          @media (max-width: 576px)
+            display: none
+            
       &__subtitle
         color: #ffffff
         +sf-tn
