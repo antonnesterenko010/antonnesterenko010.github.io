@@ -2021,6 +2021,7 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #000203;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
@@ -2032,9 +2033,29 @@ ul {
   }
 }
 
+.achieve-section::before {
+  z-index: 6;
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgba(0, 0, 0, 0)), color-stop(49%, black), to(rgba(26, 38, 50, 0)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 1%, black 49%, rgba(26, 38, 50, 0) 100%);
+}
+
+@media (max-width: 1200px) {
+  .achieve-section::before {
+    width: 0%;
+  }
+}
+
 .achieve-info {
   margin: auto;
   margin-left: 115px;
+  z-index: 5;
 }
 
 @media (max-width: 1200px) {
@@ -2051,9 +2072,7 @@ ul {
 }
 
 .achieve-image {
-  background: #000203;
-  background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(3, 10, 20, 0.11)), to(rgba(3, 10, 20, 0.11)));
-  background: linear-gradient(90deg, rgba(3, 10, 20, 0.11) 25%, rgba(3, 10, 20, 0.11) 100%);
+  z-index: 5;
 }
 
 @media (max-width: 1200px) {
@@ -2063,7 +2082,7 @@ ul {
 }
 
 .achieve-image img {
-  opacity: 0.1;
+  opacity: 1;
   width: 100%;
   height: 100%;
 }
