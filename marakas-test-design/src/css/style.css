@@ -2052,13 +2052,25 @@ ul {
 
 .achieve-image {
   background: #000203;
-  background: -webkit-gradient(linear, left top, right top, from(#000203), color-stop(20%, #2f4255));
-  background: linear-gradient(90deg, #000203 0%, #2f4255 20%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(3, 10, 20, 0.11)), to(rgba(3, 10, 20, 0.11)));
+  background: linear-gradient(90deg, rgba(3, 10, 20, 0.11) 25%, rgba(3, 10, 20, 0.11) 100%);
 }
 
 @media (max-width: 1200px) {
   .achieve-image {
     display: none;
+  }
+}
+
+.achieve-image img {
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .achieve-image {
+    padding: 20px 0;
   }
 }
 
@@ -2072,14 +2084,13 @@ ul {
   .achieve-image__resp {
     display: block;
     margin: auto;
-    background: black;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #030B15), to(rgba(3, 10, 20, 0.11)));
-    background: linear-gradient(180deg, #030B15 25%, rgba(3, 10, 20, 0.11) 100%);
-    opacity: 0.8;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(0, 0, 0, 0.95)), to(rgba(0, 0, 0, 0))), url("../img/achieve/background-resp.png") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.95) 30%, rgba(0, 0, 0, 0) 100%), url("../img/achieve/background-resp.png") no-repeat;
+    width: 320px;
+    height: 375px;
   }
   .achieve-image__resp img {
     width: 100%;
-    opacity: 0.8;
   }
 }
 
@@ -2098,7 +2109,7 @@ ul {
   }
   .achieve-image__resp__item:nth-child(1) {
     top: 10%;
-    left: 40%;
+    left: 50%;
     -webkit-transform: translate(calc(-50% - 0px), calc(-50% - 0px));
             transform: translate(calc(-50% - 0px), calc(-50% - 0px));
   }
@@ -2110,7 +2121,7 @@ ul {
   }
   .achieve-image__resp__item:nth-child(2) {
     top: 30%;
-    left: 78%;
+    left: 90%;
     -webkit-transform: translate(calc(-50% - 0px), calc(-50% - 0px));
             transform: translate(calc(-50% - 0px), calc(-50% - 0px));
   }
@@ -2125,8 +2136,8 @@ ul {
   .achieve-image__resp__item:nth-child(3) {
     -webkit-transform: translate(calc(-50% - -0px), calc(-50% - -0px));
             transform: translate(calc(-50% - -0px), calc(-50% - -0px));
-    top: 78%;
-    left: 77%;
+    top: 72%;
+    left: 85%;
   }
   .achieve-image__resp__item:nth-child(3)::after {
     -webkit-transform: translate(calc(-50% - 0px), calc(-50% - 0px));
@@ -2139,7 +2150,7 @@ ul {
   .achieve-image__resp__item:nth-child(4) {
     -webkit-transform: translate(calc(-50% - 0px), calc(-50% - -0px));
             transform: translate(calc(-50% - 0px), calc(-50% - -0px));
-    top: 85%;
+    top: 72%;
     left: 37%;
   }
   .achieve-image__resp__item:nth-child(4)::after {
@@ -2153,8 +2164,8 @@ ul {
   .achieve-image__resp__item:nth-child(5) {
     -webkit-transform: translate(calc(-50% - 0px), calc(-50% - -0px));
             transform: translate(calc(-50% - 0px), calc(-50% - -0px));
-    top: 45%;
-    left: 15%;
+    top: 37%;
+    left: 14%;
   }
   .achieve-image__resp__item:nth-child(5)::after {
     -webkit-transform: translate(calc(-50% - 0px), calc(-50% - 0px));
@@ -2172,18 +2183,6 @@ ul {
     position: absolute;
     top: 50%;
     left: 50%;
-  }
-}
-
-.achieve-image img {
-  opacity: 0.2;
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 1200px) {
-  .achieve-image {
-    padding: 20px 0;
   }
 }
 
