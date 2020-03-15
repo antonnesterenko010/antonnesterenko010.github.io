@@ -3,12 +3,43 @@
     background: #000000
     padding-top: 74px
     padding-bottom: 28px
+    @media (max-width: 1200px)
+      padding-top: 72px
+      padding-bottom: 60px
   &-block
     +muli
     display: flex
     justify-content: center
-    @media (max-width: 768px)
-      flex-wrap: wrap
+    @media (max-width: 1200px)
+      display: none
+  &-resp
+    display: none
+    @media (max-width: 1200px)
+      display: flex
+      flex-direction: column
+    &__title
+      color: #ffffff
+      font-size: 42px
+      +mr
+      display: block
+      text-align: center
+      margin-bottom: 36px
+    &__list
+      display: flex
+      flex-direction: column
+      margin: auto
+      &__item
+        margin-bottom: 26px
+        a
+          display: flex
+        &__icon
+          display: inline-block
+          margin-right: 20px
+        &__title
+          display: flex
+          align-items: center
+          color: #FCFCFC
+          +muli
   &-list
     padding-left: 0
     margin: 0 60px
@@ -42,3 +73,6 @@
     +muli
     margin-top: 24px
     line-height: 130%
+    @media (max-width: 1200px)
+      text-align: center
+      font-size: 13px

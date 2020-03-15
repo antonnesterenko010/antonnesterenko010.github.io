@@ -56,9 +56,12 @@
     position: relative
     display: flex
     margin-bottom: 60px
+    
     @media (max-width: 1200px)
       flex-direction: column
       align-items: center
+    // @media (max-width: 576px)
+    //   width: 100%
     &:nth-child(2)
       flex-direction: row-reverse
       @media (max-width: 1200px)
@@ -69,8 +72,42 @@
           margin-right: 0
         img
           width: 544px
+        &::before
+          top: 77px
+          left: 42px
+          @media (max-width: 1200px)
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - -220px), calc(-50% - -70px))
+          @media (max-width: 576px)
+            left: 90%
+            top: 70%
+            transform: translate(calc(-50% - 0px), calc(-50% - -0px))
+        &::after
+          top: 85px
+          left: 50px
+          @media (max-width: 1200px)
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - -220px), calc(-50% - -70px))
+          @media (max-width: 576px)
+            left: 90%
+            top: 70%
+            transform: translate(calc(-50% - 0px), calc(-50% - -0px))
+      .hero-item__image__wrap
+        &::after
+          left: -590px
+          top: 87px
+          @media (max-width: 1200px)
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - -220px), calc(-50% - -140px))
+          @media (max-width: 576px)
+            left: 90%
+            top: 95%
+            transform: translate(calc(-50% - 0px), calc(-50% - -0px))
       .hero-item__info__title
-        margin-left: 96px
+        margin-top: 35px
         @media (max-width: 1200px)
           text-align: right
           margin-left: 0
@@ -90,9 +127,9 @@
         @media (max-width: 1200px)
           text-align: right
       .hero-item__info
-        margin-right: 200px
-        margin-left: 0        
-        @media (max-width: 1200px)
+        margin-right: 100px
+        margin-left: 100px     
+        @media (max-width: 576px)
           margin-right: 16px
         &::after
           left: 0
@@ -111,8 +148,45 @@
       flex-direction: row-reverse
       @media (max-width: 1200px)
         flex-direction: column
+      .hero-item__image
+        &::before
+          top: 77px
+          left: 42px
+          @media (max-width: 1200px)
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - -220px), calc(-50% - -70px))
+          @media (max-width: 576px)
+            left: 90%
+            top: 70%
+            transform: translate(calc(-50% - 0px), calc(-50% - -0px))
+        &::after
+          top: 85px
+          left: 50px
+          @media (max-width: 1200px)
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - -220px), calc(-50% - -70px))
+          @media (max-width: 576px)
+            left: 90%
+            top: 70%
+            transform: translate(calc(-50% - 0px), calc(-50% - -0px))
+      .hero-item__image__wrap
+        &::after
+          left: -550px
+          top: 87px
+          width: 580px
+          @media (max-width: 1200px)
+            width: 1px
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - -220px), calc(-50% - -140px))
+          @media (max-width: 576px)
+            left: 90%
+            top: 95%
+            transform: translate(calc(-50% - 0px), calc(-50% - -0px))
       .hero-item__info__title
-        margin-left: 96px
+        margin-top: 35px
         @media (max-width: 1200px)
           text-align: right
           margin-left: 0
@@ -132,9 +206,9 @@
         @media (max-width: 1200px)
           text-align: right
       .hero-item__info
-        margin-right: 200px
-        margin-left: 0
-        @media (max-width: 1200px)
+        margin-right: 100px
+        margin-left: 100px
+        @media (max-width: 576px)
           margin-right: 16px
         &::after
           left: 0
@@ -157,6 +231,21 @@
           top: 50%
           transform: translate(calc(-50% - 220px), calc(-50% - -85px))
     &:nth-child(6)
+      .hero-item__image
+        &::before
+          top: 70%
+          left: 90%
+          transform: translate(calc(-50% - 0px), calc(-50% - -0px))
+        &::after
+          top: 70%
+          left: 90%
+          transform: translate(calc(-50% - 0px), calc(-50% - -0px))
+      .hero-item__image__wrap
+        &::after
+          left: 90%
+          top: 95%
+          transform: translate(calc(-50% - 0px), calc(-50% - -0px))
+          
       .hero-item__info__title
         text-align: right
       .hero-item__info__subtitle
@@ -164,18 +253,91 @@
       .hero-item__image
         img
           width: 100%
+    
     &__image
       width: 100%
       position: relative
       @media (max-width: 1200px)
-        min-width: 100%
-        width: auto
+        // min-width: 100%
+        // width: auto
         display: flex
         justify-content: center
-        
-
       @media (max-width: 768px)
         min-width: 1px
+      &::before
+        content: ''
+        width: 14px
+        height: 14px
+        position: absolute
+        left: 471px
+        top: 103px
+        border-radius: 50%
+        border: 1px solid transparent
+        background: #A2F81D
+        // @media (max-width: 1200px)
+        //   left: 50%
+        //   top: 50%
+        //   transform: translate(calc(-50% - -205px), calc(-50% - 60px))
+        @media (max-width: 1200px)
+          left: 50%
+          top: 50%          
+          transform: translate(calc(-50% - 220px), calc(-50% - -70px))
+        @media (max-width: 576px)
+          left: 10%
+          top: 70%
+          transform: translate(calc(-50% - 0px), calc(-50% - -0px))
+      &::after
+        content: ''
+        width: 22px
+        height: 22px
+        position: absolute
+        top: 32%
+        left: 85%
+        border-radius: 50%
+        border: 1px solid #A2F81D
+        background: transparent
+        transform: translate(calc(-50% - 0px), calc(-50% - -0px))
+        // @media (max-width: 1200px)
+        //   left: 50%
+        //   top: 50%
+        //   transform: translate(calc(-50% - -205px), calc(-50% - 60px))
+        @media (max-width: 1200px)
+          left: 50%
+          top: 50%
+          transform: translate(calc(-50% - 220px), calc(-50% - -70px))
+        @media (max-width: 576px)
+          left: 10%
+          top: 70%
+          transform: translate(calc(-50% - 0px), calc(-50% - -0px))
+      &__wrap
+        
+        &::after
+          content: ''
+          width: 620px
+          height: 0.5px
+          background: #A2F81D
+          position: absolute
+          left: 500px
+          top: 110px
+          // @media (max-width: 1200px)
+          //   top: 50%
+          //   left: 50%
+          //   width: 0.5px
+          //   height: 85px
+          //   transform: translate(calc(-50% - 220px), calc(-50% - -75px))
+          @media (max-width: 1200px)
+            width: 1.5px
+            height: 85px
+            left: 50%
+            top: 50%
+            transform: translate(calc(-50% - 220px), calc(-50% - -145px))
+          @media (max-width: 576px)
+            height: 75px
+            width: 1px
+            left: 10%
+            top: 95%
+            transform: translate(calc(-50% - 0px), calc(-50% - -0px))
+
       &__resp
         img
           width: 100%
@@ -185,7 +347,7 @@
       @media (max-width: 576px)
         display: block
     &__info
-      margin-left: 200px      
+      margin-left: 200px
       @media (max-width: 1200px)
         margin-left: 70px
         width: 510px
@@ -194,22 +356,7 @@
         margin-left: 16px
         align-self: flex-start
         width: auto
-      &::after
-        content: ''
-        width: 620px
-        height: 0.5px
-        background: #A2F81D
-        position: absolute
-        left: 500px
-        top: 110px
-        @media (max-width: 1200px)
-          top: 50%
-          left: 50%
-          width: 0.5px
-          height: 75px
-          transform: translate(calc(-50% - 220px), calc(-50% - -75px))
-        @media (max-width: 576px)
-          display: none
+    
           
       &__title
         color: #A2F81D
@@ -222,38 +369,6 @@
           margin-bottom: 20px
         @media (max-width: 768px)
           font-size: 26px
-        &::after
-          content: ''
-          width: 22px
-          height: 22px
-          position: absolute
-          left: 465px
-          top: 100px
-          border-radius: 50%
-          border: 1px solid #A2F81D
-          background: transparent
-          @media (max-width: 1200px)
-            left: 50%
-            top: 50%
-            transform: translate(calc(-50% - 220px), calc(-50% - -5px))
-          @media (max-width: 576px)
-            display: none
-        &::before
-          content: ''
-          width: 14px
-          height: 14px
-          position: absolute
-          left: 469px
-          top: 104px
-          border-radius: 50%
-          border: 1px solid transparent
-          background: #A2F81D
-          @media (max-width: 1200px)
-            left: 50%
-            top: 50%
-            transform: translate(calc(-50% - 220px), calc(-50% - -5px))
-          @media (max-width: 576px)
-            display: none
             
       &__subtitle
         color: #ffffff

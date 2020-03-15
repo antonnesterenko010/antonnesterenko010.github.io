@@ -4,12 +4,14 @@
     padding: 150px 0
     @media (max-width: 1200px)
       padding: 0
-      padding-bottom: 30px
+      padding-bottom: 72px
   &-block
     display: flex
     @media (max-width: 1200px)
       flex-direction: column
   &-info
+    @media (max-width: 1200px)
+      margin: auto 16px
     &__title
       font-size: 47px
       +mr
@@ -17,64 +19,78 @@
       color: #ffffff
       margin: 40px 0
       @media (max-width: 1200px)
-        text-align: center
-        font-size: 36px
+        font-size: 42px
+        margin-top: 71px
+        margin-bottom: 36px
     &__subtitle
       font-size: 17px
       +sf-tn
       line-height: 140%
       color: #ffffff
       margin-bottom: 40px
-      @media (max-width: 1200px)
-        text-align: center
-        font-size: 16px
+      width: 420px
+      @media (max-width: 576px)
+        width: 300px
+        margin-bottom: 36px
     &__description
       font-size: 17px
       line-height: 140%
       +sf-tn
       color: #ffffff
       @media (max-width: 1200px)
-        font-size: 16px
-      @media (max-width: 768px)
-        font-size: 14px
+        font-size: 17px
       &__title
         color: #61EC3C
         +mr
         @media (max-width: 1200px)
           text-align: center
+        &__main
+          @media (max-width: 1200px)
+            display: none
+        &__resp
+          display: none
+          @media (max-width: 1200px)
+            display: inline-block
+            margin-right: 18px
       &__subtitle
         margin-left: 40px
         color: #ffffff
         @media (max-width: 1200px)
           margin-left: 0
           text-align: center
+          p 
+            display: inline-block
       &-list
+
         @media (max-width: 1200px)
           display: flex
-          justify-content: center
           margin-top: 40px
           margin-bottom: 20px
+          justify-content: space-between
+          flex-wrap: wrap
+
         &__item
           display: flex
           margin: 40px 0
           @media (max-width: 1200px)
-            flex-direction: column
             margin: 0
             width: 250px
+          @media (max-width: 576px)
+            margin-bottom: 20px
+          
             
           &__icon
             align-self: flex-start
-            @media (max-width: 1200px)
-              align-self: center
+            &__resp
+              opacity: 0
+              @media (max-width: 1200px)
+                opacity: 1
           &__address
             margin: 0
             margin-left: 15px
-            @media (max-width: 1200px)
-              margin: 10px
+            width: 300px
             a
               color: #ffffff
-              @media (max-width: 576px)
-                font-size: 12px
   &-form
     display: flex
     flex-direction: column
@@ -110,14 +126,14 @@
         font-size: 16px
       @media (max-width: 768px)
         width: 280px
-        font-size: 14px
+        font-size: 12px
           
     &__attachment
       display: flex
       cursor: pointer
       margin: 10px 0 
       @media (max-width: 1200px)
-        margin: 10px auto
+        margin: 36px auto
       &__icon
         margin-right: 10px
       &__name
@@ -127,8 +143,6 @@
         +sf-tn
         letter-spacing: 0.1em
         color: #ffffff
-        @media (max-width: 1200px)
-          font-size: 16px
       &__input
         width: 0.1px
         height: 0.1px
@@ -147,9 +161,12 @@
       width: 260px
       cursor: pointer
       font-size: 17px
+      line-height: 132%
       @media (max-width: 1200px)
+        background: linear-gradient(180deg, #A2F71D 0%, #43E849 100%)
         margin: auto
-        font-size: 16px
+        width: 200px
+        padding: 7px 40px
       &:hover
         background: linear-gradient(112.05deg, #3DE74C -31.66%, #A2F71E 70.81%)
         @media (max-width: 1200px)
