@@ -5,10 +5,10 @@
 @import 'blocks/footer';
 
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
   @include mainr;
+
 }
 img {
   max-width: 100%;
@@ -17,7 +17,6 @@ img {
   padding-top: 118px;
   position: relative;
   height: 400px;
-  // z-index: -2;
   &::before {
     content: '';
     position: absolute;
