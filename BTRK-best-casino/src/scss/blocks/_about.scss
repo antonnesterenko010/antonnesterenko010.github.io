@@ -1,0 +1,33 @@
+.about {
+  padding: 48px 0;
+  display: flex;
+  justify-content: center;
+  background: #0085FF;
+  &-item {
+    width: 219px;
+    margin: 0 14px;
+    &__image {
+      padding: 40px;
+      width: 80%;
+      margin: auto;
+      border-radius: 50%;
+      text-align: center;
+      background: #ffffff;
+    }
+    &__title {
+      text-align: center;
+      @include mainsb;
+      font-size: 16px;
+      color: #ffffff;
+      margin-top: 16px;
+      margin-bottom: 14px;
+    }
+    &__subtitle {
+      text-align: center;
+      color: #ffffff;
+      font-size: 12px;
+      @include mainr;
+      line-height: 140%;
+    }
+  }
+}
