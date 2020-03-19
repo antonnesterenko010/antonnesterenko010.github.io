@@ -238,12 +238,13 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #ffffff;
-  width: 804px;
+  width: 800px;
   margin-left: 44px;
 }
 
 * {
   padding: 0;
+  margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
