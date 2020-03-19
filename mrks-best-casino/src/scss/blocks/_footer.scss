@@ -1,0 +1,29 @@
+.footer {
+  padding-top: 89px;
+  padding-bottom: 94px;
+  background: #00154A;
+  &-sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 33px;
+    &__item {
+      color: #0085FF;
+      font-size: 24px;
+      @include mainsb;
+      margin: 0 32px;
+    }
+  }
+  &-mga {
+    display: flex;
+    justify-content: center;
+    &__text {
+      font-size: 12px;
+      line-height: 15px;
+      @include mainr;
+      color: #ffffff;
+      width: 804px;
+      margin-left: 44px;
+    }
+  }
+}
