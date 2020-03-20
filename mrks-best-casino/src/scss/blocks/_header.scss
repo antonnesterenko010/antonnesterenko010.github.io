@@ -10,8 +10,6 @@
     display: block;
     position: relative;
     left: 20%;
-    // top: 50%;
-    // transform: translate(calc(-50% - 580px), calc(-50% - 0px));
     span {
       position: absolute;
       top: 50%; margin-top: -1px;
@@ -43,13 +41,10 @@
   }
   &-search {
     width: 20px;
-    // margin-left: -90px;
     margin-top: 6px;
     align-self: center;
     position: relative;
-    // top: 50%;
     left: 20%;
-    // left: 100%;
     transform: translate(calc(-50% - -40px), calc(-50% - -10px));
   }
   &-logo {
