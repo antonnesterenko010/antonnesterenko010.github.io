@@ -2,6 +2,10 @@
   padding-top: 18px;
   padding-bottom: 14px;
   display: flex;
+  position: fixed;
+  z-index: 10;
+  background: #ffffff;
+  width: 100%;
   &-burger {
     display: block;
     position: relative;

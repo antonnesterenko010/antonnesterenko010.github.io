@@ -5,6 +5,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+  z-index: 10;
+  background: #ffffff;
+  width: 100%;
 }
 
 .header-burger {
