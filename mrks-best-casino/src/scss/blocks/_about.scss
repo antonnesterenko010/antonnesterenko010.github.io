@@ -7,9 +7,10 @@
     width: 219px;
     margin: 0 14px;
     &__image {
-      padding: 40px;
-      width: 80%;
-      height: 174px;
+      width: 148px;
+      height: 148px;
+      display: flex;
+      justify-content: center;
       margin: auto;
       border-radius: 50%;
       text-align: center;
