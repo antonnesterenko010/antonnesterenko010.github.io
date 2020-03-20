@@ -10,6 +10,9 @@
     display: block;
     position: relative;
     left: 20%;
+    @media (max-width: 1200px) {
+      left: 30px;
+    }
     span {
       position: absolute;
       top: 50%; margin-top: -1px;
@@ -46,6 +49,18 @@
     position: relative;
     left: 20%;
     transform: translate(calc(-50% - -40px), calc(-50% - -10px));
+    @media (max-width: 1200px) {
+      left: 92%;
+    }
+    @media (max-width: 992px) {
+      left: 90%;
+    }
+    @media (max-width: 768px) {
+      left: 85%;
+    }
+    @media (max-width: 576px) {
+      left: 80%;
+    }
   }
   &-logo {
     color: #0085FF;
