@@ -3,9 +3,17 @@
   display: flex;
   justify-content: center;
   background: #0085FF;
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+    padding: 72px 0;
+  }
   &-item {
     width: 219px;
     margin: 0 14px;
+    @media (max-width: 1200px) {
+      margin: 36px 44px;
+      width: 315px;
+    }
     &__image {
       width: 148px;
       height: 148px;
@@ -23,6 +31,11 @@
       color: #ffffff;
       margin-top: 16px;
       margin-bottom: 14px;
+      @media (max-width: 1200px) {
+        font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
     }
     &__subtitle {
       text-align: center;
@@ -30,6 +43,9 @@
       font-size: 12px;
       @include mainr;
       line-height: 140%;
+      @media (max-width: 1200px) {
+        font-size: 14px;
+      }
     }
   }
 }
