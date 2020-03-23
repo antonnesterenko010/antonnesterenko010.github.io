@@ -16,13 +16,3 @@ $('.header-search__close').click(function(e){
   $('.header-search').removeClass('header-search_active');
   $('.header-search__input').removeClass('header-search__input_active');
 });
-$(document).mouseup(function (e) {
-  var close = $('.header-search__input');
-  if (e.target != close[0] && close.has(e.target).length === 0) {
-    $('.header-search__input').removeClass('header-search__input_active');
-    $('.header-search').removeClass('header-search_active');
-    $('.search-wrap').removeClass('search-wrap_active');
-    $('.header-search__2').removeClass('header-search__2_active');
-    $('.header-search__close').removeClass('header-search__close_active');
-  }
-});
