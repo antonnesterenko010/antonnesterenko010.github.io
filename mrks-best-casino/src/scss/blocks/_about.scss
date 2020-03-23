@@ -14,6 +14,12 @@
       margin: 36px 44px;
       width: 315px;
     }
+    @media (max-width: 992px) {
+      width: 285px;
+    }
+    @media (max-width: 767px) {
+      width: 375px;
+    }
     &__image {
       width: 148px;
       height: 148px;
