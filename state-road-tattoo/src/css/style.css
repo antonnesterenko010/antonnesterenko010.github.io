@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'Rockit';
+  src: url("../fonts/Rockit/");
+  src: url("../fonts/Rockit/?#iefix") format("embedded-opentype"), url("../fonts/Rockit/Rockit.woff") format("woff"), url("../fonts/Rockit/Rockit.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cambria-Regular';
+  src: url("../fonts/Cambria-Regular/");
+  src: url("../fonts/Cambria-Regular/?#iefix") format("embedded-opentype"), url("../fonts/Cambria-Regular/Cambria.woff") format("woff"), url("../fonts/Cambria-Regular/Cambria.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cambria-Bold';
+  src: url("../fonts/Cambria-Bold/");
+  src: url("../fonts/Cambria-Bold/?#iefix") format("embedded-opentype"), url("../fonts/Cambria-Bold/Cambria-Bold.woff") format("woff"), url("../fonts/Cambria-Bold/Cambria-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+.header {
+  background: #000000;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.header-info {
+  padding-left: 84px;
+  padding-right: 57px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-social__item {
+  margin-right: 13px;
+}
+
+.header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  font-family: 'Rockit', sans-serif;
+  font-weight: 400;
+}
+
+.header-title__logo {
+  margin-left: 50px;
+}
+
+.header-title__item {
+  margin: auto 10px;
+  position: relative;
+}
+
+.header-title__item:nth-child(3)::before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+}
+
+.header-title__item:nth-child(3)::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: -10%;
+}
+
+.header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-contact__item {
+  color: #ffffff;
+  margin: 5px auto;
+  font-family: 'Cambria-Regular', sans-serif;
+  font-weight: 400;
+}
+
+.header-contact__button {
+  -webkit-box-shadow: 0 0 0 2px #e91404;
+          box-shadow: 0 0 0 2px #e91404;
+  border: 2px solid #000000;
+  border-radius: 11px;
+  padding: 10px 13px;
+  background: #dc0f00;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'Cambria-Bold', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.header-nav {
+  padding-left: 45px;
+  padding-right: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-nav__item {
+  background: #071c4c;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 5px solid #ffffff;
+  border-radius: 11px;
+  font-family: 'Cambria-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  width: 170px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
+}
+
+.header-nav__item:hover {
+  color: #dc0f00;
+}
+/*# sourceMappingURL=style.css.map */

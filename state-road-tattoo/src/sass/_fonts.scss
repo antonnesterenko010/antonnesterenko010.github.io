@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Rockit';
+  src: url('../fonts/Rockit/');
+  src: url('../fonts/Rockit/?#iefix') format('embedded-opentype'),
+    url('../fonts/Rockit/Rockit.woff') format('woff'),
+    url('../fonts/Rockit/Rockit.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cambria-Regular';
+  src: url('../fonts/Cambria-Regular/');
+  src: url('../fonts/Cambria-Regular/?#iefix') format('embedded-opentype'),
+    url('../fonts/Cambria-Regular/Cambria.woff') format('woff'),
+    url('../fonts/Cambria-Regular/Cambria.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cambria-Bold';
+  src: url('../fonts/Cambria-Bold/');
+  src: url('../fonts/Cambria-Bold/?#iefix') format('embedded-opentype'),
+    url('../fonts/Cambria-Bold/Cambria-Bold.woff') format('woff'),
+    url('../fonts/Cambria-Bold/Cambria-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin logo {
+  font-family: 'Rockit', sans-serif;
+  font-weight: 400;
+}
+
+@mixin mainr {
+  font-family: 'Cambria-Regular', sans-serif;
+  font-weight: 400;
+}
+@mixin mainb {
+  font-family: 'Cambria-Bold', sans-serif;
+  font-weight: 700;
+}
