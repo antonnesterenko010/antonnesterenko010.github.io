@@ -71,6 +71,12 @@ img {
   }
 }
 
+@media (max-width: 576px) {
+  .header {
+    padding-bottom: 0;
+  }
+}
+
 .header-info {
   padding-left: 84px;
   padding-right: 57px;
@@ -120,6 +126,7 @@ img {
 
 @media (max-width: 576px) {
   .header-social {
+    top: 265px;
     left: 35%;
   }
 }
@@ -276,8 +283,8 @@ img {
   .header-contact {
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(calc(-50% - -20px), calc(-50% - 0px));
-            transform: translate(calc(-50% - -20px), calc(-50% - 0px));
+    -webkit-transform: translate(calc(-50% - -20px), calc(-50% - 50px));
+            transform: translate(calc(-50% - -20px), calc(-50% - 50px));
     z-index: 2;
   }
 }

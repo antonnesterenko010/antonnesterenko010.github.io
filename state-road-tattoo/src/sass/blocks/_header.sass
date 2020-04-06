@@ -5,6 +5,8 @@
   @media (max-width: 768px)
     padding-top: 10px
     padding-bottom: 100px
+  @media (max-width: 576px)
+    padding-bottom: 0
   &-block
   &-info
     padding-left: 84px
@@ -27,6 +29,7 @@
       left: 40%
       z-index: 2
     @media (max-width: 576px)
+      top: 265px
       left: 35%
     @media (max-width: 400px)
       left: 30%
@@ -100,7 +103,7 @@
     @media (max-width: 576px)
       top: 50%
       left: 50%
-      transform: translate(calc(-50% - -20px), calc(-50% - 0px))
+      transform: translate(calc(-50% - -20px), calc(-50% - 50px))
       z-index: 2
     &__item
       color: #ffffff
