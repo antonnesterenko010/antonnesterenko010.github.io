@@ -25,7 +25,28 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Streamster';
+  src: url('../fonts/Streamster/');
+  src: url('../fonts/Streamster/?#iefix') format('embedded-opentype'),
+    url('../fonts/Streamster/streamster.woff') format('woff'),
+    url('../fonts/Streamster/streamster.ttf') format('truetype'),
+    url('../fonts/Streamster/streamster.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Adagio';
+  src: url('../fonts/Adagio/');
+  src: url('../fonts/Adagio/?#iefix') format('embedded-opentype'),
+    url('../fonts/Adagio/Adagio.woff') format('woff'),
+    url('../fonts/Adagio/Adagio.ttf') format('truetype'),
+    url('../fonts/Adagio/Adagio.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 @mixin logo {
   font-family: 'Rockit', sans-serif;
   font-weight: 400;
@@ -38,4 +59,12 @@
 @mixin mainb {
   font-family: 'Cambria-Bold', sans-serif;
   font-weight: 700;
+}
+@mixin title {
+  font-family: 'Streamster', sans-serif;
+  font-weight: normal;
+}
+@mixin subtitle {
+  font-family: 'Adagio', sans-serif;
+  font-weight: normal;
 }
