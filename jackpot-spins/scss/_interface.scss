@@ -110,6 +110,7 @@ img {
 
     &_active {
       display: block;
+      width: 100%;
     }
     .list {
       @include flexbox();
@@ -147,6 +148,7 @@ img {
     font-size: 72px;
     letter-spacing: 0.02em;
     text-align: center;
+    text-transform: uppercase;
     color: #ffffff;
     margin: 191px 0px 0px;
     @include max-small() {
@@ -162,38 +164,50 @@ img {
     text-align: center;
     color: #ffffff;
     max-width: 65%;
-    margin: 45px 0px 0px;
+    margin: 25px 0px 0px;
+    max-height: 80px;
     @include max-small() {
       font-size: 28px;
       line-height: 24px;
       letter-spacing: 0.01em;
       margin: 28px 0px 0px;
+      max-width: 100%;
+      min-height: 48px;
+      max-height: 48px;
     }
   }
   .google-btn {
-    margin: 31px 0px 0px;
+    margin: 57px 0px 0px;
     @include max-small() {
       margin: 53px 0px 0px;
+      // max-width: 42.967%;
+      max-width: 189px;
     }
-    img {
-      @include max-small() {
-        max-width: 76.72%;
-      }
-    }
+    // img {
+    //   @include max-small() {
+    //     max-width: 76.72%;
+    //   }
+    // }
   }
   .download-btn {
     position: relative;
     margin: -45px -40px 0px 0px;
     text-align: center;
     @include max-small() {
-      margin: 7px 0px 0px 0px;
+      margin: -25px 0px 0px 0px;
+      text-align: right;
+      left: 20px;
     }
     .image {
       position: relative;
       display: inline-block;
       img {
         @include max-small() {
-          max-width: 67%;
+          // max-width: 88.3%;
+          max-width: 330px;
+        }
+        @media (max-width: 374px) {
+          max-width: 280px;
         }
       }
       &::before {
@@ -209,7 +223,8 @@ img {
         width: 100%;
         @include max-small() {
           font-size: 24px;
-          transform: translate(calc(-50% - 21px), calc(-50% - 0px));
+          text-align: center;
+          transform: translate(calc(-50% - 20px), calc(-50% - 0px));
         }
       }
     }
@@ -218,6 +233,9 @@ img {
 .feedback {
   background: radial-gradient(50% 50% at 50% 50%, #FEC363 0%, #FEC363 0.01%, #FF9457 100%);
   padding: 121px 0px 88px;
+  @include max-small() {
+    padding: 96px 0px 72px;
+  }
   .form {
     @include flexbox();
     flex-direction: column;
@@ -235,6 +253,9 @@ img {
       height: 56px;
       margin: 21px auto 0px;
       outline: none;
+      @include max-small() {
+        width: 100%;
+      }
     }
     .consent {
       @include f-normal();
@@ -245,6 +266,9 @@ img {
       text-transform: uppercase;
       max-width: 56%;
       margin: 21px auto 0px;
+      @include max-small() {
+        max-width: 100%;
+      }
     }
     .feedback-btn {
       background: #8903AC;
@@ -271,9 +295,17 @@ img {
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
+    @include max-small() {
+      font-size: 42px;
+      line-height: 38px;
+      letter-spacing: 0.01em;
+    }
   }
   .list {
     @include flexbox();
+    @include max-small() {
+      flex-direction: column;
+    }
     .item {
       @include flexbox();
       flex-direction: column;
@@ -293,6 +325,9 @@ img {
         color: #ffffff;
         margin: 28px 0px 0px;
         max-width: 90%;
+        @include max-small() {
+          text-align: center;
+        }
       }
     }
   }
@@ -308,15 +343,24 @@ img {
       color: #ffffff;
       text-transform: uppercase;
       text-align: center;
+      @include max-small() {
+        font-size: 42px;
+      }
     }
     .list {
       margin: 48px 0px 0px;
       @include flexbox();
+      @include max-small() {
+        flex-direction: column;
+      }
     }
     .item {
       @include flexbox();
       flex-direction: column;
       align-items: center;
+      @include max-small() {
+        margin: 23px 0px;
+      }
       .title {
         margin: 28px 0px 0px;
         @include f-semibold();
@@ -361,12 +405,29 @@ img {
     @include flexbox();
     flex-direction: column;
     align-items: center;
+    .logo {
+      @include max-small() {
+        text-align: center;
+      }
+      img {
+        @include max-small() {
+          max-width: 52.59%;
+        }
+      }
+    }
     .list {
       margin: 51px 0px 0px;
       @include flexbox();
       justify-content: center;
+      @include max-small() {
+        display: inline-block;
+        text-align: center;
+      }
       .item {
         margin: 0px 12px;
+        @include max-small() {
+          display: inline-block;
+        }
         .link {
           @include f-medium();
           font-size: 18px;
@@ -388,8 +449,16 @@ img {
       margin: 50px 0px 0px;
       @include flexbox();
       align-items: center;
+      @include max-small() {
+        display: inline-block;
+        text-align: center;
+      }
       .item {
         margin: 0px 12px;
+        @include max-small() {
+          display: inline-block;
+          margin: 9px 12px;
+        }
       }
     }
     .platforms {
