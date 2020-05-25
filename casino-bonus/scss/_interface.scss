@@ -205,6 +205,10 @@ img {
   .block-l {
     @include flexbox();
   }
+  .block-c {
+    @include flexbox();
+    align-items: center;
+  }
 }
 .footer {
     background: #30d580;
