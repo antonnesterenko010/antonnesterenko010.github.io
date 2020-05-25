@@ -168,7 +168,6 @@ img {
         display: block;
         @include max-medium() {
           @include flexbox();
-          align-items: center;
           margin: 9px 0px;
         }
         .image, .title {
