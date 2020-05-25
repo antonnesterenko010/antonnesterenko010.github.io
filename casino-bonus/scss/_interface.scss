@@ -140,7 +140,6 @@ img {
         @include f-bold();
         font-size: 18px;
         color: #000000;
-        max-height: 23px;
         @include max-medium() {
           font-size: 19px;
         }

@@ -225,7 +225,6 @@ img {
   font-weight: bold;
   font-size: 18px;
   color: #000000;
-  max-height: 23px;
 }
 
 @media only screen and (max-width: 991px) {
