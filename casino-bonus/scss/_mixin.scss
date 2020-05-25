@@ -125,11 +125,16 @@
     @content;
   }
 }
-@mixin f-bold {
-  font-family: 'Overpass Mono', monospace;
-  font-weight: bold;
-}
+
 @mixin f-normal {
   font-family: 'Overpass Mono', monospace;
   font-weight: normal;
+}
+@mixin f-semibold {
+  font-family: 'Overpass Mono', monospace;
+  font-weight: 600;
+}
+@mixin f-bold {
+  font-family: 'Overpass Mono', monospace;
+  font-weight: bold;
 }
