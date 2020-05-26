@@ -338,7 +338,8 @@ body {
 
 @media (min-width: 992px) {
   .card-button .btn:hover {
-    background: #0BC565;
+    background: -webkit-gradient(linear, left bottom, left top, from(#0BC565), to(#0BC565));
+    background: linear-gradient(0deg, #0BC565, #0BC565);
   }
 }
 
