@@ -216,7 +216,13 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0px 0px 36px 0px;
+    padding: 36px 24px 36px 24px;
+  }
+}
+
+@media (max-width: 374px) {
+  .recent .card-item {
+    padding: 36px 0px 36px 0px;
   }
 }
 
@@ -271,8 +277,8 @@ img {
 }
 
 .recent .card-item .logo {
-  width: 240px;
-  height: 140px;
+  width: 35%;
+  min-width: 124px;
 }
 
 .recent .card-item .logo img {
@@ -344,14 +350,6 @@ img {
   margin: 0px 10px;
 }
 
-@media only screen and (max-width: 991px) {
-  .recent .block-l, .recent .block-r {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .recent .block-l {
   display: -webkit-box;
   display: -moz-flex;
@@ -370,7 +368,7 @@ img {
 @media only screen and (max-width: 991px) {
   .recent .block-r {
     margin: auto;
-    width: 90%;
+    width: 100%;
   }
 }
 

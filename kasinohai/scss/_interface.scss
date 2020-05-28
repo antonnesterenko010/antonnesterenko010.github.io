@@ -158,7 +158,10 @@ img {
     transition: 0.15s;
     @include max-medium() {
       flex-direction: column;
-      padding: 0px 0px 36px 0px;
+      padding: 36px 24px 36px 24px;
+    }
+    @media (max-width: 374px) {
+      padding: 36px 0px 36px 0px;
     }
     &:hover {
       @media (min-width: 992px) {
@@ -191,8 +194,8 @@ img {
       }
     }
     .logo {
-      width: 240px;
-      height: 140px;
+      width: 35%;
+      min-width: 124px;
       img {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
@@ -236,11 +239,6 @@ img {
       }
     }
   }
-  .block-l, .block-r {
-    @include max-medium() {
-      justify-content: center;
-    }
-  }
   .block-l {
     @include flexbox();
     align-items: center;
@@ -250,7 +248,7 @@ img {
     margin: auto 0px auto auto;
     @include max-medium() {
       margin: auto;
-      width: 90%;
+      width: 100%;
     }
   }
 }
