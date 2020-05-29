@@ -174,7 +174,7 @@ img {
         display: block;
         @include max-medium() {
           @include flexbox();
-          margin: 9px 0px;
+          margin: 3px 0px;
         }
         .image, .title {
           display: inline-block;
