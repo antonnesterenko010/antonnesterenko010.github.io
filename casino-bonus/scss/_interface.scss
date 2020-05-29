@@ -289,8 +289,11 @@ img {
       }
     }
     .logo {
-      margin-right: 30px;
+      margin: 0px 30px 0px 0px;
       width: 80px;
+      @include max-medium() {
+        margin: 0;
+      }
     }
     .title-block {
       justify-content: flex-start;
@@ -313,7 +316,7 @@ img {
     .list {
       @include max-medium() {
         width: 50%;
-        margin: auto;
+        margin: 30px auto 0px;
       }
     }
   }
