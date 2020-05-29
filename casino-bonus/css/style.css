@@ -152,6 +152,10 @@ img {
   }
 }
 
+.top-rated .card-list .block-t .logo {
+  margin-right: 10px;
+}
+
 .top-rated .card-list .block-b {
   display: -webkit-box;
   display: -moz-flex;
@@ -430,7 +434,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0px;
+    margin: 24px 0px;
     position: relative;
   }
   .recent .card-item::before {
@@ -518,8 +522,14 @@ img {
 }
 
 @media only screen and (max-width: 991px) {
+  .recent .block-l .list-wrapper .item {
+    margin: 9px auto;
+    min-width: 270px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
   .recent .block-l .list {
-    width: 50%;
     margin: 30px auto 0px;
   }
 }
