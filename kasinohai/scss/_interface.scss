@@ -31,8 +31,8 @@ img {
 }
 
 .header {
-  background: #DB1664;
-  box-shadow: 0px 5px 15px rgba(183, 219, 222, 0.25);
+  background: #FFFFFF;
+  box-shadow: 0px 4px 5px rgba(187, 209, 231, 0.15);
   height: 68px;
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@ img {
     display: inline-block;
     font-size: 34px;
     @include f-bold();
-    color: #ffffff;
+    color: #132A53;
     text-decoration: none;
   }
   @media (max-width: 991px) {
@@ -73,7 +73,7 @@ img {
   }
 }
 .hero {
-  background: #DAFCFF;
+  background: #E0EDFA;
   padding: 48px 0px;
   .title {
     @include f-xbold();
@@ -110,7 +110,7 @@ img {
           left: 0;
           width: 100%;
           height: 100%;
-          background: linear-gradient(180deg, rgba(218, 252, 255, 0.15) 0%, #DAFCFF 79.55%);
+          background: linear-gradient(180deg, rgba(224, 237, 250, 0.15) 0%, #E0EDFA 79.55%);
         }
       }
       &_visible {
@@ -158,7 +158,7 @@ img {
     transition: 0.15s;
     @include max-medium() {
       flex-direction: column;
-      padding: 36px 24px 36px 24px;
+      padding: 36px 19px 36px 24px;
     }
     @media (max-width: 374px) {
       padding: 36px 0px 36px 0px;
@@ -186,7 +186,7 @@ img {
         .title {
           @include f-medium();
           color: #000000;
-          font-size: 12px;
+          font-size: 15px;
           @include max-medium() {
             font-size: 16px;
           }
