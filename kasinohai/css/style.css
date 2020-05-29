@@ -279,11 +279,13 @@ img {
 .recent .card-item .logo {
   width: 35%;
   min-width: 124px;
+  height: 100%;
 }
 
 .recent .card-item .logo img {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  min-height: 100%;
 }
 
 .recent .card-item .button {

@@ -196,9 +196,11 @@ img {
     .logo {
       width: 35%;
       min-width: 124px;
+      height: 100%;
       img {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+        min-height: 100%;
         }
     }
     
