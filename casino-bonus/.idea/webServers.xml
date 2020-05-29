@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="d48aeb76-b98b-4f77-9b76-7e62c1da63fd" name="gza" url="http://gza.dev2.qix.sx">
+      <webServer id="d48aeb76-b98b-4f77-9b76-7e62c1da63fd" name="gza (project level)" url="http://gza.dev2.qix.sx">
         <fileTransfer host="gza.dev2.qix.sx" port="22053" rootFolder="/home/ysafarov/www/gza/www/gza" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
