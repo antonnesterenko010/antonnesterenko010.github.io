@@ -186,7 +186,7 @@ img {
         .title {
           @include f-medium();
           color: #000000;
-          font-size: 15px;
+          font-size: 12px;
           @include max-medium() {
             font-size: 16px;
           }
