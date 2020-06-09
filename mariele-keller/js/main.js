@@ -14,7 +14,8 @@ $('.button').click(function () {
   $('.button').removeClass('button_active');
   $(this).addClass('button_active');
   var btn_num = $(this).attr('id');
+  $('.block-r-0').hide();
   btn_num = btn_num.substr(-1);
   $('#block-r-' + btn_num).fadeIn();
-  consol.log('#block-r-' + btn_num);
+  console.log('#block-r-' + btn_num);
 });

@@ -1080,4 +1080,8 @@ h1, h2, h3, h4, h5, h6, p {
 .block-r-0 {
   display: none;
 }
+
+#block-r-1 {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
