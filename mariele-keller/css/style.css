@@ -999,20 +999,39 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .kompetenz {
-  background: #B73D5B;
   color: #ffffff;
+  padding: 132px 0px 143px;
+  min-height: 950px;
+  background-image: url("../img/kompetenz-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .kompetenz-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 20px;
+  margin: 0px 0px 25px;
+}
+
+@media only screen and (max-width: 991px) {
+  .kompetenz-title {
+    font-size: 16px;
+  }
 }
 
 .kompetenz-subtitle {
+  margin: 0px 0px 31px;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 24px;
   max-width: 40%;
+}
+
+@media only screen and (max-width: 991px) {
+  .kompetenz-subtitle {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .section-title {
@@ -1020,12 +1039,13 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 700;
   font-size: 38px;
   color: #ffffff;
-  margin: 80px 0px;
+  margin: 0px 0px 80px;
 }
 
 @media only screen and (max-width: 991px) {
   .section-title {
     margin: 68px 0px 32px;
+    font-size: 26px;
   }
 }
 
@@ -1034,6 +1054,12 @@ h1, h2, h3, h4, h5, h6, p {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 991px) {
+  .section-block {
+    position: relative;
+  }
 }
 
 .section-block .block-l, .section-block .block-r {
@@ -1050,8 +1076,9 @@ h1, h2, h3, h4, h5, h6, p {
   border: none;
   cursor: pointer;
   outline: none;
-  color: #ffffff;
+  color: #E9C4CD;
   padding: 24px;
+  font-size: 14px;
   width: 384px;
   height: 64px;
   display: -webkit-box;
@@ -1067,21 +1094,119 @@ h1, h2, h3, h4, h5, h6, p {
   border-bottom: 1px solid #ffffff;
 }
 
+@media only screen and (max-width: 991px) {
+  .section-block .block-l-item .button {
+    font-size: 16px;
+    max-width: 335px;
+    height: 55px;
+  }
+}
+
 .section-block .block-l-item .button_active {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
+  color: #ffffff;
 }
 
 .section-block .block-l-item .button_active i {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  -webkit-transition: 0.15s ease;
+  transition: 0.15s ease;
 }
 
-.block-r-0 {
+.section-block .block-r-0 {
+  display: none;
+  margin: -22px 20px -22px 0px;
+  max-height: 340px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+  .section-block .block-r-0 {
+    overflow: hidden;
+    display: none;
+  }
+}
+
+.section-block .block-r-0::-webkit-scrollbar {
+  width: 7px;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+.section-block .block-r-0::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.section-block .block-r-0::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+.section-block .block-r-0-resp {
   display: none;
 }
 
-#block-r-1 {
+.section-block .block-resp_active {
   display: block;
+}
+
+.section-block #block-r-1 {
+  display: block;
+}
+
+@media only screen and (max-width: 991px) {
+  .section-block #block-r-1 {
+    display: none;
+  }
+}
+
+.section-block .block-r {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 43px 0px 48px 41px;
+}
+
+@media only screen and (max-width: 991px) {
+  .section-block .block-r {
+    display: none;
+  }
+}
+
+.section-block .block-r-item {
+  margin: 22px 0px;
+}
+
+.section-block .block-r-item .title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0px 0px 14px;
+}
+
+@media only screen and (max-width: 991px) {
+  .section-block .block-r-item .title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #AB1C3F;
+  }
+}
+
+.section-block .block-r-item .subtitle {
+  font-size: 16px;
+  color: #E9C4CD;
+}
+
+@media only screen and (max-width: 991px) {
+  .section-block .block-r-item .subtitle {
+    font-size: 14px;
+    color: #A69E9F;
+  }
 }
 /*# sourceMappingURL=style.css.map */
