@@ -6,3 +6,15 @@ $('.burger').click(function(){
   $('.header-list').toggleClass('logo_disabled');
   $('.menu').toggleClass('menu_active');
 })
+$('#btn-2, #btn-3, #btn-4, #btn-5').click(function(){
+  $('.button').removeClass('button_active');
+  $(this).addClass('button_active');
+});
+$('.button').click(function () {
+  $('.button').removeClass('button_active');
+  $(this).addClass('button_active');
+  var btn_num = $(this).attr('id');
+  btn_num = btn_num.substr(-1);
+  $('#block-r-' + btn_num).fadeIn();
+  consol.log('#block-r-' + btn_num);
+});
