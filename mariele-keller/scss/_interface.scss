@@ -8,6 +8,9 @@ a {
   text-decoration: none;
   color: #000000;
   outline: none;
+  @include max-medium() {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 ul {
   list-style-type: none;
@@ -81,7 +84,7 @@ h1,h2,h3,h4,h5,h6,p {
         position: absolute;
         top: 0;
         right: 0;
-        width: 300%;
+        width: 10000px;
         height: 16px;
         background: #B73D5B;
         z-index: -1;
@@ -189,70 +192,32 @@ h1,h2,h3,h4,h5,h6,p {
     }
   }
 }
+.main {
+  padding: 105px 0px 0px;
+  @include max-large() {
+    padding: 64px 0px 0px;
+  }
+}
 .hero {
-  .bg-wrap {
-    position: relative;
-    @include max-small() {
-      display: none;
-    }
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      top: 30px;
-      width: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center bottom;
-    }
-    &::before {
-      z-index: -1;
-      height: 788px;
-      background-image: url(../img/hero-bg-t.png);
-      @include max-small() {
-        height: 500px;
-      }
-    }
-    &::after {
-      z-index: -2;
-      height: 852px;
-      background-image: url(../img/hero-bg-b.png);
-      @include max-small() {
-        height: 535px;
-      }
-    }
-    &-resp {
-      position: relative;
-      display: none;
-      @include max-small() {
-        display: block;
-      }      
-      &::before, &::after {
-        content: '';
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center bottom;
-      }
-      &::before {
-        z-index: -1;
-        height: 788px;
-        background-image: url(../img/hero-bg-t-resp.png);
-        @include max-small() {
-          height: 500px;
-          left: -20px;
-          transform: rotate(5deg);
-      }
-    }
-      &::after {
-        z-index: -2;
-        height: 852px;
-        background-image: url(../img/hero-bg-b-resp.png);
-        @include max-small() {
-          height: 535px;
-        }
-    }
+  background: #B73D5B;
+  position: relative;
+  @include max-medium() {
+    padding: 20px 0px 48px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+    height: 150px;
+    background-image: url('../img/hero-bg-b.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left bottom;
+    @include max-medium() {
+      background-image: url('../img/hero-bg-b-resp.png');
+      height: 56px;
+      bottom: -56px;
     }
   }
   .block {
@@ -264,10 +229,7 @@ h1,h2,h3,h4,h5,h6,p {
       width: 50%;
     }
     &-l {
-      margin: 250px 0px 0px;
-      @include max-large() {
-        margin: 189px 0px 0px;
-      }
+      margin: 125px 0px 0px;
       @include max-small() {
         width: 100%;
         margin: 0;
@@ -280,7 +242,7 @@ h1,h2,h3,h4,h5,h6,p {
       margin: 0px 0px 31px;
       @include max-small() {
         font-size: 22px;
-        margin: 20px 0px 0px;
+        margin: 35px 0px 30px;
       }
     }
     .subtitle {
@@ -295,49 +257,14 @@ h1,h2,h3,h4,h5,h6,p {
     }
     }
     &-r {
-      margin: 145px 0px 0px;
-      @include max-large() {
-        margin: 100px 0px 0px;
-      }
       @include max-small() {
         display: none;
       }
-    }
-    .read-btn {
-      display: block;
-      text-decoration: underline;
-      @include f-medium();
-      font-size: 18px;
-      color: #ffffff;
-      margin: 0px 0px 43px;
-    }
-    .request-btn {
-      background: #ffffff;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-      border-radius: 6px;
-      @include f-semibold();
-      color: #B73D5B;
-      font-size: 18px;
-      text-align: center;      
-      padding: 0px 31px;
-      @include inline-flex();
-      align-items: center;
-      height: 56px;
-      @include max-small() {
-        background: #AB1B3E;
-        color: #ffffff;
-        font-size: 14px;
-        padding: 0px 17px;
-        letter-spacing: 0.2px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-      }
-
     }
     &-r-resp {
       display: none;
       @include max-small() {
         @include flexbox();
-        margin: 64px 0px 0px;
       }
       .image {
         @include flexbox();
@@ -356,15 +283,70 @@ h1,h2,h3,h4,h5,h6,p {
       }
     }
   }
+  &-text {
+    &-hidden {
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: 2s;
+    }
+    &_active {
+      opacity: 1;
+      height: 470px;
+    }
+  }
+  
+    .read-btn {
+      display: inline-block;
+      @include f-medium();
+      font-size: 18px;
+      color: #ffffff;
+      margin: 0px 0px 43px;
+      position: relative;
+      background: none;
+      border: none;
+      outline: none;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #ffffff;
+      }
+    }
+    .request-btn {
+      background: #ffffff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 6px;
+      @include f-semibold();
+      color: #B73D5B;
+      font-size: 18px;   
+      @include flexbox();
+      justify-content: center;
+      align-items: center;
+      max-width: 192px;
+      height: 56px;
+      @include max-small() {
+        max-width: 172px;
+        background: #FFFFFF;
+        color: #B73D5B;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+    }
   
 }
 .praxis {
-  padding: 80px 0px 110px;
+  padding: 150px 0px 110px;
   @include max-large() {
     padding: 160px 0px 110px;
   }
   @include max-medium() {
-    padding: 160px 0px 153px;
+    padding: 70px 0px 153px;
   }
   .title {
     @include f-bold();
@@ -429,15 +411,31 @@ h1,h2,h3,h4,h5,h6,p {
   }
 }
 .kompetenz {
+  background: #B73D5B;
   color: #ffffff;
-  padding: 132px 0px 143px;
-  min-height: 950px;
-  background-image: url('../img/kompetenz-bg.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  @include max-medium() {
-    background-image: url('../img/kompetenz-bg-resp.png');
-    padding: 90px 0px 102px;
+  padding: 56px 0px 143px;
+  position: relative;
+  &::before, &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  &::before {
+    top: 0;
+    background-image: url('../img/kompetenz-bg-t.png');
+    @include max-medium() {
+      background-image: url('../img/kompetenz-bg-t-resp.png');
+    }
+  }
+  &::after {
+    bottom: 0;
+    background-image: url('../img/kompetenz-bg-b.png');
+    @include max-medium() {
+      background-image: url('../img/kompetenz-bg-b-resp.png');
+    }
   }
   &-title {
     @include f-bold();
@@ -462,9 +460,9 @@ h1,h2,h3,h4,h5,h6,p {
   @include f-bold();
   font-size: 38px;
   color: #ffffff;
-  margin: 0px 0px 80px;
+  margin: 90px 0px 80px;
   @include max-medium() {
-    margin: 0px 0px 32px;
+    margin: 50px 0px 32px;
     font-size: 26px;
   }
 }
@@ -523,6 +521,7 @@ h1,h2,h3,h4,h5,h6,p {
   @include max-medium() {
     overflow: hidden;
     display: none;
+    margin: 0px 20px 0px 0px;
   }
   @include scrollbar(){
     width: 7px;
@@ -561,6 +560,16 @@ h1,h2,h3,h4,h5,h6,p {
   }
   &-item {
     margin: 22px 0px;
+    @include max-medium() {
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+      height: 80px;
+      padding: 10px;
+      @include flexbox();
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
     .title {
       @include f-semibold();
       font-size: 18px;
@@ -568,7 +577,6 @@ h1,h2,h3,h4,h5,h6,p {
       @include max-medium() {
         @include f-medium();
         font-size: 13px;
-        color: #AB1C3F;
       }
     }
     .subtitle {

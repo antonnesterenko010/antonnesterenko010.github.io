@@ -6,7 +6,9 @@ $('.burger').click(function(){
   $('.header-list').toggleClass('logo_disabled');
   $('.menu').toggleClass('menu_active');
 })
-
+$('.read-btn').click(function(){
+  $('.hero-text-hidden').toggleClass('hero-text_active');
+})
 if ($(window).width() > 991) {
   $('#btn-1').addClass('button_active');
   $('.button').click(function () {
@@ -22,7 +24,6 @@ else {
     $(this).toggleClass('button_active');
     var btn_num = $(this).data('number');
     $('#block-r-' + btn_num + '-resp').toggleClass('block-resp_active');
-    
     $('#block-r-' + btn_num).fadeIn();
   });
-    }
+}
