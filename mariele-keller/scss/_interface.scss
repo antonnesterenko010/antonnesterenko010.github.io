@@ -435,6 +435,10 @@ h1,h2,h3,h4,h5,h6,p {
   background-image: url('../img/kompetenz-bg.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  @include max-medium() {
+    background-image: url('../img/kompetenz-bg-resp.png');
+    padding: 90px 0px 102px;
+  }
   &-title {
     @include f-bold();
     font-size: 20px;
@@ -444,10 +448,9 @@ h1,h2,h3,h4,h5,h6,p {
     }
   }
   &-subtitle {
-    margin: 0px 0px 31px;
+    margin: 0px 0px 10px;
     font-size: 14px;
     line-height: 24px;
-    max-width: 40%;
     @include max-medium() {
       font-size: 14px;
       line-height: 17px;
@@ -461,19 +464,22 @@ h1,h2,h3,h4,h5,h6,p {
   color: #ffffff;
   margin: 0px 0px 80px;
   @include max-medium() {
-    margin: 68px 0px 32px;
+    margin: 0px 0px 32px;
     font-size: 26px;
   }
 }
 .section-block {
   @include flexbox();
+  margin: 31px 0px 0px;
   @include max-medium() {
     position: relative;
+    margin: 49px 0px 0px;
   }
   .block-l, .block-r {
     flex-basis: 50%;
   }
   .block-l {
+    margin: -12px 0px;
     &-item {
       margin: 12px 0px;
       .button {

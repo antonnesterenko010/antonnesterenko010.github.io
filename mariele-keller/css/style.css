@@ -1007,6 +1007,13 @@ h1, h2, h3, h4, h5, h6, p {
   background-size: 100% 100%;
 }
 
+@media only screen and (max-width: 991px) {
+  .kompetenz {
+    background-image: url("../img/kompetenz-bg-resp.png");
+    padding: 90px 0px 102px;
+  }
+}
+
 .kompetenz-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -1021,10 +1028,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .kompetenz-subtitle {
-  margin: 0px 0px 31px;
+  margin: 0px 0px 10px;
   font-size: 14px;
   line-height: 24px;
-  max-width: 40%;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1044,7 +1050,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media only screen and (max-width: 991px) {
   .section-title {
-    margin: 68px 0px 32px;
+    margin: 0px 0px 32px;
     font-size: 26px;
   }
 }
@@ -1054,17 +1060,23 @@ h1, h2, h3, h4, h5, h6, p {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  margin: 31px 0px 0px;
 }
 
 @media only screen and (max-width: 991px) {
   .section-block {
     position: relative;
+    margin: 49px 0px 0px;
   }
 }
 
 .section-block .block-l, .section-block .block-r {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+.section-block .block-l {
+  margin: -12px 0px;
 }
 
 .section-block .block-l-item {
