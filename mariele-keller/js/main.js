@@ -27,3 +27,21 @@ else {
     $('#block-r-' + btn_num).fadeIn();
   });
 }
+if ($(window).width() > 991) {
+  $('#btn-a-1').addClass('button_active');
+  $('.btn-angebot').click(function () {
+    $('.btn-angebot').removeClass('button_active');
+    $(this).toggleClass('button_active');
+    var btn_num = $(this).data('angebot');
+    $('.block-r-a').hide();
+    $('#block-r-a-' + btn_num).fadeIn().css('display', 'flex');
+  });
+}
+else {
+  $('.btn-angebot').click(function () {
+    $(this).toggleClass('button_active');
+    var btn_num = $(this).data('angebot');
+    $('#block-r-a-' + btn_num + '-resp').toggleClass('block-resp_active');
+    $('#block-r-a-' + btn_num).fadeIn();
+  });
+}
