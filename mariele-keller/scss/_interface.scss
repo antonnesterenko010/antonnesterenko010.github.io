@@ -75,12 +75,9 @@ h1,h2,h3,h4,h5,h6,p {
       }
     }
     .title {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 1.5;
       color: #AB1B40;
-      @include max-medium() {
-        font-size: 12px;
-      }
     }
     .extra {
       position: relative;
