@@ -63,15 +63,13 @@ $(document).mouseup(function (e) {
 $('.block-r-link, .block-r-link-2').click(function(event){
   event.preventDefault();
 });
-$('.block-r-link').click(function(){
-  $('.modal-1').fadeIn();
+// $('a[href^="#"]').click(function () {
+//   var target = $(this).attr('href');
+//   $('html, body').animate({
+//     scrollTop: $(target).offset().top
+//   }, 1500);
+// });
+$('.angebot-popup').click(function(){
+  var popup_data = $(this).data('popup');
+  $('.modal-' + popup_data).fadeIn();
 })
-$('.block-r-link-2').click(function () {
-  $('.modal-2').fadeIn();
-})
-$('a[href^="#"]').click(function () {
-  var target = $(this).attr('href');
-  $('html, body').animate({
-    scrollTop: $(target).offset().top
-  }, 1500);
-});

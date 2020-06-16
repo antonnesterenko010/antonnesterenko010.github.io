@@ -37,6 +37,7 @@ h1,h2,h3,h4,h5,h6,p {
   @include max-medium() {
     .container {
       width: 76%;
+      height: 100%;
     }
   }
 
@@ -44,13 +45,11 @@ h1,h2,h3,h4,h5,h6,p {
 }
 .header-wrap-t {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  height: 64px;
   .block {
     @include flexbox();
     justify-content: space-between;
-    padding: 21px 0px;
-    @include max-large() {
-      padding: 0;
-    }
+    height: 100%;
     &_active {
       flex-direction: row-reverse;
       justify-content: flex-end;
@@ -185,7 +184,7 @@ h1,h2,h3,h4,h5,h6,p {
     position: absolute;
     width: 100%;
     background: #ffffff;
-    margin: 10px 0px 0px;
+    z-index: -1;
   }
   .list {
     @include flexbox();
@@ -202,10 +201,7 @@ h1,h2,h3,h4,h5,h6,p {
   }
 }
 .main {
-  padding: 105px 0px 0px;
-  @include max-large() {
-    padding: 64px 0px 0px;
-  }
+  padding: 64px 0px 0px;
 }
 .hero {
   background: #B73D5B;
