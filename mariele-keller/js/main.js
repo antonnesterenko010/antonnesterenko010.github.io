@@ -73,3 +73,37 @@ $('.angebot-popup').click(function(){
   var popup_data = $(this).data('popup');
   $('.modal-' + popup_data).fadeIn();
 })
+$(document).ready(function () {
+  $("#menu , #footer-menu, .hero .block-l").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1000);
+  });
+});
+var positions = [],
+  currentActive = null,
+  links = $('.scroll-to');
+
+$(".anchor").each(function () {
+  positions.push({
+    top: $(this).position().top - 100,
+    a: links.filter('[href="#' + $(this).attr('id') + '"]')
+  });
+});
+
+positions = positions.reverse();
+
+$(window).on('scroll', function () {
+  var winTop = $(window).scrollTop();
+  for (var i = 0; i < positions.length; i++) {
+    if (positions[i].top < winTop) {
+      if (currentActive !== i) {
+        currentActive = i;
+        links.removeClass('active');
+        positions[i].a.addClass("active");
+      }
+      break;
+    }
+  }
+});

@@ -584,6 +584,10 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0px 25px;
 }
 
+.header-wrap-t .navbar .item .active .title {
+  color: #3D3F46;
+}
+
 .header-wrap-t .navbar .title {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -793,8 +797,8 @@ h1, h2, h3, h4, h5, h6, p {
   height: 0;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: 4s;
-  transition: 4s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .hero-text_active {
@@ -1284,8 +1288,13 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.angebot {
+  padding: 90px 0px 0px;
+}
+
 .angebot .section-title {
   color: #3C4152;
+  margin: 0px 0px 80px;
 }
 
 .angebot .section-block .block-l {
@@ -1504,17 +1513,18 @@ h1, h2, h3, h4, h5, h6, p {
     color: #ffffff;
   }
   .angebot .section-block .btn-angebot:hover i {
-    max-width: 6px;
-    max-height: 10px;
+    background-image: url(../img/btn-icon.svg);
   }
 }
 
 .angebot .section-block .btn-angebot i {
   display: block;
-  background-image: url(../img/btn-icon.svg);
+  background-image: url(../img/btn-icon-2.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   min-width: 6px;
+  height: 100%;
+  min-height: 10px;
 }
 
 .angebot .section-block .btn-angebot-resp {
@@ -1541,8 +1551,7 @@ h1, h2, h3, h4, h5, h6, p {
           transform: rotate(90deg);
   -webkit-transition: 0.15s ease;
   transition: 0.15s ease;
-  max-width: 6px;
-  max-height: 10px;
+  background-image: url(../img/btn-icon.svg);
 }
 
 @media only screen and (min-width: 992px) {
