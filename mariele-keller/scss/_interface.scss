@@ -655,6 +655,9 @@ h1,h2,h3,h4,h5,h6,p {
   .section-title {
     color: #3C4152;
     margin: 0px 0px 80px;
+    @include max-medium() {
+      margin: 0px;
+    }
   }
   .section-block {
     .block-l {
@@ -832,6 +835,9 @@ h1,h2,h3,h4,h5,h6,p {
 
 .online {
   padding: 120px 0px;
+  @include max-medium() {
+    padding: 0px;
+  }
   &-title {
     color: #3C4152;
   }
@@ -981,7 +987,7 @@ h1,h2,h3,h4,h5,h6,p {
     overflow-y: auto;
     overflow-x: hidden;
     @include max-medium() {
-      overflow: hidden;
+      max-height: 400px;
       margin: auto;
       width: 90%;
     }
@@ -994,10 +1000,13 @@ h1,h2,h3,h4,h5,h6,p {
       border-radius: 10px;
     }
     @include scrollbar-track(){
-      margin: 100px 0px;
+      margin: 160px 0px 30px;
       border-radius: 10px;
       background: transparent;
       transition: 0.15s ease-in-out;
+      @include max-medium() {
+        margin: 120px 0px 20px;
+      }
     }
   }
   .btn-close {

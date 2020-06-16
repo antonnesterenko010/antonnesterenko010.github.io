@@ -1,4 +1,5 @@
-$('.burger').click(function(){
+$('.burger').click(function(event){
+  event.preventDefault();
   $(this).toggleClass('burger_active');
   $('.header-block').toggleClass('block_active');
   $('.header-wrap-b').toggleClass('header-wrap-b_active');
@@ -74,13 +75,22 @@ $('.angebot-popup').click(function(){
   $('.modal-' + popup_data).fadeIn();
 })
 $(document).ready(function () {
-  $("#menu , #footer-menu, .hero .block-l").on("click", "a", function (event) {
+  $("#menu , #footer-menu, .hero .block-l, .header-wrap-b").on("click", "a", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top;
     $('body,html').animate({ scrollTop: top }, 1000);
   });
 });
+if ($(window).width() < 991) {
+  $('.logo .menu, .scroll-to').click(function () {
+    $('.header-wrap-b').toggleClass('header-wrap-b_active');
+  });
+  $('.burger_active').click(function () {
+    $('.header-wrap-b').removeClass('header-wrap-b_active');
+  })
+}
+
 var positions = [],
   currentActive = null,
   links = $('.scroll-to');

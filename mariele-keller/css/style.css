@@ -1297,6 +1297,12 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0px 0px 80px;
 }
 
+@media only screen and (max-width: 991px) {
+  .angebot .section-title {
+    margin: 0px;
+  }
+}
+
 .angebot .section-block .block-l {
   -ms-flex-preferred-size: 34%;
       flex-basis: 34%;
@@ -1564,6 +1570,12 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 120px 0px;
 }
 
+@media only screen and (max-width: 991px) {
+  .online {
+    padding: 0px;
+  }
+}
+
 .online-title {
   color: #3C4152;
 }
@@ -1790,7 +1802,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media only screen and (max-width: 991px) {
   .modal-dialog {
-    overflow: hidden;
+    max-height: 400px;
     margin: auto;
     width: 90%;
   }
@@ -1808,11 +1820,17 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .modal-dialog::-webkit-scrollbar-track {
-  margin: 100px 0px;
+  margin: 160px 0px 30px;
   border-radius: 10px;
   background: transparent;
   -webkit-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
+}
+
+@media only screen and (max-width: 991px) {
+  .modal-dialog::-webkit-scrollbar-track {
+    margin: 120px 0px 20px;
+  }
 }
 
 .modal .btn-close {
