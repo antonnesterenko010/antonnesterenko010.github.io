@@ -356,7 +356,7 @@ a {
   outline: none;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
   a {
     -webkit-tap-highlight-color: transparent;
   }
@@ -393,7 +393,7 @@ h1, h2, h3, h4, h5, h6, p {
   z-index: 1;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
   .header .container {
     width: 76%;
     height: 100%;

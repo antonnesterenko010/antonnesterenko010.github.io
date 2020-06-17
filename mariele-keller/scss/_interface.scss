@@ -8,7 +8,7 @@ a {
   text-decoration: none;
   color: #000000;
   outline: none;
-  @include max-medium() {
+  @include max-large() {
     -webkit-tap-highlight-color: transparent;
   }
 }
@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6,p {
   width: 100%;
   background: #ffffff;
   z-index: 1;
-  @include max-medium() {
+  @include max-large() {
     .container {
       width: 76%;
       height: 100%;

@@ -82,13 +82,16 @@ $(document).ready(function () {
     $('body,html').animate({ scrollTop: top }, 1000);
   });
 });
-if ($(window).width() < 991) {
-  $('.logo .menu, .scroll-to').click(function () {
-    $('.header-wrap-b').toggleClass('header-wrap-b_active');
-  });
-  $('.burger_active').click(function () {
+if ($(window).width() < 1200) {
+  $('.scroll-to').click(function () {
     $('.header-wrap-b').removeClass('header-wrap-b_active');
-  })
+    $('.header-block').removeClass('block_active');
+    $('.header-wrap-b').removeClass('header-wrap-b_active');
+    $('.header-logo').removeClass('header-logo_active');
+    $('.header-list').removeClass('logo_disabled');
+    $('.menu').removeClass('menu_active');
+    $('.burger').removeClass('burger_active');
+  });
 }
 
 var positions = [],
