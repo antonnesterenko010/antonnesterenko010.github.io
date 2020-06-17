@@ -836,7 +836,12 @@ h1,h2,h3,h4,h5,h6,p {
 .online {
   padding: 120px 0px;
   @include max-medium() {
-    padding: 0px;
+    padding: 80px 0px 0px;
+  }
+  .section-title {
+    @include max-medium() {
+      margin: 0px 0px 32px;
+    }
   }
   &-title {
     color: #3C4152;
@@ -868,6 +873,11 @@ h1,h2,h3,h4,h5,h6,p {
     background-image: url('../img/kontakt-bg-t-resp.png');
       height: 56px;
       bottom: -56px;
+    }
+  }
+  .section-title {
+    @include max-medium() {
+      margin: 0px 0px 32px;
     }
   }
   &-title {
