@@ -8,7 +8,7 @@ $('.burger').click(function(event){
   $('.menu').toggleClass('menu_active');
 })
 $('.read-btn').click(function(){
-  $('.hero-text-hidden').toggleClass('hero-text_active');
+  $('.hero-text-hidden').slideToggle('slow');
 });
 if ($(window).width() > 991) {
   $('#btn-1').addClass('button_active');
