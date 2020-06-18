@@ -794,7 +794,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero-text-hidden {
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   opacity: 0;
   -webkit-transition: 0.5s;
@@ -803,7 +803,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .hero-text_active {
   opacity: 1;
-  height: 470px;
+  max-height: 100%;
 }
 
 .hero .read-btn {
