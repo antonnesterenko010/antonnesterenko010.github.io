@@ -492,6 +492,10 @@ p {
   color: #000000;
 }
 
+.main {
+  width: 100%;
+}
+
 .main .container {
   width: 90%;
   height: 90%;
@@ -603,6 +607,7 @@ p {
 
 .main .games {
   margin: -5px;
+  width: 100%;
 }
 
 .main .games .games-list {
@@ -647,6 +652,7 @@ p {
   margin: 0px 0px -60px;
   -webkit-transition: 0.15s;
   transition: 0.15s;
+  z-index: 3;
 }
 
 .main .games .games-btn:hover .wrapper {
@@ -661,13 +667,17 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10px 0px 0px;
+  border-bottom-left-radius: 50px;
+  z-index: 4;
 }
 
 .main .games .games-btn .image {
   background-image: url("../img/game-image-1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 146px;
+  background-position: center center;
+  min-height: 74%;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .main .games .games-btn .title {
@@ -675,7 +685,7 @@ p {
   font-weight: 700;
   font-size: 12px;
   color: #000000;
-  max-height: 21px;
+  max-height: 38px;
   text-align: center;
   padding: 0px 30px;
 }
@@ -692,6 +702,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #ffffff;
 }
 
 .main .games .games-btn .hidden .rating {
@@ -705,7 +716,7 @@ p {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 5px 0px 10px;
+  margin: 0px;
 }
 
 .main .games .games-btn .hidden .rating .fa-star {
