@@ -248,13 +248,57 @@ p {
         }
       }
       .image {
-        background-image: url('../img/game-image-1.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         // min-height: 146px;
         min-height: 74%;
         border-radius: 5px 5px 0px 0px;
+      }
+      .image-1 {
+        background-image: url('../img/game-image-1.png');
+      }
+      .image-2 {
+        background-image: url('../img/game-image-2.png');
+      }
+      .image-3 {
+        background-image: url('../img/game-image-3.png');
+      }
+      .image-4 {
+        background-image: url('../img/game-image-4.png');
+      }
+      .image-5 {
+        background-image: url('../img/game-image-5.png');
+      }
+      .image-6 {
+        background-image: url('../img/game-image-6.png');
+      }
+      .image-7 {
+        background-image: url('../img/game-image-7.png');
+      }
+      .image-8 {
+        background-image: url('../img/game-image-8.png');
+      }
+      .image-9 {
+        background-image: url('../img/game-image-9.png');
+      }
+      .image-10 {
+        background-image: url('../img/game-image-10.png');
+      }
+      .image-11 {
+        background-image: url('../img/game-image-11.png');
+      }
+      .image-12 {
+        background-image: url('../img/game-image-12.png');
+      }
+      .image-13 {
+        background-image: url('../img/game-image-13.png');
+      }
+      .image-14 {
+        background-image: url('../img/game-image-14.png');
+      }
+      .image-15 {
+        background-image: url('../img/game-image-15.png');
       }
       .title {
         @include f-bold();

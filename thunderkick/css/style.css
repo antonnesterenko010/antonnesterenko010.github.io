@@ -670,12 +670,71 @@ p {
 }
 
 .main .games .games-btn .image {
-  background-image: url("../img/game-image-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   min-height: 74%;
   border-radius: 5px 5px 0px 0px;
+}
+
+.main .games .games-btn .image-1 {
+  background-image: url("../img/game-image-1.png");
+}
+
+.main .games .games-btn .image-2 {
+  background-image: url("../img/game-image-2.png");
+}
+
+.main .games .games-btn .image-3 {
+  background-image: url("../img/game-image-3.png");
+}
+
+.main .games .games-btn .image-4 {
+  background-image: url("../img/game-image-4.png");
+}
+
+.main .games .games-btn .image-5 {
+  background-image: url("../img/game-image-5.png");
+}
+
+.main .games .games-btn .image-6 {
+  background-image: url("../img/game-image-6.png");
+}
+
+.main .games .games-btn .image-7 {
+  background-image: url("../img/game-image-7.png");
+}
+
+.main .games .games-btn .image-8 {
+  background-image: url("../img/game-image-8.png");
+}
+
+.main .games .games-btn .image-9 {
+  background-image: url("../img/game-image-9.png");
+}
+
+.main .games .games-btn .image-10 {
+  background-image: url("../img/game-image-10.png");
+}
+
+.main .games .games-btn .image-11 {
+  background-image: url("../img/game-image-11.png");
+}
+
+.main .games .games-btn .image-12 {
+  background-image: url("../img/game-image-12.png");
+}
+
+.main .games .games-btn .image-13 {
+  background-image: url("../img/game-image-13.png");
+}
+
+.main .games .games-btn .image-14 {
+  background-image: url("../img/game-image-14.png");
+}
+
+.main .games .games-btn .image-15 {
+  background-image: url("../img/game-image-15.png");
 }
 
 .main .games .games-btn .title {
