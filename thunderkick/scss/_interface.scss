@@ -132,23 +132,30 @@ p {
     }
   }
   .block-b {
-    @include flexbox();
+    // @include flexbox();
     // padding: 25px 0px 40px;
     padding: 25px 0px 0px;
-    height: 95%;
+    height: 95%;    
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
   }
   .categories {
-    margin: 0px 10px 0px 0px;
+    // margin: 0px 10px 0px 0px;
+    grid-column-end: span 2;
     .categories-list {
-      @include flexbox();
-      flex-direction: column;
-      margin: -5px 0px;
+      // @include flexbox();
+      // flex-direction: column;
+      // margin: -5px 0px;
       height: 100%;
+      display: grid;
+      grid-template-rows: repeat(3,1fr);
     }
     .categories-item {
       // margin: 5px 0px;
       padding: 5px 0px;
-      height: 33%;
+      // height: 33%;
+      width: 100%;
+      height: 100%;
     }
     .categories-btn {
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -156,7 +163,7 @@ p {
       border-radius: 5px;
       // width: 172px;
       // height: 152px;
-      min-width: 172px;
+      // min-width: 172px;
       width: 100%;
       height: 100%;
       @include flexbox();
@@ -191,15 +198,23 @@ p {
     }
   }
   .games {
-    margin: -5px;
-    width: 100%;
+    // margin: -5px;
+    grid-column-end: span 10;
+    // width: 100%;
     .games-list {
-      @include flexbox();
-      flex-wrap: wrap;
+      // @include flexbox();
+      // flex-wrap: wrap;
+      // width: 100%;
+      display: grid;
+      grid-template-rows: repeat(3,1fr);
+      grid-template-columns: repeat(5,1fr);
       width: 100%;
+      height: 100%;
     }
     .games-item {
-      width: 20%;
+      // width: 20%;
+      width: 100%;
+      height: 100%;
       padding: 5px;
     }
     .games-btn {
@@ -208,7 +223,8 @@ p {
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
       background: #FFFFFF;
       border-radius: 5px;
-      height: 152px;
+      // height: 152px;
+      height: 100%;
       // @include min-large() {
       //   height: 198px;
       // }
