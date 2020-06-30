@@ -8,26 +8,11 @@ $('.slider').slick({
       return '<button type="button" class="button slick-dots-btn">' + ('0' + (i + 1)).slice(-2) + '</button>';
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-// $('.burger').click(function(event){
-//   event.preventDefault();
-//   $(this).toggleClass('burger_active');
-//   $('.header-block').toggleClass('block_active');
-//   $('.header-wrap-b').toggleClass('header-wrap-b_active');
-//   $('.header-logo').toggleClass('header-logo_active');
-//   $('.header-list').toggleClass('logo_disabled');
-//   $('.menu').toggleClass('menu_active');
-// })
+$('.burger-btn').click(function(event){
+  event.preventDefault();
+  $(this).toggleClass('active');
+  $('.header').toggleClass('active');
+})
 // $('.read-btn').click(function(){
 //   $('.hero-text-hidden').slideToggle('slow');
 // });
