@@ -378,6 +378,8 @@ template {
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .slick-track {
@@ -1068,8 +1070,18 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero .slider {
-  position: relative;
   width: 100%;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hero .slider .slider-item {
@@ -1186,23 +1198,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero .slick-dots {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: translate(calc(-0% - 450px), calc(-0% - -61px));
-          transform: translate(calc(-0% - 450px), calc(-0% - -61px));
   display: -webkit-box;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 50%;
   margin: 0px -9px;
-}
-
-@media only screen and (max-width: 767px) {
-  .hero .slick-dots {
-    -webkit-transform: translate(calc(-0% - 0px), calc(-0% - 0px));
-            transform: translate(calc(-0% - 0px), calc(-0% - 0px));
-  }
 }
 
 .hero .slick-dots li {
