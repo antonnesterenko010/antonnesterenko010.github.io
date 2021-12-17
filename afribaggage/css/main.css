@@ -1903,7 +1903,7 @@ body {
   position: absolute;
   font-size: 0;
   left: 23px;
-  top: calc(50% - -1px);
+  top: calc(50% - 1px);
   -moz-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);

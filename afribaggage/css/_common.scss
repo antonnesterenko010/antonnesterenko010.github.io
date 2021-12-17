@@ -908,7 +908,7 @@ body {
           position: absolute;
           font-size: 0;
           left: 23px;
-          top: calc(50% - -1px);
+          top: calc(50% - 1px);
           @include transform(translate(0, -50%));
           background-image: url('../img/arrow-right.svg');
           background-repeat: no-repeat;
