@@ -26,16 +26,16 @@ a {
 ul, li {
   list-style-type: none;
 }
-html, body {
-  height: 100%;
-}
-body {
-  @include flexbox();
-  @include flex-direction-column();
-}
-.main-content {
-  flex: 1 0 auto;
-}
+//html, body {
+//  height: 100%;
+//}
+//body {
+//  @include flexbox();
+//  @include flex-direction-column();
+//}
+//.main-content {
+//  flex: 1 0 auto;
+//}
 .container {
   padding: 0 20px;
   width: 100%;
@@ -329,9 +329,27 @@ body {
       .header-left {
         @include flexbox();
         .header-logo {
-          margin: 5px 50px 0 -2px;
+          margin: 5px 44px 0 -2px;
           @include flexbox();
           @include align-items-center();
+          .header-logo__image {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 1px solid #eaeaea;
+            @include flexbox();
+            @include justify-content-center();
+            @include align-items-center();
+            margin: 0 0 4px 2px;
+          }
+          .header-logo__text {
+            margin: 0 0 0 16px;
+            @include inter-bold();
+            font-size: 20px;
+            line-height: 1.4;
+            color: #222;
+            text-transform: uppercase;
+          }
         }
         .header-menu {
           position: relative;
@@ -941,7 +959,7 @@ body {
 .footer {
   background: #F8F8FA;
   padding: 35px 0 32px;
-  flex-shrink: 0;
+  //flex-shrink: 0;
   @include min-large() {
     background: #fff;
     height: 69px;
@@ -1056,7 +1074,7 @@ body {
         color: #565656;
         display: block;
         @include min-large() {
-          @include inter-semibold();
+          @include inter-regular();
           font-size: 14px;
           line-height: 1.5;
           margin: 0 22px 0 -4px;

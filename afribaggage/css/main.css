@@ -692,24 +692,6 @@ ul, li {
   list-style-type: none;
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.main-content {
-  flex: 1 0 auto;
-}
-
 .container {
   padding: 0 20px;
   width: 100%;
@@ -1098,13 +1080,37 @@ body {
     display: flex;
   }
   .header .header-desktop .header-left .header-logo {
-    margin: 5px 50px 0 -2px;
+    margin: 5px 44px 0 -2px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  .header .header-desktop .header-left .header-logo .header-logo__image {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #eaeaea;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 0 4px 2px;
+  }
+  .header .header-desktop .header-left .header-logo .header-logo__text {
+    margin: 0 0 0 16px;
+    font-family: "Inter Bold";
+    font-size: 20px;
+    line-height: 1.4;
+    color: #222;
+    text-transform: uppercase;
   }
   .header .header-desktop .header-left .header-menu {
     position: relative;
@@ -1951,7 +1957,6 @@ body {
 .footer {
   background: #F8F8FA;
   padding: 35px 0 32px;
-  flex-shrink: 0;
 }
 @media only screen and (min-width: 1201px) {
   .footer {
@@ -2121,7 +2126,7 @@ body {
 }
 @media only screen and (min-width: 1201px) {
   .footer .footer-block .footer-menu .footer-item {
-    font-family: "Inter Semibold";
+    font-family: "Inter Regular";
     font-size: 14px;
     line-height: 1.5;
     margin: 0 22px 0 -4px;
