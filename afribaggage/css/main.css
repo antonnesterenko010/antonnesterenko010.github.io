@@ -692,6 +692,10 @@ ul, li {
   list-style-type: none;
 }
 
+body {
+  overflow: hidden;
+}
+
 .container {
   padding: 0 20px;
   width: 100%;
