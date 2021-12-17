@@ -1819,19 +1819,19 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "Gilroy Regular";
+  font-family: "Gilroy Medium";
   font-size: 16px;
   line-height: 1.5;
-  color: #A3A3A3;
+  color: #212121;
   border: none;
   outline: none;
 }
 @media only screen and (min-width: 1201px) {
   .hero .track-block .track-form .track-input input[type=text] {
-    font-family: "Inter Regular";
+    font-family: "Inter Semibold";
     font-size: 14px;
     line-height: 1.4;
-    color: #565656;
+    color: #212121;
     text-align: left;
     background: #F8F8FA;
     border-radius: 4px;
@@ -1840,62 +1840,62 @@ body {
   }
 }
 .hero .track-block .track-form .track-input input[type=text].placeholder {
-  font-family: "Gilroy Regular";
+  font-family: "Gilroy Medium";
   font-size: 16px;
   line-height: 1.5;
-  color: #A3A3A3;
+  color: #212121;
 }
 @media only screen and (min-width: 1201px) {
   .hero .track-block .track-form .track-input input[type=text].placeholder {
-    font-family: "Inter Regular";
+    font-family: "Inter Semibold";
     font-size: 14px;
     line-height: 1.4;
-    color: #565656;
+    color: #212121;
     text-align: left;
   }
 }
 .hero .track-block .track-form .track-input input[type=text]:-moz-placeholder {
-  font-family: "Gilroy Regular";
+  font-family: "Gilroy Medium";
   font-size: 16px;
   line-height: 1.5;
-  color: #A3A3A3;
+  color: #212121;
 }
 @media only screen and (min-width: 1201px) {
   .hero .track-block .track-form .track-input input[type=text]:-moz-placeholder {
-    font-family: "Inter Regular";
+    font-family: "Inter Semibold";
     font-size: 14px;
     line-height: 1.4;
-    color: #565656;
+    color: #212121;
     text-align: left;
   }
 }
 .hero .track-block .track-form .track-input input[type=text]::-moz-placeholder {
-  font-family: "Gilroy Regular";
+  font-family: "Gilroy Medium";
   font-size: 16px;
   line-height: 1.5;
-  color: #A3A3A3;
+  color: #212121;
 }
 @media only screen and (min-width: 1201px) {
   .hero .track-block .track-form .track-input input[type=text]::-moz-placeholder {
-    font-family: "Inter Regular";
+    font-family: "Inter Semibold";
     font-size: 14px;
     line-height: 1.4;
-    color: #565656;
+    color: #212121;
     text-align: left;
   }
 }
 .hero .track-block .track-form .track-input input[type=text]::-webkit-input-placeholder {
-  font-family: "Gilroy Regular";
+  font-family: "Gilroy Medium";
   font-size: 16px;
   line-height: 1.5;
-  color: #A3A3A3;
+  color: #212121;
 }
 @media only screen and (min-width: 1201px) {
   .hero .track-block .track-form .track-input input[type=text]::-webkit-input-placeholder {
-    font-family: "Inter Regular";
+    font-family: "Inter Semibold";
     font-size: 14px;
     line-height: 1.4;
-    color: #565656;
+    color: #212121;
     text-align: left;
   }
 }
