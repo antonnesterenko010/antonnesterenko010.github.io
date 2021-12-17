@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Avenir Medium';
+    src: url('../fonts/Avenir/AvenirNextCyr-Medium.eot');
+    src: url('../fonts/Avenir/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Avenir/AvenirNextCyr-Medium.woff2') format('woff2'),
+    url('../fonts/Avenir/AvenirNextCyr-Medium.woff') format('woff'),
+    url('../fonts/Avenir/AvenirNextCyr-Medium.ttf') format('truetype'),
+    url('../fonts/Avenir/AvenirNextCyr-Medium.svg#AvenirNextCyr-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy Regular';
+    src: url('../fonts/Gilroy/Gilroy-Regular.eot');
+    src: url('../fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+    url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy Medium';
+    src: url('../fonts/Gilroy/Gilroy-Medium.eot');
+    src: url('../fonts/Gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Medium.woff2') format('woff2'),
+    url('../fonts/Gilroy/Gilroy-Medium.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Medium.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-Medium.svg#Gilroy-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy Semibold';
+    src: url('../fonts/Gilroy/Gilroy-SemiBold.eot');
+    src: url('../fonts/Gilroy/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-SemiBold.woff2') format('woff2'),
+    url('../fonts/Gilroy/Gilroy-SemiBold.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-SemiBold.svg#Gilroy-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('../fonts/Gilroy/Gilroy-Bold.eot');
+    src: url('../fonts/Gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
+    url('../fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-Bold.svg#Gilroy-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy Extrabold';
+    src: url('../fonts/Gilroy/Gilroy-ExtraBold.eot');
+    src: url('../fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-ExtraBold.svg#Gilroy-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Gilroy Heavy';
+    src: url('../fonts/Gilroy/Gilroy-Heavy.eot');
+    src: url('../fonts/Gilroy/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy/Gilroy-Heavy.woff2') format('woff2'),
+    url('../fonts/Gilroy/Gilroy-Heavy.woff') format('woff'),
+    url('../fonts/Gilroy/Gilroy-Heavy.ttf') format('truetype'),
+    url('../fonts/Gilroy/Gilroy-Heavy.svg#Gilroy-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('../fonts/Inter/Inter-Regular.eot');
+    src: url('../fonts/Inter/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Inter/Inter-Regular.woff2') format('woff2'),
+    url('../fonts/Inter/Inter-Regular.woff') format('woff'),
+    url('../fonts/Inter/Inter-Regular.ttf') format('truetype'),
+    url('../fonts/Inter/Inter-Regular.svg#Inter-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Semibold';
+    src: url('../fonts/Inter/Inter-SemiBold.eot');
+    src: url('../fonts/Inter/Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Inter/Inter-SemiBold.woff2') format('woff2'),
+    url('../fonts/Inter/Inter-SemiBold.woff') format('woff'),
+    url('../fonts/Inter/Inter-SemiBold.ttf') format('truetype'),
+    url('../fonts/Inter/Inter-SemiBold.svg#Inter-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('../fonts/Inter/Inter-Bold.eot');
+    src: url('../fonts/Inter/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Inter/Inter-Bold.woff2') format('woff2'),
+    url('../fonts/Inter/Inter-Bold.woff') format('woff'),
+    url('../fonts/Inter/Inter-Bold.ttf') format('truetype'),
+    url('../fonts/Inter/Inter-Bold.svg#Inter-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
