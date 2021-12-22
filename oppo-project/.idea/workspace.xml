@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4e845f72-0bd6-492c-88f9-0fc4de94b42c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../opto-project/css/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/css/_fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/css/_mixin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/css/_swiper-bundle.min.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/css/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/css/main.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/css/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/css/page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Bold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Medium.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/js/swiper-bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/privacy.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="22bVRdYAcO9CGCvSZm6xJLluKJN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../opto-project/fonts" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Anton Nesterenko\Desktop\antonportfolio\portfolio\antonnesterenko010.github.io\opto-project\fonts" />
+      <recent name="C:\Users\Anton Nesterenko\Desktop\antonportfolio\portfolio\antonnesterenko010.github.io\oppo-project\js" />
+      <recent name="C:\Users\Anton Nesterenko\Desktop\antonportfolio\portfolio\antonnesterenko010.github.io\oppo-project" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e845f72-0bd6-492c-88f9-0fc4de94b42c" name="Changes" comment="" />
+      <created>1640106267053</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640106267053</updated>
+      <workItem from="1640106268326" duration="40496000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
