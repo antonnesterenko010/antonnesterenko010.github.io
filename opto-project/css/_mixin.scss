@@ -211,6 +211,12 @@
   }
 }
 
+@mixin between-mob-and-tablet {
+  @media (min-width: 374px) and (max-width: 749px){
+    @content;
+  }
+}
+
 @mixin f-regular {
   font-family: 'Google Sans Regular';
 }

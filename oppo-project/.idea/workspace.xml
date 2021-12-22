@@ -5,35 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e845f72-0bd6-492c-88f9-0fc4de94b42c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../opto-project/css/_common.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/css/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/css/_mixin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/css/_swiper-bundle.min.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/css/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/css/main.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/css/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/css/page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Bold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Medium.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/fonts/GoogleSans-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/js/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/js/swiper-bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/privacy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/css/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/_common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/css/_mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/_mixin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640106267053</updated>
       <workItem from="1640106268326" duration="40496000" />
+      <workItem from="1640181048971" duration="7406000" />
     </task>
     <servers />
   </component>
