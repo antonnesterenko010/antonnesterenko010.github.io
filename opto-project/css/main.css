@@ -1834,6 +1834,11 @@ body.overflow-hidden {
   width: 50%;
   padding: 9px 6.5px;
 }
+@media (min-width: 1310px) and (max-width: 1919px) {
+  .service .service-block .service-list .service-list-item {
+    width: 33% !important;
+  }
+}
 @media only screen and (min-width: 1201px) {
   .service .service-block .service-list .service-list-item {
     width: auto;
@@ -1879,6 +1884,15 @@ body.overflow-hidden {
   -ms-flex-align: center;
   align-items: center;
 }
+@media (min-width: 1310px) and (max-width: 1919px) {
+  .service .service-block .service-list .service-list-item .service-item-wrapper {
+    padding: 20px 0 43px !important;
+    min-width: 331px !important;
+    max-width: 331px !important;
+    min-height: 192px !important;
+    max-height: 192px !important;
+  }
+}
 @media only screen and (min-width: 1201px) {
   .service .service-block .service-list .service-list-item .service-item-wrapper {
     border-radius: 20px;
@@ -1907,6 +1921,14 @@ body.overflow-hidden {
     margin: 0 0 21px;
   }
 }
+@media (min-width: 1310px) and (max-width: 1919px) {
+  .service .service-block .service-list .service-list-item .service-item-wrapper .service-icon {
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+  }
+}
 @media (min-width: 1px) and (max-width: 749px) {
   .service .service-block .service-list .service-list-item .service-item-wrapper .service-icon {
     min-width: 70px;
@@ -1928,6 +1950,14 @@ body.overflow-hidden {
     max-width: 70px;
     min-height: 70px;
     max-height: 70px;
+  }
+}
+@media (min-width: 1310px) and (max-width: 1919px) {
+  .service .service-block .service-list .service-list-item .service-item-wrapper .service-icon img {
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
   }
 }
 .service .service-block .service-list .service-list-item .service-item-wrapper .service-title {
@@ -2337,6 +2367,12 @@ body.overflow-hidden {
     margin: 7px;
   }
 }
+@media (min-width: 1310px) and (max-width: 1919px) {
+  .catalog .catalog-block .catalog-list .catalog-item {
+    width: 25%;
+    margin: 7px 0;
+  }
+}
 @media (min-width: 1px) and (max-width: 749px) {
   .catalog .catalog-block .catalog-list .catalog-item {
     margin: 5px;
@@ -2361,6 +2397,14 @@ body.overflow-hidden {
   max-height: 210px;
   position: relative;
 }
+@media (min-width: 1310px) and (max-width: 1919px) {
+  .catalog .catalog-block .catalog-list .catalog-item .catalog-item-wrapper {
+    min-width: 148px !important;
+    max-width: 148px !important;
+    min-height: 114px !important;
+    max-height: 114px !important;
+  }
+}
 @media (min-width: 1px) and (max-width: 749px) {
   .catalog .catalog-block .catalog-list .catalog-item .catalog-item-wrapper {
     min-width: 122px;
@@ -2382,6 +2426,15 @@ body.overflow-hidden {
 .catalog .catalog-block .catalog-list .catalog-item .catalog-item-wrapper .catalog-icon {
   position: absolute;
   top: 13px;
+}
+@media (min-width: 1310px) and (max-width: 1919px) {
+  .catalog .catalog-block .catalog-list .catalog-item .catalog-item-wrapper .catalog-icon {
+    min-width: 55px !important;
+    max-width: 55px !important;
+    min-height: 55px !important;
+    max-height: 55px !important;
+    top: 10px !important;
+  }
 }
 @media only screen and (min-width: 1201px) {
   .catalog .catalog-block .catalog-list .catalog-item .catalog-item-wrapper .catalog-icon {
@@ -2416,6 +2469,14 @@ body.overflow-hidden {
     max-height: 50px;
   }
 }
+@media (min-width: 1310px) and (max-width: 1919px) {
+  .catalog .catalog-block .catalog-list .catalog-item .catalog-item-wrapper .catalog-icon img {
+    min-width: 55px !important;
+    max-width: 55px !important;
+    min-height: 55px !important;
+    max-height: 55px !important;
+  }
+}
 .catalog .catalog-block .catalog-list .catalog-item .catalog-item-wrapper .catalog-title {
   max-width: 80%;
   text-align: center;
@@ -2428,6 +2489,12 @@ body.overflow-hidden {
   -ms-flex-align: center;
   align-items: center;
   margin: 119px 0 0;
+}
+@media (min-width: 1310px) and (max-width: 1919px) {
+  .catalog .catalog-block .catalog-list .catalog-item .catalog-item-wrapper .catalog-title {
+    margin: 60px 0 0 !important;
+    font-size: 11px;
+  }
 }
 @media only screen and (min-width: 1201px) {
   .catalog .catalog-block .catalog-list .catalog-item .catalog-item-wrapper .catalog-title {

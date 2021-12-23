@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4e845f72-0bd6-492c-88f9-0fc4de94b42c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../opto-project/css/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/_common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/css/_mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/_mixin.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../opto-project/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../opto-project/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../opto-project/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/main.scss" afterDir="false" />
@@ -75,6 +75,7 @@
       <workItem from="1640196101062" duration="26143000" />
       <workItem from="1640243289346" duration="17000" />
       <workItem from="1640252571845" duration="1096000" />
+      <workItem from="1640268519650" duration="1544000" />
     </task>
     <servers />
   </component>

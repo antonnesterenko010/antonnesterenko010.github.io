@@ -216,6 +216,11 @@
     @content;
   }
 }
+@mixin between-desktop-and-wide {
+  @media (min-width: 1310px) and (max-width: 1919px){
+    @content;
+  }
+}
 
 @mixin f-regular {
   font-family: 'Google Sans Regular';
