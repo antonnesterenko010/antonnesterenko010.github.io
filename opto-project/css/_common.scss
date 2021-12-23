@@ -516,6 +516,7 @@ body.overflow-hidden {
         .header-lang-list.opened {
           opacity: 1;
           visibility: visible;
+          z-index: 2;
         }
         .header-lang-list {
           @include transition(all .5s ease);

@@ -1264,6 +1264,7 @@ body.overflow-hidden {
 .header .header-desktop .header-block .header-lang-btn_wrapper .header-lang-list.opened {
   opacity: 1;
   visibility: visible;
+  z-index: 2;
 }
 .header .header-desktop .header-block .header-lang-btn_wrapper .header-lang-list {
   -webkit-transition: all 0.5s ease;
@@ -2643,6 +2644,16 @@ body.overflow-hidden {
   .business .business-block .business-image-block .business-image.desktop {
     display: block;
     margin: 0 0 -95px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1269px) {
+  .business .business-block .business-image-block .business-image.desktop {
+    margin: 0 0 -225px;
+  }
+}
+@media (min-width: 1270px) and (max-width: 1600px) {
+  .business .business-block .business-image-block .business-image.desktop img {
+    min-width: 772px;
   }
 }
 .business .business-block .section-btn__page-up {

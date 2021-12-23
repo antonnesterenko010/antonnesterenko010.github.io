@@ -862,6 +862,14 @@
           display: block;
           margin: 0 0 -95px;
         }
+        @media (min-width: 1200px) and (max-width: 1269px) {
+          margin: 0 0 -225px;
+        }
+        img {
+          @media (min-width: 1270px) and (max-width: 1600px) {
+            min-width: 772px;
+          }
+        }
       }
     }
     .section-btn__page-up {
