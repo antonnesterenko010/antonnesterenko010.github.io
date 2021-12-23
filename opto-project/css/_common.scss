@@ -63,6 +63,7 @@ body.overflow-hidden {
 }
 .main-content {
   flex: 1 0 auto;
+  z-index: -1;
 }
 .container {
   width: 87%;
@@ -324,7 +325,7 @@ body.overflow-hidden {
 .section-btn__page-down {
   .btn-icon {
     @include min-large() {
-      margin-left: -3px;
+      //margin-left: -3px;
     }
   }
 }

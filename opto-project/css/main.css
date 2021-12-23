@@ -676,6 +676,7 @@ body.overflow-hidden {
 
 .main-content {
   flex: 1 0 auto;
+  z-index: -1;
 }
 
 .container {
@@ -1011,12 +1012,6 @@ body.overflow-hidden {
     max-width: 20px;
     min-height: 20px;
     max-height: 20px;
-  }
-}
-
-@media only screen and (min-width: 1201px) {
-  .section-btn__page-down .btn-icon {
-    margin-left: -3px;
   }
 }
 

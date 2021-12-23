@@ -71,7 +71,7 @@ $('.header-mobile .header-lang-item.lang-sg, .header-desktop .header-lang-btn_wr
 });
 $('a[href^="#"]').click(function () {
     let target = $(this).attr('href');
-    let fixed_offset = 30;
+    let fixed_offset = -55;
     $('html, body').animate({
         scrollTop: $(target).offset().top - fixed_offset
     }, 1500);
