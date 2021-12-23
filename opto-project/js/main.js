@@ -82,9 +82,9 @@ swiper = new Swiper('.home-slider', {
         prevEl: ".slider-button-prev",
         nextEl: ".slider-button-next",
     },
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
     loop: true
 })

@@ -5,12 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e845f72-0bd6-492c-88f9-0fc4de94b42c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../opto-project/img/new-decore/hero-circle-large_desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/img/new-decore/hero-circle-small_desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/img/new-decore/service-circle-large_375.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/img/new-decore/service-circle-large_desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/img/new-decore/service-circle-large_mobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/img/new-decore/service-circle-small_375.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/img/new-decore/service-circle-small_desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/img/new-decore/service-circle-small_mobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/img/new-decore/slider-circle-small_375.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/img/new-decore/slider-circle-small_desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../opto-project/img/new-decore/slider-circle-small_mobile.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../opto-project/css/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/_common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../opto-project/css/_mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/_mixin.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../opto-project/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../opto-project/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../opto-project/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/Slice 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/about_image_desktop.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/about_image_desktop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/about_image_mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/about_image_mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/business_image_desktop.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/business_image_desktop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/business_image_mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/business_image_mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/hero_image_desktop.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/hero_image_desktop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/hero_image_desktop_v2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/hero_image_desktop_v2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/hero_image_mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/hero_image_mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/opto-logo-desktop.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/opto-logo-desktop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/opto-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/opto-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/opto-logo_green.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/opto-logo_green.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/policy_phones.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/policy_phones.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/policy_phones_mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/policy_phones_mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/slider-image-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/slider-image-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/slider-image-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/slider-image-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/img/slider-image-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/img/slider-image-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../opto-project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../opto-project/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +75,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../opto-project/fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../opto-project/img/new-decore" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -57,6 +85,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Anton Nesterenko\Desktop\antonportfolio\portfolio\antonnesterenko010.github.io\opto-project\img\new-decore" />
+      <recent name="C:\Users\Anton Nesterenko\Desktop\antonportfolio\portfolio\antonnesterenko010.github.io\opto-project\img" />
       <recent name="C:\Users\Anton Nesterenko\Desktop\antonportfolio\portfolio\antonnesterenko010.github.io\opto-project\fonts" />
       <recent name="C:\Users\Anton Nesterenko\Desktop\antonportfolio\portfolio\antonnesterenko010.github.io\oppo-project\js" />
       <recent name="C:\Users\Anton Nesterenko\Desktop\antonportfolio\portfolio\antonnesterenko010.github.io\oppo-project" />
@@ -71,7 +101,8 @@
       <option name="presentableId" value="Default" />
       <updated>1640106267053</updated>
       <workItem from="1640106268326" duration="40496000" />
-      <workItem from="1640181048971" duration="7406000" />
+      <workItem from="1640181048971" duration="7800000" />
+      <workItem from="1640196101062" duration="25547000" />
     </task>
     <servers />
   </component>
