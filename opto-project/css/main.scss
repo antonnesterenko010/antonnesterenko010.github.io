@@ -44,6 +44,13 @@
       max-height: 802px;
       border-radius: 50%;
       z-index: -1;
+      @media (min-width: 1200px) and (max-width: 1600px) {
+        min-width: 572px;
+        max-width: 572px;
+        min-height: 572px;
+        max-height: 572px;
+        top: calc(100% - 358px);
+      }
     }
   }
   .hero-text-block {

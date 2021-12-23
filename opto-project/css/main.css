@@ -654,19 +654,29 @@ body {
   flex-direction: column;
 }
 
-body.lang-ru .section .lang-en, body.lang-ru .section .lang-ua, body.lang-ru .section .lang-sg {
+body.lang-ru .section .lang-en, body.lang-ru .section .lang-ua, body.lang-ru .section .lang-sg,
+body.lang-ru .footer .lang-en, body.lang-ru .footer .lang-ua, body.lang-ru .footer .lang-sg {
+  display: none !important;
+}
+body.lang-ru .header .header-desktop .header-block .header-lang-btn_wrapper.lang-ru {
+  display: block;
+}
+
+body.lang-ua .section .lang-en, body.lang-ua .section .lang-ru, body.lang-ua .section .lang-sg,
+body.lang-ua .footer .lang-en, body.lang-ua .footer .lang-ru, body.lang-ua .footer .lang-sg {
   display: none !important;
 }
 
-body.lang-ua .section .lang-en, body.lang-ua .section .lang-ru, body.lang-ua .section .lang-sg {
+body.lang-en .section .lang-ua, body.lang-en .section .lang-ru, body.lang-en .section .lang-sg,
+body.lang-en .footer .lang-ua, body.lang-en .footer .lang-ru, body.lang-en .footer .lang-sg {
   display: none !important;
 }
-
-body.lang-en .section .lang-ua, body.lang-en .section .lang-ru, body.lang-en .section .lang-sg {
-  display: none !important;
+body.lang-en .header .header-desktop .header-block .header-lang-btn_wrapper.lang-en {
+  display: block;
 }
 
-body.lang-sg .section .lang-ua, body.lang-sg .section .lang-ru, body.lang-sg .section .lang-en {
+body.lang-sg .section .lang-ua, body.lang-sg .section .lang-ru, body.lang-sg .section .lang-en,
+body.lang-sg .footer .lang-ua, body.lang-sg .footer .lang-ru, body.lang-sg .footer .lang-en {
   display: none !important;
 }
 
@@ -676,7 +686,7 @@ body.overflow-hidden {
 
 .main-content {
   flex: 1 0 auto;
-  z-index: -1;
+  z-index: 0;
 }
 
 .container {
@@ -1217,9 +1227,6 @@ body.overflow-hidden {
 .header .header-desktop .header-block .header-logo {
   margin: 0 33.67px 0 0;
 }
-.header .header-desktop .header-block .header-lang-btn_wrapper.lang-ru {
-  display: block;
-}
 .header .header-desktop .header-block .header-lang-btn_wrapper {
   display: none;
   position: relative;
@@ -1528,6 +1535,15 @@ body.overflow-hidden {
   max-height: 802px;
   border-radius: 50%;
   z-index: -1;
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .hero .hero-image-block.desktop .hero-circle {
+    min-width: 572px;
+    max-width: 572px;
+    min-height: 572px;
+    max-height: 572px;
+    top: calc(100% - 358px);
+  }
 }
 .hero .hero-text-block {
   flex-basis: 37.5%;
