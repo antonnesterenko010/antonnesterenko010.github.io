@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e845f72-0bd6-492c-88f9-0fc4de94b42c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../opto-project/index-en.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../opto-project/index-ru.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../opto-project/css/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/_common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../opto-project/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../opto-project/css/main.css" afterDir="false" />
@@ -79,7 +77,9 @@
       <workItem from="1640252571845" duration="1096000" />
       <workItem from="1640268519650" duration="1604000" />
       <workItem from="1640272204044" duration="606000" />
-      <workItem from="1640289167374" duration="4214000" />
+      <workItem from="1640289167374" duration="4268000" />
+      <workItem from="1640337013344" duration="7000" />
+      <workItem from="1640638209977" duration="10292000" />
     </task>
     <servers />
   </component>
