@@ -21,7 +21,7 @@ $(window).scroll(function() {
 });
 //russia
 
-$('.header-mobile .header-lang-item.lang-ru, .header-desktop .header-lang-btn_wrapper.lang-ru .header-lang-btn, .header-desktop .header-lang-item.lang-ru').on('click', function(){
+$('.header-mobile .header-lang-item.lang-ru, .header-desktop .header-lang-btn_wrapper.lang-ru .header-lang-btn, .header-desktop .header-lang-item.lang-ru').on('click', function(e){
     $('.header-overlay').removeClass('opened');
     $('body').removeClass('lang-ua lang-en lang-sg overflow-hidden');
     $('body').addClass('lang-ru');
@@ -31,10 +31,14 @@ $('.header-mobile .header-lang-item.lang-ru, .header-desktop .header-lang-btn_wr
     $('.header-desktop .header-lang-btn_wrapper.lang-ru .header-lang-btn .lang-carret').toggleClass('rotate');
     $('.header-desktop .header-lang-btn_wrapper').hide();
     $('.header-desktop .header-lang-btn_wrapper.lang-ru').show();
+    console.log('rururu');
+    window.location.hash = 'hl=ru';
+    return false;
+
 
 });
 //ukraine
-$('.header-mobile .header-lang-item.lang-ua, .header-desktop .header-lang-btn_wrapper.lang-ua .header-lang-btn, .header-desktop .header-lang-item.lang-ua').on('click', function(){
+$('.header-mobile .header-lang-item.lang-ua, .header-desktop .header-lang-btn_wrapper.lang-ua .header-lang-btn, .header-desktop .header-lang-item.lang-ua').on('click', function(e){
     $('.header-overlay').removeClass('opened');
     $('body').removeClass('lang-ru lang-en lang-sg overflow-hidden');
     $('body').addClass('lang-ua');
@@ -44,6 +48,9 @@ $('.header-mobile .header-lang-item.lang-ua, .header-desktop .header-lang-btn_wr
     $('.header-desktop .header-lang-btn_wrapper.lang-ua .header-lang-btn .lang-carret').toggleClass('rotate');
     $('.header-desktop .header-lang-btn_wrapper').hide();
     $('.header-desktop .header-lang-btn_wrapper.lang-ua').show();
+    console.log('uauaua');
+    window.location.hash = 'hl=ua';
+    return false;
 });
 //english
 $('.header-mobile .header-lang-item.lang-en, .header-desktop .header-lang-btn_wrapper.lang-en .header-lang-btn, .header-desktop .header-lang-item.lang-en').on('click', function(){
