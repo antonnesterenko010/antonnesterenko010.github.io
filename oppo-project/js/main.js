@@ -31,10 +31,6 @@ $('.header-mobile .header-lang-item.lang-ru, .header-desktop .header-lang-btn_wr
     $('.header-desktop .header-lang-btn_wrapper.lang-ru .header-lang-btn .lang-carret').toggleClass('rotate');
     $('.header-desktop .header-lang-btn_wrapper').hide();
     $('.header-desktop .header-lang-btn_wrapper.lang-ru').show();
-    window.location.search = '&hl=ru';
-    return false;
-
-
 });
 //ukraine
 $('.header-mobile .header-lang-item.lang-ua, .header-desktop .header-lang-btn_wrapper.lang-ua .header-lang-btn, .header-desktop .header-lang-item.lang-ua').on('click', function(e){
