@@ -32,7 +32,7 @@ $('.header-mobile .header-lang-item.lang-ru, .header-desktop .header-lang-btn_wr
     $('.header-desktop .header-lang-btn_wrapper').hide();
     $('.header-desktop .header-lang-btn_wrapper.lang-ru').show();
     console.log('rururu');
-    window.location.hash = 'hl=ru';
+    window.location.search = '?hl=ru';
     return false;
 
 
@@ -49,7 +49,7 @@ $('.header-mobile .header-lang-item.lang-ua, .header-desktop .header-lang-btn_wr
     $('.header-desktop .header-lang-btn_wrapper').hide();
     $('.header-desktop .header-lang-btn_wrapper.lang-ua').show();
     console.log('uauaua');
-    window.location.hash = 'hl=ua';
+    window.location.search = '?hl=ua';
     return false;
 });
 //english
