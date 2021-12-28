@@ -71,19 +71,19 @@ $('.header-mobile .header-lang-item.lang-sg, .header-desktop .header-lang-btn_wr
 });
 $('.header-mobile .header-lang-list .header-lang-item.lang-ru, .header-desktop .header-lang-list .header-lang-item.lang-ru').on('click', function(){
     console.log('clicked ru');
-    window.location.hash = "&hl=ru";
+    window.history.pushState({}, '', window.location.href+'&hl=ru');
 })
 $('.header-mobile .header-lang-list .header-lang-item.lang-ua, .header-desktop .header-lang-list .header-lang-item.lang-ua').on('click', function(){
     console.log('clicked ua');
-    window.location.hash = "&hl=ua";
+    window.history.pushState({}, '', window.location.href+'&hl=ua');
 })
 $('.header-mobile .header-lang-list .header-lang-item.lang-en, .header-desktop .header-lang-list .header-lang-item.lang-en').on('click', function(){
     console.log('clicked en');
-    window.location.hash = "&hl=en";
+    window.history.pushState({}, '', window.location.href+'&hl=en');
 })
 $('.header-mobile .header-lang-list .header-lang-item.lang-sg, .header-desktop .header-lang-list .header-lang-item.lang-sg').on('click', function(){
     console.log('clicked sg');
-    window.location.hash = "&hl=sg";
+    window.history.pushState({}, '', window.location.href+'&hl=sg');
 })
 $('a[href^="#"]').click(function () {
     let target = $(this).attr('href');
