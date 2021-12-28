@@ -71,26 +71,26 @@ $('.header-mobile .header-lang-item.lang-sg, .header-desktop .header-lang-btn_wr
 });
 $('.header-mobile .header-lang-list .header-lang-item.lang-ru, .header-desktop .header-lang-list .header-lang-item.lang-ru').on('click', function(){
     console.log('clicked ru');
-    if (!window.location.href.includes('&hl=ru')) {
-        window.history.pushState({}, '', window.location.href+'&hl=ru');
+    if (!window.location.href.includes('&hl=ru') ) {
+        window.history.pushState({}, '', window.location.href.replaceAll('&hl=ru','').replaceAll('&hl=ua','')+'&hl=ru');
     }
 })
 $('.header-mobile .header-lang-list .header-lang-item.lang-ua, .header-desktop .header-lang-list .header-lang-item.lang-ua').on('click', function(){
     console.log('clicked ua');
     if (!window.location.href.includes('&hl=ua')) {
-        window.history.pushState({}, '', window.location.href+'&hl=ua');
+        window.history.pushState({}, '', window.location.href.replaceAll('&hl=ua','').replaceAll('&hl=ru','')+'&hl=ua');
     }
 })
 $('.header-mobile .header-lang-list .header-lang-item.lang-en, .header-desktop .header-lang-list .header-lang-item.lang-en').on('click', function(){
     console.log('clicked en');
-    if (!window.location.href.includes('&hl=en')) {
-        window.history.pushState({}, '', window.location.href+'&hl=en');
+    if (!window.location.href.includes('&hl=en') ) {
+        window.history.pushState({}, '', window.location.href.replaceAll('&hl=en','').replaceAll('&hl=sg','')+'&hl=en');
     }
 })
 $('.header-mobile .header-lang-list .header-lang-item.lang-sg, .header-desktop .header-lang-list .header-lang-item.lang-sg').on('click', function(){
     console.log('clicked sg');
-    if (!window.location.href.includes('&hl=sg')) {
-        window.history.pushState({}, '', window.location.href+'&hl=sg');
+    if (!window.location.href.includes('&hl=sg') ) {
+        window.history.pushState({}, '', window.location.href.replaceAll('&hl=sg','').replaceAll('&hl=en','')+'&hl=sg');
     }
 })
 $('a[href^="#"]').click(function () {
