@@ -658,9 +658,6 @@ body.lang-ru .section .lang-en, body.lang-ru .section .lang-ua, body.lang-ru .se
 body.lang-ru .footer .lang-en, body.lang-ru .footer .lang-ua, body.lang-ru .footer .lang-sg {
   display: none !important;
 }
-body.lang-ru .header .header-desktop .header-block .header-lang-btn_wrapper.lang-ru {
-  display: block;
-}
 @media only screen and (min-width: 1201px) {
   body.lang-ru .heading-3 {
     font-size: 26px !important;
@@ -675,6 +672,9 @@ body.lang-ru .header .header-desktop .header-block .header-lang-btn_wrapper.lang
 body.lang-ua .section .lang-en, body.lang-ua .section .lang-ru, body.lang-ua .section .lang-sg,
 body.lang-ua .footer .lang-en, body.lang-ua .footer .lang-ru, body.lang-ua .footer .lang-sg {
   display: none !important;
+}
+body.lang-ua .header .header-desktop .header-block .header-lang-btn_wrapper.lang-ua {
+  display: block;
 }
 @media only screen and (min-width: 1201px) {
   body.lang-ua .heading-3 {
@@ -691,10 +691,6 @@ body.lang-en .section .lang-ua, body.lang-en .section .lang-ru, body.lang-en .se
 body.lang-en .footer .lang-ua, body.lang-en .footer .lang-ru, body.lang-en .footer .lang-sg {
   display: none !important;
 }
-body.lang-en .header .header-desktop .header-block .header-lang-btn_wrapper.lang-en,
-body.lang-en .header .header-mobile .header-block .header-lang-btn_wrapper .header-lang-btn.lang-en {
-  display: block;
-}
 @media only screen and (min-width: 1201px) {
   body.lang-en .heading-3 {
     font-size: 19px !important;
@@ -709,6 +705,10 @@ body.lang-en .header .header-mobile .header-block .header-lang-btn_wrapper .head
 body.lang-sg .section .lang-ua, body.lang-sg .section .lang-ru, body.lang-sg .section .lang-en,
 body.lang-sg .footer .lang-ua, body.lang-sg .footer .lang-ru, body.lang-sg .footer .lang-en {
   display: none !important;
+}
+body.lang-sg .header .header-desktop .header-block .header-lang-btn_wrapper.lang-sg,
+body.lang-sg .header .header-mobile .header-block .header-lang-btn_wrapper .header-lang-btn.lang-sg {
+  display: block;
 }
 @media only screen and (min-width: 1201px) {
   body.lang-sg .heading-3 {

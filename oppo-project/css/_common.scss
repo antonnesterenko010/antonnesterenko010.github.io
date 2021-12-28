@@ -44,9 +44,6 @@ body.lang-ru {
   {
     display: none!important;
   }
-  .header .header-desktop .header-block .header-lang-btn_wrapper.lang-ru {
-    display: block;
-  }
   .heading-3 {
     @include min-large() {
       font-size: 26px!important;
@@ -63,6 +60,9 @@ body.lang-ua {
   .footer .lang-en, .footer .lang-ru, .footer .lang-sg,
   {
     display: none!important;
+  }
+  .header .header-desktop .header-block .header-lang-btn_wrapper.lang-ua {
+    display: block;
   }
   .heading-3 {
     @include min-large() {
@@ -81,10 +81,6 @@ body.lang-en {
   {
     display: none!important;
   }
-  .header .header-desktop .header-block .header-lang-btn_wrapper.lang-en,
-  .header .header-mobile .header-block .header-lang-btn_wrapper .header-lang-btn.lang-en {
-    display: block;
-  }
   .heading-3 {
     @include min-large() {
       font-size: 19px!important;
@@ -102,6 +98,10 @@ body.lang-sg {
   .footer .lang-ua, .footer .lang-ru, .footer .lang-en
   {
     display: none!important;
+  }
+  .header .header-desktop .header-block .header-lang-btn_wrapper.lang-sg,
+  .header .header-mobile .header-block .header-lang-btn_wrapper .header-lang-btn.lang-sg {
+    display: block;
   }
   .heading-3 {
     @include min-large() {
