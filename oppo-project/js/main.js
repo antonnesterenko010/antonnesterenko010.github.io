@@ -47,8 +47,6 @@ $('.header-mobile .header-lang-item.lang-ua, .header-desktop .header-lang-btn_wr
     $('.header-desktop .header-lang-btn_wrapper.lang-ua .header-lang-btn .lang-carret').toggleClass('rotate');
     $('.header-desktop .header-lang-btn_wrapper').hide();
     $('.header-desktop .header-lang-btn_wrapper.lang-ua').show();
-    window.location.search = '&hl=ua';
-    return false;
 });
 //english
 $('.header-mobile .header-lang-item.lang-en, .header-desktop .header-lang-btn_wrapper.lang-en .header-lang-btn, .header-desktop .header-lang-item.lang-en').on('click', function(){
@@ -61,8 +59,6 @@ $('.header-mobile .header-lang-item.lang-en, .header-desktop .header-lang-btn_wr
     $('.header-desktop .header-lang-btn_wrapper.lang-en .header-lang-btn .lang-carret').toggleClass('rotate');
     $('.header-desktop .header-lang-btn_wrapper').hide();
     $('.header-desktop .header-lang-btn_wrapper.lang-en').show();
-    window.location.search = '&hl=en';
-    return false;
 });
 // //singala
 $('.header-mobile .header-lang-item.lang-sg, .header-desktop .header-lang-btn_wrapper.lang-sg .header-lang-btn, .header-desktop .header-lang-item.lang-sg').on('click', function(){
@@ -75,9 +71,24 @@ $('.header-mobile .header-lang-item.lang-sg, .header-desktop .header-lang-btn_wr
     $('.header-desktop .header-lang-btn_wrapper.lang-sg .header-lang-btn .lang-carret').toggleClass('rotate');
     $('.header-desktop .header-lang-btn_wrapper').hide();
     $('.header-desktop .header-lang-btn_wrapper.lang-sg').show();
+
+});
+$('.header-mobile .header-lang-list .header-lang-item.lang-ru').on('click', function(){
+    window.location.search = '&hl=ru';
+    return false;
+})
+$('.header-mobile .header-lang-list .header-lang-item.lang-ua').on('click', function(){
+    window.location.search = '&hl=ua';
+    return false;
+})
+$('.header-mobile .header-lang-list .header-lang-item.lang-en').on('click', function(){
+    window.location.search = '&hl=en';
+    return false;
+})
+$('.header-mobile .header-lang-list .header-lang-item.lang-sg').on('click', function(){
     window.location.search = '&hl=sg';
     return false;
-});
+})
 $('a[href^="#"]').click(function () {
     let target = $(this).attr('href');
     let fixed_offset = -55;
