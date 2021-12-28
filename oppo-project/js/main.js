@@ -21,7 +21,7 @@ $(window).scroll(function() {
 });
 //russia
 
-$('.header-mobile .header-lang-item.lang-ru, .header-desktop .header-lang-btn_wrapper.lang-ru .header-lang-btn, .header-desktop .header-lang-item.lang-ru').on('click', function(e){
+$('.header-mobile .header-lang-list .header-lang-item.lang-ru, .header-desktop .header-lang-list .header-lang-item.lang-ru, .header-mobile .header-lang-item.lang-ru, .header-desktop .header-lang-btn_wrapper.lang-ru .header-lang-btn, .header-desktop .header-lang-item.lang-ru').on('click', function(e){
     $('.header-overlay').removeClass('opened');
     $('body').removeClass('lang-ua lang-en lang-sg overflow-hidden');
     $('body').addClass('lang-ru');
@@ -33,7 +33,7 @@ $('.header-mobile .header-lang-item.lang-ru, .header-desktop .header-lang-btn_wr
     $('.header-desktop .header-lang-btn_wrapper.lang-ru').show();
 });
 //ukraine
-$('.header-mobile .header-lang-item.lang-ua, .header-desktop .header-lang-btn_wrapper.lang-ua .header-lang-btn, .header-desktop .header-lang-item.lang-ua').on('click', function(e){
+$('.header-mobile .header-lang-list .header-lang-item.lang-ua, .header-desktop .header-lang-list .header-lang-item.lang-ua, .header-mobile .header-lang-item.lang-ua, .header-desktop .header-lang-btn_wrapper.lang-ua .header-lang-btn, .header-desktop .header-lang-item.lang-ua').on('click', function(e){
     $('.header-overlay').removeClass('opened');
     $('body').removeClass('lang-ru lang-en lang-sg overflow-hidden');
     $('body').addClass('lang-ua');
