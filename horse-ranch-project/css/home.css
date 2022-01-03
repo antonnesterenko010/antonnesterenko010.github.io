@@ -805,6 +805,17 @@ footer {
   width: 100%;
   z-index: 10;
 }
+@media only screen and (min-width: 1201px) {
+  .header.scroll-down .header-bottom {
+    padding: 5px 0;
+  }
+  .header.scroll-down .header-bottom .header-block .header-menu .header-menu-item a {
+    font-size: 18px;
+  }
+  .header.scroll-down .header-bottom .header-block .header-contact a {
+    font-size: 16px;
+  }
+}
 
 .footer {
   background: #7886c3;
