@@ -1,0 +1,187 @@
+@import 'common';
+@import 'includes/swiper-bundle.min';
+.hero {
+  padding: 35px 0px;
+  position: relative;
+  //&::before {
+  //  content: '';
+  //  position: absolute;
+  //  top: 15px;
+  //  left: calc(50% + 32px);
+  //  @include transform(translate(-50%, 0%));
+  //  width: 64px;
+  //  height: 64px;
+  //  background-image: url('../img/icons/horseshoe.png');
+  //  background-repeat: no-repeat;
+  //  background-size: contain;
+  //  @include min-large() {
+  //    width: 128px;
+  //    height: 128px;
+  //    left: calc(50% + 64px);
+  //  }
+  //}
+  @include min-large() {
+    padding: 35px 0 70px;
+  }
+  .hero-block {
+    @include min-large() {
+      @include display-flex();
+
+    }
+    .hero-title-wrapper {
+      @include min-large() {
+        margin: 0 70px 0 0;
+        @include display-flex();
+        @include flex-direction-column();
+        @include justify-content-center();
+      }
+      .hero-title {
+        text-align: center;
+        @include source-sans-black();
+        font-size: 40px;
+        margin: 10px 0 15px;
+        @include min-large() {
+          text-align: left;
+          font-size: 50px;
+          margin: 0 0 35px;
+        }
+        span {
+          color: #007aff;
+          @include source-sans-black();
+          font-size: 40px;
+          @include min-large() {
+            font-size: 50px;
+          }
+        }
+      }
+      .hero-text {
+        line-height: 1.4;
+        margin: 0 auto 35px;
+        max-width: 570px;
+        font-size: 20px;
+        @include min-large() {
+          max-width: 90%;
+          margin: 0;
+          font-size: 22px;
+          line-height: 1.7;
+        }
+        p {
+          margin: 0 0 35px;
+        }
+      }
+    }
+    .hero-image {
+      @include display-flex();
+      @include justify-content-center();
+      img {
+        border-radius: 50%;
+        min-height: 300px;
+        max-height: 300px;
+        min-width: 300px;
+        max-width: 300px;
+        object-fit: cover;
+        box-shadow: 5px 10px 20px rgb(0 0 0 / 55%);
+        @include min-large() {
+          min-height: 550px;
+          max-height: 550px;
+          min-width: 550px;
+          max-width: 550px;
+          box-shadow: 10px 15px 20px rgb(0 0 0 / 55%);
+        }
+      }
+    }
+  }
+}
+.review {
+  position: relative;
+  padding: 35px 0px;
+  @include min-large() {
+    padding: 70px 0 90px;
+  }
+  .review-block {
+    padding: 0 30px;
+    @include min-large() {
+      @include display-flex();
+      @include align-items-center();
+    }
+    .review-image {
+      display: none;
+      @include min-large() {
+        display: block;
+        margin: 0 70px 0 0;
+        img {
+          border-radius: 50%;
+          min-height: 550px;
+          max-height: 550px;
+          min-width: 550px;
+          max-width: 550px;
+          box-shadow: -10px 15px 20px rgb(0 0 0 / 55%);
+          object-fit: cover;
+        }
+      }
+    }
+    .review-slider {
+      position: relative;
+      padding: 40px 0 0px;
+      @include min-large() {
+        padding: 70px 0 0;
+      }
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../img/icons/quote.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 32px;
+        height: 32px;
+        @include min-large() {
+          width: 64px;
+          height: 64px;
+        }
+      }
+      &::before {
+        top: 0;
+        left: 0px;
+        @include transform(rotate(180deg));
+      }
+      &::after {
+        bottom: 20px;
+        right: 20px;
+        @include min-large() {
+          right: 0;
+          bottom: 25px;
+        }
+      }
+      .review-slide {
+        .review-quote {
+          @include source-sans-regular-italic();
+          font-size: 18px;
+          min-height: 150px;
+          max-height: 150px;
+          overflow: hidden;
+          overflow-y: auto;
+          @include min-large() {
+            font-size: 22px;
+            max-width: 800px;
+            padding: 0 0 0 70px;
+            min-height: 200px;
+            max-height: 200px;
+            line-height: 1.4;
+          }
+        }
+        .review-author {
+          margin: 40px 0 0;
+          @include source-sans-semibold();
+          font-size: 18px;
+          text-align: right;
+          @include min-large() {
+            text-align: left;
+            font-size: 22px;
+            padding: 0 0 0 70px;
+            margin: 60px 0 0;
+          }
+        }
+      }
+    }
+  }
+}

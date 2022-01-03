@@ -1,0 +1,130 @@
+@import 'common';
+
+.service {
+  .service-list {
+    @include display-flex();
+    @include flex-direction-column();
+    .service-list-item {
+      margin: 0 0 10px;
+      @include min-large() {
+        &:nth-child(even) {
+          .service-description {
+            @include flex-direction-row-reverse();
+            @include justify-content-space-between();
+            .service-image {
+              margin: 0 0 0 45px;
+            }
+          }
+        }
+      }
+      .service-name {
+        font-size: 26px;
+        @include source-sans-bold();
+        margin: 0 0 15px;
+        position: relative;
+        color: #222;
+        padding: 0 0 0 20px;
+        @include min-large() {
+          cursor: pointer;
+          @include transition(all .5s ease);
+          font-size: 36px;
+          padding: 0 0 0 35px;
+          &:hover {
+            color: #007aff;
+            &::before, &::after {
+              background:#007aff;
+            }
+          }
+        }
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 2px;
+          background: #222;
+          left: 0px;
+          top: 15px;
+          @include min-large() {
+            width: 15px;
+            height: 3px;
+            top: 20px;
+          }
+        }
+        &::before {
+          @include transform(rotate(90deg));
+          @include transition(all .5s ease);
+        }
+      }
+      .service-description {
+        min-height: 0px;
+        max-height: 0px;
+        @include transition(all .5s ease);
+        overflow: hidden;
+        @include min-large() {
+          @include display-flex();
+        }
+        @media (min-width: 1600px) {
+          max-width: 1400px;
+        }
+        .service-image {
+          margin: 0 0 15px;
+          @include min-large() {
+            margin: 0 45px 0 0;
+          }
+          img {
+            width: 350px;
+            height: 150px;
+            object-fit: cover;
+            @include min-large() {
+              width: 600px;
+              height: 350px;
+            }
+          }
+        }
+        .service-text {
+          max-width: 95%;
+          @include min-large() {
+            max-width: 50%;
+          }
+          p {
+            font-size: 18px;
+            margin: 0 0 15px;
+            @include min-large() {
+              font-size: 22px;
+            }
+          }
+          a {
+            font-size: 18px;
+            color: #007aff;
+            border-bottom: 1px solid #007aff;
+            @include source-sans-semibold();
+            @include min-large() {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+      .service-text, .service-image{
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all .5s ease);
+      }
+    }
+    .service-list-item.opened {
+      .service-name {
+        &::before {
+          @include transform(rotate(0deg));
+        }
+      }
+      .service-description {
+        min-height: 450px;
+        max-height: 450px;
+        overflow-y: auto;
+      }
+      .service-text, .service-image{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
