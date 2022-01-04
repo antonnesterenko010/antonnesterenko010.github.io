@@ -1,8 +1,8 @@
 @import 'common';
 @import 'includes/swiper-bundle.min';
-.main-content {
-  background-image: linear-gradient(315deg, rgb(249 234 143 / 50%) 0%, rgb(175 241 218 / 50%) 74%);
-}
+//.main-content {
+//  background-image: linear-gradient(315deg, rgb(249 234 143 / 50%) 0%, rgb(175 241 218 / 50%) 74%);
+//}
 .gallery {
   .gallery-block {
     .gallery-slider {
@@ -31,7 +31,7 @@
         }
       }
       .swiper-pagination-bullet-active {
-        background: #7886c3;
+        background: $header-background-color;
       }
     }
   }

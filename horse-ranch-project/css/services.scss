@@ -22,7 +22,6 @@
         @include source-sans-bold();
         margin: 0 0 15px;
         position: relative;
-        color: #222;
         padding: 0 0 0 20px;
         @include min-large() {
           cursor: pointer;
@@ -30,9 +29,9 @@
           font-size: 36px;
           padding: 0 0 0 35px;
           &:hover {
-            color: #007aff;
+            color: $header-background-color;
             &::before, &::after {
-              background:#007aff;
+              background: $header-background-color;
             }
           }
         }
@@ -41,7 +40,7 @@
           position: absolute;
           width: 10px;
           height: 2px;
-          background: #222;
+          background: $header-text-color;
           left: 0px;
           top: 15px;
           @include min-large() {
@@ -95,8 +94,8 @@
           }
           a {
             font-size: 18px;
-            color: #007aff;
-            border-bottom: 1px solid #007aff;
+            color: $header-background-color;
+            border-bottom: 1px solid $header-background-color;
             @include source-sans-semibold();
             @include min-large() {
               font-size: 22px;

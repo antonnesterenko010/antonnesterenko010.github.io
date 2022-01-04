@@ -1,5 +1,6 @@
 @import 'includes/fonts';
 @import 'includes/mixin';
+@import 'includes/variables';
 @import 'includes/normalize';
 
 /**
@@ -9,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #222;
+  color: $text-color;
   @include source-sans-regular();
 }
 h1,h2,h3,h4,h5,h6,p {
@@ -66,22 +67,22 @@ footer {
   @include min-large() {
     font-size: 50px;
   }
-  span {
-    color: #007aff;
-    @include source-sans-black();
-    font-size: 40px;
-    @include min-large() {
-      font-size: 50px;
-    }
-  }
+  //span {
+  //  color: #007aff;
+  //  @include source-sans-black();
+  //  font-size: 40px;
+  //  @include min-large() {
+  //    font-size: 50px;
+  //  }
+  //}
 }
 .container {
   width: 90%;
   margin: 0 auto;
 }
 .main-content {
-  background-color: #f9ea8f;
-  background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+  background-color: #f1dfd1;
+  background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
 }
 .page-title-section {
   .page-title {
@@ -105,6 +106,7 @@ footer {
     @include align-items-center();
     @include justify-content-center();
     text-align: center;
+    box-shadow: 0px 15px 20px #6B4E3C;
     @include min-large() {
       min-height: 450px;
       text-align: left;
@@ -129,7 +131,7 @@ footer {
       z-index: 1;
       .header-title {
         z-index: 1;
-        color: #fff;
+        color: $banner-title-color;
         @include source-sans-black();
         font-size: 40px;
         @include min-large() {
@@ -143,7 +145,7 @@ footer {
           display: block;
           font-size: 32px;
           letter-spacing: 0.14em;
-          color: #fff;
+          color: $banner-title-color;
           text-transform: uppercase;
           z-index: 1;
         }
@@ -152,16 +154,18 @@ footer {
   }
   .header-bottom {
     padding: 15px 0 10px;
-    background: #7886c3;
+    background: $header-background-color;
     @include transition(all .5s ease);
     position: fixed;
-    top: 234px;
+    //top: 234px;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 10;
     @include min-large() {
       padding: 15px 0;
-      top: 379px;
+      //top: 379px;
+      top: 0;
     }
     .header-block {
       @include display-flex();
@@ -178,7 +182,7 @@ footer {
         div {
           width: 24px;
           height: 2px;
-          background: #fff;
+          background: $header-text-color;
           position: absolute;
           border-radius: 50%;
           left: 50%;
@@ -216,10 +220,10 @@ footer {
         width: 100%;
         @include transition(all .5s ease);
         left: -100%;
-        background: #7886c3;
         position: absolute;
         z-index: 4;
         margin: 51px 0 0;
+        background: $header-background-color;
         @include min-large() {
           @include flex-direction-row();
           position: static;
@@ -236,7 +240,7 @@ footer {
               position: absolute;
               width: 0%;
               @include transition(all .5s ease);
-              background: #ffd900;
+              background: $header-text-hover-color;
               height: 2px;
               bottom: -4px;
             }
@@ -247,7 +251,7 @@ footer {
               right: -10px;
               width: 2px;
               height: 80%;
-              background: #fff;
+              background: $header-text-color;
             }
             &:last-child {
               &::after {
@@ -261,7 +265,7 @@ footer {
             }
           }
           a {
-            color: #fff;
+            color: $header-text-color;
             @include source-sans-semibold();
             font-size: 20px;
             position: relative;
@@ -269,11 +273,11 @@ footer {
         }
         .header-menu-item.active {
           a {
-            color: #ffd900;
+            color: $header-text-hover-color;
             &::before {
               content: '';
               position: absolute;
-              background: #ffd900;
+              background: $header-text-hover-color;
               width: 100%;
               height: 2px;
               bottom: -4px;
@@ -289,13 +293,13 @@ footer {
         @include flex-direction-column();
         text-align: right;
         a {
-          color: #fff;
+          color: $header-text-color;
           font-size: 18px;
           @include source-sans-semibold();
           @include transition(all .5s ease);
           @include min-large() {
             &:hover {
-              color: #ffd900;
+              color: $header-text-hover-color;
             }
           }
         }
@@ -332,10 +336,11 @@ footer {
   }
 }
 .footer {
-  background: #7886c3;
+  background: $header-background-color;
   padding: 35px 0;
   .footer-copyright {
-    color: #fff;
+    color: $header-text-color;
+    @include source-sans-semibold();
   }
 }
 .section {

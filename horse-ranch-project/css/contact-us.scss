@@ -1,10 +1,5 @@
 @import 'common';
 
-.page-title-section {
-  .page-title {
-    color: #007aff;
-  }
-}
 .contact {
   padding: 0 0 55px;
   .contact-section-wrapper {
@@ -47,7 +42,6 @@
         a, p {
           display: block;
           text-align: center;
-          color: #007aff;
           @include source-sans-bold();
         }
       }
@@ -71,7 +65,6 @@
         .contact-social-name {
           display: block;
           text-align: center;
-          color: #007aff;
           @include source-sans-bold();
         }
       }
@@ -117,8 +110,8 @@
         max-width: 150px;
         height: 55px;
         padding: 0;
-        background: #7886c3;
-        color: #fff;
+        background: $header-background-color;
+        color: $header-text-color;
         @include source-sans-semibold();
         font-size: 20px;
         @include min-large() {

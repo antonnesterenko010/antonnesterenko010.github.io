@@ -2,8 +2,8 @@
 
 .page-title-section {
   .page-title {
-    color: #007aff;
-    border-bottom: 1px solid #007aff;
+    color: $text-color;
+    border-bottom: 2px solid $header-text-color;
     display: inline-block;
   }
 }
@@ -46,12 +46,12 @@
       @include source-sans-bold();
     }
     a {
-      color: #007aff;
+      color: $header-background-color;
       font-size: 18px;
     }
     hr {
       margin: 15px 0;
-      background: #fff;
+      background: $header-text-color;
       height: 2px;
       border: none;
     }
