@@ -163,23 +163,38 @@
 }
 
 @mixin source-sans-extra-light {
-  font-family: 'Source Sans Pro Extralight', sans-serif;
+  //font-family: 'Source Sans Pro Extralight', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
 }
 @mixin source-sans-light {
-  font-family: 'Source Sans Pro Light', sans-serif;
+  //font-family: 'Source Sans Pro Light', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
 }
 @mixin source-sans-regular {
-  font-family: 'Source Sans Pro Regular', sans-serif;
+  //font-family: 'Source Sans Pro Regular', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
 }
 @mixin source-sans-regular-italic {
-  font-family: 'Source Sans Pro Italic', sans-serif;
+  //font-family: 'Source Sans Pro Italic', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+  font-weight: 400;
 }
 @mixin source-sans-semibold {
-  font-family: 'Source Sans Pro Semibold', sans-serif;
+  //font-family: 'Source Sans Pro Semibold', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
 }
 @mixin source-sans-bold {
-  font-family: 'Source Sans Pro Bold', sans-serif;
+  //font-family: 'Source Sans Pro Bold', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
 }
 @mixin source-sans-black {
-  font-family: 'Source Sans Pro Black', sans-serif;
+  //font-family: 'Source Sans Pro Black', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
 }

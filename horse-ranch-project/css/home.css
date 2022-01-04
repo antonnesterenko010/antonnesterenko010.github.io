@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
 @font-face {
   font-family: "Source Sans Pro Extralight";
   src: url("../../fonts/SourceSansPro-ExtraLight.eot");
@@ -401,7 +402,8 @@ template {
   padding: 0;
   box-sizing: border-box;
   color: #222;
-  font-family: "Source Sans Pro Regular", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -468,7 +470,8 @@ footer {
 * COMMON STYLES
 **/
 .heading-1 {
-  font-family: "Source Sans Pro Black", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
   font-size: 40px;
 }
 @media only screen and (min-width: 1201px) {
@@ -552,7 +555,8 @@ footer {
 .header .header-top .header-title-wrapper .header-title {
   z-index: 1;
   color: #fff;
-  font-family: "Source Sans Pro Black", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
   font-size: 40px;
 }
 @media only screen and (min-width: 1201px) {
@@ -562,7 +566,8 @@ footer {
 }
 .header .header-top .header-title-wrapper .header-subtitle {
   display: none;
-  font-family: "Source Sans Pro Bold", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
 }
 @media only screen and (min-width: 1201px) {
   .header .header-top .header-title-wrapper .header-subtitle {
@@ -738,7 +743,8 @@ footer {
 }
 .header .header-bottom .header-block .header-menu .header-menu-item a {
   color: #222;
-  font-family: "Source Sans Pro Semibold", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
   font-size: 20px;
   position: relative;
 }
@@ -771,7 +777,8 @@ footer {
 .header .header-bottom .header-block .header-contact a {
   color: #222;
   font-size: 18px;
-  font-family: "Source Sans Pro Semibold", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -814,7 +821,8 @@ footer {
 }
 .footer .footer-copyright {
   color: #222;
-  font-family: "Source Sans Pro Semibold", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
 }
 
 .section {
@@ -1457,7 +1465,8 @@ button.swiper-pagination-bullet {
 }
 .hero .hero-block .hero-title-wrapper .hero-title {
   text-align: center;
-  font-family: "Source Sans Pro Black", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
   font-size: 40px;
   margin: 10px 0 15px;
 }
@@ -1596,7 +1605,9 @@ button.swiper-pagination-bullet {
   }
 }
 .review .review-block .review-slider .review-slide .review-quote {
-  font-family: "Source Sans Pro Italic", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+  font-weight: 400;
   font-size: 18px;
   min-height: 150px;
   max-height: 150px;
@@ -1615,7 +1626,8 @@ button.swiper-pagination-bullet {
 }
 .review .review-block .review-slider .review-slide .review-author {
   margin: 40px 0 0;
-  font-family: "Source Sans Pro Semibold", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
   font-size: 18px;
   text-align: right;
 }
