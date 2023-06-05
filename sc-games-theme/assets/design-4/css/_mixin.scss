@@ -1,0 +1,233 @@
+@mixin list{
+  margin-left: 20px;
+}
+@mixin absolute-max{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@mixin psevdo-absolute{
+  content: '';
+  position: absolute;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin background-size($background-size) {
+  -webkit-background-size: $background-size;
+  -moz-background-size: $background-size;
+  -o-background-size: $background-size;
+  background-size: $background-size;
+}
+@mixin box-shadow($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+}
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+@mixin scrollbar {
+  &::-webkit-scrollbar { @content; }
+}
+
+@mixin scrollbar-track {
+  &::-webkit-scrollbar-track { @content; }
+}
+
+@mixin scrollbar-thumb {
+  &::-webkit-scrollbar-thumb { @content; }
+}
+@mixin display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@mixin display-inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+@mixin flex-wrap-wrap{
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@mixin flex-direction-column{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@mixin flex-direction-column-reverse{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+@mixin flex-direction-row{
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+@mixin flex-direction-row-reverse{
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+@mixin justify-content-flex-start{
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+@mixin justify-content-center{
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@mixin justify-content-space-between{
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@mixin justify-content-space-around{
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+}
+
+@mixin justify-content-flex-end{
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+@mixin align-items-flex-start{
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+@mixin align-items-center{
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@mixin align-items-stretch{
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+@mixin align-items-flex-end{
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+@mixin max-large {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin min-large {
+  @media only screen and (min-width: 1201px) {
+    @content;
+  }
+}
+@mixin max-medium {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin min-medium {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin max-small {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin min-small {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin max-large {
+  @media only screen and (max-width: 1240px) {
+    @content;
+  }
+}
+@mixin min-large {
+  @media only screen and (min-width: 1241px) {
+    @content;
+  }
+}
+@mixin max-medium {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin min-medium {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin max-small {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin min-small {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin max-small-x{
+  @media only screen and (max-width: 620px) {
+    @content;
+  }
+}
+@mixin oxanium-normal {
+  font-family: 'Oxanium', sans-serif;
+  font-weight: 400;
+}
+@mixin open-sans-medium {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+@mixin open-sans-semibold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+@mixin oswald-semibold {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+@mixin oswald-bold {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}

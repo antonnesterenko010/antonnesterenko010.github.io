@@ -1,0 +1,33 @@
+$color_main: #D52D1A;
+$color_bg: #141414;
+$color_bg__static: $color_bg;
+$color_danger: $color_main;
+$color_text__dark: #3A3A3A;
+$color_link: $color_main;
+
+$header_bg: $color_bg;
+$header_link: #FFFFFF;
+$header_link__active: $color_main;
+$header_height: 62px;
+$header_height__large: 200px;
+
+$bg_main: linear-gradient(291.25deg, #1D161F 28%, #3F192B 49.37%, #3B191E 76.75%, #1D161F 100%);
+$title_color: #FFFFFF;
+$htp_icon__bg: #1C1D2E;
+$footer_bg: transparent;
+$footer_bottom_bg: $color_bg;
+$footer_text: $color_bg;
+$subscribe_bg: rgba(255, 255, 255, 0.1);
+$subscribe_text: #FFFFFF;
+$htp_title: $color_main;
+$input_bg: #FFFFFF;
+$game-card_bg: rgba(255, 255, 255, 0.9);
+
+
+
+$modal_bg__outer: $color_bg__static;
+$modal_bg__inner: transparent;
+$form_bg: transparent;
+$button_bg: rgba(213, 45, 26, 0.9);
+$button_text: white;
+

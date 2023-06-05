@@ -1,0 +1,85 @@
+@import 'mixin';
+
+//common styles start
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  @include montserrat-regular();
+  @include max-large() {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul, ol, li {
+  @include list();
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+  @include max-large() {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+  @include min-large() {
+    max-width: 1170px;
+    padding: 0;
+  }
+}
+
+.button {
+  position: relative;
+  @include display-flex();
+  @include justify-content-center();
+  @include align-items-center();
+  @include montserrat-semibold();
+  @include border-radius(9px);
+  height: 49px;
+  background: linear-gradient(180deg, #CD0766 0%, #FD223B 100%);
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 220px;
+  //padding: 0 53px;
+  @include min-large() {
+    @include transition(all .2s ease-in-out);
+    font-size: 18px;
+    &:hover {
+      box-shadow: 0 4px 11px rgba(0, 0, 0, 0.36);
+    }
+  }
+
+  .name {
+    z-index: 1;
+  }
+}
+
+//common styles end

@@ -1,0 +1,83 @@
+//delete import googlefonts after implementing local on wordpress
+@import 'mixin';
+
+.content__form.game {
+  min-height: auto;
+
+  .game-content {
+    background: #F6F6FE;
+    border: 8px solid #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+
+    iframe {
+      width: 100%;
+      min-height: 85vh;
+      border: none;
+      border-radius: 8px;
+    }
+  }
+}
+
+body.page-template {
+  p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 36px;
+    line-height: 1.1;
+  }
+}
+
+// bg styles
+.page-wrap {
+  position: relative;
+}
+
+.page-bg {
+  position: absolute;
+  top: 138px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-content-bg {
+  flex-grow: 1;
+  background: rgb(48, 27, 101); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(48, 27, 101, 1) 0%, rgba(33, 28, 92, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(48, 27, 101, 1) 0%, rgba(33, 28, 92, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(48, 27, 101, 1) 0%, rgba(33, 28, 92, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#301b65', endColorstr='#211c5c', GradientType=0);
+}
+
+.page-content {
+  position: relative;
+  z-index: 100;
+}
+
+.hero-bg img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.footer-bg img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.content {
+  background: none;
+}
+
+.games {
+  background: none;
+  border: none;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+@font-face {
+  font-family: 'Verdana Pro Regular';
+  src: url('../fonts/VerdanaPro-Regular.eot');
+  src: local('Verdana Pro Regular'), local('VerdanaPro-Regular'),
+  url('../fonts/VerdanaPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/VerdanaPro-Regular.woff2') format('woff2'),
+  url('../fonts/VerdanaPro-Regular.woff') format('woff'),
+  url('../fonts/VerdanaPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Verdana Pro Semibold';
+  src: url('../fonts/VerdanaPro-Semibold.eot');
+  src: local('Verdana Pro Semibold'), local('VerdanaPro-Semibold'),
+  url('../fonts/VerdanaPro-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/VerdanaPro-Semibold.woff2') format('woff2'),
+  url('../fonts/VerdanaPro-Semibold.woff') format('woff'),
+  url('../fonts/VerdanaPro-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Verdana Pro Bold';
+  src: url('../fonts/VerdanaPro-Bold.eot');
+  src: local('Verdana Pro Bold'), local('VerdanaPro-Bold'),
+  url('../fonts/VerdanaPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/VerdanaPro-Bold.woff2') format('woff2'),
+  url('../fonts/VerdanaPro-Bold.woff') format('woff'),
+  url('../fonts/VerdanaPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

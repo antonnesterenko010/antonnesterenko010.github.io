@@ -1,0 +1,385 @@
+@mixin font-family {
+  font-family: 'Lora', sans-serif;
+}
+
+@mixin list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin absolute-max {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin absolute-center {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@mixin pseudo-absolute {
+  content: '';
+  position: absolute;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin background-size($background-size) {
+  -webkit-background-size: $background-size;
+  -moz-background-size: $background-size;
+  -o-background-size: $background-size;
+  background-size: $background-size;
+}
+
+@mixin box-shadow($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+}
+
+@mixin filter($value) {
+  -webkit-filter: $value;
+  filter: $value;
+}
+
+@mixin input {
+  border: none;
+  outline: none;
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-box-shadow: none;
+  }
+}
+
+@mixin button {
+  border: none;
+  outline: none;
+}
+
+@mixin display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flexbox-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@mixin inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@mixin flex-direction-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@mixin flex-direction-column-reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+@mixin flex-direction-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@mixin flex-direction-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+@mixin justify-content-space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@mixin justify-content-flex-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+@mixin align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@mixin align-items-flex-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@mixin align-items-stretch {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+@mixin align-items-flex-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@mixin justify-content-flex-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+@mixin justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@mixin flex-wrap-wrap {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@mixin flex-wrap-nowrap {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+@mixin flex-shrink($value) {
+  -webkit-flex-shrink: $value;
+  -ms-flex-negative: $value;
+  flex-shrink: $value;
+}
+@mixin flex-grow($value) {
+  -webkit-box-flex: $value;
+  -ms-flex-positive: $value;
+  flex-grow: $value;
+}
+
+@mixin origin($originX, $originY) {
+  -webkit-transform-origin: $originX $originY;
+  -moz-transform-origin: $originX $originY;
+  -o-transform-origin: $originX $originY;
+  -ms-transform-origin: $originX $originY;
+  transform-origin: $originX $originY;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    @content;
+  }
+}
+
+@mixin scrollbar-track {
+  &::-webkit-scrollbar-track {
+    @content;
+  }
+}
+
+@mixin scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
+    @content;
+  }
+}
+
+@mixin max-large {
+  @media only screen and (max-width: 1240px) {
+    @content;
+  }
+}
+
+@mixin min-large {
+  @media only screen and (min-width: 1241px) {
+    @content;
+  }
+}
+
+@mixin max-medium {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin min-medium {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin max-small {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin min-small {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin min-small-x {
+  @media only screen and (min-width: 620px) {
+    @content;
+  }
+}
+
+@mixin max-small-x {
+  @media only screen and (max-width: 620px) {
+    @content;
+  }
+}
+
+@mixin between-ipad-pro {
+  @media (min-width: 647px) and (max-width: 990px) {
+    @content;
+  }
+}
+
+@mixin f-normal {
+  @include font-family;
+  font-weight: 400;
+}
+
+@mixin f-medium {
+  @include font-family;
+  font-weight: 500;
+}
+
+@mixin f-semibold {
+  @include font-family;
+  font-weight: 700;
+}
+
+@mixin f-bold {
+  @include font-family;
+  font-weight: 700;
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: calc((#{$height} / #{$width}) * 100%);
+  }
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin borderlines {
+  position: relative;
+
+  &::before, &::after {
+    @include pseudo-absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    background-image: url("../img/line.svg");
+    @include background-size(contain);
+
+    @include min-small {
+      display: none;
+    }
+  }
+  &::after {
+    top: auto;
+    bottom: 0;
+  }
+}
+
+@mixin card-decor {
+  &::before, &::after {
+    @include pseudo-absolute;
+    z-index: -1;
+    width: calc(100% - 16px);
+    height: 100%;
+    bottom: -8px;
+    left: 8px;
+    background: linear-gradient(221.68deg, #A5AFF7 0%, #232A5C 100%);
+    opacity: 0.5;
+    @include border-radius(6px);
+  }
+
+  &::after {
+    width: calc(100% - 26px);
+    left: 13px;
+    bottom: -14px;
+  }
+}

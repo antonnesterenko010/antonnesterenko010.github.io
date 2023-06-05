@@ -1,0 +1,220 @@
+@import 'mixin';
+
+//contact page styles start
+.content__form {
+  background-image: url("../img/content-bg-tinified.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  min-height: 789px;
+  padding: 71px 0 146px;
+
+  .content-block {
+    .content-title {
+      @include indie-flower;
+      font-size: 42px;
+      line-height: 114.8%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #005408;
+      margin-bottom: 30px;
+      @include max-large() {
+        font-size: 32px;
+      }
+    }
+
+    form {
+      padding: 50px 32px;
+      background: #294315;
+      border: 2px solid rgba(255, 255, 255, 0.62);
+      @include border-radius(37px);
+      @include display-flex();
+      @include flex-direction-column();
+
+      .form-block {
+        @include display-flex();
+        @include max-large() {
+          @include flex-direction-column();
+          border-radius: 8px;
+        }
+
+        .block-l {
+          margin: 0 30.5px 0 0;
+          flex-basis: 50%;
+        }
+
+        .block-r {
+          flex-basis: 50%;
+        }
+
+        .form-group {
+          margin: 0 0 40px;
+          @include max-large() {
+            margin: 0 0 24px;
+          }
+
+          .label-wrapper {
+            margin: 0 0 17px;
+            @include max-large() {
+              margin: 0 0 12px;
+            }
+
+            label {
+              @include noah-bold;
+              font-size: 18px;
+              line-height: 22px;
+              color: #fff;
+
+              @include max-large() {
+                color: #fff;
+              }
+            }
+
+            &.required {
+              label {
+                position: relative;
+
+                &::before {
+                  content: '*';
+                  position: absolute;
+                  right: -10px;
+                  top: -5px;
+                  color: #EE6B73;
+                }
+              }
+            }
+          }
+
+          .input-wrapper {
+            vertical-align: middle;
+            position: relative;
+
+            input {
+              box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+              border-radius: 8px;
+              border: none;
+              background: #fff;
+              color: #6A6A6A;
+              outline: none;
+              width: 100%;
+              height: 77px;
+              padding: 0 0 0 20px;
+              @include display-flex();
+              @include align-items-center();
+              @include transition(all .5s ease);
+              @include max-large() {
+                height: 48px;
+                padding: 0 0 0 18px;
+              }
+              @include min-large() {
+                &:hover {
+                  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+                }
+              }
+
+              &:focus {
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+              }
+            }
+
+            textarea {
+              resize: none;
+              box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+              border-radius: 8px;
+              border: none;
+              background: #fff;
+              color: #6A6A6A;
+              outline: none;
+              width: 100%;
+              height: 234px;
+              padding: 27px 27px 0;
+
+            }
+
+            .wpcf7-form-control-wrap {
+            }
+          }
+        }
+      }
+
+      .submit-block {
+        @include display-flex();
+        @include justify-content-center();
+
+        .submit-btn {
+          background: #30EE83;
+          border: none;
+          border-bottom: 2px solid #FFFFFF;
+          border-radius: 133px;
+          box-shadow: 0 8px 4px rgba(255, 167, 65, 0.09), 0 3px 0 rgba(139, 139, 139, 0.1);
+          outline: none;
+          text-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), 0 1px 0 #078F59;
+          font-size: 21px;
+          line-height: 26px;
+          color: #fff;
+          min-width: 240px;
+          max-width: 240px;
+          height: 65px;
+          @include display-flex();
+          @include justify-content-center();
+          @include align-items-center();
+          cursor: pointer;
+          @include transition(all .5s ease);
+          outline: none;
+          @include min-large() {
+            &:hover {
+              border-bottom: 2px solid transparent;
+              background: #0CC47C;
+            }
+          }
+          @include max-large() {
+            margin: 24px 0 0;
+            border: 2px solid #FFFFFF;
+            -webkit-tap-highlight-color: transparent;
+          }
+        }
+      }
+
+      .wpcf7-not-valid-tip {
+        color: #EE6B73;
+        font-size: 14px;
+        min-width: 200px;
+        position: absolute;
+        left: 0;
+      }
+
+      .wpcf7-response-output {
+        border: none !important;
+        color: #EE6B73;
+        font-size: 14px;
+        text-align: center;
+
+      }
+    }
+  }
+}
+
+//contact page styles end
+
+.page-template-page-contact {
+  .page-content {
+    .form-block-wrapper {
+      @include display-flex();
+      @include justify-content-space-between();
+      @include max-medium() {
+        @include flex-direction-column();
+      }
+
+      .form-block {
+        flex-basis: 45%;
+        @include display-flex();
+        @include flex-direction-column();
+      }
+    }
+
+    .button {
+      min-width: 233px;
+      border: none;
+    }
+  }
+}

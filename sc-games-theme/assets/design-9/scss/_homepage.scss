@@ -1,0 +1,418 @@
+@import 'mixin';
+
+//homepage styles start
+.page-wrap {
+  background-color: #EFFAF3;
+}
+
+.hero {
+  margin-top: -120px;
+  margin-bottom: 100px;
+  @include display-flex;
+  @include justify-content-center;
+  //height: 100vh;
+  min-height: 740px;
+  position: relative;
+  padding-top: 120px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  @include min-medium() {
+    padding-top: 140px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: rgba(0,0,0,0.3);
+  }
+  .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-block {
+    @include display-flex;
+    @include align-items-center;
+    @include justify-content-center;
+    @include flex-direction-column;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 120px;
+    @include max-small {
+      margin-bottom: 20vh;
+    }
+
+    .hero-title {
+      @include indie-flower();
+      font-size: 62px;
+      line-height: 100.3%;
+      text-align: center;
+      color: #005408;
+      max-width: 650px;
+      margin-bottom: 20px;
+      @include max-small {
+        font-size: 42px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .hero-description {
+      @include noah-medium();
+      font-size: 18px;
+      line-height: 146.4%;
+      text-align: center;
+      color: #fff;
+      max-width: 510px;
+
+    }
+  }
+}
+
+.games {
+  &-block {
+    padding: 0 0 134px;
+    @include max-large() {
+      padding: 0 0 100px;
+    }
+
+    .games-title {
+      @include display-flex();
+      @include justify-content-center();
+      @include align-items-center();
+      text-transform: uppercase;
+      margin-bottom: 20px;
+
+      .name {
+        @include indie-flower;
+        font-size: 42px;
+        line-height: 114.8%;
+        text-align: center;
+        color: #005408;
+        @include max-medium() {
+          font-size: 34px;
+        }
+      }
+    }
+
+    .games-description {
+      @include noah-medium();
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size: 18px;
+      line-height: 146.4%;
+      color: #000000;
+    }
+
+    .games-card-list {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(calc(33% - 11px), 1fr));
+      column-gap: 11px;
+      row-gap: 30px;
+      @include max-medium() {
+        margin-top: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(calc(50% - 32px), 1fr));
+      }
+      @include max-small() {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        gap: 25px;
+      }
+
+      .game-card {
+        outline: none;
+        height: 100%;
+        @include max-large() {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        &:nth-child(1) {
+          .game-card-wrapper {
+            background-color: #4D703C;
+          }
+        }
+
+        &:nth-child(2) {
+          .game-card-wrapper {
+            background-color: #3C705A;
+          }
+        }
+
+        &:nth-child(3) {
+          .game-card-wrapper {
+            background-color: #3C7067;
+          }
+        }
+
+        &:nth-child(4) {
+          .game-card-wrapper {
+            background-color: #70553C;
+          }
+        }
+
+        &:nth-child(5) {
+          .game-card-wrapper {
+            background-color: #6F703C;
+          }
+        }
+
+        &:nth-child(6) {
+          .game-card-wrapper {
+            background-color: #4D703C;
+          }
+        }
+
+        &:nth-child(7) {
+          .game-card-wrapper {
+            background-color: #3C705D;
+          }
+        }
+
+        &:nth-child(8) {
+          .game-card-wrapper {
+            background-color: #3C5D70;
+          }
+        }
+
+        &:nth-child(9) {
+          .game-card-wrapper {
+            background-color: #3C4B70;
+          }
+        }
+
+        .game-card-wrapper {
+          @include display-flex();
+          @include align-items-center();
+          @include flex-direction-column();
+          @include justify-content-flex-start;
+          padding: 16px;
+          @include border-radius(65px);
+          background-color: #4D703C;
+          outline: none;
+          position: relative;
+          overflow: hidden;
+          height: 100%;
+
+          .image {
+            width: 100%;
+            height: 100%;
+
+            img {
+              max-width: 100%;
+              min-height: 192px;
+              max-height: 192px;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 62px;
+              @include max-small {
+                min-height: 292px;
+                max-height: 292px;
+              }
+              @include max-small-x {
+                min-height: 220px;
+                max-height: 220px;
+              }
+            }
+          }
+
+
+          .title {
+            @include noah-extra-bold();
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .rating {
+            position: relative;
+            max-width: 120px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 8px;
+            margin-top: 10px;
+            @include max-large {
+              max-width: 148px;
+            }
+
+            .rating-inner {
+              z-index: 4;
+              overflow: hidden;
+              position: relative;
+            }
+
+            .rating-outer {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 3;
+            }
+
+            .rating-inner, .rating-outer {
+              @include display-flex();
+
+              .star {
+                img {
+                  min-width: 23.53px;
+                  max-width: 23.53px;
+                  min-height: 24.74px;
+                  max-height: 24.74px;
+                  @include max-large() {
+                    min-width: 28.53px;
+                    max-width: 28.53px;
+                    min-height: 29.74px;
+                    max-height: 29.74px;
+                  }
+                }
+              }
+            }
+          }
+
+          .info-wrapper {
+            @include display-flex();
+            @include justify-content-center();
+            @include flex-direction-column();
+          }
+        }
+      }
+    }
+  }
+}
+
+.how-to-play {
+  margin-bottom: 100px;
+
+  .content-title {
+    h2 {
+      @include indie-flower();
+      font-size: 42px;
+      line-height: 114.8%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #005408;
+      margin-bottom: 20px;
+      //@include max-small {
+      //  font-size: 34px;
+      //}
+    }
+  }
+
+  .content-description {
+    @include noah-medium;
+    max-width: 599px;
+    font-size: 18px;
+    line-height: 146.4%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+  }
+
+  .content-list {
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(33% - 30px), 1fr));
+    gap: 30px;
+    @include max-large {
+      @include display-flex();
+      gap: unset;
+      @include flex-wrap-wrap();
+      @include justify-content-center();
+    }
+
+    .content-list-item {
+      position: relative;
+      @include max-large() {
+        width: 50%;
+      }
+      @include max-small() {
+        width: 100%;
+      }
+      &-blur {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(254 255 216);
+        filter: blur(58px);
+        border-radius: 50%;
+        @include max-small {
+          display: none;
+        }
+      }
+
+      .item-wrapper {
+        min-height: 355px;
+        height: 100%;
+        position: relative;
+        @include display-flex;
+        @include flex-direction-column;
+        @include align-items-center;
+        //@include justify-content-flex-end;
+
+        .icon {
+          @include display-flex;
+          @include justify-content-center;
+          margin-bottom: 40px;
+          @include max-small {
+            margin-bottom: 20px;
+            img {
+              width: 80%;
+            }
+          }
+          @include min-medium() {
+            img {
+              min-height: 315px;
+            }
+          }
+          @include max-medium() {
+            img {
+              min-height: 236px;
+              object-fit: contain;
+            }
+          }
+        }
+
+        .title {
+          @include indie-flower();
+          font-size: 42px;
+          line-height: 114.8%;
+          text-align: center;
+          text-transform: uppercase;
+          color: #005408;
+          margin-bottom: 20px;
+          @include max-small {
+            margin-bottom: 10px;
+          }
+        }
+
+        .subtitle {
+          @include noah-medium;
+          font-size: 18px;
+          line-height: 146.4%;
+          text-align: center;
+          color: #000000;
+          max-width: 75%;
+        }
+      }
+    }
+  }
+
+}
+
+//homepage styles end
