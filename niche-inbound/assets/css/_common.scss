@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @include f-normal();
+  color: #000000;
+}
+body, html {
+  height: 100%;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+ul, li {
+  list-style-type: none;
+}
+body.overflow-hidden {
+  overflow: hidden;
+}
+.main-wrapper {
+  @include flexbox();
+  flex-direction: column;
+  min-height: 100%;
+}
+.main-content {
+  flex: 1 0 auto;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 882px;
+}
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  height: 53px;
+  background: #ff412d;
+  @include flexbox();
+  align-items: center;
+  justify-content: center;
+  min-width: 236px;
+  max-width: 236px;
+  transition: all .5s ease;
+  span {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: lowercase;
+    position: relative;
+    &::before {
+      content: '';
+      width: 6px;
+      height: 9px;
+      position: absolute;
+      top: 8px;
+      //right: -27px;
+      right: -16px;
+      background: url('../img/arrow-small.svg');
+      background-repeat: no-repeat;
+    }
+  }
+  @include min-medium() {
+    &:hover {
+      background: #CC3424;
+    }
+  }
+}
+.heading, .heading * {
+  color: #000000;
+  span {
+    color: #ff412d;
+  }
+}
+h1, .heading-1, .heading-1 * {
+  font-size: 50px;
+  @include max-medium() {
+    font-size: 38px;
+  }
+}
+h2, .heading-2, .heading-2 * {
+  font-size: 30px;
+}
+h3, p,  .heading-3, .heading-3 * {
+  font-size: 18px;
+}
+h4, .heading-4, .heading-4 * {
+  font-size: 16px;
+}
+
+.wpcf7-response-output {
+  display: none!important;
+}

@@ -1,0 +1,63 @@
+@import 'mixin';
+@import 'common';
+
+
+@import 'block/header';
+@import 'block/footer';
+
+.page-default-section {
+  padding: 225px 0 245px;
+  @include max-medium() {
+    padding: 120px 0 160px;
+  }
+  h1, h2 {
+    margin: 0 0 40px;
+  }
+  h3 {
+    margin: 0 0 20px;
+  }
+  p {
+    margin: 0 0 20px;
+  }
+  a {
+    position: relative;
+    color: #ff412d;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      width: 0;
+      height: 1px;
+      background: #ff412d;
+      transition: all .5s ease;
+    }
+    &:hover {
+      @include min-medium() {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+  ul, ol {
+    padding: 0 0 0 20px;
+    margin: 0 0 20px;
+  }
+  li {
+    &::marker {
+      color: #ff412d;
+    }
+  }
+  ul {
+    li {
+      list-style: disc;
+    }
+  }
+  ol {
+    padding: 0 0 0 20px;
+    li {
+      list-style: decimal;
+    }
+  }
+
+}
