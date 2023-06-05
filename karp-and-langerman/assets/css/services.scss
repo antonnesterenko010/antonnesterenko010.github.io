@@ -1,0 +1,233 @@
+@import 'mixin';
+@import 'common';
+
+
+@import 'block/header';
+@import 'block/footer';
+
+
+
+.hero {
+  position: relative;
+  @include flexbox();
+  background-repeat: no-repeat;
+  padding: 130px 0 90px;
+  background-size: cover;
+  background-position: center center;
+  @include min-large() {
+    padding: 210px 0 175px;
+    background-size: contain;
+    margin: 0;
+    background-position: inherit;
+  }
+  @media (min-width: 1600px) {
+    background-size: 55%;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #413027;
+    opacity: 0.4;
+    @include min-large() {
+      left: 0;
+      width: 100%;
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 38, 66, 0.95);
+    opacity: 0.88;
+    @include min-large() {
+      top: 0;
+      left: auto;
+      right: 0;
+      width: 50%;
+      z-index: 0;
+      background: #002642;
+      opacity: 1;
+    }
+  }
+  .container {
+    z-index: 1;
+  }
+  .hero-title-wrapper {
+    @include flexbox();
+    flex-direction: column;
+    position: relative;
+    padding: 0 0 0 26px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: #BFE2EB;
+      @include min-large() {
+        left: 64px;
+      }
+    }
+    @include min-large() {
+      margin: 0 0 0 50%;
+      padding: 0 0 0 96px;
+    }
+    .hero-title {
+      margin: 0 0 12px;
+      @include min-large() {
+        margin: 0 0 20px;
+      }
+      p, span {
+        @include f-bold-2();
+        line-height: 1.6;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        @include min-large() {
+          font-size: 28px;
+        }
+      }
+      span {
+        color: #BFE2EB;
+      }
+    }
+    .hero-subtitle {
+      font-size: 17px;
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      max-width: 416px;
+    }
+  }
+}
+.goal {
+  @include min-large() {
+    padding: 100px 0 180px;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .goal-list {
+    @include flexbox();
+    flex-direction: column;
+    margin: -30px 0 0;
+    @include min-large() {
+      margin: -30px 0;
+    }
+    .goal-item {
+      @include flexbox();
+      flex-direction: column;
+      margin: 0;
+      padding: 0 0 60px;
+      background: #002642;
+      @include min-large() {
+        flex-direction: row;
+        width: 90%;
+        padding: 0;
+        margin: 30px 0;
+      }
+      .image-wrapper {
+        flex-basis: 100%;
+        position: relative;
+        @include min-large() {
+          //flex-basis: 57%;
+          //max-width: 800px;
+          flex-basis: 600px;
+        }
+        .image {
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          min-height: 234px;
+          z-index: 1;
+          @include min-large() {
+            min-height: 400px;
+          }
+        }
+        .overlay {
+          position: absolute;
+          width: 100%;
+          min-height: 100%;
+          z-index: 2;
+          mix-blend-mode: multiply;
+          opacity: 0.2;
+        }
+      }
+      .title-wrapper {
+        width: 90%;
+        padding-top: 27px;
+        @include min-large() {
+          margin: auto 0;
+          padding-top: 0;
+          padding-left: 13%;
+          padding-right: 35px;
+          width: auto;
+
+
+        }
+        .goal-title {
+          @include f-bold-2();
+          margin: 0 0 25px 27px;
+          line-height: 1.6;
+          letter-spacing: 0.02em;
+          color: #ffffff;
+          font-size: 25px;
+          @include min-large() {
+            font-size: 28px;
+            margin: 0 0 25px;
+          }
+        }
+        .goal-subtitle {
+          @include min-large() {
+            padding: 0 0 0 3px;
+          }
+          ul {
+            margin: -10px 0;
+          }
+          li {
+            margin: 10px 0;
+          }
+          li, p {
+            font-size: 15px;
+            line-height: 1.6;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+            padding: 0 0 0 45px;
+            @include min-large() {
+              font-size: 17px;
+              padding: 0;
+            }
+          }
+          ul li::before {
+            content: "\2022";
+            color: #ffffff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin: 0 16px 0 -32px;
+            @include min-large() {
+              margin: 0 8px 0 -27px;
+            }
+          }
+        }
+      }
+      &:nth-child(odd) {
+        @include min-large() {
+          flex-direction: row-reverse;
+          justify-content: space-between;
+        }
+      }
+      &:nth-child(even) {
+        @include min-large() {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}

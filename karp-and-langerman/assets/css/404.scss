@@ -1,0 +1,16 @@
+@import 'mixin';
+@import 'common';
+
+
+@import 'block/header';
+@import 'block/footer';
+
+.error-section {
+  background: #E5E5E5;
+  padding: 150px 0;
+  .error-message {
+    font-size: 3rem;
+    @include f-bold-2();
+    color: #23272b;
+  }
+}

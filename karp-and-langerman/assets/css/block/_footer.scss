@@ -1,0 +1,255 @@
+.footer-top {
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url('../img/footer-bg-mobile.png');
+  background-size: cover;
+  @include min-medium() {
+    background-image: url('../img/footer-bg-desktop.png');
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(87.22deg, #002642 27.35%, rgba(0, 38, 66, 0) 199.86%);
+  }
+  .form-block {
+    padding: 40px 0 88px;
+    @include min-medium() {
+      padding: 60px 0 135px;
+    }
+    .form-title {
+      @include f-bold-2();
+      font-size: 25px;
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      text-align: center;
+      margin: 0 0 24px;
+      @include min-medium() {
+        font-size: 32px;
+        margin: 0 0 40px;
+      }
+    }
+    .footer-form, .wpcf7-form {
+      @include flexbox();
+      flex-direction: column;
+      position: relative;
+      .form-group {
+        margin: 0 0 16px;
+        position: relative;
+        @include min-medium() {
+          margin: 0 0 24px;
+        }
+        input {
+          border: 1px solid rgba(191, 226, 235, 0.65);
+          background: transparent;
+          width: 100%;
+          height: 67px;
+          outline: none;
+          transition: all .5s ease;
+          text-align: center;
+          @include flexbox();
+          align-items: center;
+          @include min-medium() {
+            margin: 0 auto;
+            max-width: 736px;
+          }
+          @include placeholder() {
+            @include f-normal();
+            text-align: center;
+            font-size: 17px;
+            line-height: 1.6;
+            letter-spacing: 0.02em;
+            color: rgba(255,255,255,0.65);
+          }
+        }
+        input:focus {
+          border: 1px solid rgba(191, 226, 235, 1);
+          @include placeholder() {
+            color: rgba(255,255,255, 1);
+          }
+        }
+        input[name="c_info"] {
+          height: 155px;
+          padding: 30px 0 110px;
+          @include min-medium() {
+            height: 152px;
+            padding: 25px 0 110px;
+          }
+        }
+      }
+      p {
+        @include flexbox();
+        justify-content: center;
+      }
+      .form-btn {
+        margin: 8px 0 0;
+        max-width: 219px;
+        width: 100%;
+        cursor: pointer;
+        height: 49px;
+        @include flexbox();
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        text-transform: uppercase;
+        outline: none;
+        border: 2px solid #BFE2EB;
+        font-size: 15px;
+        line-height: 1.6;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        background: transparent;
+        @include min-medium() {
+          max-width: 200px;
+          height: 48px;
+          margin: 16px 0 0;
+          transition: all .5s;
+          &:hover {
+            background: #BFE2EB;
+            color: #002642;
+            @include f-bold();
+          }
+        }
+      }
+      .ajax-loader {
+        visibility: hidden!important;
+      }
+      .wpcf7-form-control-wrap {
+        position: static;
+      }
+      .wpcf7-not-valid-tip {
+        width: 100%;
+        position: absolute;
+        font-size: 12px;
+        bottom: -16px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background: #EC6161;
+        box-shadow: 0px 10px 36px 2px rgba(39, 82, 114, 0.15);
+        color: #ffffff;
+        text-align: center;
+        max-width: 100%;
+        @include min-medium() {
+          max-width: 736px;
+        }
+      }
+    }
+    .wpcf7-form.invalid {
+      input[aria-invalid="true"] {
+        border: 1px solid #EC6161;
+        //border-bottom: none;
+        color: #EC6161;
+        @include placeholder() {
+          color: #EC6161;
+        }
+        &:focus {
+          border: 1px solid #BFE2EB;
+          color: #ffffff;
+          @include placeholder() {
+            color: #ffffff;
+          }
+        }
+      }
+      .wpcf7-response-output {
+        display: none;
+        z-index: -10;
+        visibility: hidden;
+        margin: -30px 0 0;
+      }
+    }
+  }
+  .address-block {
+    @include min-medium() {
+      @include flexbox();
+      padding: 0 0 87px;
+    }
+    .logo {
+      display: block;
+      text-align: center;
+      margin: 0 0 41px;
+      @include min-medium() {
+        margin: 0 96px 0 0;
+      }
+    }
+    .address-list {
+      @include flexbox();
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 -7px;
+      @include min-medium() {
+        margin: 0 -16px;
+      }
+      .address-item {
+        width: 50%;
+        padding: 0 7px;
+        margin: 0 0 40px;
+        @include min-medium() {
+          width: 25%;
+          padding: 0 16px;
+          margin: 0;
+        }
+        .address-title {
+          @include f-bold-2();
+          font-size: 19px;
+          line-height: 1.7;
+          letter-spacing: 0.02em;
+          color: #BFE2EB;
+          margin: 0 0 22px;
+          @include min-medium() {
+            margin: 0 0 35px;
+          }
+        }
+        .address-text {
+          font-size: 15px;
+          line-height: 1.7;
+          letter-spacing: 0.02em;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+.footer-bottom {
+  background: #002642;
+  padding: 16px 0 60px;
+  @include min-medium() {
+    padding: 26px 0 70px;
+  }
+  .copyright-block {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -16px;
+      width: 100%;
+      height: 1px;
+      background: #BFE2EB;
+      opacity: 0.2;
+      @include min-medium() {
+        top: -26px;
+      }
+    }
+    .text-box {
+      @include min-medium() {
+        max-width: 448px;
+        margin: 0 0 0 267px;
+      }
+      font-size: 13px;
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      opacity: 0.7;
+    }
+
+    a {
+      @include f-semibold();
+      font-size: 13px;
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      text-decoration-line: underline;
+      opacity: 0.7;
+      display: block;
+    }
+  }
+}

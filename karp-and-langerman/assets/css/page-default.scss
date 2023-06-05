@@ -1,0 +1,87 @@
+@import 'mixin';
+@import 'common';
+
+
+@import 'block/header';
+@import 'block/footer';
+
+
+.hero {
+  position: relative;
+  @include flexbox();
+  background-repeat: no-repeat;
+  padding: 130px 0 90px;
+  background-size: cover;
+  @include min-large() {
+    padding: 227px 0 226px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #413027;
+    opacity: 0.4;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(35, 39, 43, 0.3);
+    opacity: 0.8;
+  }
+  .container {
+    z-index: 1;
+    text-align: center;
+  }
+  .logo {
+    svg {
+      max-width: 80%;
+      width: auto;
+      @include min-large() {
+        max-width: 100%;
+      }
+    }
+  }
+}
+.page-default-section {
+  background: #ffffff;
+  padding: 46px 0 64px;
+  @include min-large() {
+    padding: 86px 0 124px;
+  }
+  .container {
+    max-width: 736px;
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: #23272B;
+    @include f-bold-2();
+    margin: 0px 0px 20px;
+  }
+  h2 {
+    font-size: 21px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    margin: 30px 0;
+    color: #23272b;
+    @include f-bold-2();
+  }
+  p {
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+    margin: 0 0 25px;
+    color: #23272b;
+  }
+  a {
+    font-size: 17px;
+    color: #23272b;
+  }
+}
