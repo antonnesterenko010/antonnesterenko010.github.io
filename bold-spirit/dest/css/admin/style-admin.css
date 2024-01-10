@@ -1,0 +1,15 @@
+.editor-styles-wrapper {
+    background: #f2f0e9;
+}
+
+.edit-post-visual-editor__post-title-wrapper .editor-post-title {
+    background: #fff;
+}
+
+.wp-block {
+    max-width: 1000px;
+}
+
+.editor-post-title .editor-post-title__input {
+    padding: 19px;
+}

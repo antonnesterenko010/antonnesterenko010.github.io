@@ -1,0 +1,25 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 51px 0 0 87px;
+  z-index: 10;
+  @include max-medium() {
+    padding: 45px 0 0 0px;
+  }
+  .logo {
+    img {
+      @media (min-width: 769px) and (max-width: 1024px) {
+        width: 200.477px;
+        height: 22.002px;
+      }
+      @media(max-width: 390px) {
+        width: 75%;
+      }
+      @include max-medium() {
+        margin: 0 auto;
+      }
+    }
+  }
+}

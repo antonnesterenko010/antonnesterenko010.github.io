@@ -1,0 +1,46 @@
+.not-found {
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 318px 0 90px;
+    @include max-medium() {
+      padding: 185px 26px 0px;
+    }
+
+    h1 {
+      font-family: 'Abyssinica SIL', sans-serif;
+      background: linear-gradient(151deg, #BC8431 3%, #ECC777 10.42%, #ECC777 11.72%, #ECC777 26.04%, #FFEAA1 37.79%, #ECC777 39.73%, #ECC777 51.71%, #ECC777 57.58%, #BC8431 71%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      font-size: 120px;
+      line-height: 1.3;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 400;
+      @include max-medium() {
+        font-size: 90px;
+        width: 100%;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-family: 'Gilroy Bold', sans-serif;
+      font-size: 37px;
+      line-height: 1.45;
+      margin: 0 0 62px;
+      @include max-medium() {
+        font-size: 24px;
+        margin: 0 0 47px;
+      }
+    }
+  }
+}
+
+body.error404 {
+  .site-body {
+    background: #0D0A2C;
+  }
+}

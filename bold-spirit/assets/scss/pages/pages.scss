@@ -1,0 +1,87 @@
+
+.page-default {
+    padding-bottom: 30px;
+    & .container {
+        max-width:1660px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    & .banner {
+        width: 100%;
+        height: 300px;
+        background: #0D0A2C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        padding-top: 81px;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(165deg,rgba(20,133,126,0) 28%,#dd8ad8 136%);
+        }
+        & h1 {
+            font-family: "Abyssinica SIL",sans-serif;
+            background: linear-gradient(151deg,#bc8431 3%,#ecc777 10.42%,#ecc777 11.72%,#ecc777 26.04%,#ffeaa1 37.79%,#ecc777 39.73%,#ecc777 51.71%,#ecc777 57.58%,#bc8431 71%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            font-size: 70px;
+            line-height: .78;
+            text-align: center;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: 400;
+            @media (max-width: 550px){
+                font-size: 60px;
+            }
+            @media (max-width: 450px){
+                font-size: 50px;
+            }
+        }
+    }
+    & h2, h3 {
+        font-family:'Gilroy-Bold', sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 39px */
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background: var(--for-button, linear-gradient(277deg, #3F1254 36.78%, #030812 94.17%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        @media (max-width: 768px) {
+            font-size: 25px;
+        }
+    }
+    & h3 {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 25px;
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+    & p {
+        color : #030812;
+        font-family:'Gilroy-Bold', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 10px;
+        line-height: 142%; /* 39px */
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+}
