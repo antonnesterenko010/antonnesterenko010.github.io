@@ -1,0 +1,304 @@
+@import '../../global/mixins';
+@import '../../global/variable';
+
+.contact {
+  display: flex;
+  @include max-medium() {
+    flex-direction: column;
+  }
+  .contact-form {
+    padding: 113px 11px 112px 20px;
+    flex-basis: 61.3%;
+    @include max-medium() {
+      border-bottom: 1px solid $border_color;
+    }
+    form {
+      max-width: 585px;
+      margin: 0 auto;
+      @include max-small() {
+        max-width: 350px;
+      }
+    }
+    .contact-form__title {
+      color: #fff;
+      font-family: 'Hanken Grotesk Medium', sans-serif;
+      font-size: 48px;
+      line-height: 58px;
+      max-width: 585px;
+      margin: 0 auto 43px;
+      @include max-small() {
+        max-width: 350px;
+        font-size: 32px;
+        line-height: 42px;
+        margin: 0 auto 20px;
+      }
+    }
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative;
+      &.message-group {
+        p {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
+      &.file-group {
+        border: 1px solid $border_color;
+        padding: 40px 0 30px;
+        @include max-small() {
+          padding: 45px 0 25px;
+        }
+        p {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .wpcf7-form-control-wrap {
+          display: block;
+          height: 100%;
+        }
+      }
+      p {
+        width: 100%;
+      }
+      .input-group {
+        flex-basis: 250px;
+        position: relative;
+        margin: 0 0 56px;
+        @include max-medium() {
+          flex-basis: 100%;
+        }
+        input {
+          border-bottom: 1px solid $border_color;
+          height: 37px;
+          padding: 0 0 10px;
+          width: 100%;
+          max-width: 245px;
+          @include max-medium() {
+            max-width: 100%;
+            border-radius: 0px;
+          }
+        }
+      }
+      .form-group__title {
+        width: 100%;
+        text-align: center;
+        pointer-events: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        + p {
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+        p {
+          width: auto;
+          height: auto;
+        }
+        span {
+          font-size: 16px;
+          line-height: 26px;
+          color: #fff;
+          display: block;
+        }
+        span:last-child {
+          text-transform: uppercase;
+          color: #888BAB;
+          font-size: 14px;
+        }
+      }
+    }
+    label {
+      color: #fff;
+      font-size: 16px;
+      line-height: 25.6px;
+      pointer-events: none;
+      &:not(.c_message__label) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s ease-in-out;
+      }
+    }
+    input {
+      outline: none;
+      border: none;
+      background: transparent;
+      color: #fff;
+      font-size: 16px;
+      line-height: 25.6px;
+      &:focus + label {
+        top: -26px;
+        font-size: 14px;
+        color: #888BAB;
+        font-family: 'Hanken Grotesk Regular', sans-serif;
+        font-weight: 400;
+      }
+    }
+    textarea {
+      background: transparent;
+      outline: none;
+      resize: none;
+      width: 100%;
+      height: 121px;
+      border: 1px solid $border_color;
+      margin: 11px 0 56px;
+      font-size: 16px;
+      line-height: 25.6px;
+      color: #fff;
+      padding: 12px;
+      &::-webkit-scrollbar-track
+      {
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar
+      {
+        width: 3px;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb
+      {
+        border-radius: 10px;
+        background-color: $light_color;
+      }
+      + .wpcf7-not-valid-tip {
+        bottom: 20px;
+      }
+    }
+    input[type="file"] {
+      height: 100%;
+      width: 100%;
+      display: block;
+      background: transparent;
+      color: transparent;
+      cursor: pointer;
+      overflow: hidden;
+      opacity: 0;
+      &::-webkit-file-upload-button {
+        visibility: hidden;
+      }
+      + .wpcf7-not-valid-tip {
+        bottom: -50px;
+      }
+    }
+    .contact-form__submit {
+      margin: 65px 0 0;
+      border-radius: 60px;
+      border: 1px solid #fff;
+      height: 55px;
+      min-width: 146px;
+      cursor: pointer;
+      background: transparent;
+      font-size: 18px;
+    }
+    .codedropz-upload-container {
+      padding: 15px 20px 57px;
+      @include max-medium() {
+        padding: 15px 20px 60px;
+      }
+    }
+    .codedropz-upload-handler {
+      border: none;
+    }
+    .dnd-upload-status {
+      padding: 0;
+    }
+    .dnd-upload-counter {
+      opacity: 0;
+    }
+    .dnd-upload-status .dnd-upload-details .remove-file span:after {
+      opacity: 0;
+    }
+    .codedropz-upload-inner {
+      h3, span {
+        display: none;
+      }
+    }
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 39%;
+    border-left: 1px solid $border_color;
+    @include max-medium() {
+      border-left: none;
+    }
+    .contact-info__block {
+      padding: 125px 20px 125px 102px;
+      @include max-medium() {
+        padding: 40px 20px 40px 40px;
+        border-left: none;
+      }
+      @include max-small() {
+        padding: 40px 20px 40px 20px;
+      }
+      h3 {
+        font-family: 'Hanken Grotesk Medium', sans-serif;
+        font-size: 32px;
+        line-height: 38px;
+        color: #fff;
+        margin: 0 0 46px;
+        max-width: 235px;
+        @include max-medium() {
+          max-width: 100%;
+        }
+        @media (max-width: 400px){
+          max-width: 320px;
+        }
+      }
+      p {
+        color: $light_color;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0 0 20px;
+        max-width: 320px;
+        @include max-medium() {
+          max-width: 100%;
+        }
+        @media (max-width: 400px){
+          max-width: 320px;
+        }
+        &:last-child {
+          margin: 0;
+        }
+      }
+      &.contact-info__top {
+        border-bottom: 1px solid $border_color;
+      }
+      &.contact-info__bottom {}
+    }
+  }
+
+}
+.wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted .wpcf7-response-output {
+  border-color: $border_color;
+  border-width: 1px;
+  margin: 15px 0 0;
+  color: red;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+  color: #fff;
+  margin: 15px 0 0;
+  border-color: $border_color;
+  border-width: 1px;
+}
+#c_file_name {
+  color: #fff;
+  display: none;
+}
+.wpcf7-not-valid-tip {
+  text-align: center;
+  margin: 0 0 15px;
+  position: absolute;
+}
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+  border-width: 1px;
+  border-color: $border_color;
+  color: #fff;
+}
