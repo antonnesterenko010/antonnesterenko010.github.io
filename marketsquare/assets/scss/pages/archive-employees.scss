@@ -1,0 +1,173 @@
+.site-archive-employees {
+    & .hero__title {
+        @media (max-width: 400px) {
+            //font-size: 4rem;
+        }
+    }
+}
+
+.archive-employees {
+    &__wrapper {
+        margin-bottom: 200px;
+        @media (max-width: 768px) {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__main-content {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 80px;
+        //margin-bottom: 80px;
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    &__administration {
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__title {
+            //font-weight: 800;
+            font-family: $satoshiRegular;
+            //font-size: 3.2rem;
+            //line-height: 4rem;
+            color: $msq_black;
+            margin: 0;
+            padding: 0 0 40px 0;
+            text-align: center;
+        }
+    }
+}
+
+.employees {
+    &__item {
+        max-width: 100%;
+        width: 100%;
+        min-height: initial;
+
+        & picture {
+            display: block;
+        }
+
+        animation: employeesOpacity ease-in 1s;
+        @keyframes employeesOpacity {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__title {
+        //font-weight: 700;
+        font-family: $satoshiRegular;
+        //font-size: 2.4rem;
+        //line-height: 3.2rem;
+        color: $msq_black;
+        //margin: 8px 0;
+        margin: 0;
+    }
+
+    &__position {
+        //font-weight: 400;
+        font-family: $satoshiRegular;
+        //font-size: 1.6rem;
+        //line-height: 2.4rem;
+        color: $msq_black;
+        opacity: 1;
+        margin: 0;
+        transition: opacity 0.3s;
+        @media (max-width: 1024px) {
+            margin: 8px 0 0;
+        }
+    }
+
+    &__email {
+        //font-weight: 600;
+        font-family: $satoshiRegular;
+        //font-size: 1.6rem;
+        //line-height: 2.4rem;
+        color: $melon;
+        margin-top: 16px;
+        display: block;
+    }
+
+    &__hover-pos {
+        //font-weight: 400;
+        font-family: $satoshiRegular;
+        //font-size: 1.6rem;
+        //line-height: 2.4rem;
+        color: $msq_black;
+        opacity: 0;
+        transition: opacity .3s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    &__pos-wrapper {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+        row-gap: 10px;
+        flex-wrap: wrap;
+        margin: 8px 0 0;
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
+        p, a {
+            margin: 0;
+        }
+    }
+
+    &__item:hover {
+        & .employees__position.addhover {
+            opacity: 0;
+        }
+
+        & .employees__hover-pos {
+            opacity: 1;
+        }
+    }
+}
+
+
+.archive-employees__administration__content {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 80px;
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (max-width: 600px) {
+        grid-row-gap: 40px;
+    }
+
+    & .employees__item {
+    }
+
+    @media (max-width: 913px) {
+        & .employees__item:not(:nth-child(2n+2)) {
+            margin-right: 0;
+        }
+    }
+}

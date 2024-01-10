@@ -1,0 +1,439 @@
+.latest-cases {
+    &__module {
+        margin-bottom: 40px;
+        @media (max-width: 768px) {
+            margin-bottom: 40px;
+        }
+
+        &.white {
+            h3, h2, p , a {
+                color: #fff;
+            }
+
+            .arrow-stick {
+                path {
+                    stroke: #fff;
+                }
+            }
+        }
+
+        & ~ .services-slider__module {
+            margin-top: 120px;
+            @media (max-width: 768px) {
+                margin-top: 40px;;
+            }
+        }
+
+        & .offset-top {
+            margin-top: -150px;
+        }
+
+        @media (max-width: 709px) {
+            padding-bottom: 40px;
+        }
+
+        & .latest-cases__item {
+            width: 100%;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-column-gap: 40px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-row-gap: 80px;
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-row-gap: 40px;
+        }
+        @media (max-width: 600px) {
+            grid-template-columns: initial;
+        }
+
+        &.single {
+            display: initial;
+            @media (max-width: 768px) {
+                margin-bottom: 0;
+            }
+
+            & ~ .latest-cases__all-link-wrapper {
+                @media (max-width: 768px) {
+                    margin-top: 40px;
+                }
+            }
+
+            .latest-cases__item {
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 24px;
+                @media (max-width: 600px) {
+                    grid-template-columns: 1fr;
+                    grid-row-gap: 10px;
+                }
+            }
+
+            .latest-cases__link {
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                margin-right: 32px;
+                padding-right: 10px;
+                line-height: 24px;
+                @media (max-width: 600px) {
+                    width: fit-content;
+                    justify-content: left;
+                }
+            }
+
+            .arrow-stick {
+                &:before {
+                    width: 29px;
+                }
+            }
+
+            .latest-cases__title {
+                margin: 0;
+            }
+
+            .latest-cases__img-wrapper {
+                max-width: 100%;
+                height: 777px;
+                grid-column: 1 / span 2;
+                @media (max-width: 1200px) {
+                    height: 485px;
+                }
+                @media (max-width: 1024px) {
+                    height: 400px;
+                }
+                @media (max-width: 768px) {
+                    height: 350px;
+                }
+                @media (max-width: 600px) {
+                    grid-column: initial;
+                }
+
+                &:hover {
+                    transform: none;
+
+                    img, .img-absolute {
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                        border-bottom-left-radius: 0;
+                    }
+                }
+
+                a {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    &__all-link-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        animation: casesOpacity ease-in 1s;
+
+        &:not(:last-child) {
+            @media (max-width: 709px) {
+                margin-right: 0;
+                margin-bottom: 24px;
+            }
+        }
+
+        @keyframes casesOpacity {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__img-wrapper {
+        width: 100%;
+        border-radius: 0;
+        transition: all 1s;
+        position: relative;
+        //height: 766px;
+        height: 600px;
+
+        @media (max-width: 1440px) {
+            height: 33.5vw;
+            object-fit: cover;
+        }
+        @media (max-width: 1024px) {
+            height: 400px;
+        }
+        @media (max-width: 600px) {
+            height: 350px;
+        }
+
+        &:hover {
+            transform: rotate(-2deg);
+
+            & .img-absolute {
+                transition: all 0.5s;
+                opacity: 1;
+                visibility: visible;
+                //cursor: url("../dest/images/cursor-eyes.svg") 38 40, auto;
+                border-top-left-radius: 72px;
+                border-top-right-radius: 72px;
+                border-bottom-left-radius: 72px;
+                object-fit: cover;
+            }
+
+            video {
+                transition: all 0.5s;
+                opacity: 1;
+                visibility: visible;
+                //cursor: url("../dest/images/cursor-eyes.svg") 38 40, auto;
+                object-fit: cover;
+            }
+
+            & img {
+                //cursor: url("../dest/images/cursor-eyes.svg") 38 40, auto;
+                border-top-left-radius: 72px;
+                border-top-right-radius: 72px;
+                border-bottom-left-radius: 72px;
+            }
+        }
+
+        & img {
+            transition: all 0.5s;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        font-family: $satoshiRegular;
+        //font-weight: 700;
+        //font-size: 2.4rem;
+        //line-height: 3.2rem;
+        //color: black;
+        color: $msq_black;
+        //margin: 24px 0 0;
+        @media (max-width: 961px) {
+            //font-size: 1.6rem;
+            //margin: 12px 0;
+        }
+    }
+
+    &__link {
+        font-family: $satoshiRegular;
+        //font-weight: 500;
+        //font-size: 1.6rem;
+        //line-height: 1.95rem;
+        //color: $black;
+        color: $msq_black;
+        //padding-right: 10px;
+        @media (max-width: 768px) {
+            //font-size: 1.4rem;
+        }
+    }
+
+    &__all-link {
+        font-family: $satoshiRegular;
+        //font-weight: 500;
+        //font-size: 2.2rem;
+        //line-height: 2.9rem;
+        //color: $black;
+        //text-transform: uppercase;
+        //padding-right: 10px;
+        color: $msq_black;
+        @media (max-width: 709px) {
+            //font-size: 1.8rem;
+        }
+        @media (max-width: 400px) {
+            //font-size: 1.6rem;
+        }
+        @media (max-width: 350px) {
+            //font-size: 1.36rem;
+        }
+    }
+}
+.latest-cases__module.redesign-latest-cases__module {
+    margin: 0;
+    .link-arrow, .link-arrow-white {
+        padding-right: 42px;
+    }
+    .latest-cases__wrapper {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(1, minmax(0,1fr));
+            grid-row-gap: 20px;
+        }
+    }
+    .latest-cases__header {
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-column-gap: 40px;
+        justify-content: space-between;
+        padding: 8px 0 0;
+        margin: 0px 0 24px;
+        border-top: 1px solid $msq_divider;
+        @media (max-width: 600px) {
+            grid-template-columns: repeat(1,minmax(0,1fr));
+        }
+        .latest-cases__module__title {
+            text-align: left;
+            margin: 0;
+            font-weight: inherit;
+        }
+        .latest-cases__all-link-wrapper {
+            justify-content: space-between;
+            align-items: center;
+            .latest-cases__all-link {
+                text-transform: inherit;
+                font-weight: 400;
+            }
+            .all-cases__counter {
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -12px;
+                    top: 11px;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 12px;
+                    background: $msq_mint;
+                    //@media (max-width: 600px) {
+                    //    left: 50%;
+                    //    transform: translateX(-50%);
+                    //    top: -10px;
+                    //}
+                }
+            }
+        }
+    }
+    .latest-cases__title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 8px 0 0;
+        @media (max-width: 600px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .latest-cases__title {
+            margin: 0;
+            color: $msq_black;
+            font-weight: inherit;
+        }
+        .latest-cases__link {
+            color: $msq_black;
+            text-transform: inherit;
+        }
+    }
+    .latest-cases__img-wrapper {
+
+        &:hover {
+            transform: none;
+            .img-absolute {
+                border-radius: 0;
+            }
+
+            img {
+                border-radius: 0;
+            }
+        }
+
+    }
+}
+.link-arrow, .link-arrow-white {
+    position: relative;
+    padding-right: 10px;
+
+    .arrow-stick {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+
+        &.redesign {
+            left: calc(100% - 34px);
+        }
+    }
+
+    &:hover {
+        .arrow-stick {
+            &:before {
+                width: 35px;
+            }
+        }
+
+    }
+}
+
+.link-arrow-white {
+    & .arrow-stick {
+        & svg {
+            & path {
+                stroke: white;
+            }
+        }
+    }
+}
+
+.site-market {
+    & .latest-cases__module {
+        margin-bottom: 80px;
+    }
+}
+
+.img-absolute {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.page-template-archive-cases {
+    & .latest-cases__item {
+        max-width: 100%;
+    }
+}
+
+.latest-cases__img-wrapper__desktop {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.latest-cases__img-wrapper__mobile {
+    @media (min-width: 769px) {
+        display: none;
+    }
+}
+
+.latest-cases__module__title {
+    //font-weight: 800;
+    //font-size: 32px;
+    //line-height: 40px;
+    //margin: 0 auto 40px auto;
+    //text-align: center;
+    //color: #000000;
+    color: $msq_black;
+    font-family: $satoshiRegular;
+}

@@ -1,0 +1,25 @@
+.medium-image {
+    &__module {
+        margin-bottom: 80px;
+
+        & .image-img {
+            max-width: 1267px;
+            width: 100%;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        width: 100%;
+
+        & .image__img {
+            max-width: 1267px;
+            width: 100%;
+        }
+    }
+}
+
+
+.align-right {
+    justify-content: flex-end;
+}

@@ -1,0 +1,456 @@
+.archive-cases {
+
+    &__wrapper {
+        padding-top: var(--padding-top);
+
+        @media (max-width: 1024px) {
+            padding-top: var(--padding-top-mobile);
+        }
+
+        .cases-top {
+            border-top: 1px solid $msq_black;
+            padding-top: 8px;
+            margin-bottom: 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                font-family: $satoshiRegular;
+                color: $msq_black;
+            }
+        }
+
+        .cases-pcs {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                margin: 0;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                font-family: $satoshiRegular;
+                color: $msq_black;
+            }
+
+            .pcs {
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background: $msq_divider;
+                    left: -12px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+    &__filter {
+        display: flex;
+        justify-content: flex-end;
+
+        &__title {
+            font-family: $satoshiRegular;
+            font-size: 1.6rem;
+            line-height: 1.95rem;
+            color: $black;
+            font-weight: 700;
+            margin: 0 30px 0 0;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+        }
+
+        &__item {
+            & a {
+                font-family: $satoshiRegular;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: $black;
+                font-weight: 400;
+            }
+
+            &:hover a {
+                font-style: italic;
+            }
+        }
+    }
+
+    &__main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+    }
+}
+
+.site-archive-cases {
+
+    //.hero_module {
+    //    margin-top: 157px;
+    //    margin-bottom: 113px;
+    //    @media (max-width: 768px) {
+    //        margin-top: 74px;
+    //        margin-bottom: 80px;
+    //    }
+    //}
+
+    .hero__title {
+        @media (max-width: 768px) {
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 48px;
+        }
+    }
+
+    //& .hero {
+    //
+    //    padding: 0;
+    //    min-height: initial;
+    //}
+
+    & .latest-cases__img-wrapper {
+        height: auto;
+
+        & img {
+            height: auto;
+        }
+    }
+}
+
+.employees__item {
+    &:hover {
+        & .employees__img-wrapper {
+            transform: rotate(-2deg);
+
+            & .img-absolute {
+                transition: all 0.5s;
+                opacity: 1;
+                visibility: visible;
+                border-top-left-radius: 72px;
+                border-top-right-radius: 72px;
+                border-bottom-left-radius: 72px;
+            }
+
+            & img {
+                border-top-left-radius: 72px;
+                border-top-right-radius: 72px;
+                border-bottom-left-radius: 72px;
+            }
+        }
+    }
+}
+
+.employees__img-wrapper {
+    border-radius: 0;
+    transition: all 1s;
+    position: relative;
+
+    .image__img {
+        img {
+            aspect-ratio: 4 / 5;
+        }
+    }
+
+    & img {
+        transition: all 0.5s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.archive-cases__wrapper {
+    & .latest-cases__item {
+        opacity: 0;
+        transition: all 1s;
+        animation: none;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.opacity {
+    opacity: 1 !important;
+}
+
+
+@media (max-width: 1255px) {
+    .archive-cases__main-content {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+.archive-cases__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 80px;
+    opacity: 0;
+    transition: .3s linear;
+    margin-bottom: 200px;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 16px;
+        grid-row-gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    .latest-cases__item {
+        opacity: initial;
+        animation: initial;
+        margin: 0;
+        transition: initial;
+
+        &.all-right {
+            //opacity: 0;
+        }
+
+        &.all-left {
+            //opacity: 0;
+        }
+
+        .latest-cases__link {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: fit-content;
+            gap: 5px;
+            flex-wrap: wrap;
+            padding-right: 0;
+            max-width: 90%;
+            margin: 8px 0 0;
+
+            &.indent-none {
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+            .latest-cases__link_title {
+                display: inline;
+
+                .client__name {
+                    display: inline;
+                    text-transform: uppercase;
+                }
+
+                @media (max-width: 500px) {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+
+                span {
+                    display: inline-block;
+                    width: 10px;
+                    height: 2px;
+                    background: black;
+                    vertical-align: middle;
+                    margin: 0 6px;
+                }
+            }
+
+            .arrow-stick {
+                left: calc(100% + 10px);
+
+                &:before {
+                    width: 29px;
+                }
+
+                &:hover {
+                    &:before {
+                        width: 35px;
+                    }
+                }
+
+                @media (max-width: 1024px) {
+                    display: none;
+                }
+            }
+
+            span {
+                @media (max-width: 500px) {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+        }
+
+        .latest-cases__title-wrapper {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            @media (max-width: 500px) {
+                gap: 4px;
+                row-gap: 0;
+                margin: 8px 0 0;
+            }
+
+            .latest-cases__title {
+                font-family: $satoshiRegular;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: #151515;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 8px;
+
+                @media (max-width: 500px) {
+                    font-size: 8px;
+                    line-height: 16px;
+                    gap: 4px;
+                }
+
+                &:last-of-type {
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                &:after {
+                    content: '';
+                    height: 18px;
+                    width: 1px;
+                    background: black;
+                    transform: rotate(20deg);
+                    @media (max-width: 500px) {
+                        height: 7px;
+                    }
+                }
+            }
+        }
+
+        &:first-of-type, &:nth-of-type(2) {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        //&:first-of-type {
+        //    animation: top-image-left .8s ease-in-out;
+        //}
+        //
+        //&:nth-of-type(2) {
+        //    animation: top-image-right 1s ease-in-out;
+        //}
+
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .image__img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    .latest-cases__img-wrapper {
+        max-width: 100%;
+
+        &:hover {
+            & ~ .latest-cases__link {
+                .arrow-stick {
+                    &:before {
+                        width: 35px;
+                    }
+                }
+            }
+
+            img {
+                border-radius: 0;
+            }
+
+            .img-absolute {
+                border-radius: 0;
+            }
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .3s linear;
+
+            &:hover {
+                border: 0;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        a {
+            width: 100%;
+            height: 0;
+            padding-bottom: 125%;
+            display: block;
+        }
+
+        &:hover {
+            transform: none;
+        }
+    }
+}
+
+@keyframes top-image-left {
+    from {
+        opacity: 0;
+        transform: translateY(+200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes top-image-right {
+    from {
+        opacity: 0;
+        transform: translateY(+350px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cases-opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

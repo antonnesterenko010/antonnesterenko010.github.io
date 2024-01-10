@@ -1,0 +1,58 @@
+.gallery-contact {
+    &__module {
+        margin-bottom: 80px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        & .square {
+            max-width: calc(50% - 20px);
+            width: 100%;
+            @media (max-width: 768px) {
+                max-width: 100%;
+            }
+        }
+
+        & .small-r {
+            max-width: calc(50% - 20px);
+            width: 100%;
+            @media (max-width: 768px) {
+                max-width: 100%;
+            }
+        }
+
+        & .big-r {
+            max-width: 1920px;
+            width: 100%;
+
+            img {
+                max-height: 992px;
+            }
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__img-wrapper {
+
+        picture {
+            display: block;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}

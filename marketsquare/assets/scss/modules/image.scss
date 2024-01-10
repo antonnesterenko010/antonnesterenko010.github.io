@@ -1,0 +1,27 @@
+.image {
+    &__module {
+        margin-bottom: 120px;
+        @media (max-width: 768px) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__wrapper {
+        max-width: 1920px;
+        width: 100%;
+
+        picture {
+            display: block;
+        }
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.offset-top {
+    @media (max-width: 768px) {
+        margin-top: -60px;
+    }
+}

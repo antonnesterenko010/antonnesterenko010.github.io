@@ -1,0 +1,116 @@
+.text {
+
+    &__module {
+        @media (max-width: 1024px) {
+            margin-bottom: 40px !important;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-column-gap: 40px;
+        @media (max-width: 1024px) {
+            display: initial;
+        }
+
+        &.white {
+            h6, p {
+                color: #fff;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-family: $satoshiRegular;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: black;
+        margin: 0 0 24px 0;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-family: $satoshiRegular;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        color: black;
+    }
+
+    &__content {
+        & h2 {
+            font-family: $satoshiRegular;
+            font-size: 3.2rem;
+            line-height: 4rem;
+            font-weight: 800;
+            color: black;
+            margin: 16px 0;
+            @media(max-width: 426px) {
+                font-size: 2.7rem;
+            }
+            @media(max-width: 360px) {
+                font-size: 2.2rem;
+            }
+        }
+
+        & h3 {
+            font-family: $satoshiRegular;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            font-weight: 700;
+            color: black;
+            margin: 16px 0;
+            @media(max-width: 360px) {
+                font-size: 2rem;
+            }
+        }
+
+        & p, & li {
+            font-family: $satoshiRegular;
+            font-size: 2.2rem;
+            line-height: 3.2rem;
+            font-weight: 400;
+            color: black;
+            margin: 0;
+        }
+
+        & ul {
+            list-style: unset;
+            padding-left: 19px;
+        }
+
+        & a {
+            color: #da8b67;
+
+            &:hover {
+                font-style: italic;
+            }
+        }
+
+
+        & .wp-caption {
+            margin: 55px auto;
+            position: relative;
+            width: 100% !important;
+
+            & img {
+                width: 100%;
+            }
+
+            & p {
+                margin: 8px 0 0 0;
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: #DA8B67;
+                bottom: -6px;
+                left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,166 @@
+.services-slider {
+
+    &__module {
+        margin-bottom: 80px;
+
+        &.white {
+            a, h2, h6, p {
+                color: #fff;
+            }
+
+            .arrow-stick {
+                path {
+                    stroke: #fff;
+                }
+            }
+        }
+    }
+
+    &__container {
+        background: rgba(225, 225, 225, 0.5);
+        padding: 80px 0;
+        @media (max-width: 768px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__items {
+        display: flex;
+        max-height: 356px;
+        padding: 0 80px;
+        @media (max-width: 768px) {
+            padding: 0;
+        }
+    }
+
+    &__main-title {
+        font-family: $satoshiRegular;
+        color: #000;
+        font-weight: 800;
+        font-size: 3.2rem;
+        line-height: 4rem;
+        text-align: center;
+        margin: 0 auto 80px auto;
+        max-width: 940px;
+    }
+
+    &__item {
+        flex-direction: column;
+        max-width: 304px;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        @media (max-width: 1024px) {
+            align-items: center;
+        }
+
+        & .image__img {
+            height: 160px;
+            width: 200px;
+            margin-bottom: 24px;
+
+            & img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                display: block;
+            }
+        }
+    }
+
+    &__item-title {
+        font-family: $satoshiRegular;
+        color: $black;
+        font-weight: 800;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        margin: 0 0 24px 0;
+        @media (max-width: 1024px) {
+            text-align: center;
+        }
+    }
+
+    &__item-desc {
+        font-family: $satoshiRegular;
+        color: black;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin: 0;
+        display: none;
+        max-width: 230px;
+    }
+
+    &__item-link {
+        font-family: $satoshiRegular;
+        color: $black;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        width: fit-content;
+
+        &:hover {
+            .arrow-stick {
+                &:before {
+                    width: 35px;
+                }
+            }
+        }
+
+        .arrow-stick {
+            &:before {
+                width: 29px;
+            }
+        }
+    }
+
+    &__img {
+        max-width: 317px;
+        height: 210px;
+
+        & img {
+            height: 100%;
+        }
+    }
+}
+
+.owl-carousel .owl-item img {
+    width: inherit;
+}
+
+.sponsors__items .owl-item img {
+    width: 100%;
+}
+
+.services-slider__items .owl-item img {
+    width: 100%;
+}
+
+.services-slider__module .owl-stage-outer {
+    & * {
+        //cursor: url(../dest/images/mouse-galery.svg) 38 40, auto;
+
+        & .services-slider__item-link {
+            //cursor: url(../dest/images/mousesite.svg) 12 12, auto;
+        }
+    }
+
+    & .owl-item {
+        animation: services-sliderOpacity ease-in 1s;
+        justify-content: center;
+        display: flex;
+        @keyframes services-sliderOpacity {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.opacity {
+    opacity: 1;
+}
+

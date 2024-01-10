@@ -1,0 +1,77 @@
+// normalize
+@import '../../dev/node_modules/normalize-scss/sass/normalize';
+
+@include normalize();
+
+
+// global
+@import "global/variable";
+@import "global/color";
+@import "global/fonts";
+@import "global/base";
+
+// components
+@import "components/header";
+@import "components/footer";
+@import "components/form";
+
+
+// pages
+
+@import "pages/front-page";
+@import "pages/archive-cases";
+@import "pages/archive-employees";
+@import "pages/single-cases";
+@import "pages/archive-news";
+@import "pages/archive-services";
+@import "pages/single-news";
+
+
+// modules
+
+@import "modules/hero";
+@import "modules/video";
+@import "modules/latest_cases";
+@import "modules/services";
+@import "modules/sticky_news_module";
+@import "modules/image";
+@import "modules/business_principles";
+@import "modules/services_slider_module";
+@import "modules/sponsors_module";
+@import "modules/map_module";
+@import "modules/direct_contact_module";
+@import "modules/gallery_contact_module";
+@import "modules/services_main_module";
+@import "modules/latest_news_module";
+@import "modules/vores_proces_module";
+@import "modules/editor_module";
+@import "modules/audio_module";
+@import "modules/about_module";
+@import "modules/insights_module";
+@import "modules/redesign_news_module";
+@import "modules/text_with_image_module";
+@import "modules/text_with_image_button_module";
+@import "modules/usp_liste_module";
+@import "modules/redesign_awards_module";
+@import "modules/contact_module";
+@import "modules/text_and_contact";
+@import "modules/previous-next-cases";
+
+//modules cases
+
+@import "modules-cases/hero_cases_module";
+@import "modules-cases/facts_module";
+@import "modules-cases/text_and_image_video_module";
+@import "modules-cases/image_full_width_cases";
+@import "modules-cases/gallery_slider_cases";
+@import "modules-cases/facts_full_width";
+@import "modules-cases/text_and_double_video";
+@import "modules-cases/medium_image";
+@import "modules-cases/text_module";
+@import "modules-cases/text_and_mobile_video";
+@import "modules-cases/accordion_module";
+@import "modules-cases/awards_module";
+@import "modules-cases/text_columns_module";
+@import "modules-cases/image_columns_module";
+@import "modules-cases/video_module_cases";
+@import "modules-cases/clients_module";

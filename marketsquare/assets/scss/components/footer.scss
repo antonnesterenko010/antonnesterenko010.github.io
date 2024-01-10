@@ -1,0 +1,248 @@
+.site-footer.redesign {
+    background: $msq_black;
+    padding: 120px 0 21px;
+    color: $msq_white;
+    h3, p {
+        margin: 0;
+    }
+    .footer-wrapper {
+        .footer__img-wrapper {
+            padding: 0 0 16px;
+            border-bottom: 1px solid $msq_white;
+            display: block;
+            img {
+                max-width: 203px;
+                object-fit: contain;
+            }
+        }
+        .footer__contact-wrapper {
+            padding: 16px 0;
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+            .footer__contact-title {
+                color: $msq_white;
+            }
+            .footer__contact-items {
+                display: flex;
+                flex-basis: 49%;
+                justify-content: space-between;
+                @media (max-width: 867px) {
+                    flex-basis: 55%;
+                }
+                @media (max-width: 600px) {
+                    flex-direction: column;
+                }
+                .footer__contact-items__title {
+                    color: $msq_white;
+                }
+                .footer__contact-items__repeater {
+                    display: flex;
+                    flex-direction: column;
+                    color: $msq_white;
+                    .repeater__wrapper {
+                    }
+                    span {
+                        color: $msq_white;
+                    }
+                    a {
+                        color: $msq_white;
+                    }
+                }
+            }
+        }
+        .footer__address-wrapper {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid $msq_white;
+            padding: 16px 0;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+            .footer__address-items {
+                display: flex;
+                flex-basis: 49%;
+                justify-content: space-between;
+                @media (max-width: 867px) {
+                    flex-basis: 55%;
+                }
+                @media (max-width: 600px) {
+                    display: block;
+                }
+            }
+            .footer__address_title {
+                color: $msq_white;
+            }
+            .footer__address_desc {
+                color: $msq_white;
+            }
+            .map_footer {
+                color: $msq_white;
+                display: flex;
+                margin: 0 25px 0 0;
+                @media (max-width: 600px) {
+                    display: inline-flex;
+                    align-items: center;
+                }
+                &:hover {
+                    font-style: italic;
+
+                    .arrow-stick {
+                        &:before {
+                            width: 40px;
+                        }
+                    }
+                }
+
+                .arrow-stick {
+                    left: calc(100% - 10px);
+                    @media (max-width: 600px) {
+                        top: 100%;
+                    }
+                    svg {
+                        position: static;
+                    }
+                    &:before {
+                        width: 35px;
+                        border: none;
+                    }
+                }
+            }
+        }
+        .footer__social-wrapper {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid $msq_white;
+            padding: 16px 0;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+            h3 {}
+            .footer__social__wrapper {
+                flex-basis: 49%;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                @media (max-width: 867px) {
+                    flex-basis: 55%;
+                }
+                @media (max-width: 600px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                a {
+                    color: $msq_white;
+                    margin: 0 40px 0 12px;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: -12px;
+                        top: 9px;
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 12px;
+                        background: $msq_mint;
+                    }
+                }
+            }
+        }
+        .footer__menu-wrapper {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid $msq_white;
+            padding: 16px 0;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+            h3 {}
+            .footer__menu__list {
+                display: flex;
+                justify-content: space-between;
+                flex-basis: 49%;
+                @media (max-width: 867px) {
+                    flex-basis: 55%;
+                }
+                a {
+                    color: $msq_white;
+                    font-family: $satoshiRegular;
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                    line-height: 1.33;
+                    @media (max-width: 1350px) {
+                        font-size: 1.6rem;
+                        line-height: 1.5;
+                    }
+                }
+                ul {
+                    &:last-child {
+                        text-align: right;
+                        @media (max-width: 600px) {
+                            text-align: left;
+                        }
+                    }
+                    li {
+                        margin: 0 0 7px;
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .footer__info-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 125px 0 0;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+            .footer__rights-wrapper {
+                @media (max-width: 768px) {
+                    margin: 0 0 5px;
+                }
+                .footer__rights {
+                    color: $msq_white;
+                }
+            }
+            .footer__pages-wrapper {
+                display: flex;
+                justify-content: space-between;
+                flex-basis: 49%;
+                a {
+                    color: #989898;
+                    position: relative;
+                    @media (max-width: 768px) {
+                        margin: 0 15px 0 0;
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                    &:hover {
+                        &:after {
+                            left: 0;
+                            right: auto;
+                            width: 100%;
+                            background: #989898;
+                        }
+                    }
+                    &::after {
+                        position: absolute;
+                        bottom: -2px;
+                        background: #989898;
+                        height: 1px;
+                        display: block;
+                        content: "";
+                        width: 0;
+                        right: 0;
+                        transition: .3s ease-in;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

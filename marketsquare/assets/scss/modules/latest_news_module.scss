@@ -1,0 +1,39 @@
+.latest-news {
+    &__wrapper {
+        &.white {
+            p,h3,a {
+                color: #fff;
+            }
+            .arrow-stick {
+                path {
+                    stroke: #fff;
+                }
+            }
+        }
+    }
+    &__title {
+        margin: 0 0 56px 0;
+        font-family: $satoshiRegular;
+        font-size: 2.3rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+        color: black;
+        text-align: center;
+    }
+
+    &__content-wrapper {
+        display: flex;
+        @media (max-width: 736px) {
+            flex-direction: column;
+            align-items: center;
+            & .latest-cases__img-wrapper {
+                height: 100%;
+            }
+            & .latest-cases__item:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+
+    }
+}

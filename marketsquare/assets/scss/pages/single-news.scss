@@ -1,0 +1,180 @@
+.single-news {
+
+
+    &__wrapper {
+        padding: 0 26%;
+        margin-bottom: 120px;
+        @media (max-width: 1024px) {
+            padding: 13%;
+        }
+        @media (max-width: 768px) {
+            padding: 0;
+        }
+        @media (max-width: 768px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    &__content {
+        & h2 {
+            font-family: $satoshiRegular;
+            font-size: 3.2rem;
+            line-height: 4rem;
+            font-weight: 800;
+            color: black;
+            margin: 0 0 16px 0;
+        }
+
+        & h3 {
+            font-family: $satoshiRegular;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            font-weight: 700;
+            color: black;
+            margin: 0 0 16px 0;
+        }
+
+        & p, & li {
+            font-family: $satoshiRegular;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            font-weight: 400;
+            color: black;
+            margin: 0;
+        }
+
+        & ul {
+            list-style: unset;
+            padding-left: 19px;
+        }
+
+
+        & .wp-caption {
+            margin: 55px auto;
+            position: relative;
+            width: 100% !important;
+
+            & img {
+                width: 100%;
+            }
+
+            & p {
+                margin: 8px 0 0 0;
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: #DA8B67;
+                bottom: -6px;
+                left: 0;
+            }
+        }
+    }
+
+    &__share {
+        margin-top: 56px;
+    }
+
+    &__share-title {
+        font-family: $satoshiRegular;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        font-weight: 700;
+        color: black;
+        margin: 0 0 16px 0;
+    }
+
+    &__share-content {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 483px) {
+            flex-direction: column;
+        }
+    }
+
+    &__share-desc {
+        font-family: $satoshiRegular;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+        color: $black;
+        margin: 0;
+
+    }
+
+    &__share-list {
+        display: flex;
+        @media (max-width: 483px) {
+            justify-content: flex-end;
+        }
+
+        & li {
+            &:not(:last-child) a {
+                margin-right: 14px;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    width: 5px;
+                    height: 1px;
+                    right: -9.5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: #DA8B67;
+                }
+            }
+        }
+    }
+
+    &__share-item {
+        font-family: $satoshiRegular;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 600;
+        color: #DA8B67;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.single-news-more__wrapper {
+    margin-bottom: 238px;
+}
+
+.single-news-more__title {
+    margin: 0 0 56px 0;
+    font-family: $satoshiRegular;
+    font-size: 2.3rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+.single-news-more__content-wrapper {
+    display: flex;
+    @media (max-width: 736px) {
+        flex-direction: column;
+        align-items: center;
+        & .latest-cases__img-wrapper {
+            height: 100%;
+        }
+        & .latest-cases__item:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+    }
+
+}
+
+.single-news__share-content {
+    & .single-news__share-desc {
+        @media (max-width: 483px) {
+            margin-bottom: 16px;
+        }
+    }
+}

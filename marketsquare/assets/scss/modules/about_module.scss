@@ -1,0 +1,228 @@
+.about__module {
+    margin-top: 200px;
+    position: relative;
+    @media (max-width: 768px) {
+        margin-top: 80px;
+    }
+
+    &.white {
+        span, p {
+            color: #fff;
+        }
+    }
+
+    //&:after {
+    //    height: 1px;
+    //    width: calc(100% - 160px);
+    //    background: #E1E1E1;
+    //    left: 50%;
+    //    content: '';
+    //    position: absolute;
+    //    bottom: 0;
+    //    transform: translateX(-50%);
+    //    @media (max-width: 1024px) {
+    //        width: calc(100% - 80px);
+    //    }
+    //    @media (max-width: 768px) {
+    //        width: calc(100% - 40px);
+    //    }
+    //}
+}
+
+.about__module__wrapper {
+    max-width: 1266px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 200px;
+    @media (max-width: 768px) {
+        padding-bottom: 80px;
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
+        color: #3D3D3D;
+        font-family: $satoshiRegular;
+    }
+}
+
+.about__module__wrapper__content {
+    margin: 18px 0;
+    color: rgba(61, 61, 61, 1);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    font-family: $satoshiRegular;
+    transition: .1s linear;
+    @media (max-width: 768px) {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    &.hover {
+        color: rgba(61, 61, 61, .2);
+
+        p {
+            color: rgba(61, 61, 61, .2);
+        }
+
+        a {
+            color: rgba(218, 139, 103, .2);
+
+            &:after {
+                background: rgba(218, 139, 103, .2);
+            }
+
+            &.active {
+                color: rgba(218, 139, 103, 1);
+
+                &:after {
+                    background: rgba(218, 139, 103, 1);
+                }
+            }
+        }
+    }
+
+    p {
+        color: rgba(61, 61, 61, 1);
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 80px;
+        font-family: $satoshiRegular;
+        margin: 0 0 20px;
+        transition: .3s linear;
+        @media (max-width: 768px) {
+            font-size: 30px;
+            line-height: 48px;
+        }
+
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+
+    a {
+        color: rgba(218, 139, 103, 1);
+        position: relative;
+        display: -webkit-inline-box;
+        transition: .3s linear;
+        position: relative;
+        @media (max-width: 1200px) {
+            display: initial;
+            text-decoration: underline;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 18px;
+            left: 0;
+            width: 100%;
+            height: 2.5px;
+            background: rgba(218, 139, 103, 1);
+            @media (max-width: 1200px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.about__module__wrapper__popup {
+    position: absolute;
+    top: 0;
+    left: -25%;
+    width: 400px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.hover_popup {
+    position: absolute;
+    left: 0;
+    //background-color: red;
+    top: 0;
+    //transform: translate(-100%, -50%);
+    display: none;
+    z-index: 8;
+    transition: .8s linear;
+
+    &.active {
+        display: block;
+    }
+
+    &.right {
+        left: initial;
+        right: 0;
+        //transform: translate(100%, -50%);
+    }
+}
+
+#cursor-about {
+    position: fixed;
+    transform: translateX(30%) translateY(-50%);
+    pointer-events: none;
+    left: 0;
+    top: 50%;
+    z-index: 4;
+    transition: opacity .3s linear;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    @media (max-width: 1300px) {
+        display: none;
+    }
+
+    &.active {
+        width: 518px;
+        height: 448px;
+        opacity: 1;
+
+        video {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &.right {
+        transform: translateX(-130%) translateY(-50%);
+    }
+}
+
+.about__module.redesign-about {
+    margin: 0;
+    .about__module__wrapper {
+        padding: 0;
+        margin: 0;
+    }
+    .about__module__wrapper__content {
+        max-width: 940px;
+        margin: 0;
+        p {
+            font-family: 'Satoshi Medium', sans-serif;
+            font-weight: 500;
+            font-size: 3.2rem;
+            line-height: 1.5;
+            color: $msq_black;
+            margin: 0 0 48px;
+            @media (max-width: 1350px) {
+                font-size: 2.8rem;
+                line-height: 1.2;
+                margin: 0 0 20px;
+            }
+            @media (max-width: 600px) {
+                font-size: 2.3rem;
+            }
+        }
+        a {
+            font-weight: 400;
+            color: $msq_mint;
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

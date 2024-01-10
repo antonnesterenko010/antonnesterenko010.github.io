@@ -1,0 +1,442 @@
+html {
+    font-size: 10px;
+    height: 100%;
+}
+html, body {
+    @media (max-width: 600px) {
+        height: 100vh;
+    }
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $msq_white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+picture {
+    line-height: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button,
+a {
+    cursor: pointer;
+
+}
+
+.d-none {
+    display: none;
+}
+
+
+input {
+    outline: none;
+}
+
+.site {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.fixed {
+    overflow: hidden;
+}
+
+.visuali-hidden {
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.max-width {
+    max-width: 2080px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (max-width: 1350px) {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    @media (max-width: 867px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    //@media (max-width: 768px) {
+    //    padding-right: 20px;
+    //    padding-left: 20px;
+    //}
+}
+
+.cursor-none {
+    *:not(.video__absolute):not(.protected) {
+        //cursor: none !important;
+    }
+}
+section {
+    background: $msq_white;
+}
+* {
+    //cursor: url("../dest/images/mousesite.svg") 12 12, auto;
+}
+
+a, button {
+    //cursor: url("../dest/images/mousesite.svg") 12 12, auto;
+}
+
+.header-sticky {
+    & .sticky-btn * {
+        //cursor: url("../dest/images/mousesite.svg") 12 12, auto;
+    }
+}
+
+.header-sticky.sticky-menu-open {
+    & .site-header, & .site-header * {
+        //cursor: url("../dest/images/mousesite.svg") 12 12, auto;
+    }
+
+    & .sticky-btn * {
+        //cursor: url("../dest/images/mousesite.svg") 12 12, auto;
+    }
+}
+main {
+    margin: 80px 0 0;
+    @media (max-width: 869px) {
+        margin: 56px 0 0;
+    }
+}
+.btn-close-menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    &.open {
+        z-index: 19;
+        pointer-events: unset;
+    }
+}
+
+.page-template-archive-cases, .page-template-archive-services, .page-template-archive-news, .page-template-archive-employees, .single-news {
+    .sticky-arrow-wrapper {
+        display: none;
+    }
+
+    .footer_top {
+        display: block !important;
+    }
+}
+
+.cursor-block {
+    width: 22.88px;
+    height: 24px;
+    color: transparent;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    transform: rotate(10deg);
+    position: absolute;
+    display: none;
+    border: 2px solid white;
+    mix-blend-mode: difference;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    z-index: 9999999999;
+    pointer-events: none;
+}
+
+
+.header-sticky {
+    & .sticky-btn * {
+        //cursor: none;
+        @media (max-width: 768px) {
+            //cursor: url("../dest/images/mousesite.svg") 12 12, auto;
+        }
+    }
+}
+
+.header-sticky.sticky-menu-open {
+    & .site-header, & .site-header * {
+        //cursor: none;
+        @media (max-width: 768px) {
+            //cursor: url("../dest/images/mousesite.svg") 12 12, auto;
+        }
+    }
+
+    & .sticky-btn * {
+        //cursor: none;
+        @media (max-width: 768px) {
+            //cursor: url("../dest/images/mousesite.svg") 12 12, auto;
+        }
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.block-shadow-mobile {
+    box-shadow: 0px 21px 42px rgba(0, 0, 0, 0.12);
+}
+
+iframe {
+    border: none;
+}
+
+.arrow-stick {
+    transition: width 0.3s;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    & svg {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-100%, -50%);
+    }
+
+    &:before {
+        content: '';
+        width: 22px;
+        border-top: 2px solid;
+        transition: 0.3s ease;
+    }
+
+    &.redesign {
+        &::before {
+            width: 28px;
+            border: none;
+        }
+    }
+}
+
+.custom-mobile-pudding {
+    @media (max-width: 768px) {
+        padding: 40px 0 !important;
+    }
+}
+
+.no-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.no-scroll-full {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.protected {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1024px) {
+        height: 100vh;
+    }
+
+    input {
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-family: $satoshiRegular;
+        font-size: 2.2rem;
+        line-height: 4rem;
+        color: #000;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        @media (max-width: 768px) {
+            width: 100%;
+            font-size: 1.8rem;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input {
+                border: 1px solid black;
+                max-width: 400px;
+                width: 100%;
+                display: block;
+                margin-bottom: 10px;
+                height: 50px;
+                @media (max-width: 768px) {
+                    height: 40px;
+                }
+            }
+        }
+
+        input[type="submit"] {
+            border: 1px solid black;
+            font-family: $satoshiRegular;
+            height: 50px;
+            @media (max-width: 768px) {
+                height: 40px;
+            }
+        }
+    }
+}
+
+.error-404.not-found {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1024px) {
+        height: 50vh;
+    }
+
+    p {
+        font-weight: 400;
+        font-family: $satoshiRegular;
+        font-size: 2.2rem;
+        line-height: 4rem;
+        color: #000;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        @media (max-width: 768px) {
+            width: 100%;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.redesign {
+    font-size: inherit;
+}
+h1, h1.redesign {
+    font-size: 7.6rem;
+    font-family: $satoshiRegular;
+    font-weight: 400;
+    line-height: 1.18;
+    @media (max-width: 1350px) {
+        font-size: 6.7rem;
+        line-height: 1.2;
+    }
+    @media (max-width: 600px) {
+        font-size: 4rem;
+    }
+}
+h2, h2.redesign {
+    font-size: 5.7rem;
+    font-family: $satoshiRegular;
+    font-weight: 400;
+    line-height: 0.98;
+    @media (max-width: 1350px) {
+        font-size: 5.1rem;
+        line-height: 1.2;
+    }
+    @media (max-width: 600px) {
+        font-size: 3.3rem;
+    }
+}
+h3, h3.redesign {
+    font-size: 4.3rem;
+    font-family: $satoshiRegular;
+    font-weight: 400;
+    line-height: 1.11;
+    @media (max-width: 1350px) {
+        font-size: 3.8rem;
+        line-height: 1.2;
+    }
+    @media (max-width: 600px) {
+        font-size: 2.8rem;
+    }
+}
+h4, h4.redesign {
+    font-size: 1.8rem;
+    line-height: 1.34;
+    @media (max-width: 1350px) {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+}
+
+.msq-display, .msq-display * {
+    font-family: $satoshiRegular;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    @media (max-width: 1350px) {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+    @media (max-width: 600px) {
+        font-size: 2.3rem;
+    }
+}
+.msq-body__large {
+    font-family: $satoshiRegular;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.33;
+    @media (max-width: 1350px) {
+        font-size: 2.1rem;
+        line-height: 1.2;
+    }
+    @media (max-width: 600px) {
+        font-size: 1.9rem;
+        line-height: 1.26;
+    }
+}
+.msq-body {
+    font-family: $satoshiRegular;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.33;
+    @media (max-width: 1350px) {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+}
+.msq-body__small {
+    font-family: $satoshiRegular;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.14;
+    @media (max-width: 600px) {
+        font-size: 1.3rem;
+        line-height: 1.2;
+    }
+}

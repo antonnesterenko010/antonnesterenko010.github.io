@@ -1,0 +1,49 @@
+.text-with-image__module {
+  .twi__module {}
+  .twi__title {
+    margin: 0 0 16px;
+    max-width: 1267px;
+    @media (max-width: 1350px) {
+      max-width: 100% !important;
+    }
+    * {
+      margin: 0;
+    }
+    a {
+      color: $msq_mint;
+    }
+  }
+  .twi__content {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1350px) {
+      flex-wrap: wrap;
+    }
+  }
+  .twi__subtitle {
+    margin: 0 40px 16px 0;
+    max-width: 613px;
+    @media (max-width: 1350px) {
+      max-width: 100% !important;
+      margin: 0 0 16px;
+    }
+    * {
+      margin: 0;
+    }
+  }
+  .twi__image {
+    flex-basis: 50%;
+    @media (max-width: 1350px) {
+      width: 100%;
+      flex-basis: 100%;
+    }
+    img {
+      object-fit: contain;
+      object-position: top left;
+      height: var(--twi-image-height);
+      @media (max-width: 1350px) {
+        height: auto;
+      }
+    }
+  }
+}

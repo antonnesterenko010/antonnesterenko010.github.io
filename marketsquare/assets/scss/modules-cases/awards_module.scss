@@ -1,0 +1,59 @@
+.awards {
+    &__module {
+        background-color: white;
+        padding: 10px 0;
+        margin-bottom: 60px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 815px) {
+            flex-direction: column;
+        }
+    }
+
+    &__info-title {
+        font-family: $satoshiRegular;
+        font-weight: 700;
+        font-size: 2.3rem;
+        line-height: 3.2rem;
+        color: black;
+        margin: 0 0 16px 0;
+    }
+
+    &__info-desc {
+        font-family: $satoshiRegular;
+        font-weight: 400;
+        font-size: 2.3rem;
+        line-height: 2.8rem;
+        color: black;
+        margin: 0;
+    }
+
+    &__info-wrapper {
+        max-width: 360px;
+        @media (max-width: 815px) {
+            margin-bottom: 20px;
+        }
+
+        &.white {
+            p {
+                color: #fff;
+            }
+        }
+    }
+
+    &__item {
+        @media (max-width: 991px) {
+            max-width: 225px;
+            margin: 0 auto 20px auto;
+            &:last-child {
+                margin: 0 0 0 auto;
+            }
+            &:nth-child(2) {
+                margin: 0 auto 20px 0;
+            }
+        }
+    }
+}

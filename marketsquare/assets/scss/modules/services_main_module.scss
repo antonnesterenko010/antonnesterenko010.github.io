@@ -1,0 +1,169 @@
+.services-main-module {
+
+    &__title {
+        margin-bottom: 10px;
+        @media (max-width: 1039px) {
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: #000;
+            margin: 0;
+            font-family: $satoshiRegular;
+        }
+    }
+
+    &__module {
+        margin-bottom: 120px;
+    }
+
+    &__wrapper {
+        padding: 0;
+        @media (max-width: 1039px) {
+            padding: 30px;
+        }
+
+        &.white {
+            p {
+                color: #fff;
+            }
+        }
+    }
+
+    &__items-wrapper {
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        min-height: 80px;
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+
+        & .image__img {
+            width: 200px;
+            height: 160px;
+            display: flex;
+            justify-content: center;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+
+            @media (max-width: 448px) {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 448px) {
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+        }
+    }
+
+    &__item-title {
+        font-family: $satoshiRegular;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        font-weight: 700;
+        margin: 8px 0;
+        position: relative;
+        transition: all 1s;
+        @media (max-width: 548px) {
+            font-size: 1.6rem;
+        }
+        @media (max-width: 448px) {
+            margin: 0;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 80px;
+        @media (max-width: 1024px) {
+            grid-template-columns: initial;
+        }
+    }
+
+    &__info {
+        max-width: 463px;
+        color: $black;
+    }
+
+    &__info-title {
+        font-family: $satoshiRegular;
+        font-size: 3.2rem;
+        line-height: 4rem;
+        font-weight: 800;
+        margin: 0 0 24px 0;
+        @media (max-width: 448px) {
+            font-size: 2.5rem;
+            margin: 0 0 15px 0;
+        }
+    }
+
+    &__info-desc {
+        font-family: $satoshiRegular;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        font-weight: 400;
+        margin: 0 0 24px 0;
+        @media (max-width: 448px) {
+            font-size: 2rem;
+            margin: 0 0 15px 0;
+        }
+    }
+
+    &__info-link {
+        font-family: $satoshiRegular;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 500;
+        margin: 0;
+        color: $black;
+        width: fit-content;
+
+        &:hover {
+            .arrow-stick {
+                &:before {
+                    width: 35px;
+                }
+            }
+        }
+
+        .arrow-stick {
+            &:before {
+                width: 29px;
+            }
+        }
+    }
+
+    &__info-item {
+        margin-top: 20px;
+
+        &:not(:first-child) {
+            display: none;
+        }
+
+        @media (max-width: 923px) {
+            display: none;
+        }
+    }
+}
+
+
+.services-main-module__info-item.mobile {
+    @media (max-width: 923px) {
+        display: block;
+    }
+    margin-bottom: 30px;
+}
+
