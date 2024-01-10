@@ -1,0 +1,118 @@
+@import '../../global/mixins';
+@import '../../global/variable';
+.about {
+  border-top: 1px solid $border_color;
+  background: $body_color;
+  @include min-large() {
+    &:hover {
+      .about__image {
+        transform: translateY(100px);
+      }
+    }
+  }
+  .container {
+    max-width: 1150px;
+    @include max-large() {
+      max-width: 100%;
+      border-bottom: 1px solid $border_color;
+    }
+    &.container-block {
+      max-width: 1320px;
+    }
+  }
+  .about-text {
+    padding: 207px 0 142px 138px;
+    border-left: 1px solid $border_color;
+    @include min-large() {
+      padding: 207px 0 292px 138px;
+      margin: 0 0 -150px 0;
+    }
+    @include max-large() {
+      padding: 40px 0 40px 20px;
+    }
+    * {
+      max-width: 872px;
+      color: $light_color;
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 54px;
+      font-family: 'Hanken Grotesk Light', sans-serif;
+      @include max-large() {
+        font-size: 24px;
+        line-height: 45px;
+      }
+    }
+  }
+  .about-block {
+    padding: 42px 0 0;
+    display: flex;
+    justify-content: space-between;
+    @include max-large() {
+      flex-direction: column;
+    }
+    .about__image {
+      flex-basis: 32%;
+      display: flex;
+      align-items: flex-start;
+      @include min-large() {
+        transition: all 1s ease-in-out;
+      }
+      @include max-large() {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 0 42px;
+      }
+    }
+    .about__list {
+      display: grid;
+      grid-template-columns: 357px 357px;
+      grid-column-gap: 46px;
+      grid-row-gap: 42px;
+      flex-basis: 57%;
+      @include max-large() {
+        grid-template-columns: auto;
+      }
+      .about__list__item {
+        flex-basis: 50%;
+        border-top: 1px solid $border_color;
+        padding: 31px 0 30px;
+        .about__list__item__title {
+          display: flex;
+          margin: 0 0 48px;
+          span {
+            display: inline-block;
+            font-size: 24px;
+            color: #616377;
+            margin: 6px 39px 0 0;
+            font-family: "Hanken Grotesk Italic", sans-serif;
+            font-weight: 400;
+            @include max-large() {
+              font-size: 18px;
+              margin: 3px 20px 0 0;
+            }
+          }
+          h3 {
+            font-family: 'Hanken Grotesk Medium', sans-serif;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 38px;
+            max-width: 220px;
+            color: #fff;
+            @include max-large() {
+              max-width: 100%;
+              font-size: 24px;
+              line-height: 28px;
+            }
+          }
+        }
+        .about__list__item__subtitle {
+          display: block;
+          font-size: 16px;
+          line-height: 25.6px;
+          color: $light_color;
+        }
+      }
+    }
+  }
+}

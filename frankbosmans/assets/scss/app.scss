@@ -1,0 +1,22 @@
+// global
+@import "global/fonts";
+@import "global/mixins";
+@import "global/variable";
+@import "global/base";
+
+// components
+@import "components/header";
+@import "components/footer";
+
+// pages
+@import "pages/404";
+
+//blocks
+@import "acf/blocks/hero";
+@import "acf/blocks/about";
+@import "acf/blocks/slider";
+@import "acf/blocks/text_with_image";
+@import "acf/blocks/contact";
+
+
+

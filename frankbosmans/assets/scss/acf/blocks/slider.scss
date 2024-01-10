@@ -1,0 +1,68 @@
+@import '../../global/mixins';
+@import '../../global/variable';
+.slider {
+    padding: 211px 0 49px;
+    background: $body_color;
+    position: relative;
+    @include max-medium() {
+        padding: 40px 0 0;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 78px;
+        left: 0;
+        width: 100%;
+        height: 320px;
+        background: linear-gradient(180deg, rgba(29, 31, 48, 0.00) 0%, #1D1F30 94.27%);
+        @include max-medium() {
+            height: 150px;
+            bottom: -50px;
+        }
+    }
+    .slider-image {
+        img {
+            width: 100%;
+        }
+    }
+    .slider-list {
+        margin: -85px 0 0;
+        overflow-x: hidden;
+        .slider-list__item {
+            text-align: center;
+            color: $border_color;
+            h3 {
+                font-family: 'Hanken Grotesk Thin Italic', sans-serif;
+                font-style: italic;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.slider__list {
+    margin: -85px 0 0;
+    width: 100%;
+    pointer-events: none;
+    overflow: hidden;
+
+    .slider__list__wrapper {
+        width: 100%;
+        height: 100%;
+        .slider__list__inner {
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            animation: marquee 50s linear infinite;
+            will-change: transform;
+            .slider__item {
+                height: 8rem;
+                margin: 0 4vw;
+                h3 {
+                    color: rgba(255,255,255,0.15);
+                }
+            }
+        }
+    }
+}
