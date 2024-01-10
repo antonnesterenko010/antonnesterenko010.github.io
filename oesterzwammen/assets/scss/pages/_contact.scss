@@ -1,0 +1,202 @@
+.page-contact {
+  .hero-module-block {
+    min-height: 499px;
+  }
+}
+
+.contact-content {
+  display: flex;
+  position: relative;
+  margin-bottom: 109px;
+
+  &.block-container {
+    //margin-left: 27.5%;
+    //margin-right: 0;
+    max-width: 1320px;
+    @media (max-width: 1380px) {
+      max-width: 1149px;
+    }
+  }
+
+  .contact-left {
+    max-width: 369px;
+    width: 100%;
+    margin-right: 35px;
+    margin-top: 27px;
+    margin-left: 87px;
+
+    .contact-description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #434343;
+    }
+
+    .contact-info-block {
+      margin-top: 72px;
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #434343;
+        margin-bottom: 20px;
+      }
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #434343;
+        text-decoration: none;
+        transition: all 1s;
+
+        &:hover {
+          color: #786854;
+
+        }
+      }
+
+      strong {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #786854;
+      }
+    }
+
+    .contact-socials {
+      margin-top: 34px;
+      display: flex;
+      align-items: center;
+
+      a {
+        margin-right: 10px;
+        width: 27px;
+        height: 27px;
+        display: inline-flex;
+      }
+
+      a.linkedin-footer-link {
+        align-items: center;
+        justify-content: center;
+        background: #CBBB9D;
+        border-radius: 50%;
+        svg {
+          fill: #fff;
+        }
+        img {
+          width: 14px;
+        }
+      }
+    }
+    @media (max-width: 1380px) {
+      margin-left: 0;
+    }
+  }
+
+  .contact-right {
+    max-width: 652px;
+    width: 100%;
+    background: #CBBB9D;
+    padding: 48px 80px 47px 49px;
+    margin-top: -165px;
+    z-index: 1;
+    margin-left: 145px;
+    //max-height: 719px;
+
+    .wpforms-container {
+      margin-top: 0 !important;
+
+    }
+
+    .wpforms-field-container {
+      .wpforms-required-label {
+        display: none;
+      }
+
+      .wpforms-field {
+        padding: 0 !important;
+        margin-bottom: 37px;
+      }
+
+      label {
+        font-family: 'Veneer Two';
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: 40px !important;
+        line-height: 49px !important;
+        color: #FFFFFF !important;
+        @media (max-width: 600px) {
+          font-size: 28px !important;
+        }
+      }
+      .wpforms-error{
+        color: red !important;
+        font-size: 16px !important;
+      }
+
+      input {
+        background: transparent !important;
+        border: 2px solid #786854 !important;
+        border-width: 0 0 2px 0 !important;;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+    }
+
+    .wpforms-submit {
+      font-family: 'Veneer Two';
+      font-style: normal !important;
+      font-weight: 400 !important;
+      font-size: 24px !important;
+      line-height: 30px !important;
+      color: #FFFFFF !important;
+      background: #786854 !important;
+      border-radius: 35px !important;
+      border: none !important;
+      margin-top: 28px !important;
+      padding: 10px 29px !important;
+      transition: all 1s !important;
+
+      &:hover{
+        color: #786854 !important;
+        background: #fff !important;
+      }
+    }
+    .wpforms-submit-spinner{
+      position: absolute !important;
+      top: 55% !important;
+      margin-left: 40px !important;
+    }
+    @media (max-width: 1100px) {
+      margin-left: 80px;
+    }
+    @media (max-width: 800px) {
+      padding: 48px 50px 47px 50px;
+    }
+  }
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+
+    .contact-left{
+      max-width: 100%;
+      margin-right: 0;
+    }
+    .contact-right{
+      max-width: 100%;
+      margin-left: 0;
+      margin-top: 0;
+      position: relative;
+    }
+  }
+}
+
+.acf-map{
+  height: 513px;
+  @media (max-width: 600px) {
+    height: 400px;
+
+  }
+}

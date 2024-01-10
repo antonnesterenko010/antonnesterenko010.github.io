@@ -1,0 +1,233 @@
+.blog-single-page {
+  .hero-module-block {
+    min-height: 499px;
+  }
+
+  .team-section {
+    margin-top: 33px;
+    margin-bottom: 135px;
+  }
+
+  @media (max-width: 450px) {
+    .team-section {
+      margin-bottom: 66px;
+    }
+  }
+
+  .single-block-main {
+    display: flex;
+    margin-top: 129px;
+
+    .single-block-left {
+      max-width: 671px;
+      margin-right: 35px;
+      width: 100%;
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #434343;
+        margin: 10px 0;
+        margin-bottom: 16px;
+      }
+
+      h2 {
+        font-family: 'Veneer Two';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 49px;
+        color: #786854;
+        margin-top: 36px;
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        font-family: 'Veneer Two';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #786854;
+        margin-top: 32px;
+        margin-bottom: 12px;
+      }
+
+      h4 {
+        font-family: 'Veneer Two';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #786854;
+        margin-top: 28px;
+        margin-bottom: 12px;
+      }
+
+      h5 {
+        font-family: 'Veneer Two';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #786854;
+        margin-top: 24px;
+        margin-bottom: 10px;
+      }
+
+      h6 {
+        font-family: 'Veneer Two';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #786854;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .single-blog-subtitle {
+      font-family: 'Veneer Two';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 49px;
+      color: #786854;
+      margin-bottom: 13px !important;
+      margin-top: 0 !important;
+    }
+
+    .single-block-right {
+      max-width: 280px;
+      width: 100%;
+      margin-left: 119px;
+
+      .relative-posts-block {
+        margin-top: 27px;
+      }
+
+      .blog-single-block {
+        display: flex;
+        margin-bottom: 21px;
+
+
+        .blog-block-img {
+          max-width: 127px;
+          width: 100%;
+          overflow: hidden;
+
+          a {
+            max-width: 127px;
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 1s;
+          }
+        }
+
+        .blog-block-content {
+          max-width: 134px;
+          width: 100%;
+          margin-left: 15px;
+
+          h4 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #786854;
+            margin-top: 7px;
+            margin-bottom: 4px;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #434343;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            margin: 0;
+          }
+        }
+
+        &:hover{
+          .blog-block-img {
+            img {
+            transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1150px) {
+      .single-block-right{
+        margin-left: auto;
+      }
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      .single-block-left {
+        max-width: 100%;
+        margin-right: 0;
+      }
+      .single-block-right {
+        margin-left: 0;
+        max-width: 100%;
+        margin-top: 25px;
+
+        .blog-single-block {
+          .blog-block-img {
+            max-width: 250px;
+
+            a {
+              max-width: 250px;
+            }
+          }
+
+          .blog-block-content {
+            max-width: calc(100% - 50px);
+
+            p {
+              -webkit-line-clamp: 3;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 450px) {
+      margin-top: 66px;
+      .single-block-right {
+
+        .blog-single-block {
+          flex-direction: column;
+
+          .blog-block-img {
+            max-width: 100%;
+
+            a {
+              max-width: 100%;
+            }
+          }
+
+          .blog-block-content {
+            max-width: 100%;
+            margin-top: 0;
+            margin-left: 0;
+
+          }
+        }
+      }
+    }
+  }
+}

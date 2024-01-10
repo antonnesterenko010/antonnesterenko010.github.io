@@ -1,0 +1,150 @@
+.hero-module-block{
+  min-height: 808px;
+  display: flex;
+  position: relative;
+
+  //background-size: 100% 100% !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+
+  .block-container{
+    //margin-top: 181px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+  }
+  &.hero__height__large {
+    min-height: 808px;
+    .hero-image {
+      max-height: 808px;
+      height: 808px;
+    }
+  }
+  &.hero__height__medium {
+    min-height: 540px;
+    .hero-image {
+      max-height: 540px;
+      height: 540px;
+    }
+  }
+  .hero-bg{
+    //background: rgba(255,255,255, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+  @media (max-width: 650px) {
+    min-height: 650px;
+  }
+
+  &.other-hero{
+    height: 795px;
+    margin-bottom: 140px;
+
+    .block-container{
+      margin-top: 300px;
+    }
+    .home-title{
+      margin-bottom: 14px;
+    }
+    .hero.description{
+      margin-bottom: 40px;
+    }
+
+    .hero-module-background .hero-image{
+      height: 795px;
+    }
+  }
+}
+
+.home-title{
+  font-family: 'Veneer Two';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 105px;
+  color: #fff;
+  max-width: 634px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (max-width: 650px) {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+  @media (max-width: 450px) {
+    font-size: 40px;
+  }
+}
+
+.description{
+  &.hero{
+    color: #fff;
+    max-width: 479px;
+    margin-top: 1px;
+    margin-bottom: 25px;
+  }
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #434343;
+}
+
+.main-link{
+  background: #cbbb9d;
+  border-radius: 35px;
+  padding: 13px 29px;
+  //padding: 0px 29px;
+  height: 50px;
+  display: inline-flex;
+  transition: .3s linear;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  //line-height: 30px;
+  color: #fff;
+  font-family: 'Veneer Two';
+  //display: block;
+  max-width: fit-content;
+  transition: all 1s;
+
+  &:hover{
+    color: #786854;
+  }
+
+}
+
+.hero-module-background{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
+  .hero-image{
+    max-height: 808px;
+    height: 808px;
+    width: 100%;
+    overflow: hidden;
+    @media (max-width: 650px) {
+      height: 650px;
+    }
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    @media (max-width: 1200px) {
+      height: 100%  ;
+    }
+  }
+}

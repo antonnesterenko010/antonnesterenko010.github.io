@@ -1,0 +1,64 @@
+.storage-advice-block {
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 180px;
+  padding-right: 180px;
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .info {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    .title {
+      font-family: 'Veneer Two';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 49px;
+      color: #786854;
+      margin-bottom: 22px;
+      margin-top: 0;
+
+      @media (max-width: 650px) {
+        font-size: 30px;
+        line-height: 1.2;
+      }
+    }
+
+    .text {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #786854;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .image {
+    width: 100%;
+    max-width: 520px;
+  }
+}

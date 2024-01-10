@@ -1,0 +1,286 @@
+.recipe-single-page {
+  .hero-bg{
+    display: none;
+  }
+
+  .single-recipe-news {
+    margin-top: 65px;
+
+    .block-title {
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.recipe-single-main-block {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 34px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+
+
+}
+
+.recipe-single-left-block {
+  max-width: 671px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #434343;
+  margin-right: 25px;
+
+  .recipe-types {
+    display: flex;
+    margin-bottom: 31px;
+    align-items: center;
+    text-align: center;
+    height: max-content;
+    flex-wrap: wrap;
+    row-gap: 25px;
+
+    span {
+      font-family: 'Veneer Two';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: #FFFFFF;
+      background: #CBBB9D;
+      border-radius: 35px;
+      display: inline-block;
+      padding: 10px 29px;
+
+      &:not(:last-of-type) {
+        margin-right: 10px;
+
+      }
+    }
+  }
+
+  .recipe-ingredients {
+    margin-top: 23px;
+    margin-bottom: 53px;
+    .recipe-ingredients__title {
+      margin: 0 0 19px;
+      color: #786854;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .recipe-ingredients__list {
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+        position: relative;
+        padding-left: 36px;
+
+        &:before {
+          content: '';
+          width: 22px;
+          height: 22px;
+          background: #EEEEEE;
+          margin-right: 12px;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .recipe-text-content {
+
+    h2 {
+      font-family: 'Veneer Two';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 49px;
+      color: #786854;
+      margin-top: 36px;
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      font-family: 'Veneer Two';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: #786854;
+      margin-top: 32px;
+      margin-bottom: 0;
+    }
+
+    h3 ~ p {
+      margin: 0;
+    }
+
+    h4 {
+      font-family: 'Veneer Two';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #786854;
+      margin-top: 26px;
+      margin-bottom: 0;
+    }
+
+    h5 {
+      font-family: 'Veneer Two';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #786854;
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+
+    p ~ h3 {
+      margin-top: 13px;
+    }
+
+    p {
+      &:first-of-type {
+        margin-bottom: 32px;
+      }
+
+      &:last-of-type {
+        margin-top: 31px;
+      }
+    }
+
+  }
+
+  @media (max-width: 800px) {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+.recipe-subtitle {
+  font-family: 'Veneer Two';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #786854;
+  margin-top: 0;
+  margin-bottom: 19px;
+
+  &.inner-subtitle {
+    margin-bottom: 14px;
+  }
+  @media (max-width: 600px) {
+    font-size: 32px;
+  }
+}
+
+.recipe-single-right-block {
+  max-width: 308px;
+  width: 100%;
+  margin-left: auto;
+
+  .recipe-subtitle {
+    margin-bottom: 13px;
+  }
+
+  .popular-single-block {
+    margin-bottom: 14px;
+
+    .pop-recipe {
+      height: 144px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 1s;
+      }
+
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #786854;
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+
+    &:hover{
+      .pop-recipe {
+        img{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .side-image-block {
+    margin-top: 95px;
+    min-height: 484px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 30px;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .recipe-description {
+      margin-bottom: 8px;
+      margin-top: 11px;
+    }
+
+    .main-link {
+      margin-bottom: 18px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 35px;
+
+    .popular-single-block {
+
+
+      .pop-recipe {
+        height: 280px;
+      }
+    }
+    .side-image-block{
+      margin: auto;
+      margin-top: 25px;
+    }
+  }
+  @media (max-width: 500px) {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 35px;
+
+    .popular-single-block {
+
+      .pop-recipe {
+        height: 180px;
+      }
+    }
+    .side-image-block{
+      margin: auto;
+      margin-top: 25px;
+    }
+  }
+
+}
+

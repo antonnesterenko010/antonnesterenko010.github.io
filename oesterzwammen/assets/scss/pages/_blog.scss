@@ -1,0 +1,120 @@
+.blog-posts{
+  margin-top: 121px;
+  @media (max-width: 800px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .blog-single-block{
+    display: flex;
+
+    &:not(:first-of-type){
+      margin-top: 57px;
+    }
+    @media (max-width: 850px) {
+      flex-direction: column;
+      &:not(:first-of-type){
+        margin-top: 35px;
+      }
+    }
+
+    .blog-block-img{
+      max-width: 525px;
+      width: 100%;
+      height: 355px;
+      margin-right: 25px;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @media (max-width: 850px) {
+        max-width: 100%;
+      }
+
+      @media (max-width: 650px) {
+        margin-right: 0;
+        margin: auto;
+        height: 280px;
+      }
+    }
+    .blog-block-content{
+      max-width: 496px;
+      width: 100%;
+      margin-left: 37px;
+      margin-top: 43px;
+
+      span{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #CBBB9D;
+      }
+      h4{
+        font-family: 'Veneer Two';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 49px;
+        color: #786854;
+        margin-top: 4px;
+        margin-bottom: 14px;
+      }
+      p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #434343;
+        margin-bottom: 25px;
+      }
+      @media (max-width: 850px) {
+        margin-top: 25px;
+        margin-left: 0;
+        max-width: 100%;
+
+      }
+      @media (max-width: 650px) {
+        margin-left: 0;
+      }
+    }
+
+
+  }
+}
+
+.pagination-blog{
+  margin-top: 40px;
+  display: flex;
+  margin-bottom: 113px;
+
+  .pagination-blog-content{
+    margin-left: auto;
+    display: flex;
+    @media (max-width: 850px) {
+      margin: auto;
+    }
+  }
+  .page-numbers {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5F5F5;
+
+    margin-left: 6px;
+
+  }
+  .current{
+    background: #CBBB9D;
+  }
+}

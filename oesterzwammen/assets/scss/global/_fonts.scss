@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Veneer Two';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+  url('../fonts/Veneer Two.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Veneer Two.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/Veneer Two.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+  url('../fonts/Poppins-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Poppins-Medium.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/Poppins-Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../fonts/Poppins-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Poppins-Regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/Poppins-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+  url('../fonts/Poppins-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Poppins-SemiBold.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/Poppins-SemiBold.ttf') format('truetype'); /* Safari, Android, iOS */
+}

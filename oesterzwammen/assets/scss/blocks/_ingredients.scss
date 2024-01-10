@@ -1,0 +1,84 @@
+.ingredients-block {
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 180px;
+  padding-right: 180px;
+  margin: 50px auto;
+
+  @media (max-width: 1200px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 70px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+  }
+
+  .left {
+    flex-basis: 50%;
+  }
+
+  .right {
+    flex-basis: 50%;
+  }
+
+  .title {
+    font-family: 'Veneer Two';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #786854;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    @media (max-width: 650px) {
+      font-size: 30px;
+      line-height: 1.2;
+    }
+  }
+
+  .list-item {
+    padding: 6px 15px 5px 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #786854;
+
+    &:first-child {
+      font-weight: 600;
+      padding-left: 15px;
+      justify-content: flex-start;
+    }
+
+    &.additional-indent {
+      padding-left: 47px;
+    }
+
+    &:nth-child(2n + 1) {
+      background: rgba(203, 187, 157, 0.5);
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .quantity {
+      width: 180px;
+      flex-shrink: 0;
+
+      @media (max-width: 600px) {
+        width: 100px;
+      }
+    }
+  }
+}

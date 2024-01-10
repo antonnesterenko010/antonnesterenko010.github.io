@@ -1,0 +1,128 @@
+.steps-block{
+  display: flex;
+  flex-direction: column;
+
+  &.block-container{
+    max-width: 1100px;
+  }
+}
+
+.single-step-block{
+  max-width: 360px;
+  position: relative;
+
+  &.last-step{
+    &:after{
+      display: none;
+    }
+  }
+
+
+  &.left-step{
+    margin-right: auto;
+
+    &:after{
+      content: '';
+      background: url("../images/left-arrow.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 222px;
+      height: 169px;
+      position: absolute;
+      right: -281px;
+      bottom: -58px;
+
+    }
+
+
+  }
+  &.right-step{
+    margin-left: auto;
+    margin-right: 70px;
+    margin-top: -105px;
+
+    &:after{
+      content: '';
+      background: url("../images/right-arrow.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 222px;
+      height: 169px;
+      position: absolute;
+      left: -272px;
+      bottom: -99px;
+    }
+  }
+
+
+  .step-image-block{
+    width: 161px;
+    height: 161px;
+    margin: auto;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .step-title{
+    font-family: 'Veneer Two';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #786854;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+    @media (max-width: 600px) {
+      line-height: 1;
+    }
+
+    @media (max-width: 500px) {
+      word-break: break-word;
+      font-size: 28px;
+    }
+  }
+  .step-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #434343;
+    text-align: center;
+    margin-top: 9px;
+    max-width: 332px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 1000px) {
+    margin-bottom: 85px !important;
+
+    &:last-of-type{
+      margin-bottom: 0 !important;
+    }
+    &.left-step{
+      margin: auto;
+    }
+    &.right-step{
+      margin: auto;
+    }
+
+    &:after{
+      background: url("../images/step-down-arrow.svg") !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+      bottom: -60px !important;
+      left: 50% !important;
+      transform: translateX(-50%);
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+
+}

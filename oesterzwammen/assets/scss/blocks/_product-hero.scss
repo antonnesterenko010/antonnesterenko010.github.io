@@ -1,0 +1,105 @@
+.product-hero-block {
+  margin: 0 auto;
+  padding-top: 135px;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 1440px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+  }
+
+  .wrapper {
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    @media (max-width: 768px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      font-family: 'Veneer Two', sans-serif;
+      font-weight: 400;
+      font-size: 85px;
+      line-height: 105px;
+      color: #786854;
+      max-width: 400px;
+      margin-top: 0;
+      margin-bottom: 12px;
+
+      @media (max-width: 650px) {
+        font-size: 55px;
+        line-height: 1.2;
+      }
+    }
+
+    .title-image {
+      max-width: 490px;
+      margin-bottom: 25px;
+    }
+
+    .subtitle-wrapper {
+      padding-left: 12px;
+      padding-right: 12px;
+      background: #CBBB9D;
+      max-width: 550px;
+      width: fit-content;
+
+      &.decoration {
+        position: relative;
+
+        @media (max-width: 1200px) {
+          margin-bottom: 100px;
+        }
+
+        &:after {
+          position: absolute;
+          content: '';
+          width: 139px;
+          height: 107px;
+          background-image: url("data:image/svg+xml,%3Csvg width='139' height='107' viewBox='0 0 139 107' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M94.067 0.746636C98.1671 12.9894 101.846 25.4287 102.52 38.3734C102.717 42.1641 102.717 45.983 102.211 49.7456C101.649 53.9014 100.301 57.9168 99.2904 61.9603C98.2513 66.1441 97.3246 70.3561 96.117 74.5119C94.9656 78.4711 93.5334 82.4023 92.6909 86.4457C90.725 95.8243 98.7007 104.22 107.322 106.41C109.709 107 112.209 107.169 114.624 106.747C118.949 106.017 122.936 104.136 126.784 102.17C129.929 100.57 133.187 98.9412 135.714 96.414C141.106 91.0227 139.028 83.4131 135.49 77.6007C134.479 75.944 133.383 74.3715 132.316 72.771C130.435 70.0191 128.469 67.3235 126.98 64.3471C125.183 60.7809 124.341 57.0183 124.004 53.059C123.358 45.5618 124.341 37.9522 125.997 30.6234C126.643 27.7593 127.598 24.9513 128.974 22.3399C130.435 19.5319 132.653 17.2294 134.17 14.4776C136.501 10.2376 137.82 5.01475 137.708 0.269287' fill='%23CBBB9D'/%3E%3Cpath d='M0.746094 2.12239C1.27967 9.53541 1.56052 18.9983 6.33466 25.1758C9.50805 29.2754 15.4617 31.1568 20.3201 32.2799C24.5606 33.2908 28.8293 32.7854 32.7047 30.7636C40.1187 26.9167 44.7243 18.9702 47.4765 11.3887C48.0943 9.7039 48.8806 7.0925 50.5937 6.22203C53.0089 4.98653 54.4973 8.60879 55.4521 10.1532C57.109 12.8207 59.2433 15.2918 61.7427 17.2012C63.203 18.3244 64.8319 19.3071 66.6011 19.8406C71.6842 21.4131 76.7953 17.8751 78.6207 13.1015C80.0249 9.42311 80.6989 4.62148 83.451 1.53271' fill='%23CBBB9D'/%3E%3C/svg%3E%0A");
+          background-size: cover;
+          right: -1px;
+          bottom: -104px;
+          z-index: 10;
+        }
+      }
+    }
+
+    .subtitle {
+      margin: 0;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 150%;
+      color: #FFFFFF;
+
+      @media (max-width: 650px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .image {
+    max-width: 100%;
+    width: 560px;
+
+    image {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

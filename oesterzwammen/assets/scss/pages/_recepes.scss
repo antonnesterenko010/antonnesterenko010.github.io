@@ -1,0 +1,287 @@
+.recepten-posts {
+  margin-top: 94px;
+
+  &.block-container {
+    max-width: 1109px;
+  }
+
+  h4 {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Veneer Two';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+    padding: 0 25px;
+    margin: 20px 0;
+    z-index: 1;
+
+    @media (max-width: 1000px) {
+      padding: 0 25px !important;
+
+    }
+    @media (max-width: 600px) {
+      font-size: 32px;
+      line-height: 1.1;
+    }
+  }
+
+  .resepten-block-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1s;
+    }
+
+  }
+
+  .recepten-single-block {
+    height: 100%;
+    position: relative;
+
+    a {
+      display: block;
+      height: 100%;
+
+
+    }
+
+
+    &:after{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 194px;
+      background: linear-gradient(180deg, rgba(60, 60, 60, 0.72) 0%, rgba(100, 100, 100, 0) 100%);
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      bottom: 0;
+      z-index: 0;
+    }
+
+    &:hover{
+
+
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .first-row {
+    height: 480px;
+    margin-bottom: 20px;
+
+
+  }
+
+  .second-row {
+    display: flex;
+    height: 464px;
+    margin-bottom: 20px;
+
+
+    .recepten-single-block {
+      &:first-of-type {
+        max-width: 462px;
+        width: 100%;
+      }
+
+      &:last-of-type {
+        margin-left: 20px;
+        max-width: calc(100% - 462px);
+        width: 100%;
+      }
+    }
+  }
+
+  .third-row {
+    display: flex;
+
+    .third-sub-block-row {
+      margin-right: 20px;
+      max-width: 710px;
+      width: 100%;
+
+      .third-first-row {
+        display: flex;
+        height: 289px;
+        margin-bottom: 20px;
+
+        .recepten-single-block {
+          max-width: 50%;
+          width: 100%;
+
+          h4 {
+            padding: 0 12px;
+          }
+
+          &:first-of-type {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      .third-second-row {
+        height: 289px;
+      }
+    }
+
+    & > .recepten-single-block {
+      width: 100%;
+      max-width: 349px;
+      height: 599px;
+    }
+  }
+
+  @media (max-width: 950px) {
+
+    .first-row {
+      height: 373px;
+
+    }
+    .recepten-single-block {
+    }
+    .second-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      height: 373px;
+
+      .recepten-single-block {
+        max-width: 100% !important;
+        margin: 0 !important;
+        height: 373px;
+      }
+    }
+    .third-row {
+      display: flex;
+      flex-direction: column;
+
+      .third-sub-block-row {
+        max-width: 100% !important;
+        margin: 0;
+        margin-bottom: 20px;
+
+        .third-first-row {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 20px;
+          height: 373px;
+
+          .recepten-single-block {
+            max-width: 100% !important;
+            margin: 0 !important;
+          }
+        }
+
+        .third-second-row {
+          height: 373px;
+        }
+      }
+
+      & > .recepten-single-block {
+        max-width: 100%;
+        height: 373px;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .first-row {
+      height: 350px;
+    }
+    .second-row {
+      grid-template-columns: repeat(1, 1fr);
+      height: unset;
+
+      .recepten-single-block {
+        height: 350px;
+        margin-bottom: 20px !important;
+
+        &:last-of-type {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+    .third-row {
+      .third-sub-block-row {
+        .third-first-row {
+          height: unset;
+          grid-template-columns: repeat(1, 1fr);
+
+          .recepten-single-block {
+            height: 350px;
+            margin-bottom: 20px !important;
+
+            &:last-of-type {
+              margin-bottom: 0 !important;
+            }
+          }
+        }
+
+        .third-second-row {
+          height: 350px;
+        }
+
+      }
+
+      & > .recepten-single-block {
+        height: 350px;
+
+      }
+    }
+  }
+  @media (max-width: 450px) {
+    .first-row {
+      height: 290px !important;
+    }
+    .second-row {
+      .recepten-single-block {
+        height: 290px !important;
+
+
+      }
+    }
+    .third-row {
+      .third-sub-block-row {
+        .third-first-row {
+
+          .recepten-single-block {
+            height: 290px;
+          }
+
+        }
+
+        .third-second-row {
+          height: 290px;
+
+        }
+      }
+
+      & > .recepten-single-block {
+        height: 290px;
+      }
+    }
+  }
+}
+
+.page-recepten {
+  .hero-module-block{
+    min-height: 402px;
+    .block-container{
+      margin-top: 142px;
+    }
+  }
+  .pagination-blog {
+    &.block-container {
+      max-width: 1109px;
+    }
+  }
+}

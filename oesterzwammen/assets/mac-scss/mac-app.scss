@@ -1,0 +1,48 @@
+.main-link{
+    padding-top: 13px;
+    padding-bottom: 7px;
+  //@media screen and (-webkit-min-device-pixel-ratio:0) {
+  //  padding-top: 16px;
+  //  padding-bottom: 10px;
+  //}
+  //@supports (-webkit-hyphens:none){
+  //  padding-top: 16px;
+  //  padding-bottom: 10px;
+  //}
+}
+
+
+
+.site-header__wrapper__menu {
+
+  ul {
+    li {
+      &:last-of-type {
+        a {
+
+          padding-top: 16px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.recipe-single-page{
+  .recipe-types{
+    span{
+      padding-top: 16px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.contact-content {
+  .contact-right {
+    .wpforms-submit {
+      padding-top: 16px !important;
+      padding-bottom: 10px !important;
+    }
+  }
+
+}
