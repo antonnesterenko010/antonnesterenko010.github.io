@@ -1,0 +1,126 @@
+.inspiratie {
+  padding: 120px 0 80px;
+  @include max-small() {
+    padding: 60px 0 30px;
+  }
+  .inspiratie__title {
+    text-align: center;
+  }
+  .inspiratie__cat__list {
+    display: flex;
+    gap: 34px;
+    margin: 64px 0;
+    @include max-small() {
+      margin: 32px 0;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .inspiratie__cat__item {
+      background: #fff;
+      border: 1px solid rgba(44, 56, 67, 0.50);
+      border-radius: 63px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      padding: 0 29px;
+      height: 53px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(44, 56, 67, 0.50);
+      transition: all .5s ease;
+      cursor: pointer;
+      &.active, &:hover {
+        background: var(--cta-color);
+        border: 1px solid var(--cta-color);
+        color: #fff;
+      }
+    }
+  }
+  .inspiratie__lists {
+    overflow: hidden;
+  }
+  .inspiratie__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    opacity: 1;
+    height: auto;
+    transition: all .5s ease;
+    @include max-medium() {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include max-small() {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &.hidden {
+      transform: translateY(100%);
+      opacity: 0;
+      height: 0px;
+    }
+    .inspiratie__list__item {
+      border-radius: 8px;
+      position: relative;
+      pointer-events: all;
+      cursor: pointer;
+      height: 275px;
+      overflow: hidden;
+      &:hover {
+        .inspiratie__content {
+          transform: translateY(0%);
+          background: var(--accent-color);
+        }
+      }
+      .inspiratie__item__image {
+        border-radius: 8px;
+        height: 275px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+      }
+      .inspiratie__content {
+        padding: 63px 24px 24px;
+        transition: all .65s ease;
+        position: absolute;
+        border-radius: 8px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+        overflow-y: auto;
+        &::-webkit-scrollbar-track{
+          border-radius: 10px;
+          background-color: var(--accent-color);
+        }
+        &::-webkit-scrollbar{
+          width: 4px;
+          background-color: var(--accent-color);
+        }
+
+        &::-webkit-scrollbar-thumb{
+          border-radius: 10px;
+          background-color: var(--cta-color);
+        }
+        .inspiratie__item__title {
+          color: #fff;
+          font-size: 36px;
+          font-weight: 500;
+          line-height: 1.2;
+          margin: 0 0 20px;
+        }
+        .inspiratie__item__subtitle {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.5;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

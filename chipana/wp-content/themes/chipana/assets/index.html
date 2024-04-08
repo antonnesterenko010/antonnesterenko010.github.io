@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chipana Web studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header grid-container" style="background-color: #FFFFFF;">
+        <div class="header-content grid-content">
+            <a href="#">
+                <img src="./images/CHINAPA__profile.png" alt="logo" height="80" width="auto">
+            </a>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#samples">Voice examples</a>
+                    </li>
+                    <li>
+                        <a href="#review">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu-mobile">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#samples">Voice examples</a>
+                    </li>
+                    <li>
+                        <a href="#review">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="social header-social">
+                <li><a href="https://twitter.com/chinapa" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/chinapa/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/chinapathevoice?igsh=aG40dzc2ajZ2aW90" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="grid-container">
+        <section id="home" class="hero grid-container grid-content-full">
+                <div class="hero-swiper grid-content-full grid-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide hero-card grid-content-full grid-container" style="background-image: url('./images/hero-slider1.png')">
+                            <div class="hero-inner grid-content">
+                                <h1>PERSONALIZED <span>VOICE</span> MAGIC BY A FEMALE <span>ARTIST</span></h1>
+                                <p>Let my voice infuse your project with vitality – explore samples from my unique talent!</p>
+                                <button class="btn" onclick="scrollToSection('#contact')">Contact Me</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide hero-card grid-content-full grid-container" style="background-image: url('./images/hero-slider2.png')">
+                            <div class="hero-inner grid-content">
+                                <h1>PERSONALIZED <span>VOICE</span> MAGIC BY A FEMALE <span>ARTIST</span></h1>
+                                <p>Let my voice infuse your project with vitality – explore samples from my unique talent!</p>
+                                <button class="btn" onclick="scrollToSection('#contact')">Contact Me</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide hero-card grid-content-full grid-container" style="background-image: url('./images/hero-slider4.jpg')">
+                            <div class="hero-inner grid-content">
+                                <h1>PERSONALIZED <span>VOICE</span> MAGIC BY A FEMALE <span>ARTIST</span></h1>
+                                <p>Let my voice infuse your project with vitality – explore samples from my unique talent!</p>
+                                <button class="btn" onclick="scrollToSection('#contact')">Contact Me</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <div class="swiper-pagination"></div>
+                      
+                        <div class="swiper-button-prev hero-arrow-prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="swiper-button-next hero-arrow-next">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="about" class="about grid-content">
+            <div class="about-inner section-inner">
+                <h2>ABOUT ME</h2>
+                <div class="about-wrap">
+                    <div class="about-text">
+                        <p>
+                            Hi I’m Chinapa, a British & Nigerian voice-over artist offering a full range of voice-over samples and recording options from my professional London based recording studio.
+                        </p>
+                        <p>
+                            Whatever your voice needs are, I will work with you to create exceptional voice-over results. My natural voice is 20s-30s RP, warm, clear and authentic.
+                        </p>
+                        <p>
+                            Sample my range of vocal tones by having a listen to my reels. Get in contact to see how we can collaborate and create engaging and effective voice-over content for your project
+                        </p>
+                    </div>
+                    <img src="./images/photo.png" alt="me">
+                </div>
+            </div>
+        </section>
+        <section id="samples" class="samples grid-content-full grid-container" style="background-color: #EADFEC;">
+            <div class="grid-content">
+                <div class="samples-inner section-inner">
+                    <div class="samples-heading">
+                        <h2>VOISE SAMPLE</h2>
+                        <p>Are you searching for captivating voice-over narration to elevate your project? Look no further! I am a London-based female voice-over artist, equipped with a state-of-the-art home studio, dedicated to delivering top-tier audio quality tailored to your needs.</p>
+                        <button class="btn" onclick="scrollToSection('#contact')">Contact Me</button>
+                    </div>
+                    <div class="samples-wrap">
+                        <figure>
+                            <figcaption>Commercial</figcaption>
+                            <div class="audio-container">
+                                <div class="audio-player" data-src="./audio/Chinapa Aguh - Commercial Voice Reel - vocals and sound design.mp3">
+                                    <div class="play-btn btn">
+                                        <img class="play" src="./images/Play.svg" alt="play">
+                                        <img class="pause" src="./images/Pause Circle.svg" alt="pause">
+                                    </div>
+                                    <div class="time-display">
+                                        <span class="current-time">0:00</span>
+                                        <span class="slash">/</span>
+                                        <span class="total-time">0:00</span>
+                                    </div>            
+                                    <div class="audio"></div>
+                                    <div class="mute-btn btn">
+                                        <img class="volume-up" src="./images/Volume On.svg" alt="volum on">
+                                        <img class="volume-mute" src="./images/Volume Off.svg" alt="volume off">
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure>
+                            <figcaption>E-Learning</figcaption>
+                            <div class="audio-container">
+                                <div class="audio-player" data-src="./audio/E - Learning - MP3.mp3">
+                                    <div class="play-btn btn">
+                                        <img class="play" src="./images/Play.svg" alt="play">
+                                        <img class="pause" src="./images/Pause Circle.svg" alt="pause">
+                                    </div>
+                                    <div class="time-display">
+                                        <span class="current-time">0:00</span>
+                                        <span class="slash">/</span>
+                                        <span class="total-time">0:00</span>
+                                    </div>            
+                                    <div class="audio"></div>
+                                    <div class="mute-btn btn">
+                                        <img class="volume-up" src="./images/Volume On.svg" alt="volum on">
+                                        <img class="volume-mute" src="./images/Volume Off.svg" alt="volume off">
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure>
+                            <figcaption>Corporate</figcaption>
+                            <div class="audio-container">
+                                <div class="audio-player" data-src="./audio/Corporate - First Story - English Voice.mp3">
+                                    <div class="play-btn btn">
+                                        <img class="play" src="./images/Play.svg" alt="play">
+                                        <img class="pause" src="./images/Pause Circle.svg" alt="pause">
+                                    </div>
+                                    <div class="time-display">
+                                        <span class="current-time">0:00</span>
+                                        <span class="slash">/</span>
+                                        <span class="total-time">0:00</span>
+                                    </div>            
+                                    <div class="audio"></div>
+                                    <div class="mute-btn btn">
+                                        <img class="volume-up" src="./images/Volume On.svg" alt="volum on">
+                                        <img class="volume-mute" src="./images/Volume Off.svg" alt="volume off">
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure>
+                            <figcaption>Audio book - African voice</figcaption>
+                            <div class="audio-container">
+                                <div class="audio-player" data-src="./audio/Audio-book-1-African-Voice.mp3">
+                                    <div class="play-btn btn">
+                                        <img class="play" src="./images/Play.svg" alt="play">
+                                        <img class="pause" src="./images/Pause Circle.svg" alt="pause">
+                                    </div>
+                                    <div class="time-display">
+                                        <span class="current-time">0:00</span>
+                                        <span class="slash">/</span>
+                                        <span class="total-time">0:00</span>
+                                    </div>            
+                                    <div class="audio"></div>
+                                    <div class="mute-btn btn">
+                                        <img class="volume-up" src="./images/Volume On.svg" alt="volum on">
+                                        <img class="volume-mute" src="./images/Volume Off.svg" alt="volume off">
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services grid-content">
+            <div class="services-inner section-inner">
+                <h2>SERVICES OFFERED</h2>
+                <div class="services-cards">
+                    <div class="services-card">
+                        <h4>Narration</h4>
+                        <p>Whether it's a promotional video, audiobook, or documentary, I bring scripts to life with compelling narration that captivates audiences.</p>
+                    </div>
+                    <div class="services-card">
+                        <h4>Character Voices</h4>
+                        <p>From whimsical creatures to relatable protagonists, I lend my vocal talents to breathe life into diverse characters, adding depth and dimension to your storytelling.</p>
+                    </div>
+                    <div class="services-card">
+                        <h4>E-Learning</h4>
+                        <p>With extensive experience in educational narration, I simplify complex concepts and engage learners through clear, articulate delivery, making e-learning modules both informative and enjoyable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="choose grid-content grid-content-full grid-container" style="background-color: #EADFEC;">
+            <div class="choose-inner section-inner grid-content">
+                <h2>WHY CHOOSE ME</h2>
+                <div class="choose-cards">
+                    <div class="choose-card">
+                        <img src="./images/CHINAPA__submarks_2.png" alt="card image" width="64" height="64">
+                        <h4>Professional Quality</h4>
+                        <p>Equipped with a home studio outfitted with industry-standard equipment, I deliver pristine audio recordings that meet professional standards.</p>
+                    </div>
+                    <div class="choose-card">
+                        <img src="./images/CHINAPA__submarks_4.png" alt="card image" width="64" height="64">
+                        <h4>Adaptability</h4>
+                        <p>Whether you need a warm and inviting tone or a commanding presence, I adapt my delivery to suit the tone and style of your project, ensuring maximum impact.</p>
+                    </div>
+                    <div class="choose-card">
+                        <img src="./images/CHINAPA__submarks_3.png" alt="card image" width="64" height="64">
+                        <h4>Commitment to Excellence</h4>
+                        <p>I am committed to excellence in every aspect of my work, striving to not only meet but exceed your expectations with every project.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="studio grid-content">
+            <div class="studio-inner section-inner">
+                <h2>WHERE MAGIC HAPPENS</h2>
+                <p>My home studio is expertly set up with hands-on technical support is ready to provide seamless integration in the aproach, execution and delivery to meet all your production demands</p>
+                <div class="studio-photos">
+                    <div class="short">
+                        <img src="./images/pexels-david-bartus-690779.jpg" alt="my studio" >
+                    </div>
+                    <div class="tall">
+                        <img src="./images/pexels-cottonbro-studio-5650547.jpg" alt="my studio">
+                    </div>
+                    <div class="short">
+                        <img src="./images/CHINAPA_Mockup 1.jpg" alt="my studio">
+                    </div>
+                    <div class="tall">
+                        <img src="./images/CHINAPA_Mockup 2.jpg" alt="my studio">
+                    </div>
+                    <div class="tall">
+                        <img src="./images/pexels-cottonbro-studio-4087994.jpg" alt="my studio">
+                    </div>
+                    <div class="short">
+                        <img src="./images/pexels-paul-deetman-2960891.jpg" alt="my studio">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="review" class="review grid-content-full grid-container" style="background-color: #EADFEC;">
+            <div class="review-inner section-inner grid-content">
+                <h2>WHAT MY CLIENTS SAY</h2>
+                <p>I prioritize collaboration and communication, working closely with clients to understand their vision and requirements, guaranteeing a final product that exceeds expectations.</p>
+                <div class="review-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="card-wrap">
+                                <img src="./images/StockSnap_NWFLCH8IBN.jpg" alt="photo" width="56" height="56">
+                                <h4>Jennifer Williams</h4>
+                            </div>
+                            <p>"Engaging Chinapa for our project was an absolute stroke of genius! Her voice injected unparalleled depth and emotion, captivating our audience from the very first word."</p>
+                            <div class="audio-container">
+                                <div class="audio-player" data-src="./audio/Chinapa Aguh - Animation Voices.mp3">
+                                    <div class="play-btn btn">
+                                        <img class="play" src="./images/Play.svg" alt="play">
+                                        <img class="pause" src="./images/Pause Circle.svg" alt="pause">
+                                    </div>
+                                    <div class="time-display">
+                                        <span class="current-time">0:00</span>
+                                        <span class="slash">/</span>
+                                        <span class="total-time">0:00</span>
+                                    </div>            
+                                    <div class="audio"></div>
+                                    <div class="mute-btn btn">
+                                        <img class="volume-up" src="./images/Volume On.svg" alt="volum on">
+                                        <img class="volume-mute" src="./images/Volume Off.svg" alt="volume off">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="card-wrap">
+                                    <img src="./images/smiley-man-relaxing-outdoors.jpg" alt="photo" width="56" height="56">
+                                    <h4>Michael Rodriguez</h4>
+                                </div>
+                                <p>"Collaborating with Chinapa was an incredible experience! Her voice infused our project with richness and emotion, creating a profound connection with our audience."</p>
+                                <div class="audio-container">
+                                    <div class="audio-player" data-src="./audio/Audio Book 2 - 50 shades of Grey - English Voice.mp3">
+                                        <div class="play-btn btn">
+                                            <img class="play" src="./images/Play.svg" alt="play">
+                                            <img class="pause" src="./images/Pause Circle.svg" alt="pause">
+                                        </div>
+                                        <div class="time-display">
+                                            <span class="current-time">0:00</span>
+                                            <span class="slash">/</span>
+                                            <span class="total-time">0:00</span>
+                                        </div>            
+                                        <div class="audio"></div>
+                                        <div class="mute-btn btn">
+                                            <img class="volume-up" src="./images/Volume On.svg" alt="volum on">
+                                            <img class="volume-mute" src="./images/Volume Off.svg" alt="volume off">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="card-wrap">
+                                    <img src="./images/portrait-beautiful-young-woman-standing-grey-wall.jpg" alt="photo" width="56" height="56">
+                                    <h4>Emily Anderson</h4>
+                                </div>
+                                <p>"Her voice brought our project to life in ways we never imagined! Her exceptional talent and dedication shone through in every recording, captivating our audience from the very first word."</p>
+                                <div class="audio-container">
+                                    <div class="audio-player" data-src="./audio/Cape Town.wav">
+                                        <div class="play-btn btn">
+                                            <img class="play" src="./images/Play.svg" alt="play">
+                                            <img class="pause" src="./images/Pause Circle.svg" alt="pause">
+                                        </div>
+                                        <div class="time-display">
+                                            <span class="current-time">0:00</span>
+                                            <span class="slash">/</span>
+                                            <span class="total-time">0:00</span>
+                                        </div>            
+                                        <div class="audio"></div>
+                                        <div class="mute-btn btn">
+                                            <img class="volume-up" src="./images/Volume On.svg" alt="volum on">
+                                            <img class="volume-mute" src="./images/Volume Off.svg" alt="volume off">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="card-wrap">
+                                    <img src="./images/pexels-anastasiya-gepp-2065200.jpg" alt="photo" width="56" height="56">
+                                    <h4>Jessica Taylor</h4>
+                                </div>
+                                <p>"Working with Chinapa was an absolute pleasure! Her voice brought depth and emotion to our project, resonating with our audience on a profound level. Jessica's dedication and expertise made the entire process smooth and enjoyable from start to finish."</p>
+                                <div class="audio-container">
+                                    <div class="audio-player" data-src="./audio/Cleopatra.wav">
+                                        <div class="play-btn btn">
+                                            <img class="play" src="./images/Play.svg" alt="play">
+                                            <img class="pause" src="./images/Pause Circle.svg" alt="pause">
+                                        </div>
+                                        <div class="time-display">
+                                            <span class="current-time">0:00</span>
+                                            <span class="slash">/</span>
+                                            <span class="total-time">0:00</span>
+                                        </div>            
+                                        <div class="audio"></div>
+                                        <div class="mute-btn btn">
+                                            <img class="volume-up" src="./images/Volume On.svg" alt="volum on">
+                                            <img class="volume-mute" src="./images/Volume Off.svg" alt="volume off">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="card-wrap">
+                                    <img src="./images/portrait-modern-man.jpg" alt="photo" width="56" height="56">
+                                    <h4>Matthew Carter</h4>
+                                </div>
+                                <p>"Chinapa's voice brought magic to our project, infusing it with authenticity and charm that captivated our audience from beginning to end."</p>
+                                <div class="audio-container">
+                                    <div class="audio-player" data-src="./audio/Easy Motion Tourist - SA Voice.mp3">
+                                        <div class="play-btn btn">
+                                            <img class="play" src="./images/Play.svg" alt="play">
+                                            <img class="pause" src="./images/Pause Circle.svg" alt="pause">
+                                        </div>
+                                        <div class="time-display">
+                                            <span class="current-time">0:00</span>
+                                            <span class="slash">/</span>
+                                            <span class="total-time">0:00</span>
+                                        </div>            
+                                        <div class="audio"></div>
+                                        <div class="mute-btn btn">
+                                            <img class="volume-up" src="./images/Volume On.svg" alt="volum on">
+                                            <img class="volume-mute" src="./images/Volume Off.svg" alt="volume off">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-swiper-pagination"></div>
+                  
+                    <div class="swiper-button-prev review-arrow-prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="swiper-button-next review-arrow-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+        </section>
+        <section id="contact" class="contact grid-content">
+            <div class="contact-inner section-inner">
+                <div class="contact-wrap">
+                    <h2>LET'S WORK TOGETHER</h2>
+                    <p>If you have questions about what services I provide, timelines, payment, other related topics, or anything else, shoot me a message!</p>
+                    <address>
+                        <div class="adress-wrap">
+                            <i class="fa-solid fa-phone-volume"></i><a href="tel:+447508840369">+447508 840 369</a>
+                        </div>
+                        <div class="adress-wrap">
+                            <i class="fa-regular fa-envelope"></i><a href="mailto:bookme@chinapathevoice.com">bookme@chinapathevoice.com</a><br />
+                        </div>
+                    </address>
+                </div>
+                <form class="contact-form" action="#">
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="tel" name="tel" placeholder="Enter Your Phone">
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <input type="text" name="subject" placeholder="Enter Your Subject">
+                        <textarea name="message" rows="3" placeholder="Enter Your Message" required></textarea>
+                        <label>
+                            <input type="checkbox" name="terms" id="terms" required>
+                            By checking this box, you agree to our <a href="#" target="_blank">Terms and Conditions</a>.
+                        </label>
+                        <button type="submit" class="btn" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!" data-initial="" value="">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer grid-container grid-content-full" style="background-color: #2C1E33;">
+        <div class="grid-content">
+            <div class="footer-inner">
+                <img src="./images/CHINAPA__profile.png" alt="logo" width="100" height="100">
+                <ul class="menu footer-menu">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#samples">Voice examples</a>
+                    </li>
+                    <li>
+                        <a href="#review">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="social footer-social">
+                    <li><a href="https://twitter.com/chinapa" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/chinapa/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/chinapathevoice?igsh=aG40dzc2ajZ2aW90" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                </ul>
+            </div>
+            <button class="go-top-btn">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log('renko js loaded');

@@ -1,0 +1,86 @@
+.steps {
+  padding: 0 0 135px;
+  @include max-medium() {
+    padding: 0 0 60px;
+  }
+  .steps__title {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  .steps__subtitle {
+    max-width: 983px;
+    margin: 0 auto;
+    color: rgba(44, 56, 67, 0.60);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .steps__list {
+    margin: 79px 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 31px;
+    @include max-medium() {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 31px;
+    }
+    .steps__item {
+      border-radius: 0px 36.725px 36.725px 36.725px;
+      position: relative;
+      overflow: hidden;
+      background: #F3F7FB;
+      padding: 110px 27px 74px;
+      transition: all .5s ease;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--cta-color);
+        width: 100%;
+        height: 13px;
+        border-radius: 0px 36.725px 0 0;
+      }
+      &.highlighted, &:hover{
+        background: var(--accent-color);
+        .steps__item__counter, .steps__item__title, .steps__item__subtitle {
+          color: #fff;
+        }
+      }
+      .steps__item__counter {
+        position: absolute;
+        top: -15px;
+        left: -60px;
+        font-family: 'Sora', sans-serif;
+        font-size: 159px;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: -31.813px;
+        opacity: 0.05;
+        color: var(--accent-color);
+        transition: all .5s ease;
+      }
+      .steps__item__title {
+        margin: 0 0 21px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.5;
+        z-index: 1;
+        position: relative;
+        transition: all .5s ease;
+      }
+      .steps__item__subtitle {
+        font-family: 'Sora', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        z-index: 1;
+        position: relative;
+        color: #585656;
+        letter-spacing: -0.32px;
+        transition: all .5s ease;
+      }
+    }
+  }
+}
